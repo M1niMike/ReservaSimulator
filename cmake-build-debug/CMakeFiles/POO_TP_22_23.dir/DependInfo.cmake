@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj"
   "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj"
-  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Comandos.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Comandos.cpp.obj"
+  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Interface.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Interface.cpp.obj"
   "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj"
   "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Simulador.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj"
   "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAlimentos.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.obj"

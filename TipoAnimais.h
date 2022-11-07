@@ -7,7 +7,14 @@
 
 #include "util.h"
 
-class TipoAnimais{};
+class TipoAnimais{
+    string tipo;
+
+public:
+    string getTipoAnimal () const {return tipo;}
+    TipoAnimais(string t) : tipo(t){};
+
+};
 
 class Coelho : public TipoAnimais{};
 

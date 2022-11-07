@@ -8,7 +8,13 @@
 #include "util.h"
 
 
-class TipoAlimentos{};
+class TipoAlimentos{
+    string tipo;
+
+public:
+    string getTipoAlimentos () const  {return tipo;}
+    TipoAlimentos(string t) : tipo(t){};
+};
 
 class Relva : public TipoAlimentos{};
 

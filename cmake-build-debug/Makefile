@@ -176,29 +176,29 @@ Animais.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Animais.cpp.s
 .PHONY : Animais.cpp.s
 
-Comandos.obj: Comandos.cpp.obj
-.PHONY : Comandos.obj
+Interface.obj: Interface.cpp.obj
+.PHONY : Interface.obj
 
 # target to build an object file
-Comandos.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Comandos.cpp.obj
-.PHONY : Comandos.cpp.obj
+Interface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Interface.cpp.obj
+.PHONY : Interface.cpp.obj
 
-Comandos.i: Comandos.cpp.i
-.PHONY : Comandos.i
+Interface.i: Interface.cpp.i
+.PHONY : Interface.i
 
 # target to preprocess a source file
-Comandos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Comandos.cpp.i
-.PHONY : Comandos.cpp.i
+Interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Interface.cpp.i
+.PHONY : Interface.cpp.i
 
-Comandos.s: Comandos.cpp.s
-.PHONY : Comandos.s
+Interface.s: Interface.cpp.s
+.PHONY : Interface.s
 
 # target to generate assembly for a file
-Comandos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Comandos.cpp.s
-.PHONY : Comandos.cpp.s
+Interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Interface.cpp.s
+.PHONY : Interface.cpp.s
 
 Reserva.obj: Reserva.cpp.obj
 .PHONY : Reserva.obj
@@ -335,9 +335,9 @@ help:
 	@echo ... Animais.obj
 	@echo ... Animais.i
 	@echo ... Animais.s
-	@echo ... Comandos.obj
-	@echo ... Comandos.i
-	@echo ... Comandos.s
+	@echo ... Interface.obj
+	@echo ... Interface.i
+	@echo ... Interface.s
 	@echo ... Reserva.obj
 	@echo ... Reserva.i
 	@echo ... Reserva.s

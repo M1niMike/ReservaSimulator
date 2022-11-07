@@ -1,7 +1,8 @@
 
 #include "util.h"
+#include "Interface.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+
+    Interface::runInterface();
 }

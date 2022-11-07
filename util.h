@@ -11,7 +11,7 @@
 #include <vector>
 #include <cmath>
 
-using namespace std:
+using namespace std;
 
 
 #endif //POO_TP_22_23_UTIL_H
