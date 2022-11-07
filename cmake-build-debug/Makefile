@@ -128,6 +128,174 @@ POO_TP_22_23/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/build
 .PHONY : POO_TP_22_23/fast
 
+Alimentos.obj: Alimentos.cpp.obj
+.PHONY : Alimentos.obj
+
+# target to build an object file
+Alimentos.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj
+.PHONY : Alimentos.cpp.obj
+
+Alimentos.i: Alimentos.cpp.i
+.PHONY : Alimentos.i
+
+# target to preprocess a source file
+Alimentos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.i
+.PHONY : Alimentos.cpp.i
+
+Alimentos.s: Alimentos.cpp.s
+.PHONY : Alimentos.s
+
+# target to generate assembly for a file
+Alimentos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.s
+.PHONY : Alimentos.cpp.s
+
+Animais.obj: Animais.cpp.obj
+.PHONY : Animais.obj
+
+# target to build an object file
+Animais.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj
+.PHONY : Animais.cpp.obj
+
+Animais.i: Animais.cpp.i
+.PHONY : Animais.i
+
+# target to preprocess a source file
+Animais.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Animais.cpp.i
+.PHONY : Animais.cpp.i
+
+Animais.s: Animais.cpp.s
+.PHONY : Animais.s
+
+# target to generate assembly for a file
+Animais.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Animais.cpp.s
+.PHONY : Animais.cpp.s
+
+Comandos.obj: Comandos.cpp.obj
+.PHONY : Comandos.obj
+
+# target to build an object file
+Comandos.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Comandos.cpp.obj
+.PHONY : Comandos.cpp.obj
+
+Comandos.i: Comandos.cpp.i
+.PHONY : Comandos.i
+
+# target to preprocess a source file
+Comandos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Comandos.cpp.i
+.PHONY : Comandos.cpp.i
+
+Comandos.s: Comandos.cpp.s
+.PHONY : Comandos.s
+
+# target to generate assembly for a file
+Comandos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Comandos.cpp.s
+.PHONY : Comandos.cpp.s
+
+Reserva.obj: Reserva.cpp.obj
+.PHONY : Reserva.obj
+
+# target to build an object file
+Reserva.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj
+.PHONY : Reserva.cpp.obj
+
+Reserva.i: Reserva.cpp.i
+.PHONY : Reserva.i
+
+# target to preprocess a source file
+Reserva.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.i
+.PHONY : Reserva.cpp.i
+
+Reserva.s: Reserva.cpp.s
+.PHONY : Reserva.s
+
+# target to generate assembly for a file
+Reserva.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.s
+.PHONY : Reserva.cpp.s
+
+Simulador.obj: Simulador.cpp.obj
+.PHONY : Simulador.obj
+
+# target to build an object file
+Simulador.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj
+.PHONY : Simulador.cpp.obj
+
+Simulador.i: Simulador.cpp.i
+.PHONY : Simulador.i
+
+# target to preprocess a source file
+Simulador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.i
+.PHONY : Simulador.cpp.i
+
+Simulador.s: Simulador.cpp.s
+.PHONY : Simulador.s
+
+# target to generate assembly for a file
+Simulador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.s
+.PHONY : Simulador.cpp.s
+
+TipoAlimentos.obj: TipoAlimentos.cpp.obj
+.PHONY : TipoAlimentos.obj
+
+# target to build an object file
+TipoAlimentos.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.obj
+.PHONY : TipoAlimentos.cpp.obj
+
+TipoAlimentos.i: TipoAlimentos.cpp.i
+.PHONY : TipoAlimentos.i
+
+# target to preprocess a source file
+TipoAlimentos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.i
+.PHONY : TipoAlimentos.cpp.i
+
+TipoAlimentos.s: TipoAlimentos.cpp.s
+.PHONY : TipoAlimentos.s
+
+# target to generate assembly for a file
+TipoAlimentos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.s
+.PHONY : TipoAlimentos.cpp.s
+
+TipoAnimais.obj: TipoAnimais.cpp.obj
+.PHONY : TipoAnimais.obj
+
+# target to build an object file
+TipoAnimais.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.obj
+.PHONY : TipoAnimais.cpp.obj
+
+TipoAnimais.i: TipoAnimais.cpp.i
+.PHONY : TipoAnimais.i
+
+# target to preprocess a source file
+TipoAnimais.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.i
+.PHONY : TipoAnimais.cpp.i
+
+TipoAnimais.s: TipoAnimais.cpp.s
+.PHONY : TipoAnimais.s
+
+# target to generate assembly for a file
+TipoAnimais.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.s
+.PHONY : TipoAnimais.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +329,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... POO_TP_22_23
+	@echo ... Alimentos.obj
+	@echo ... Alimentos.i
+	@echo ... Alimentos.s
+	@echo ... Animais.obj
+	@echo ... Animais.i
+	@echo ... Animais.s
+	@echo ... Comandos.obj
+	@echo ... Comandos.i
+	@echo ... Comandos.s
+	@echo ... Reserva.obj
+	@echo ... Reserva.i
+	@echo ... Reserva.s
+	@echo ... Simulador.obj
+	@echo ... Simulador.i
+	@echo ... Simulador.s
+	@echo ... TipoAlimentos.obj
+	@echo ... TipoAlimentos.i
+	@echo ... TipoAlimentos.s
+	@echo ... TipoAnimais.obj
+	@echo ... TipoAnimais.i
+	@echo ... TipoAnimais.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

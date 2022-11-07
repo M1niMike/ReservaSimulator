@@ -8,6 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj"
+  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj"
+  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Comandos.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Comandos.cpp.obj"
+  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj"
+  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Simulador.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj"
+  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAlimentos.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.obj"
+  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.obj"
   "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/main.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
