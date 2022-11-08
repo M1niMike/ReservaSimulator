@@ -7,6 +7,10 @@
 
 #include "util.h"
 
-class Animais{};
+class Animais{
+public:
+
+private:
+};
 
 #endif //POO_TP_22_23_ANIMAIS_H
