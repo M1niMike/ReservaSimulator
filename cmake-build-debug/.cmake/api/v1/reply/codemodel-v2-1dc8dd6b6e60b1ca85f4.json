@@ -6,7 +6,6 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -49,12 +48,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Goncalo/Desktop/ISEC/1\u00ba Semestre/POO/POO-TP-22-23/cmake-build-debug",
-		"source" : "C:/Users/Goncalo/Desktop/ISEC/1\u00ba Semestre/POO/POO-TP-22-23"
+		"build" : "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug",
+		"source" : "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 2
 	}
 }
