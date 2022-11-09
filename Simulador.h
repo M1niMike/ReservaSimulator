@@ -8,12 +8,13 @@
 #include "Reserva.h"
 
 class Simulador{
-    Reserva *r;
-
 public:
     Simulador(Reserva *aux);
-
-    Reserva* getReserva() const {return r;}
+    const Reserva& getReserva() const {return *r;}
+    int leFicheiro();
+private:
+    Reserva *r;
+    static int instantes;
 };
 
 #endif //POO_TP_22_23_SIMULADOR_H
