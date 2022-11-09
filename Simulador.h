@@ -11,6 +11,7 @@ class Simulador{
 public:
     Simulador(Reserva *aux);
     const Reserva& getReserva() const {return *r;}
+    int leFicheiro();
 private:
     Reserva *r;
     static int instantes;

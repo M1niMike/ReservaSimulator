@@ -8,14 +8,19 @@
 #include "util.h"
 
 class Reserva{
-    int Linhas;
-    int Colunas;
+    int linhas;
+    int colunas;
 
 public:
     Reserva(int nl=0, int nc=0);
 
-    int getLinhas() const {return Linhas;}
-    int getColunas() const {return Colunas;}
+    //Get
+    int getLinhas() const;
+    int getColunas() const;
+
+    //Set
+    void setLinhas(int newLinhas);
+    void setColunas(int newColunas);
 };
 
 #endif //POO_TP_22_23_RESERVA_H

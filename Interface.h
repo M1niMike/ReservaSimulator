@@ -10,6 +10,14 @@
 class Interface{
 public:
     static void runInterface();
+    static string leFicheiroComandos(string fileName);
+    static int leFicheiroValores(string fileName);
+    void validaComandos(string cmd);
+    vector<string> splitString(string cmd) const;
+
+
+private:
+
 };
 
 #endif //POO_TP_22_23_INTERFACE_H
