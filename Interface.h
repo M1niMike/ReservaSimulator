@@ -10,6 +10,7 @@
 class Interface{
 public:
     static void runInterface();
+    static void menuSimulador();
     static string leFicheiroComandos(string fileName);
     static int leFicheiroValores(string fileName);
     void validaComandos(string cmd);

@@ -6,6 +6,73 @@
 #include "util.h"
 
 
+void Interface::runInterface() {
+
+    string opcao;
+
+    do{
+        cout << "\n1 - Novo Simulador";
+        cout << "\n2 - Sair";
+
+        cout << "\n->";
+        cin >> opcao;
+        if(opcao == "1"){
+            menuSimulador();
+        }
+        else if(opcao == "2"){
+            cout << "\nA Sair";
+            exit(1);
+        }
+        else
+            cout << "\n Opcao invalida";
+
+    }while(opcao != "2");
+
+}
+
+void Interface::menuSimulador() {
+
+    int linhas = 0;
+    int colunas = 0;
+    string choice;
+    string cmd;
+    string aux;
+    Interface i;
+    cout << "Simulacao Iniciada" << endl;
+    cout << "Criando a Reserva" << endl;
+    cin.ignore();
+    do
+    {
+        cout << "Introduza o tamanho da reserva que pretende: [Linha] [Coluna]" << endl;
+        cout << "->";
+        getline(cin, aux);
+
+        istringstream iss(aux);
+        iss >> linhas >> colunas;
+
+        if((linhas<16 || colunas<16) || (linhas>500 || colunas>500))
+            cout << "O tamanho da reserva deve ser entre 16x16 e 500x500!" << endl;
+    }while((linhas<16 || colunas<16) || (linhas>500 || colunas>500));
+
+
+
+    cout << "Deseja inserir um comando por ficheiro ou texto? <ficheiro> <texto>" << endl;
+    cin >> choice;
+    if(choice == "ficheiro"){
+        leFicheiroComandos("comandos.txt");
+    }else if(choice == "texto"){
+        cin.ignore();
+        while (1) {
+            cout << "Comandos:" << endl;
+            getline(cin, cmd);
+            i.validaComandos(cmd);
+        }
+    }else
+        cout << "insira <texto> ou <ficheiro>" << endl;
+}
+
+
+
 string Interface::leFicheiroComandos(string fileName) {
     string texto;
     Interface i;
@@ -27,31 +94,7 @@ string Interface::leFicheiroComandos(string fileName) {
 
 }
 
-void Interface::runInterface() {
 
-    string choice;
-    string cmd;
-    Interface i;
-    cout << "Simulacao Iniciada" << endl;
-    cout << "1 2 3..." << endl;
-    cout << "Bem vindo a Reserva" << endl;
-
-
-    cout << "Deseja inserir um comando por ficheiro ou texto? <ficheiro> <texto>" << endl;
-    cin >> choice;
-    if(choice == "ficheiro"){
-        leFicheiroComandos("comandos.txt");
-    }else if(choice == "texto"){
-        cin.ignore();
-        while (1) {
-            cout << "Comandos: " << endl;
-            getline(cin, cmd);
-            i.validaComandos(cmd);
-        }
-    }else
-        cout << "insira <texto> ou <ficheiro>" << endl;
-
-}
 
 int Interface::leFicheiroValores(string fileName) {
     string aux;
@@ -162,7 +205,7 @@ void Interface::validaComandos(string cmd){
         cout << "A ser implementado" << endl;
     }
     else if (tipoComando == "exit" && cmdVector.size() == 1) {
-        cout << "A SAIR" << endl;
+        cout << "a sair" << endl;
         exit(1);
     }
     else {
