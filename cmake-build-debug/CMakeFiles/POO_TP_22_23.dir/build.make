@@ -78,22 +78,9 @@ CMakeFiles/POO_TP_22_23.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/main.cpp.s"
 	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\main.cpp -o CMakeFiles\POO_TP_22_23.dir\main.cpp.s
 
-CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
-CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj: ../Simulador.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_TP_22_23.dir\Simulador.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Simulador.cpp
-
-CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.i"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Simulador.cpp > CMakeFiles\POO_TP_22_23.dir\Simulador.cpp.i
-
-CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.s"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Simulador.cpp -o CMakeFiles\POO_TP_22_23.dir\Simulador.cpp.s
-
 CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
 CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj: ../Reserva.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj"
 	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_TP_22_23.dir\Reserva.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Reserva.cpp
 
 CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.i: cmake_force
@@ -106,7 +93,7 @@ CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.s: cmake_force
 
 CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
 CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj: ../Alimentos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj"
 	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_TP_22_23.dir\Alimentos.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Alimentos.cpp
 
 CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.i: cmake_force
@@ -119,7 +106,7 @@ CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.s: cmake_force
 
 CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
 CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj: ../Animais.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj"
 	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_TP_22_23.dir\Animais.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Animais.cpp
 
 CMakeFiles/POO_TP_22_23.dir/Animais.cpp.i: cmake_force
@@ -130,72 +117,40 @@ CMakeFiles/POO_TP_22_23.dir/Animais.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/Animais.cpp.s"
 	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Animais.cpp -o CMakeFiles\POO_TP_22_23.dir\Animais.cpp.s
 
-CMakeFiles/POO_TP_22_23.dir/Interface.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
-CMakeFiles/POO_TP_22_23.dir/Interface.cpp.obj: ../Interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/POO_TP_22_23.dir/Interface.cpp.obj"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_TP_22_23.dir\Interface.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Interface.cpp
+CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj: ../Simulador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_TP_22_23.dir\Simulador.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Simulador.cpp
 
-CMakeFiles/POO_TP_22_23.dir/Interface.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/Interface.cpp.i"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Interface.cpp > CMakeFiles\POO_TP_22_23.dir\Interface.cpp.i
+CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.i"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Simulador.cpp > CMakeFiles\POO_TP_22_23.dir\Simulador.cpp.i
 
-CMakeFiles/POO_TP_22_23.dir/Interface.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/Interface.cpp.s"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Interface.cpp -o CMakeFiles\POO_TP_22_23.dir\Interface.cpp.s
-
-CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
-CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.obj: ../TipoAnimais.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.obj"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais.cpp
-
-CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.i"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAnimais.cpp.i
-
-CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.s"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais.cpp.s
-
-CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
-CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.obj: ../TipoAlimentos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.obj"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos.cpp
-
-CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.i"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAlimentos.cpp.i
-
-CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.s"
-	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos.cpp.s
+CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.s"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Simulador.cpp -o CMakeFiles\POO_TP_22_23.dir\Simulador.cpp.s
 
 # Object files for target POO_TP_22_23
 POO_TP_22_23_OBJECTS = \
 "CMakeFiles/POO_TP_22_23.dir/main.cpp.obj" \
-"CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj" \
 "CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj" \
 "CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj" \
 "CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj" \
-"CMakeFiles/POO_TP_22_23.dir/Interface.cpp.obj" \
-"CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.obj" \
-"CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.obj"
+"CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj"
 
 # External object files for target POO_TP_22_23
 POO_TP_22_23_EXTERNAL_OBJECTS =
 
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/main.cpp.obj
-POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj
-POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Interface.cpp.obj
-POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.obj
-POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/build.make
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/linklibs.rsp
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/objects1.rsp
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable POO_TP_22_23.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable POO_TP_22_23.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\POO_TP_22_23.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

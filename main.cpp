@@ -1,8 +1,10 @@
 
 #include "util.h"
-#include "Interface.h"
+#include "Simulador.h"
 
 int main() {
 
-    Interface::runInterface();
+    Simulador::runInterface();
+
+    return 0;
 }

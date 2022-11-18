@@ -9,28 +9,12 @@ CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj: \
  ../Animais.cpp \
  ../Animais.h \
  ../util.h
-CMakeFiles/POO_TP_22_23.dir/Interface.cpp.obj: \
- ../Interface.cpp \
- ../Interface.h \
- ../util.h
 CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj: \
  ../Reserva.cpp \
  ../Reserva.h \
  ../util.h
-CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj: \
- ../Reserva.h \
- ../Simulador.cpp \
- ../Simulador.h \
- ../util.h
-CMakeFiles/POO_TP_22_23.dir/TipoAlimentos.cpp.obj: \
- ../TipoAlimentos.cpp \
- ../TipoAlimentos.h \
- ../util.h
-CMakeFiles/POO_TP_22_23.dir/TipoAnimais.cpp.obj: \
- ../TipoAnimais.cpp \
- ../TipoAnimais.h \
- ../util.h
 CMakeFiles/POO_TP_22_23.dir/main.cpp.obj: \
- ../Interface.h \
+ ../Reserva.h \
+ ../Simulador.h \
  ../main.cpp \
  ../util.h

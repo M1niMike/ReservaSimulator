@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -14,7 +14,7 @@
       <config projectName="POO_TP_22_23" targetName="POO_TP_22_23" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
@@ -22,6 +22,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb5b0fea-053f-43f1-a63e-edde484ee9f2" name="Changes" comment="" />
     <list id="ec113f9e-e530-4597-b00c-75ddafb9dd85" name="Changes by Goncalo" comment="" />
+    <list id="99394c63-bda3-4fdd-bdf1-41aec35818ab" name="Changes by Gonçalo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +34,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Simulador.cpp">
+      <ranges>
+        <range start1="4" end1="5" start2="4" end2="5" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="7" end1="7" start2="7" end2="9" changelist="99394c63-bda3-4fdd-bdf1-41aec35818ab" />
+        <range start1="8" end1="9" start2="10" end2="11" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="32" end1="33" start2="34" end2="35" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="39" end1="40" start2="41" end2="42" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="41" end1="42" start2="43" end2="44" changelist="99394c63-bda3-4fdd-bdf1-41aec35818ab" />
+        <range start1="56" end1="57" start2="58" end2="60" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="75" end1="76" start2="78" end2="79" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="77" end1="78" start2="80" end2="81" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="98" end1="99" start2="101" end2="102" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="116" end1="117" start2="119" end2="120" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="123" end1="124" start2="126" end2="127" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="131" end1="132" start2="134" end2="135" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="143" end1="144" start2="146" end2="147" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="216" end1="216" start2="219" end2="241" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,6 +70,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,12 +83,12 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="POO_TP_22_23" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POO_TP_22_23" TARGET_NAME="POO_TP_22_23" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="POO_TP_22_23" RUN_TARGET_NAME="POO_TP_22_23">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POO_TP_22_23" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POO_TP_22_23" TARGET_NAME="POO_TP_22_23" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="POO_TP_22_23" RUN_TARGET_NAME="POO_TP_22_23">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -83,7 +106,8 @@
       <workItem from="1667861466269" duration="3956000" />
       <workItem from="1668070797225" duration="283000" />
       <workItem from="1668706197523" duration="641000" />
-      <workItem from="1668712603774" duration="3301000" />
+      <workItem from="1668712603774" duration="3849000" />
+      <workItem from="1668797842721" duration="4873000" />
     </task>
     <servers />
   </component>

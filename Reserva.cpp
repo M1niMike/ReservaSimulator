@@ -5,6 +5,8 @@
 #include "Reserva.h"
 #include "util.h"
 
+Reserva::Reserva(int nl, int nc):linhas(nl), colunas(nc) {}
+
 int Reserva::getLinhas() const {
     return linhas;
 }
@@ -20,6 +22,8 @@ void Reserva::setLinhas(int newLinhas){
 void Reserva::setColunas(int newColunas) {
     colunas = newColunas;
 }
+
+
 
 
 

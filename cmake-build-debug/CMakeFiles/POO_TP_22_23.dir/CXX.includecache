@@ -6,27 +6,3 @@
 
 #IncludeRegexTransform: 
 
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Interface.cpp
-Interface.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Interface.h
-util.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
-
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Interface.h
-util.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
-
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
-iostream
--
-string
--
-sstream
--
-vector
--
-cmath
--
-fstream
--
-

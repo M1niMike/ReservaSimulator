@@ -8,9 +8,6 @@
 #include "util.h"
 
 class Reserva{
-    int linhas;
-    int colunas;
-
 public:
     Reserva(int nl=0, int nc=0);
 
@@ -21,6 +18,10 @@ public:
     //Set
     void setLinhas(int newLinhas);
     void setColunas(int newColunas);
+
+private:
+    int linhas;
+    int colunas;
 };
 
 #endif //POO_TP_22_23_RESERVA_H
