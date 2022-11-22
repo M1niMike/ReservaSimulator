@@ -36,14 +36,41 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Simulador.h">
+    <file path="$PROJECT_DIR$/Reserva.h">
       <ranges>
-        <range start1="9" end1="9" start2="9" end2="11" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="11" end1="12" start2="13" end2="13" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
-        <range start1="13" end1="17" start2="14" end2="18" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="18" end1="20" start2="19" end2="21" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="21" end1="21" start2="22" end2="27" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="24" end1="25" start2="30" end2="30" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="18" end1="18" start2="18" end2="21" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="23" end1="28" start2="26" end2="27" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="30" end1="31" start2="29" end2="29" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="32" end1="32" start2="30" end2="44" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="36" end1="37" start2="48" end2="48" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
+        <range start1="38" end1="38" start2="49" end2="50" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Simulador.cpp">
+      <ranges>
+        <range start1="65" end1="66" start2="65" end2="66" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="67" end1="68" start2="67" end2="73" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="72" end1="73" start2="77" end2="78" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="84" end1="84" start2="89" end2="93" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="157" end1="158" start2="166" end2="167" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="160" end1="162" start2="169" end2="171" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
+        <range start1="170" end1="171" start2="179" end2="181" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="173" end1="174" start2="183" end2="185" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="235" end1="236" start2="246" end2="247" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="244" end1="246" start2="255" end2="268" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Reserva.cpp">
+      <ranges>
+        <range start1="25" end1="25" start2="25" end2="27" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="29" end1="30" start2="31" end2="32" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="34" end1="37" start2="36" end2="41" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="41" end1="41" start2="45" end2="49" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
+        <range start1="65" end1="66" start2="73" end2="73" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
+        <range start1="71" end1="72" start2="78" end2="79" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
+        <range start1="73" end1="73" start2="80" end2="96" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
+        <range start1="74" end1="74" start2="97" end2="99" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
+        <range start1="87" end1="87" start2="112" end2="206" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
       </ranges>
     </file>
   </component>
@@ -94,7 +121,8 @@
       <workItem from="1668706197523" duration="641000" />
       <workItem from="1668712603774" duration="3849000" />
       <workItem from="1668797842721" duration="5049000" />
-      <workItem from="1669047889911" duration="21703000" />
+      <workItem from="1669047889911" duration="21795000" />
+      <workItem from="1669151588645" duration="6343000" />
     </task>
     <servers />
   </component>
@@ -113,15 +141,6 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Simulador.cpp</url>
-          <line>156</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="this" />

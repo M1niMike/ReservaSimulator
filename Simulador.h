@@ -18,7 +18,7 @@ public:
     int leFicheiroValores(string fileName);
     void validaComandos(string cmd);
     vector<string> splitString(const string& cmd) const;
-    void printaReserva();
+    void buildReserva();
 
     Reserva* getReserva() const {
         return r;

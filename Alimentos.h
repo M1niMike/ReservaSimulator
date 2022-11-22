@@ -10,22 +10,25 @@
 class Alimentos{
 public:
     //gets
-    char getTipoAlimento() const;
+    string getTipoAlimento() const;
     int getValimento();
     int getValorNutri();
     int getToxicidade();
     string getCheiro();
-    int getX() const;
-    int getY() const;
+    int getId(){return id;}
+//    int getX() const;
+//    int getY() const;
 
-    Alimentos(const char& t, int Va, int Vn, int tx, string c, int x, int y);
+    Alimentos(const string& t, int Va, int Vn, int tx, string c, int id);
 private:
-    char tipo;
+    string tipo;
     int vAlimento;
     int valorNutri;
     int toxicidade;
     string cheiro;
-    int cordX, cordY;
+    static int ID;
+    int id;
+    //int cordX, cordY;
 };
 
 //class Relva : public Alimentos{
@@ -40,7 +43,7 @@ private:
 
 class Relva : public Alimentos{
 public:
-    Relva(char tipo) : Alimentos('r', 20, 3, 0, "erva e verdura", 0 , 0) {}
+    Relva(string tipo, int x, int y) : Alimentos("r", 20, 3, 0, "erva e verdura", 1) {}
 };
 
 //class Cenoura : public Alimentos{
@@ -55,7 +58,7 @@ public:
 
 class Cenoura : public Alimentos{
 public:
-    Cenoura(char tipo) : Alimentos('t', 9999, 4, 1, "verdura", 0 , 1) {}
+    Cenoura(string tipo, int x, int y) : Alimentos("t", 9999, 4, 1, "verdura", 1) {}
 };
 
 //class Corpo : public Alimentos{
@@ -70,7 +73,7 @@ public:
 
 class Corpo : public Alimentos{
 public:
-    Corpo(char tipo) : Alimentos('p', 9999, 4, 1, "carne", 0 , 2) {}
+    Corpo(string tipo, int x, int y) : Alimentos("p", 9999, 4, 1, "carne", 1) {}
 };
 
 
@@ -86,7 +89,7 @@ public:
 
 class Bife : public Alimentos{
 public:
-    Bife(char tipo) : Alimentos('b', 30, 10, 2, "carne e ketchup", 0 , 3) {}
+    Bife(string tipo, int x, int y) : Alimentos("b", 30, 10, 2, "carne e ketchup", 1) {}
 };
 
 
@@ -102,7 +105,7 @@ public:
 
 class AlimentoMisterio : public Alimentos{
 public:
-    AlimentoMisterio(char tipo) : Alimentos('g', 20, 2, 1, "fruta", 0 , 4) {}
+    AlimentoMisterio(string tipo, int x, int y) : Alimentos("g", 20, 2, 1, "fruta", 1) {}
 };
 
 

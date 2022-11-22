@@ -63,14 +63,19 @@ void Simulador::menuSimulador() {
         cin.clear();
         cin.ignore(colunas, '\n');
 
-        if((linhas<16 || colunas<16) || (linhas>500 || colunas>500))
+        if((linhas<3 || colunas<3) || (linhas>500 || colunas>500))
             cout << "O tamanho da reserva deve ser entre 16x16 e 500x500!" << endl;
-    }while((linhas<16 || colunas<16) || (linhas>500 || colunas>500));
+    }while((linhas<3 || colunas<3) || (linhas>500 || colunas>500));
+
+//  restrições originais
+//    if((linhas<16 || colunas<16) || (linhas>500 || colunas>500))
+//        cout << "O tamanho da reserva deve ser entre 16x16 e 500x500!" << endl;
+//}while((linhas<16 || colunas<16) || (linhas>500 || colunas>500));
 
     r->setLinhas(linhas);
     r->setColunas(colunas);
 
-    printaReserva();
+    buildReserva();
 
     cout << "Deseja inserir um comando por ficheiro ou texto? <ficheiro> <texto>" << endl;
     cin >> choice;
@@ -82,6 +87,10 @@ void Simulador::menuSimulador() {
             cout << "Comandos:" << endl;
             getline(cin, cmd);
             validaComandos(cmd);
+            cout << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals() << endl;
+            cout << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood() << endl;
+            cout << endl;
+            buildReserva();
         }
     }else
         cout << "insira <texto> ou <ficheiro>" << endl;
@@ -155,11 +164,11 @@ void Simulador::validaComandos(string cmd){
 
     if (tipoComando == "animal" && cmdVector.size() == 4){
         r->criaAnimal(cmdVector[1], stoi(cmdVector[2]), stoi(cmdVector[3]));
-        cout << r->obtemReserva();
+        cout << r->obtemAnimal();
     }
     else if (tipoComando == "animal" && cmdVector.size() == 2){
-        //();
-        cout << "A ser implementado" << endl;
+        r->criaAnimalRandom(cmdVector[1]);
+        cout << r->obtemAnimal();
     }
     else if (tipoComando == "kill" && cmdVector.size() == 3){
         cout << "A ser implementado" << endl;
@@ -168,10 +177,12 @@ void Simulador::validaComandos(string cmd){
         cout << "A ser implementado" << endl;
     }
     else if (tipoComando == "food" && cmdVector.size() == 4) {
-        cout << "A ser implementado" << endl;
+        r->criaAlimento(cmdVector[1], stoi(cmdVector[2]), stoi(cmdVector[3]));
+        cout << r->obtemAlimento();
     }
     else if (tipoComando == "food" && cmdVector.size() == 2) {
-        cout << "A ser implementado" << endl;
+        r->criaAlimentoRandom(cmdVector[1]);
+        cout << r->obtemAlimento();
     }
     else if (tipoComando == "feed" && cmdVector.size() == 5) {
         cout << "A ser implementado" << endl;
@@ -233,7 +244,7 @@ void Simulador::validaComandos(string cmd){
 }
 
 
-void Simulador::printaReserva() {
+void Simulador::buildReserva() {
     //Animais *a;
     int linhas = r->getLinhas();
     int colunas = r->getColunas();
@@ -242,8 +253,19 @@ void Simulador::printaReserva() {
 
     for (int i = 0; i < linhas; i ++) {
         for (int j = 0; j < colunas; j++) {
-            board[i][j] = "_____";
-            cout << "_____";
+            if(board[i][j] == r->getTipoAnimal("c"))
+                board[i][j] = "c";
+            else if(board[i][j]== r->getTipoAnimal("o")){
+                board[i][j] = "o";
+            }else if(board[i][j]== r->getTipoAnimal("l")){
+                board[i][j] = "l";
+            }else if(board[i][j]== r->getTipoAnimal("g")){
+                board[i][j] = "g";
+            }else if(board[i][j]== r->getTipoAnimal("m")){
+                board[i][j] = "m";
+            }else{
+                board[i][j] = "_____";
+            }
         }
     }
 

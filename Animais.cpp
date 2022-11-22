@@ -14,7 +14,7 @@ Animais::Animais(const string& t, int Sa = 0, int p = 0, int Va = 0, bool isDead
 string Animais::getTipoAnimal() const {
     ostringstream oss;
 
-    oss << tipo << endl;
+    oss << tipo;
 
     return oss.str();
 }
@@ -30,6 +30,8 @@ int Animais::getPeso() {
 int Animais::getvAnimal() {
     return vAnimal;
 }
+
+
 
 //int Animais::getX() const {
 //    return cordX;

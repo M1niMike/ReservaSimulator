@@ -5,11 +5,10 @@
 #include "Alimentos.h"
 #include "util.h"
 
-Alimentos::Alimentos(const char& t, int Va = 0, int Vn = 0, int tx = 0, string c = "", int x = 0, int y = 0) : tipo(t), vAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), cordX(x), cordY(y) {}
+int Alimentos::ID = 1;
 
-char Alimentos::getTipoAlimento() const {
-    return tipo;
-}
+Alimentos::Alimentos(const string& t, int Va = 0, int Vn = 0, int tx = 0, string c = "", int id = 1) : tipo(t), vAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), id(ID++) {}
+
 
 int Alimentos::getValimento() {
     return vAlimento;
@@ -23,13 +22,14 @@ int Alimentos::getToxicidade() {
     return toxicidade;
 }
 
-int Alimentos::getX() const {
-    return cordX;
+string Alimentos::getTipoAlimento() const {
+    ostringstream oss;
+
+    oss << tipo;
+
+    return oss.str();
 }
 
-int Alimentos::getY() const {
-    return cordY;
-}
 
 string Alimentos::getCheiro() {
     ostringstream oss;
@@ -38,3 +38,11 @@ string Alimentos::getCheiro() {
 
     return oss.str();
 }
+
+//int Alimentos::getX() const {
+//    return cordX;
+//}
+//
+//int Alimentos::getY() const {
+//    return cordY;
+//}
