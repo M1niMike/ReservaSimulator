@@ -4,9 +4,15 @@
 
 #include "Simulador.h"
 #include "util.h"
+#include <sstream>
+#include <string>
+#include <fstream>
+#include <iostream>
+#include <random>
+#include <cstdlib>
 
 
-
+Simulador::Simulador(Reserva *r):r(r) {}
 
 void Simulador::runInterface() {
 
@@ -39,7 +45,6 @@ void Simulador::menuSimulador() {
     string choice;
     string cmd;
     string aux;
-    Simulador i;
     cout << "Simulacao Iniciada" << endl;
     cout << "A criar a Reserva..." << endl;
     cin.ignore();
@@ -47,17 +52,25 @@ void Simulador::menuSimulador() {
     {
         cout << "Introduza o tamanho da reserva que pretende: [Linha] [Coluna]" << endl;
         cout << "->";
-        getline(cin, aux);
+       // getline(cin, aux);
+        cin >> linhas;
+        cin.clear();
+        cin.ignore(linhas, '\n');
 
-        istringstream iss(aux);
-        iss >> linhas >> colunas;
+        cout << "->";
+
+        cin >> colunas;
+        cin.clear();
+        cin.ignore(colunas, '\n');
 
         if((linhas<16 || colunas<16) || (linhas>500 || colunas>500))
             cout << "O tamanho da reserva deve ser entre 16x16 e 500x500!" << endl;
     }while((linhas<16 || colunas<16) || (linhas>500 || colunas>500));
 
-    Reserva Reserva(linhas, colunas);
-    i.printaReserva(Reserva);
+    r->setLinhas(linhas);
+    r->setColunas(colunas);
+
+    printaReserva();
 
     cout << "Deseja inserir um comando por ficheiro ou texto? <ficheiro> <texto>" << endl;
     cin >> choice;
@@ -68,7 +81,7 @@ void Simulador::menuSimulador() {
         while (1) {
             cout << "Comandos:" << endl;
             getline(cin, cmd);
-            i.validaComandos(cmd);
+            validaComandos(cmd);
         }
     }else
         cout << "insira <texto> ou <ficheiro>" << endl;
@@ -78,7 +91,7 @@ void Simulador::menuSimulador() {
 
 string Simulador::leFicheiroComandos(string fileName) {
     string texto;
-    Simulador i;
+    Simulador i(new Reserva());
     ifstream file;
 
     file.open(fileName);
@@ -117,19 +130,18 @@ int Simulador::leFicheiroValores(string fileName) {
     return valor;
 }
 
-vector<string> Simulador::splitString(string cmd) const {
+vector<string> Simulador::splitString(const string& cmd) const {
     string aux;
     istringstream ss(cmd);
 
     vector<string> palavras;
 
     while(getline(ss, aux, ' ')){
-        palavras.push_back(aux); // adicionar a palavra depois de cada espa?o para o nosso vetor de palavras
+        palavras.push_back(aux); // adicionar a palavra depois de cada espaco para o nosso vetor de palavras
     }
 
     return palavras;
 }
-
 
 
 void Simulador::validaComandos(string cmd){
@@ -142,9 +154,11 @@ void Simulador::validaComandos(string cmd){
     tipoComando = cmdVector[0]; // ir buscar a primeira palavra ao vetor para descobrir qual o comando
 
     if (tipoComando == "animal" && cmdVector.size() == 4){
-        cout << "A ser implementado" << endl;
+        r->criaAnimal(cmdVector[1], stoi(cmdVector[2]), stoi(cmdVector[3]));
+        cout << r->obtemReserva();
     }
     else if (tipoComando == "animal" && cmdVector.size() == 2){
+        //();
         cout << "A ser implementado" << endl;
     }
     else if (tipoComando == "kill" && cmdVector.size() == 3){
@@ -218,25 +232,34 @@ void Simulador::validaComandos(string cmd){
 
 }
 
-void Simulador::printaReserva(Reserva r) {
-    int linhas = r.getLinhas();
-    int colunas = r.getColunas();
 
+void Simulador::printaReserva() {
+    //Animais *a;
+    int linhas = r->getLinhas();
+    int colunas = r->getColunas();
 
-   // ??????????????????
+    string board[linhas][colunas];
 
-    for(int o=0; o<colunas;o++)
-    {
-        if(o == 0)
-            cout  << "┌───────";
-        else if(o == colunas-1)
-            cout << "?";
-        else
-            cout << "?";
-
+    for (int i = 0; i < linhas; i ++) {
+        for (int j = 0; j < colunas; j++) {
+            board[i][j] = "_____";
+            cout << "_____";
+        }
     }
-   // ?????????????????
 
+    for (int i = 0; i < linhas; i++) {
+        // print the first character as part of the opener.
+        cout << " " << "|" << board[i][0];
+        for (int j = 1; j < colunas; j++) {
+            // only add spaces for subsequent characters.
+            cout << " " << board[i][j];
+        }
+        cout << "|" << endl;
+    }
 
 }
+
+
+
+
 

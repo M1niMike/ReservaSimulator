@@ -8,21 +8,26 @@
 #include "util.h"
 #include "Reserva.h"
 
+class Reserva;
+
 class Simulador{
-
 public:
-    static void runInterface();
-    static void menuSimulador();
-    static string leFicheiroComandos(string fileName);
-    static int leFicheiroValores(string fileName);
+    void runInterface();
+    void menuSimulador();
+    string leFicheiroComandos(string fileName);
+    int leFicheiroValores(string fileName);
     void validaComandos(string cmd);
-    vector<string> splitString(string cmd) const;
-    void printaReserva(Reserva r);
+    vector<string> splitString(const string& cmd) const;
+    void printaReserva();
 
+    Reserva* getReserva() const {
+        return r;
+    };
+
+    Simulador(Reserva *r);
 
 private:
     Reserva *r;
-
 };
 
 #endif //POO_TP_22_23_INTERFACE_H

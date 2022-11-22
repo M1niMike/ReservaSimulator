@@ -4,7 +4,8 @@
 
 int main() {
 
-    Simulador::runInterface();
+    Simulador s(new Reserva());
+    s.runInterface();
 
     return 0;
 }

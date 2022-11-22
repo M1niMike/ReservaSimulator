@@ -10,10 +10,14 @@ CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj: \
  ../Animais.h \
  ../util.h
 CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj: \
+ ../Alimentos.h \
+ ../Animais.h \
  ../Reserva.cpp \
  ../Reserva.h \
  ../util.h
 CMakeFiles/POO_TP_22_23.dir/main.cpp.obj: \
+ ../Alimentos.h \
+ ../Animais.h \
  ../Reserva.h \
  ../Simulador.h \
  ../main.cpp \
