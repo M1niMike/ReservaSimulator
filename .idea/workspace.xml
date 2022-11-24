@@ -22,7 +22,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb5b0fea-053f-43f1-a63e-edde484ee9f2" name="Changes" comment="" />
     <list id="ec113f9e-e530-4597-b00c-75ddafb9dd85" name="Changes by Goncalo" comment="" />
-    <list id="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" name="Changes by Gonçalo" comment="" />
+    <list id="82e96648-3b0d-4ff5-8539-3795c9c45982" name="Changes by Gonçalo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,41 +36,49 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Reserva.h">
-      <ranges>
-        <range start1="18" end1="18" start2="18" end2="21" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="23" end1="28" start2="26" end2="27" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="30" end1="31" start2="29" end2="29" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="32" end1="32" start2="30" end2="44" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="36" end1="37" start2="48" end2="48" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
-        <range start1="38" end1="38" start2="49" end2="50" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
     <file path="$PROJECT_DIR$/Simulador.cpp">
       <ranges>
-        <range start1="65" end1="66" start2="65" end2="66" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="67" end1="68" start2="67" end2="73" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="72" end1="73" start2="77" end2="78" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="84" end1="84" start2="89" end2="93" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="157" end1="158" start2="166" end2="167" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="160" end1="162" start2="169" end2="171" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
-        <range start1="170" end1="171" start2="179" end2="181" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="173" end1="174" start2="183" end2="185" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="235" end1="236" start2="246" end2="247" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="244" end1="246" start2="255" end2="268" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="77" end1="78" start2="77" end2="79" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="92" end1="93" start2="93" end2="94" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
+        <range start1="95" end1="96" start2="96" end2="97" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="153" end1="153" start2="154" end2="185" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
+        <range start1="154" end1="154" start2="186" end2="226" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="165" end1="167" start2="237" end2="238" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="169" end1="171" start2="240" end2="242" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="179" end1="181" start2="250" end2="252" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="183" end1="185" start2="254" end2="256" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="241" end1="243" start2="312" end2="312" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="246" end1="247" start2="315" end2="316" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
+        <range start1="248" end1="272" start2="317" end2="339" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="273" end1="277" start2="340" end2="347" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="278" end1="280" start2="348" end2="364" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="281" end1="281" start2="365" end2="399" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="282" end1="287" start2="400" end2="400" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Reserva.h">
+      <ranges>
+        <range start1="19" end1="20" start2="19" end2="20" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
+        <range start1="30" end1="32" start2="30" end2="31" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="33" end1="35" start2="32" end2="34" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="40" end1="43" start2="39" end2="42" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/Reserva.cpp">
       <ranges>
-        <range start1="25" end1="25" start2="25" end2="27" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="29" end1="30" start2="31" end2="32" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="34" end1="37" start2="36" end2="41" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="41" end1="41" start2="45" end2="49" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
-        <range start1="65" end1="66" start2="73" end2="73" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
-        <range start1="71" end1="72" start2="78" end2="79" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
-        <range start1="73" end1="73" start2="80" end2="96" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
-        <range start1="74" end1="74" start2="97" end2="99" changelist="af35f5d6-2ca9-4aa3-b05f-e74b23c78a81" />
-        <range start1="87" end1="87" start2="112" end2="206" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="31" end1="32" start2="31" end2="32" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="46" end1="48" start2="46" end2="61" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
+        <range start1="49" end1="49" start2="62" end2="63" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
+        <range start1="51" end1="79" start2="65" end2="66" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="80" end1="95" start2="67" end2="78" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="99" end1="100" start2="82" end2="103" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="101" end1="108" start2="104" end2="106" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="109" end1="109" start2="107" end2="118" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="113" end1="113" start2="122" end2="123" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
+        <range start1="114" end1="128" start2="124" end2="124" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="131" end1="138" start2="127" end2="155" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="139" end1="161" start2="156" end2="157" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="181" end1="202" start2="177" end2="203" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
       </ranges>
     </file>
   </component>
@@ -122,7 +130,8 @@
       <workItem from="1668712603774" duration="3849000" />
       <workItem from="1668797842721" duration="5049000" />
       <workItem from="1669047889911" duration="21795000" />
-      <workItem from="1669151588645" duration="6343000" />
+      <workItem from="1669151588645" duration="6587000" />
+      <workItem from="1669239394647" duration="14235000" />
     </task>
     <servers />
   </component>
@@ -141,8 +150,18 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Simulador.cpp</url>
+          <line>93</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
+        <watch expression="this" />
         <watch expression="this" />
       </configuration>
     </watches-manager>

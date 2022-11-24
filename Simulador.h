@@ -18,7 +18,8 @@ public:
     int leFicheiroValores(string fileName);
     void validaComandos(string cmd);
     vector<string> splitString(const string& cmd) const;
-    void buildReserva();
+    void buildReserva(Reserva &r);
+    void cmdCriaAnimal(vector<string> comando);
 
     Reserva* getReserva() const {
         return r;
@@ -28,6 +29,7 @@ public:
 
 private:
     Reserva *r;
+
 };
 
 #endif //POO_TP_22_23_INTERFACE_H

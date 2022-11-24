@@ -17,7 +17,7 @@ public:
     int getLinhas() const;
     int getColunas() const;
 
-    bool hasAnimal();
+    bool hasAnimal(int x, int y);
 
 
     //Set
@@ -28,19 +28,18 @@ public:
     void criaAnimal(const string& tipo,const int& x, const int& y);
     void criaAnimalRandom(const string& tipo);
     int getNumberOfAnimals() const;
-    string getTipoAnimal(string tipo) const;
-    string obtemAnimal() const;
+    string PrintaAnimal() const;
 
-    Animais getAnimal(int linha, int coluna);
-    Alimentos getAlimento(int linha, int coluna);
+    vector<Animais*> getVecAnimal() const;
+    vector<Alimentos*> getVecAlimento() const;
 
     //Alimento
     void criaAlimento(const string& tipo, const int& x, const int& y);
     void criaAlimentoRandom(const string& tipo);
     int getNumberOfFood() const;
-    string getTipoAlimento(string tipo) const;
-    string obtemAlimento() const;
-
+    //string getTipoAlimento(string tipo) const;
+    string PrintaAlimento() const;
+    string getAnimalIn(int x, int y){return animais[x][y].getTipoAnimal();}
 
 
 private:

@@ -7,18 +7,18 @@
 
 int Alimentos::ID = 1;
 
-Alimentos::Alimentos(const string& t, int Va = 0, int Vn = 0, int tx = 0, string c = "", int id = 1) : tipo(t), vAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), id(ID++) {}
+Alimentos::Alimentos(const string& t, int Va = 0, int Vn = 0, int tx = 0, string c = "", int id = 1, int x = 0, int y = 0) : tipo(t), vAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), id(ID++), cordX(x), cordY(y) {}
 
 
-int Alimentos::getValimento() {
+int Alimentos::getValimento() const{
     return vAlimento;
 }
 
-int Alimentos::getValorNutri() {
+int Alimentos::getValorNutri() const{
     return valorNutri;
 }
 
-int Alimentos::getToxicidade() {
+int Alimentos::getToxicidade() const {
     return toxicidade;
 }
 
@@ -31,7 +31,7 @@ string Alimentos::getTipoAlimento() const {
 }
 
 
-string Alimentos::getCheiro() {
+string Alimentos::getCheiro() const{
     ostringstream oss;
 
     oss << "(" << cheiro << ")" << endl;
@@ -39,10 +39,10 @@ string Alimentos::getCheiro() {
     return oss.str();
 }
 
-//int Alimentos::getX() const {
-//    return cordX;
-//}
-//
-//int Alimentos::getY() const {
-//    return cordY;
-//}
+int Alimentos::getX() const {
+    return cordX;
+}
+
+int Alimentos::getY() const {
+    return cordY;
+}

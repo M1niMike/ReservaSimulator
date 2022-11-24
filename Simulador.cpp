@@ -75,7 +75,8 @@ void Simulador::menuSimulador() {
     r->setLinhas(linhas);
     r->setColunas(colunas);
 
-    buildReserva();
+    cout << endl;
+    buildReserva(*r);
 
     cout << "Deseja inserir um comando por ficheiro ou texto? <ficheiro> <texto>" << endl;
     cin >> choice;
@@ -90,10 +91,10 @@ void Simulador::menuSimulador() {
             cout << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals() << endl;
             cout << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood() << endl;
             cout << endl;
-            buildReserva();
+            buildReserva(*r);
         }
     }else
-        cout << "insira <texto> ou <ficheiro>" << endl;
+        cout << "Insira <texto> ou <ficheiro>" << endl;
 }
 
 
@@ -153,6 +154,77 @@ vector<string> Simulador::splitString(const string& cmd) const {
 }
 
 
+//ALIMENTO
+//void Reserva::criaAlimento(const string &tipo, const int &x, const int &y) {
+//
+//    if (tipo != "r" && tipo != "t" && tipo != "p" && tipo != "b" && tipo != "g"){
+//        cout << "\nPor favor insira um alimento valido!" << endl;
+//    } else {
+//        if (x < 0 || x > getLinhas() * getColunas() || y < 0 || y > getLinhas() * getColunas())
+//            cout << "\nPor favor insira um numero valido de colunas/linhas!" << endl;
+//
+//        else{
+//            if(tipo == "r"){
+//                alimentos.push_back(new Alimentos(tipo, getAlimento().getValimento(), getAlimento().getValorNutri(),getAlimento().getToxicidade() ,getAlimento().getCheiro(), x, y, 1));
+//            }
+//            else if (tipo == "t"){
+//                alimentos.push_back(new Alimentos(tipo, x, y));
+//            }
+//            else if (tipo == "p"){
+//                alimentos.push_back(new Alimentos(tipo, x, y));
+//            }
+//            else if (tipo == "b"){
+//                alimentos.push_back(new Alimentos(tipo, x, y));
+//            }
+//            else if (tipo == "g"){
+//                alimentos.push_back(new Alimentos(tipo, x, y));
+//            }
+//        }
+//    }
+//
+//}
+
+void Simulador::cmdCriaAnimal(vector<string> comando) { // animal c 0 1
+    for (auto it: comando) { // armezenar comandos
+
+        if(it == comando[2]){
+            char coordX = comando[2][0];
+
+            if (isdigit(coordX) == 0){
+                cout << "\nPor favor insira um numero na coordenada!\n" << endl;
+            }
+
+        }else if (it == comando[3]){
+            char coordY = comando[3][0];
+
+            if (isdigit(coordY) == 0){
+                cout << "\nPor favor insira um numero na coordenada!\n" << endl;
+            }
+
+        }else if (it == comando[1]) { // animal \c| 1 1
+                int x = stoi(comando[2]);
+                int y = stoi(comando[3]);
+                r->criaAnimal(it, x, y);
+            }
+        }
+    }
+/* else {
+            int coordX = stoi(comando[2]);
+            int coordY = stoi(comando[3]);
+
+            if (comando[1] == "c"){
+                r->getVecAnimal().push_back(new Animais(comando[1], 20, 0, 0, false, 1, coordX, coordY));
+            } else if(comando[1] == "o"){
+                r->getVecAnimal().push_back(new Animais(comando[1], 30, 0, 0, false, 1, coordX, coordY));
+            } else if (comando[1] == "l"){
+                r->getVecAnimal().push_back(new Animais(comando[1], 25, 15, 0, false, 1, coordX, coordY));
+            } else if(comando[1] == "g"){
+                r->getVecAnimal().push_back(new Animais(comando[1], 20, 10, 70, false, 1, coordX, coordY));
+            } else if (comando[1] == "m"){
+                r->getVecAnimal().push_back(new Animais(comando[1], 0, 0, 0, false, 1, coordX, coordY));
+            }
+        }*/
+
 void Simulador::validaComandos(string cmd){
     vector<string> cmdVector;
 
@@ -163,12 +235,11 @@ void Simulador::validaComandos(string cmd){
     tipoComando = cmdVector[0]; // ir buscar a primeira palavra ao vetor para descobrir qual o comando
 
     if (tipoComando == "animal" && cmdVector.size() == 4){
-        r->criaAnimal(cmdVector[1], stoi(cmdVector[2]), stoi(cmdVector[3]));
-        cout << r->obtemAnimal();
+        cmdCriaAnimal(cmdVector);
     }
     else if (tipoComando == "animal" && cmdVector.size() == 2){
-        r->criaAnimalRandom(cmdVector[1]);
-        cout << r->obtemAnimal();
+//        r->criaAnimalRandom(cmdVector[1]);
+//        cout << r->PrintaAnimal();
     }
     else if (tipoComando == "kill" && cmdVector.size() == 3){
         cout << "A ser implementado" << endl;
@@ -177,12 +248,12 @@ void Simulador::validaComandos(string cmd){
         cout << "A ser implementado" << endl;
     }
     else if (tipoComando == "food" && cmdVector.size() == 4) {
-        r->criaAlimento(cmdVector[1], stoi(cmdVector[2]), stoi(cmdVector[3]));
-        cout << r->obtemAlimento();
+//        r->criaAlimento(cmdVector[1], stoi(cmdVector[2]), stoi(cmdVector[3]));
+//        cout << r->PrintaAlimento();
     }
     else if (tipoComando == "food" && cmdVector.size() == 2) {
-        r->criaAlimentoRandom(cmdVector[1]);
-        cout << r->obtemAlimento();
+//        r->criaAlimentoRandom(cmdVector[1]);
+//        cout << r->PrintaAlimento();
     }
     else if (tipoComando == "feed" && cmdVector.size() == 5) {
         cout << "A ser implementado" << endl;
@@ -239,49 +310,91 @@ void Simulador::validaComandos(string cmd){
     else {
         cout << "\nComando desconhecido!" << endl;
     }
-
-
 }
 
 
-void Simulador::buildReserva() {
+void Simulador::buildReserva(Reserva &r) {
     //Animais *a;
-    int linhas = r->getLinhas();
-    int colunas = r->getColunas();
-
-    string board[linhas][colunas];
-
-    for (int i = 0; i < linhas; i ++) {
-        for (int j = 0; j < colunas; j++) {
-            if(board[i][j] == r->getTipoAnimal("c"))
-                board[i][j] = "c";
-            else if(board[i][j]== r->getTipoAnimal("o")){
-                board[i][j] = "o";
-            }else if(board[i][j]== r->getTipoAnimal("l")){
-                board[i][j] = "l";
-            }else if(board[i][j]== r->getTipoAnimal("g")){
-                board[i][j] = "g";
-            }else if(board[i][j]== r->getTipoAnimal("m")){
-                board[i][j] = "m";
-            }else{
-                board[i][j] = "_____";
-            }
+    int linhas = r.getLinhas();
+    int colunas = r.getColunas();
+//
+//    /*for (int i = 0; i < linhas; i ++) {
+//        for (int j = 0; j < colunas; j++) {
+//            if(board[i][j] == r->getTipoAnimal("c"))
+//                board[i][j] = "c";
+//            else if(board[i][j]== r->getTipoAnimal("o")){
+//                board[i][j] = "o";
+//            }else if(board[i][j]== r->getTipoAnimal("l")){
+//                board[i][j] = "l";
+//            }else if(board[i][j]== r->getTipoAnimal("g")){
+//                board[i][j] = "g";
+//            }else if(board[i][j]== r->getTipoAnimal("m")){
+//                board[i][j] = "m";
+//            }else{
+//                board[i][j] = "_____";
+//            }
+//        }
+//    }*/
+//
+    //Quadrado
+        // print the first character as part of the opener.
+        for (int o = 0; o < colunas; o++) {
+            if (o == 0)
+                cout << "T-------"; // ┌───────
+            else if (o == colunas - 1)
+                cout << "|-------T"; // ┬───────┐
+            else
+                cout << "|-------"; // ┬───────
         }
-    }
 
     for (int i = 0; i < linhas; i++) {
-        // print the first character as part of the opener.
-        cout << " " << "|" << board[i][0];
-        for (int j = 1; j < colunas; j++) {
-            // only add spaces for subsequent characters.
-            cout << " " << board[i][j];
-        }
-        cout << "|" << endl;
+            cout << "\n|";
+       for (int j = 0; j < colunas; j++){
+            cout << "\t|";
+       }
+
+       cout << "\n" << "|";
+
+       for (int j = 0; j < colunas; j++) {
+           if (!r->hasAnimal(i, j)) {
+               cout << "\t\t|";
+           } else {
+               cout << r->getAnimalIn(i, j) << "\t|";
+           }
+           cout << "\n" << "|";
+
+           for (int j = 0; j < colunas; j++) {
+               if (!r->hasAnimal(i, j)) {
+                   cout << "\t\t|";
+               }else {
+                   cout << r->getAnimalIn(i, j) << "\t|";
+               }
+       }
+           cout << "\n" << "|";
+
+           for(int j=0; j<colunas; j++)
+           {
+               if(i != linhas-1)
+               {
+                   if(j == colunas-1)
+                       cout << "-------|";
+                   else if (j == 0)
+                       cout  << "|-------|";
+                   else
+                       cout  << "-------|";
+               }
+               else
+               {
+                   if(j == 0)
+                       cout << "L_______|";
+                   else if(j == colunas-1)
+                       cout << "_______|";
+                   else
+                       cout << "-------|";
+
+               }
+           }
+       }
+        cout <<"\n";
     }
-
 }
-
-
-
-
-
