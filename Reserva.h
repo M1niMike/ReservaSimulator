@@ -19,7 +19,6 @@ public:
 
     bool hasAnimal(int x, int y);
 
-
     //Set
     void setLinhas(int newLinhas);
     void setColunas(int newColunas);
@@ -39,8 +38,8 @@ public:
     int getNumberOfFood() const;
     //string getTipoAlimento(string tipo) const;
     string PrintaAlimento() const;
-    string getAnimalIn(int x, int y){return animais[x][y].getTipoAnimal();}
 
+//    string getAnimalIn(int x, int y){return animais[x][y].getTipoAnimal();}
 
 private:
     int linhas;

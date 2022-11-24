@@ -14,21 +14,23 @@ public:
     int getSaude() const;
     int getPeso () const;
     int getvAnimal() const;
-    int getId() const {return id;}
 
     int getX() const;
     int getY() const;
 
-    Animais(const string& t, int Sa, int p, int Va, bool isDead, int id, int x, int y );
+    int getId() const;
+
+    Animais(int id, const string& t, int Sa, int p, int Va, bool isDead, int x, int y);
+
 private:
     string tipo;
     int sAnimal;
     int peso;
     int vAnimal; // tempo de vida
     bool isDead;
-    static int ID;
-    int id;
     int cordX, cordY;
+    int id;
+
 };
 
 /*

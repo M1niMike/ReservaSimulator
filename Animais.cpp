@@ -5,10 +5,8 @@
 #include "Animais.h"
 #include "util.h"
 
-int Animais::ID = 1;
-
-Animais::Animais(const string& t, int Sa = 0, int p = 0, int Va = 0, bool isDead = false, int id = 1, int x = 0, int y = 0) : tipo(t), sAnimal(Sa), peso(p), vAnimal(Va), isDead(isDead), id(ID++), cordX(x), cordY(y){
-
+Animais::Animais(int id, const string& t, int Sa = 0, int p = 0, int Va = 0, bool isDead = false, int x = 0, int y = 0) : id(id), tipo(t), sAnimal(Sa), peso(p), vAnimal(Va), isDead(isDead), cordX(x), cordY(y){
+    id++;
 }
 
 string Animais::getTipoAnimal() const {
@@ -17,6 +15,10 @@ string Animais::getTipoAnimal() const {
     oss << tipo;
 
     return oss.str();
+}
+
+int Animais::getId() const {
+    return id;
 }
 
 int Animais::getSaude() const{

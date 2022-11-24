@@ -11,6 +11,9 @@
 #include <vector>
 #include <cmath>
 #include <fstream>
+#include <algorithm>
+#include <random>
+#include <cstdlib>
 
 using namespace std;
 

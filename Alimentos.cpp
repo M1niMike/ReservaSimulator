@@ -5,9 +5,10 @@
 #include "Alimentos.h"
 #include "util.h"
 
-int Alimentos::ID = 1;
 
-Alimentos::Alimentos(const string& t, int Va = 0, int Vn = 0, int tx = 0, string c = "", int id = 1, int x = 0, int y = 0) : tipo(t), vAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), id(ID++), cordX(x), cordY(y) {}
+
+Alimentos::Alimentos(int id, const string& t, int Va = 0, int Vn = 0, int tx = 0, string c = "", int x = 0, int y = 0) : id(id++), tipo(t), vAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), cordX(x), cordY(y){
+}
 
 
 int Alimentos::getValimento() const{
@@ -45,4 +46,8 @@ int Alimentos::getX() const {
 
 int Alimentos::getY() const {
     return cordY;
+}
+
+int Alimentos::getId() const {
+    return id;
 }

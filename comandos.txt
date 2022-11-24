@@ -1,3 +1,2 @@
-animal cu cu cu
-killid 12
-exit
+animal
+

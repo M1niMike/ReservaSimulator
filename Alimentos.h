@@ -15,11 +15,12 @@ public:
     int getValorNutri() const;
     int getToxicidade() const;
     string getCheiro() const;
-    int getId() const {return id;}
     int getX() const;
     int getY() const;
 
-    Alimentos(const string& t, int Va, int Vn, int tx, string c, int x, int y, int id);
+    int getId() const;
+
+    Alimentos(int id, const string& t, int Va, int Vn, int tx, string c, int x, int y);
 
 private:
     string tipo;
@@ -27,9 +28,7 @@ private:
     int valorNutri;
     int toxicidade;
     string cheiro;
-    static int ID;
     int id;
-    int x;
     int cordX, cordY;
 };
 
