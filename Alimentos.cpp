@@ -7,7 +7,7 @@
 
 
 
-Alimentos::Alimentos(int id, const string& t, int Va = 0, int Vn = 0, int tx = 0, string c = "", int x = 0, int y = 0) : id(id++), tipo(t), vAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), cordX(x), cordY(y){
+Alimentos::Alimentos(int id, const string& t, int Va = 0, int Vn = 0, int tx = 0, string c = "", int x = 0, int y = 0) : id(id), tipo(t), vAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), cordX(x), cordY(y){
 }
 
 

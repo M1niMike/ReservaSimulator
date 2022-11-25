@@ -16,18 +16,20 @@ public:
     void menuSimulador();
 
     int leFicheiroValores(string fileName);
-    string leFicheiroComandos(Reserva &r,string fileName);
-    void validaComandos(Reserva &r, string cmd);
+    string leFicheiroComandos(Reserva &res,string fileName);
+    void validaComandos(Reserva &res, string cmd);
     vector<string> splitString(const string& cmd) const;
     void buildReserva();
 
     //Comandos
-    void cmdCriaAnimal(Reserva &r, vector<string> comando);
-    void cmdCriaAnimalRandom(vector<string> comando);
-    void cmdCriaAlimento(vector<string> comando);
-    void cmdCriaAlimentoRandom(vector<string> comando);
+    void cmdCriaAnimal(Reserva &res, vector<string> comando);
+    void cmdCriaAnimalRandom(Reserva &res, vector<string> comando);
+    void cmdCriaAlimento(Reserva &res, vector<string> comando);
+    void cmdCriaAlimentoRandom(Reserva &res, vector<string> comando);
     void cmdExit();
     void cmdAnim();
+    string maiscula(string palavra);
+    //void cmdInfo();
     /*void cmdLoad(vector<string> comando); need fix*/
 
     Reserva* getReserva() const {

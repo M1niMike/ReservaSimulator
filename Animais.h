@@ -29,7 +29,7 @@ private:
     int vAnimal; // tempo de vida
     bool isDead;
     int cordX, cordY;
-    int id;
+    int id = 1;
 
 };
 

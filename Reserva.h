@@ -39,6 +39,8 @@ public:
     //string getTipoAlimento(string tipo) const;
     string PrintaAlimento() const;
 
+    int getTotalCoisas();
+
 //    string getAnimalIn(int x, int y){return animais[x][y].getTipoAnimal();}
 
 private:
@@ -46,6 +48,7 @@ private:
     int colunas;
     vector<Animais*> animais;
     vector<Alimentos*> alimentos;
+    int totalCoisas = 1;
 };
 
 #endif //POO_TP_22_23_RESERVA_H
