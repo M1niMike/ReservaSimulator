@@ -22,7 +22,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb5b0fea-053f-43f1-a63e-edde484ee9f2" name="Changes" comment="" />
     <list id="ec113f9e-e530-4597-b00c-75ddafb9dd85" name="Changes by Goncalo" comment="" />
-    <list id="82e96648-3b0d-4ff5-8539-3795c9c45982" name="Changes by Gonçalo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,84 +33,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Animais.h">
-      <ranges>
-        <range start1="16" end1="17" start2="16" end2="16" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="21" end1="22" start2="20" end2="24" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="28" end1="30" start2="30" end2="30" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-        <range start1="31" end1="31" start2="31" end2="33" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Reserva.h">
-      <ranges>
-        <range start1="20" end1="21" start2="20" end2="20" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-        <range start1="41" end1="42" start2="40" end2="40" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="43" end1="43" start2="41" end2="44" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="49" end1="49" start2="50" end2="51" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Reserva.cpp">
-      <ranges>
-        <range start1="26" end1="38" start2="26" end2="27" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="39" end1="49" start2="28" end2="41" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="61" end1="62" start2="53" end2="54" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-        <range start1="64" end1="74" start2="56" end2="66" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-        <range start1="76" end1="76" start2="68" end2="69" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-        <range start1="78" end1="99" start2="71" end2="101" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="118" end1="121" start2="120" end2="121" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="122" end1="152" start2="122" end2="122" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="154" end1="156" start2="124" end2="126" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="157" end1="167" start2="127" end2="141" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="169" end1="169" start2="143" end2="144" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-        <range start1="170" end1="170" start2="145" end2="171" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="173" end1="174" start2="174" end2="174" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-        <range start1="175" end1="176" start2="175" end2="176" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="191" end1="213" start2="191" end2="191" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="214" end1="215" start2="192" end2="193" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Simulador.cpp">
-      <ranges>
-        <range start1="6" end1="12" start2="6" end2="7" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="59" end1="60" start2="54" end2="54" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="77" end1="78" start2="71" end2="72" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="79" end1="96" start2="73" end2="84" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="97" end1="101" start2="85" end2="86" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="102" end1="103" start2="87" end2="87" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="104" end1="105" start2="88" end2="88" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="109" end1="110" start2="92" end2="93" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="120" end1="122" start2="103" end2="103" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="156" end1="227" start2="137" end2="138" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="236" end1="237" start2="147" end2="148" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-        <range start1="239" end1="241" start2="150" end2="151" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="249" end1="251" start2="159" end2="160" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="253" end1="255" start2="162" end2="163" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="287" end1="288" start2="195" end2="196" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="299" end1="300" start2="207" end2="209" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="305" end1="307" start2="214" end2="215" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="314" end1="315" start2="222" end2="328" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="316" end1="347" start2="329" end2="342" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="348" end1="355" start2="343" end2="349" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="356" end1="397" start2="350" end2="395" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="399" end1="399" start2="397" end2="400" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Alimentos.cpp">
-      <ranges>
-        <range start1="7" end1="8" start2="7" end2="7" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="9" end1="10" start2="8" end2="11" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="48" end1="48" start2="49" end2="53" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Animais.cpp">
-      <ranges>
-        <range start1="7" end1="11" start2="7" end2="8" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="20" end1="20" start2="17" end2="21" changelist="82e96648-3b0d-4ff5-8539-3795c9c45982" />
-        <range start1="35" end1="42" start2="36" end2="43" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -127,6 +48,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "TODO_SCOPE": "All Places",
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
@@ -136,7 +58,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RunManager">
@@ -169,7 +91,8 @@
       <workItem from="1669151588645" duration="6587000" />
       <workItem from="1669239394647" duration="14498000" />
       <workItem from="1669280360499" duration="924000" />
-      <workItem from="1669286694523" duration="29525000" />
+      <workItem from="1669286694523" duration="29835000" />
+      <workItem from="1669394891668" duration="5553000" />
     </task>
     <servers />
   </component>

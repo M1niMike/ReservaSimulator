@@ -20,6 +20,9 @@ public:
     void validaComandos(Reserva &res, string cmd);
     vector<string> splitString(const string& cmd) const;
     void buildReserva();
+    void buildArea(int x, int y);
+    void getInfoAnimal(int x, int y);
+    void getInfoAlimento(int x, int y);
 
     //Comandos
     void cmdCriaAnimal(Reserva &res, vector<string> comando);
@@ -28,6 +31,7 @@ public:
     void cmdCriaAlimentoRandom(Reserva &res, vector<string> comando);
     void cmdExit();
     void cmdAnim();
+    void cmdInfo(Reserva &res, vector<string> comando);
     string maiscula(string palavra);
     //void cmdInfo();
     /*void cmdLoad(vector<string> comando); need fix*/
