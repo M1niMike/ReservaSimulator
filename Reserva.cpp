@@ -49,24 +49,22 @@ void Reserva::setColunas(int newColunas) {
 //    return false;
 //}
 
-
 void Reserva::criaAnimal(const string &tipo, const int& x, const int& y) {
     if (tipo != "C" && tipo != "O" && tipo != "L" && tipo != "G" && tipo != "M") {
         cout << "\nPor favor insira um animal valido!" << endl;
-    } else {
+    }else{
         if (tipo == "C") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 20, 0, 0, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, 20, 0, 0, false, x, y));
         } else if (tipo == "O") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 30, 0, 0, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, 30, 0, 0, false, x, y));
         } else if (tipo == "L") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 25, 15, 0, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, 25, 15, 0, false, x, y));
         } else if (tipo == "G") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 20, 10, 70, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, 20, 10, 70, false, x, y));
         } else if (tipo == "M") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 0, 0, 0, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, 0, 0, 0, false, x, y));
         }
     }
-
 }
 
 void Reserva::criaAnimalRandom(const string &tipo) {
@@ -193,12 +191,6 @@ int Reserva::getNumberOfFood() const {
 vector<Alimentos*> Reserva::getVecAlimento() const {
     return alimentos;
 }
-
-
-
-
-
-
 
 
 

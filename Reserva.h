@@ -13,11 +13,25 @@ class Reserva{
 public:
     Reserva(int nl=0, int nc=0);
 
+    ~Reserva(){
+        for (auto it = animais.begin(); it != animais.end(); it++){
+            delete(*it);
+        }
+        cout << "\nAdeus...Animais...\n";
+
+        for (auto it = alimentos.begin(); it != alimentos.end(); it++){
+            delete(*it);
+        }
+        cout << "\nAdeus...alimentos...\n";
+    };
+
     //Get
     int getLinhas() const;
     int getColunas() const;
 
-    bool hasAnimal(int x, int y);
+    bool verificaLinhasColunas(const int& x, const int& y);
+
+    //bool hasAnimal(int x, int y);
 
     //Set
     void setLinhas(int newLinhas);

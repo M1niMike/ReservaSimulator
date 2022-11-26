@@ -14,15 +14,14 @@ class Simulador{
 public:
     void runInterface();
     void menuSimulador();
-
-    int leFicheiroValores(string fileName);
-    string leFicheiroComandos(Reserva &res,string fileName);
+    bool leFicheiroComandos(Reserva &res,string fileName);
     void validaComandos(Reserva &res, string cmd);
     vector<string> splitString(const string& cmd) const;
     void buildReserva();
-    void buildArea(int x, int y);
+    void buildArea(Reserva &res, int x, int y);
     void getInfoAnimal(int x, int y);
     void getInfoAlimento(int x, int y);
+    bool verificaCoord(Reserva &r, const int& linha, const int& coluna);
 
     //Comandos
     void cmdCriaAnimal(Reserva &res, vector<string> comando);
@@ -31,16 +30,21 @@ public:
     void cmdCriaAlimentoRandom(Reserva &res, vector<string> comando);
     void cmdExit();
     void cmdAnim();
-    void cmdInfo(Reserva &res, vector<string> comando);
+    void cmdSee(Reserva &res, vector<string> comando);
     string maiscula(string palavra);
-    //void cmdInfo();
-    /*void cmdLoad(vector<string> comando); need fix*/
+    void cmdLoad(Reserva &res, vector<string> comando);
+
 
     Reserva* getReserva() const {
         return r;
     };
 
     Simulador(Reserva *r);
+
+    ~Simulador(){
+        cout << "\nAdeus...Reserva...\n";
+        delete r;
+    }
 
 private:
     Reserva *r;
