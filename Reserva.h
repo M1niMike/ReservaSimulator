@@ -22,7 +22,7 @@ public:
         for (auto it = alimentos.begin(); it != alimentos.end(); it++){
             delete(*it);
         }
-        cout << "\nAdeus...alimentos...\n";
+        cout << "\nAdeus...alimentos...\n" << endl;
     };
 
     //Get

@@ -357,9 +357,9 @@ void Simulador::buildArea(int x, int y) {
 
     if (verificaCoord(x,y)){
         cout << "\nA printar info de x = " << x << " e y = " << y << endl;
-        cout << "Animais: "<< endl;
+        cout << "\nAnimais: "<< endl;
         getInfoAnimal(x, y);
-        cout << "Alimentos: "<< endl;
+        cout << "\nAlimentos: "<< endl;
         getInfoAlimento(x, y);
         cout << endl;
     } else {
