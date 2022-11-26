@@ -69,7 +69,7 @@ void Simulador::menuSimulador() {
     while (cmd != "exit") {
         cout << "\nComandos:";
         getline(cin, cmd);
-        validaComandos(*r,cmd);
+        validaComandos(cmd);
         buildReserva();
 
         cout << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals() << endl;
@@ -79,7 +79,7 @@ void Simulador::menuSimulador() {
     }
 }
 
-bool Simulador::leFicheiro(Reserva &res, string fileName) {
+bool Simulador::leFicheiro(string fileName) {
     string texto;
     ifstream file;
     file.open(fileName);
@@ -87,7 +87,7 @@ bool Simulador::leFicheiro(Reserva &res, string fileName) {
     if (file){
         while(getline(file, texto)){
             //cout << "[ " << texto << " ]" << endl;
-            validaComandos(res,texto);
+            validaComandos(texto);
         }
         file.ignore('\n');
     }
@@ -100,14 +100,14 @@ bool Simulador::leFicheiro(Reserva &res, string fileName) {
     return true;
 }
 
-void Simulador::constantesChanger(Reserva &res, string fileName) {
+void Simulador::constantesReaderAndChanger(string fileName) {
     ifstream file;
     string texto;
     file.open(fileName);
-    int guardaSaude;
-    int guardaVida;
-    int guardaPeso;
     vector<string> cenas;
+    int saude;
+    int vida;
+    int peso;
 
     if (!file){
         return;
@@ -115,18 +115,18 @@ void Simulador::constantesChanger(Reserva &res, string fileName) {
     while (getline(file, texto)){
         cenas = splitString(texto);
         if (cenas[0] == "SAnimal") {
-            guardaSaude = stoi(cenas[1]);
+            saude = stoi(cenas[1]);
         } else if (cenas[0] == "VAnimal") {
-            guardaVida = stoi(cenas[1]);
+            vida = stoi(cenas[1]);
         } else if (cenas[0] == "Peso") {
-            guardaPeso = stoi(cenas[1]);
+            peso = stoi(cenas[1]);
         }
     }
     file.close();
 }
 
-void Simulador::cmdLoad(Reserva &res, vector<string> comando) {
-    if (leFicheiro(res, comando[1])){
+void Simulador::cmdLoad(vector<string> comando) {
+    if (leFicheiro(comando[1])){
         cout << "\nFicheiro lido com sucesso!" << endl;
     } else {
         cout << "\nErro! Ficheiro invalido!" << endl;
@@ -146,9 +146,8 @@ vector<string> Simulador::splitString(const string& cmd) const {
     return palavras;
 }
 
-
 //ALIMENTO
-void Simulador::validaComandos(Reserva &res, string cmd){
+void Simulador::validaComandos(string cmd){
     vector<string> cmdVector;
 
     string tipoComando;
@@ -158,10 +157,10 @@ void Simulador::validaComandos(Reserva &res, string cmd){
     tipoComando = cmdVector[0]; // ir buscar a primeira palavra ao vetor para descobrir qual o comando
 
     if (tipoComando == "animal" && cmdVector.size() == 4){
-        cmdCriaAnimal(res,cmdVector);
+        cmdCriaAnimal(cmdVector);
     }
     else if (tipoComando == "animal" && cmdVector.size() == 2){
-        cmdCriaAnimalRandom(res ,cmdVector);
+        cmdCriaAnimalRandom(cmdVector);
     }
     else if (tipoComando == "kill" && cmdVector.size() == 3){
         cout << "A ser implementado" << endl;
@@ -170,10 +169,10 @@ void Simulador::validaComandos(Reserva &res, string cmd){
         cout << "A ser implementado" << endl;
     }
     else if (tipoComando == "food" && cmdVector.size() == 4) {
-        cmdCriaAlimento(res, cmdVector);
+        cmdCriaAlimento(cmdVector);
     }
     else if (tipoComando == "food" && cmdVector.size() == 2) {
-        cmdCriaAlimentoRandom(res,cmdVector);
+        cmdCriaAlimentoRandom(cmdVector);
     }
     else if (tipoComando == "feed" && cmdVector.size() == 5) {
         cout << "A ser implementado" << endl;
@@ -191,7 +190,7 @@ void Simulador::validaComandos(Reserva &res, string cmd){
         cout << "A ser implementado" << endl;
     }
     else if (tipoComando == "see" && cmdVector.size() == 3) {
-        cmdSee(res,cmdVector);
+        cmdSee(cmdVector);
     }
     else if (tipoComando == "info" && cmdVector.size() == 2) {
         //cmdInfo(res, cmdVector);
@@ -220,10 +219,10 @@ void Simulador::validaComandos(Reserva &res, string cmd){
     }
     else if (tipoComando == "load" && cmdVector.size() == 2) {
         if (tipoComando == "load" && cmdVector[1] == "constantes.txt"){
-            constantesChanger(res, cmdVector[1]);
+            constantesReaderAndChanger(cmdVector[1]);
+        }else{
+            cmdLoad(cmdVector);
         }
-
-        cmdLoad(res, cmdVector);
     }
     else if (tipoComando == "slide" && cmdVector.size() == 3) {
         cout << "A ser implementado" << endl;
@@ -241,7 +240,7 @@ void Simulador::cmdExit() {
     exit(0);
 }
 
-void Simulador::cmdCriaAnimal(Reserva &res, vector<string> comando) { // animal c 0 1
+void Simulador::cmdCriaAnimal(vector<string> comando) { // animal c 0 1
     for (auto it: comando) { // armezenar comandos
         char coordX = comando[2][0];
         char coordY = comando[3][0];
@@ -261,8 +260,8 @@ void Simulador::cmdCriaAnimal(Reserva &res, vector<string> comando) { // animal 
             it = maiscula(it);
             int x = stoi(comando[2]);
             int y = stoi(comando[3]);
-            if (verificaCoord(res,x,y)){
-                res.criaAnimal(it, x, y);
+            if (verificaCoord(x,y)){
+                r->criaAnimal(it, x, y);
             } else {
                 cout << "\nPor favor, insira coordenadas validas!" << endl;
             }
@@ -270,7 +269,7 @@ void Simulador::cmdCriaAnimal(Reserva &res, vector<string> comando) { // animal 
     }
 }
 
-void Simulador::cmdSee(Reserva &res,vector<string> comando) {
+void Simulador::cmdSee(vector<string> comando) {
     for (auto it: comando) { // armezenar comandos
         char coordX = comando[1][0];
         char coordY = comando[2][0];
@@ -288,17 +287,17 @@ void Simulador::cmdSee(Reserva &res,vector<string> comando) {
 
         int x = stoi(comando[1]);
         int y = stoi(comando[2]);
-        buildArea(res,x,y);
+        buildArea(x,y);
         break;
         //res.criaAlimento(it, x, y);
     }
 }
 
-void Simulador::cmdCriaAnimalRandom(Reserva &res, vector<string> comando) {
+void Simulador::cmdCriaAnimalRandom(vector<string> comando) {
     for (auto it: comando){
         if(it == comando[1]){
             it = maiscula(it);
-            res.criaAnimalRandom(it);
+            r->criaAnimalRandom(it);
         }
     }
 }
@@ -316,7 +315,7 @@ string Simulador::maiscula(std::string palavra) {
     return palavra;
 }
 
-void Simulador::cmdCriaAlimento(Reserva &res, vector<string> comando) {
+void Simulador::cmdCriaAlimento(vector<string> comando) {
     for (auto it: comando) { // armezenar comandos
         char coordX = comando[2][0];
         char coordY = comando[3][0];
@@ -333,19 +332,19 @@ void Simulador::cmdCriaAlimento(Reserva &res, vector<string> comando) {
             it = maiscula(it);
             int x = stoi(comando[2]);
             int y = stoi(comando[3]);
-            if (verificaCoord(res, x, y))
-                res.criaAlimento(it, x, y);
+            if (verificaCoord(x, y))
+                r->criaAlimento(it, x, y);
             else
                 cout << "\nPor favor insira uma coordenada valida! " << endl;
         }
     }
 }
 
-void Simulador::cmdCriaAlimentoRandom(Reserva &res, vector<string> comando) {
+void Simulador::cmdCriaAlimentoRandom(vector<string> comando) {
     for (auto it: comando){
         if(it == comando[1]){
             it = maiscula(it);
-            res.criaAlimentoRandom(it);
+            r->criaAlimentoRandom(it);
         }
     }
 }
@@ -354,9 +353,9 @@ void Simulador::cmdAnim() {
     cout << r->PrintaAnimal();
 }
 
-void Simulador::buildArea(Reserva &res, int x, int y) {
+void Simulador::buildArea(int x, int y) {
 
-    if (verificaCoord(res,x,y)){
+    if (verificaCoord(x,y)){
         cout << "\nA printar info de x = " << x << " e y = " << y << endl;
         cout << "Animais: "<< endl;
         getInfoAnimal(x, y);
@@ -450,7 +449,8 @@ void Simulador::getInfoAnimal(int x, int y) {
             cout << "Tipo: " << r->getVecAnimal()[k]->getTipoAnimal()<< " | ";
             cout << "Saude: "<< r->getVecAnimal()[k]->getSaude() << endl;
         } else if(r->getVecAnimal()[k]->getY() != x && r->getVecAnimal()[k]->getX() != y){
-            cout << "\nEste animal nao pertence as coordenadas que inseriu" << endl;
+            cout << "\nNao se encontra nenhum animal nas coordenadas " << x << " e " << y << endl;
+            break;
         }
     }
 
@@ -466,17 +466,20 @@ void Simulador::getInfoAlimento(int x, int y) {
             cout << "Tipo: " << r->getVecAlimento()[k]->getTipoAlimento() << " | ";
             cout << "Cheiro: " << r->getVecAlimento()[k]->getCheiro() << endl;
         }else if(r->getVecAnimal()[k]->getY() != x && r->getVecAnimal()[k]->getX() != y){
-            cout << "\nEste alimento nao pertence as coordenadas que inseriu" << endl;
+            cout << "\nNao se encontra nenhum alimento nas coordenadas " << x << " e " << y << endl;
+            break;
         }
     }
 }
 
-bool Simulador::verificaCoord(Reserva &r, const int& linha, const int& coluna) {
-    int linhas = r.getLinhas();
-    int colunas = r.getColunas();
+bool Simulador::verificaCoord(const int& linha, const int& coluna) {
+    int linhas = r->getLinhas();
+    int colunas = r->getColunas();
 
     if ((linha >= 1 && linha <= linhas) && (coluna >= 1 && coluna <= colunas)){
         return true;
     }
     return false;
 }
+
+

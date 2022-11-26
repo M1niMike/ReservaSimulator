@@ -14,27 +14,27 @@ class Simulador{
 public:
     void runInterface();
     void menuSimulador();
-    bool leFicheiro(Reserva &res, string fileName);
-    void validaComandos(Reserva &res, string cmd);
+    bool leFicheiro(string fileName);
+    void validaComandos(string cmd);
     vector<string> splitString(const string& cmd) const;
     void buildReserva();
-    void buildArea(Reserva &res, int x, int y);
+    void buildArea(int x, int y);
     void getInfoAnimal(int x, int y);
     void getInfoAlimento(int x, int y);
-    bool verificaCoord(Reserva &r, const int& linha, const int& coluna);
+    bool verificaCoord(const int& linha, const int& coluna);
 
-    void constantesChanger(Reserva &res, string fileContents);
+    void constantesReaderAndChanger(string fileName);
 
     //Comandos
-    void cmdCriaAnimal(Reserva &res, vector<string> comando);
-    void cmdCriaAnimalRandom(Reserva &res, vector<string> comando);
-    void cmdCriaAlimento(Reserva &res, vector<string> comando);
-    void cmdCriaAlimentoRandom(Reserva &res, vector<string> comando);
+    void cmdCriaAnimal(vector<string> comando);
+    void cmdCriaAnimalRandom(vector<string> comando);
+    void cmdCriaAlimento(vector<string> comando);
+    void cmdCriaAlimentoRandom(vector<string> comando);
     void cmdExit();
     void cmdAnim();
-    void cmdSee(Reserva &res, vector<string> comando);
+    void cmdSee(vector<string> comando);
     string maiscula(string palavra);
-    void cmdLoad(Reserva &res, vector<string> comando);
+    void cmdLoad(vector<string> comando);
 
 
     Reserva* getReserva() const {

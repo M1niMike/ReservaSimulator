@@ -4,24 +4,15 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj"
-  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj"
-  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj"
-  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Simulador.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj"
-  "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/main.cpp" "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug/CMakeFiles/POO_TP_22_23.dir/main.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Gonsalo/Documents/GitHub/POO-TP-22-23/Alimentos.cpp" "CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj" "gcc" "CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj.d"
+  "C:/Users/Gonsalo/Documents/GitHub/POO-TP-22-23/Animais.cpp" "CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj" "gcc" "CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj.d"
+  "C:/Users/Gonsalo/Documents/GitHub/POO-TP-22-23/Reserva.cpp" "CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj" "gcc" "CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj.d"
+  "C:/Users/Gonsalo/Documents/GitHub/POO-TP-22-23/Simulador.cpp" "CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj" "gcc" "CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj.d"
+  "C:/Users/Gonsalo/Documents/GitHub/POO-TP-22-23/main.cpp" "CMakeFiles/POO_TP_22_23.dir/main.cpp.obj" "gcc" "CMakeFiles/POO_TP_22_23.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

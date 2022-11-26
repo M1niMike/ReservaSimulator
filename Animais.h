@@ -26,7 +26,6 @@ public:
 
     //Animais(int id, const string& t, int Sa, int p, int Va, bool isDead, int x, int y);
     Animais(int id, const string& t, int x, int y);
-protected:
 
 private:
     string tipo;

@@ -149,7 +149,7 @@ void Reserva::criaAlimentoRandom(const string &tipo) {
     } else {
         if (tipo == "R") {                    //tipo va vn tx cheiro id x y
             alimentos.push_back(new Alimentos(getTotalCoisas(), tipo, 20, 3, 0,"erva e verdura", (rand() % linhas +1) , (rand() % colunas+1)));
-        } else if (tipo == "R") {
+        } else if (tipo == "T") {
             alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 30, 9999, 4, "verdura", (rand() % linhas +1) , (rand() % colunas+1)));
 
         } else if (tipo == "P") {
@@ -158,7 +158,7 @@ void Reserva::criaAlimentoRandom(const string &tipo) {
         } else if (tipo == "B") {
             alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 30, 10, 2, "carne e ketchup", (rand() % linhas +1) , (rand() % colunas+1)));
 
-        } else if (tipo == "G") {
+        } else if (tipo == "Z") {
             alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 20, 2, 1, "fruta", (rand() % linhas +1) , (rand() % colunas+1)));
         }
     }

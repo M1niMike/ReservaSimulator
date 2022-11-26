@@ -10,8 +10,6 @@
 
 }*/
 
-Animais::SAnimal = 10;
-
 Animais::Animais(int id, const string& t, int x, int y) : id(id), tipo(t), x(x), y(y){
     VAnimal = 30;
     SAnimal = 20;
