@@ -64,7 +64,6 @@ void Simulador::menuSimulador() {
     r->setLinhas(linhas);
     r->setColunas(colunas);
 
-    cout << endl;
     buildReserva();
 
     while (cmd != "exit") {
@@ -72,20 +71,22 @@ void Simulador::menuSimulador() {
         getline(cin, cmd);
         validaComandos(*r,cmd);
         buildReserva();
+
         cout << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals() << endl;
         cout << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood() << endl;
         cout << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals()+r->getNumberOfFood()<< endl;
         cout << endl;
     }
 }
-bool Simulador::leFicheiroComandos(Reserva &res, string fileName) {
+
+bool Simulador::leFicheiro(Reserva &res, string fileName) {
     string texto;
     ifstream file;
     file.open(fileName);
 
     if (file){
         while(getline(file, texto)){
-            cout << "[ " << texto << " ]" << endl;
+            //cout << "[ " << texto << " ]" << endl;
             validaComandos(res,texto);
         }
         file.ignore('\n');
@@ -96,13 +97,36 @@ bool Simulador::leFicheiroComandos(Reserva &res, string fileName) {
     }
 
     file.close();
-
     return true;
+}
 
+void Simulador::constantesChanger(Reserva &res, string fileName) {
+    ifstream file;
+    string texto;
+    file.open(fileName);
+    int guardaSaude;
+    int guardaVida;
+    int guardaPeso;
+    vector<string> cenas;
+
+    if (!file){
+        return;
+    }
+    while (getline(file, texto)){
+        cenas = splitString(texto);
+        if (cenas[0] == "SAnimal") {
+            guardaSaude = stoi(cenas[1]);
+        } else if (cenas[0] == "VAnimal") {
+            guardaVida = stoi(cenas[1]);
+        } else if (cenas[0] == "Peso") {
+            guardaPeso = stoi(cenas[1]);
+        }
+    }
+    file.close();
 }
 
 void Simulador::cmdLoad(Reserva &res, vector<string> comando) {
-    if (leFicheiroComandos(res, comando[1])){
+    if (leFicheiro(res, comando[1])){
         cout << "\nFicheiro lido com sucesso!" << endl;
     } else {
         cout << "\nErro! Ficheiro invalido!" << endl;
@@ -195,6 +219,10 @@ void Simulador::validaComandos(Reserva &res, string cmd){
         cout << "A ser implementado" << endl;
     }
     else if (tipoComando == "load" && cmdVector.size() == 2) {
+        if (tipoComando == "load" && cmdVector[1] == "constantes.txt"){
+            constantesChanger(res, cmdVector[1]);
+        }
+
         cmdLoad(res, cmdVector);
     }
     else if (tipoComando == "slide" && cmdVector.size() == 3) {
@@ -216,7 +244,6 @@ void Simulador::cmdExit() {
 void Simulador::cmdCriaAnimal(Reserva &res, vector<string> comando) { // animal c 0 1
     for (auto it: comando) { // armezenar comandos
         char coordX = comando[2][0];
-
         char coordY = comando[3][0];
 
         if(it == comando[2]){

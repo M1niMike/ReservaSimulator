@@ -6,41 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.h
-util.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
-
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.h
-util.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
-
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.cpp
-Reserva.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.h
-util.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
-
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.h
-util.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
+C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.cpp
 Animais.h
 C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.h
-Alimentos.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.h
-vector
--
-
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Simulador.h
 util.h
 C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
-Reserva.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.h
 
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/main.cpp
+C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.h
 util.h
 C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
-Simulador.h
-C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Simulador.h
 
 C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h
 iostream

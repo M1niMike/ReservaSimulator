@@ -54,15 +54,15 @@ void Reserva::criaAnimal(const string &tipo, const int& x, const int& y) {
         cout << "\nPor favor insira um animal valido!" << endl;
     }else{
         if (tipo == "C") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, 20, 0, 0, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
         } else if (tipo == "O") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, 30, 0, 0, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
         } else if (tipo == "L") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, 25, 15, 0, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
         } else if (tipo == "G") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, 20, 10, 70, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
         } else if (tipo == "M") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, 0, 0, 0, false, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
         }
     }
 }
@@ -72,15 +72,15 @@ void Reserva::criaAnimalRandom(const string &tipo) {
         cout << "\nPor favor insira um animal valido!" << endl;
     } else {
         if (tipo == "C") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 20, 0, 0, false, rand() % linhas * colunas, rand() % linhas * colunas));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, (rand() % linhas +1) , (rand() % colunas+1)) );
         } else if (tipo == "O") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 30, 0, 0, false, rand() % linhas * colunas, rand() % linhas * colunas));
+            animais.push_back(new Animais(getTotalCoisas(),tipo,(rand() % linhas+1), (rand() % colunas+1)));
         } else if (tipo == "L") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 25, 15, 0, false, rand() % linhas * colunas, rand() % linhas * colunas));
+            animais.push_back(new Animais(getTotalCoisas(),tipo, (rand() % linhas+1), (rand() % colunas+1)));
         } else if (tipo == "G") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 20, 10, 70, false, rand() % linhas * colunas, rand() % linhas * colunas));
+            animais.push_back(new Animais(getTotalCoisas(),tipo, (rand() % linhas+1), (rand() % colunas+1)));
         } else if (tipo == "M") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, 0, 0, 0, false, rand() % linhas * colunas, rand() % linhas * colunas));
+            animais.push_back(new Animais(getTotalCoisas(),tipo, (rand() % linhas+1), (rand() % colunas+1)));
         }
     }
 }
@@ -148,18 +148,18 @@ void Reserva::criaAlimentoRandom(const string &tipo) {
         cout << "\nPor favor insira um alimento valido!" << endl;
     } else {
         if (tipo == "R") {                    //tipo va vn tx cheiro id x y
-            alimentos.push_back(new Alimentos(getTotalCoisas(), tipo, 20, 3, 0,"erva e verdura", rand() % linhas * colunas, rand() % linhas * colunas));
+            alimentos.push_back(new Alimentos(getTotalCoisas(), tipo, 20, 3, 0,"erva e verdura", (rand() % linhas +1) , (rand() % colunas+1)));
         } else if (tipo == "R") {
-            alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 30, 9999, 4, "verdura", rand() % linhas * colunas, rand() % linhas * colunas));
+            alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 30, 9999, 4, "verdura", (rand() % linhas +1) , (rand() % colunas+1)));
 
         } else if (tipo == "P") {
-            alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 9999, 4, 1, "carne", rand() % linhas * colunas, rand() % linhas * colunas));
+            alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 9999, 4, 1, "carne", (rand() % linhas +1) , (rand() % colunas+1)));
 
         } else if (tipo == "B") {
-            alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 30, 10, 2, "carne e ketchup", rand() % linhas * colunas, rand() % linhas * colunas));
+            alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 30, 10, 2, "carne e ketchup", (rand() % linhas +1) , (rand() % colunas+1)));
 
         } else if (tipo == "G") {
-            alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 20, 2, 1, "fruta", rand() % linhas * colunas, rand() % linhas * colunas));
+            alimentos.push_back(new Alimentos(getTotalCoisas(),tipo, 20, 2, 1, "fruta", (rand() % linhas +1) , (rand() % colunas+1)));
         }
     }
 }

@@ -1,5 +1,2 @@
-animal c 1 1
-animal l 1 1
-food r 1 1
-food r 0 3
-see 1 1
+animal c
+animal c

@@ -20,15 +20,21 @@ public:
 
     int getId() const;
 
-    Animais(int id, const string& t, int Sa, int p, int Va, bool isDead, int x, int y);
+    void setSaude(int novaSaude) { SAnimal = novaSaude;}
+    void setPeso(int newPeso) {peso = newPeso;}
+    void setVida(int newVida) { VAnimal = newVida;}
+
+    //Animais(int id, const string& t, int Sa, int p, int Va, bool isDead, int x, int y);
+    Animais(int id, const string& t, int x, int y);
+protected:
 
 private:
     string tipo;
-    int sAnimal;
+    int SAnimal;
     int peso;
-    int vAnimal; // tempo de vida
+    int VAnimal; // tempo de vida
     bool isDead;
-    int cordX, cordY;
+    int x, y;
     int id = 1;
 
 };

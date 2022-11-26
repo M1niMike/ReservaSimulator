@@ -37,11 +37,14 @@ public:
     void setLinhas(int newLinhas);
     void setColunas(int newColunas);
 
+
     //Animal
     void criaAnimal(const string& tipo,const int& x, const int& y);
     void criaAnimalRandom(const string& tipo);
     int getNumberOfAnimals() const;
     string PrintaAnimal() const;
+
+    void criaAnimalByTextFile();
 
     vector<Animais*> getVecAnimal() const;
     vector<Alimentos*> getVecAlimento() const;

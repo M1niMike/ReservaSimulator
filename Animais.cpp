@@ -5,7 +5,17 @@
 #include "Animais.h"
 #include "util.h"
 
-Animais::Animais(int id, const string& t, int Sa = 0, int p = 0, int Va = 0, bool isDead = false, int x = 0, int y = 0) : id(id),tipo(t), sAnimal(Sa), peso(p), vAnimal(Va), isDead(isDead), cordX(x), cordY(y){
+/*Animais::Animais(int id, const string& t, int Sa = 0, int p = 0, int Va = 0, bool isDead = false, int x = 0, int y = 0) : id(id), tipo(t), SAnimal(Sa), peso(p), VAnimal(Va), isDead(isDead), x(x), y(y){
+
+
+}*/
+
+Animais::SAnimal = 10;
+
+Animais::Animais(int id, const string& t, int x, int y) : id(id), tipo(t), x(x), y(y){
+    VAnimal = 30;
+    SAnimal = 20;
+    peso = 10;
 }
 
 string Animais::getTipoAnimal() const {
@@ -21,7 +31,7 @@ int Animais::getId() const {
 }
 
 int Animais::getSaude() const{
-    return sAnimal;
+    return SAnimal;
 }
 
 int Animais::getPeso() const{
@@ -29,15 +39,13 @@ int Animais::getPeso() const{
 }
 
 int Animais::getvAnimal() const{
-    return vAnimal;
+    return VAnimal;
 }
 
-
-
 int Animais::getX() const {
-    return cordX;
+    return x;
 }
 
 int Animais::getY() const {
-    return cordY;
+    return y;
 }
