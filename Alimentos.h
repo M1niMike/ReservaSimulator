@@ -17,14 +17,15 @@ public:
     string getCheiro() const;
     int getX() const;
     int getY() const;
-
     int getId() const;
+
+    string PrintaAlimento() const;
 
     Alimentos(int id, const string& t, int Va, int Vn, int tx, string c, int x, int y);
 
 private:
     string tipo;
-    int vAlimento;
+    int VAlimento;
     int valorNutri;
     int toxicidade;
     string cheiro;

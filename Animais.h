@@ -15,6 +15,8 @@ public:
     int getPeso () const;
     int getvAnimal() const;
 
+    string PrintaAnimal() const;
+
     int getX() const;
     int getY() const;
 

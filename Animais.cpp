@@ -8,16 +8,9 @@
 Animais::Animais(int id, const string& t, int SAnimal = 0, int VAnimal = 0, int peso = 0, int x = 0, int y = 0) : id(id), tipo(t), x(x), y(y), SAnimal(SAnimal), VAnimal(VAnimal), peso(peso){
 }
 
-/*Animais::Animais(int id, const string& t, int x, int y, int SAnimal = 0, int VAnimal = 0, int peso = 0) : id(id), tipo(t), x(x), y(y){
-
-}*/
 
 string Animais::getTipoAnimal() const {
-    ostringstream oss;
-
-    oss << tipo;
-
-    return oss.str();
+    return tipo;
 }
 
 int Animais::getId() const {
@@ -42,4 +35,16 @@ int Animais::getX() const {
 
 int Animais::getY() const {
     return y;
+}
+
+string Animais::PrintaAnimal() const{
+    ostringstream oss;
+
+    oss << "\nID: " << id;
+    oss << "\nTipo de animal: " << tipo;
+    oss << "\nSaude: " << SAnimal;
+    oss << "\nVida: " << VAnimal;
+    oss << "\nPeso: " << peso << endl;
+
+    return oss.str();
 }

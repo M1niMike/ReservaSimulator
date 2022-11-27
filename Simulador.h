@@ -22,9 +22,11 @@ public:
     void getInfoAnimal(int x, int y);
     void getInfoAlimento(int x, int y);
     bool verificaCoord(const int& linha, const int& coluna);
-
-
+    string maiscula(string palavra);
+    int constantesReader(string aux);
     bool leFicheiroConstantes(string fileName);
+
+
 
     //Comandos
     void cmdCriaAnimal(vector<string> comando);
@@ -34,10 +36,10 @@ public:
     void cmdExit();
     void cmdAnim();
     void cmdSee(vector<string> comando);
-    string maiscula(string palavra);
+    void cmdInfo(vector<string> comando);
     void cmdLoad(vector<string> comando);
 
-    int constantesReader(string aux);
+
 
 
     Reserva* getReserva() const {

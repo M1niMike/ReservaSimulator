@@ -69,12 +69,12 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="POO_TP_22_23" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POO_TP_22_23" TARGET_NAME="POO_TP_22_23" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="POO_TP_22_23" RUN_TARGET_NAME="POO_TP_22_23">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POO_TP_22_23" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POO_TP_22_23" TARGET_NAME="POO_TP_22_23" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="POO_TP_22_23" RUN_TARGET_NAME="POO_TP_22_23">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -102,6 +102,7 @@
       <workItem from="1669394891668" duration="22674000" />
       <workItem from="1669437054206" duration="2292000" />
       <workItem from="1669478522898" duration="23356000" />
+      <workItem from="1669584533845" duration="6153000" />
     </task>
     <servers />
   </component>
