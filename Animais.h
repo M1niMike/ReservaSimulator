@@ -24,8 +24,8 @@ public:
     void setPeso(int newPeso) {peso = newPeso;}
     void setVida(int newVida) { VAnimal = newVida;}
 
-    //Animais(int id, const string& t, int Sa, int p, int Va, bool isDead, int x, int y);
-    Animais(int id, const string& t, int x, int y);
+    Animais(int id, const string& t, int SAnimal, int VAnimal, int peso, int x, int y);
+    //Animais(int id, const string& t, int SAnimal, int VAnimal, int peso, int x, int y);
 
 private:
     string tipo;

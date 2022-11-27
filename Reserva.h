@@ -39,12 +39,10 @@ public:
 
 
     //Animal
-    void criaAnimal(const string& tipo,const int& x, const int& y);
-    void criaAnimalRandom(const string& tipo);
+    void criaAnimal(const string &tipo, int saude, int vida, int peso, const int& x, const int& y);
+    void criaAnimalRandom(const string &tipo, int saude, int vida, int peso);
     int getNumberOfAnimals() const;
     string PrintaAnimal() const;
-
-    void criaAnimalByTextFile();
 
     vector<Animais*> getVecAnimal() const;
     vector<Alimentos*> getVecAlimento() const;

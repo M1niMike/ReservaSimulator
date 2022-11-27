@@ -40,57 +40,52 @@ void Reserva::setColunas(int newColunas) {
 //    return false;
 //}
 
-//bool Jogo::temEdificio(int l, int c)
-//{
-//    if(i->getIlha()[l][c].verificaEdificio())
-//        return true;
-//    else
-//        false;
-//    return false;
-//}
 
-void Reserva::criaAnimal(const string &tipo, const int& x, const int& y) {
+void Reserva::criaAnimal(const string &tipo, int saude, int vida, int peso, const int& x, const int& y) {
     if (tipo != "C" && tipo != "O" && tipo != "L" && tipo != "G" && tipo != "M") {
         cout << "\nPor favor insira um animal valido!" << endl;
     }else{
         if (tipo == "C") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, saude, vida, peso, x,y));
         } else if (tipo == "O") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo,  saude, vida, peso, x, y));
         } else if (tipo == "L") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo,  saude, vida, peso,  x, y));
         } else if (tipo == "G") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo, saude, vida, peso, x, y));
         } else if (tipo == "M") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, x, y));
+            animais.push_back(new Animais(getTotalCoisas(), tipo , saude, vida, peso, x, y));
         }
     }
 }
 
-void Reserva::criaAnimalRandom(const string &tipo) {
+void Reserva::criaAnimalRandom(const string &tipo, int saude, int vida, int peso) {
     if (tipo != "C" && tipo != "O" && tipo != "L" && tipo != "G" && tipo != "M") {
         cout << "\nPor favor insira um animal valido!" << endl;
     } else {
         if (tipo == "C") {
-            animais.push_back(new Animais(getTotalCoisas(), tipo, (rand() % linhas +1) , (rand() % colunas+1)) );
+            animais.push_back(new Animais(getTotalCoisas(), tipo, saude, vida, peso, (rand() % linhas +1) , (rand() % colunas+1)));
         } else if (tipo == "O") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo,(rand() % linhas+1), (rand() % colunas+1)));
+            animais.push_back(new Animais(getTotalCoisas(),tipo, saude, vida, peso, (rand() % linhas+1), (rand() % colunas+1)));
         } else if (tipo == "L") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, (rand() % linhas+1), (rand() % colunas+1)));
+            animais.push_back(new Animais(getTotalCoisas(),tipo, saude, vida, peso, (rand() % linhas+1), (rand() % colunas+1)));
         } else if (tipo == "G") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, (rand() % linhas+1), (rand() % colunas+1)));
+            animais.push_back(new Animais(getTotalCoisas(),tipo, saude, vida, peso, (rand() % linhas+1), (rand() % colunas+1)));
         } else if (tipo == "M") {
-            animais.push_back(new Animais(getTotalCoisas(),tipo, (rand() % linhas+1), (rand() % colunas+1)));
+            animais.push_back(new Animais(getTotalCoisas(),tipo, saude, vida, peso, (rand() % linhas+1), (rand() % colunas+1)));
         }
     }
 }
 
 string Reserva::PrintaAnimal() const{
     ostringstream oss;
+
     for (auto it = animais.begin(); it != animais.end(); it++){
         oss << "\nID: " << (*it)->getId() << endl;
         oss << "\nTipo de animal: " << (*it)->getTipoAnimal() << endl;
-        oss << "\nVida: " << (*it)->getSaude() << endl;
+        oss << "\nSaude: " << (*it)->getSaude() << endl;
+        oss << "\nVida: " << (*it)->getvAnimal() << endl;
+        oss << "\nPeso: " << (*it)->getPeso() << endl;
     }
 
     //oss << "Existem " << animais.size() + alimentos.size() << " coisas na reserva neste momento.";

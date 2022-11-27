@@ -23,7 +23,8 @@ public:
     void getInfoAlimento(int x, int y);
     bool verificaCoord(const int& linha, const int& coluna);
 
-    void constantesReaderAndChanger(string fileName);
+
+    bool leFicheiroConstantes(string fileName);
 
     //Comandos
     void cmdCriaAnimal(vector<string> comando);
@@ -35,6 +36,8 @@ public:
     void cmdSee(vector<string> comando);
     string maiscula(string palavra);
     void cmdLoad(vector<string> comando);
+
+    int constantesReader(string aux);
 
 
     Reserva* getReserva() const {
@@ -49,7 +52,7 @@ public:
 
 private:
     Reserva *r;
-
+    map<string, int> mapa;
 };
 
 #endif //POO_TP_22_23_INTERFACE_H

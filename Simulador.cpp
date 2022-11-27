@@ -7,6 +7,8 @@ Simulador::Simulador(Reserva *r):r(r) {}
 
 void Simulador::runInterface() {
 
+    leFicheiroConstantes("constantes.txt");
+
     string opcao;
 
     do{
@@ -26,7 +28,6 @@ void Simulador::runInterface() {
             cout << "\n Opcao invalida";
 
     }while(opcao != "2");
-
 }
 
 void Simulador::menuSimulador() {
@@ -100,29 +101,32 @@ bool Simulador::leFicheiro(string fileName) {
     return true;
 }
 
-void Simulador::constantesReaderAndChanger(string fileName) {
-    ifstream file;
-    string texto;
-    file.open(fileName);
-    vector<string> cenas;
-    int saude;
-    int vida;
-    int peso;
+bool Simulador::leFicheiroConstantes(string fileName){
+    string textoDoFich;
 
-    if (!file){
-        return;
+    ifstream file;
+
+    int valor;
+
+    string aux;
+
+    file.open(fileName);
+
+    if(!file){
+        return false;
     }
-    while (getline(file, texto)){
-        cenas = splitString(texto);
-        if (cenas[0] == "SAnimal") {
-            saude = stoi(cenas[1]);
-        } else if (cenas[0] == "VAnimal") {
-            vida = stoi(cenas[1]);
-        } else if (cenas[0] == "Peso") {
-            peso = stoi(cenas[1]);
+
+    while (getline(file, textoDoFich)){
+        istringstream iss(textoDoFich);
+        if (!(iss >> aux >> valor)){
+            continue;
         }
+        mapa[aux] = valor;
     }
-    file.close();
+
+    file.ignore('\n');
+
+    return true;
 }
 
 void Simulador::cmdLoad(vector<string> comando) {
@@ -132,6 +136,8 @@ void Simulador::cmdLoad(vector<string> comando) {
         cout << "\nErro! Ficheiro invalido!" << endl;
     }
 }
+
+
 
 vector<string> Simulador::splitString(const string& cmd) const {
     string aux;
@@ -160,7 +166,7 @@ void Simulador::validaComandos(string cmd){
         cmdCriaAnimal(cmdVector);
     }
     else if (tipoComando == "animal" && cmdVector.size() == 2){
-        cmdCriaAnimalRandom(cmdVector);
+        //cmdCriaAnimalRandom(cmdVector);
     }
     else if (tipoComando == "kill" && cmdVector.size() == 3){
         cout << "A ser implementado" << endl;
@@ -218,11 +224,7 @@ void Simulador::validaComandos(string cmd){
         cout << "A ser implementado" << endl;
     }
     else if (tipoComando == "load" && cmdVector.size() == 2) {
-        if (tipoComando == "load" && cmdVector[1] == "constantes.txt"){
-            constantesReaderAndChanger(cmdVector[1]);
-        }else{
             cmdLoad(cmdVector);
-        }
     }
     else if (tipoComando == "slide" && cmdVector.size() == 3) {
         cout << "A ser implementado" << endl;
@@ -240,8 +242,21 @@ void Simulador::cmdExit() {
     exit(0);
 }
 
+int Simulador::constantesReader(string aux) {
+    for (auto it: mapa){
+        if(mapa.find(aux) != mapa.end()){
+            return mapa[aux];
+        }
+    }
+    return -1;
+}
+
 void Simulador::cmdCriaAnimal(vector<string> comando) { // animal c 0 1
     for (auto it: comando) { // armezenar comandos
+        //int i = 0;
+        int peso = constantesReader("Peso");
+        int saude = constantesReader("SAnimal");
+        int vida = constantesReader("VAnimal");
         char coordX = comando[2][0];
         char coordY = comando[3][0];
 
@@ -260,8 +275,9 @@ void Simulador::cmdCriaAnimal(vector<string> comando) { // animal c 0 1
             it = maiscula(it);
             int x = stoi(comando[2]);
             int y = stoi(comando[3]);
+
             if (verificaCoord(x,y)){
-                r->criaAnimal(it, x, y);
+                r->criaAnimal(it, saude, vida, peso, x, y);
             } else {
                 cout << "\nPor favor, insira coordenadas validas!" << endl;
             }
@@ -293,14 +309,14 @@ void Simulador::cmdSee(vector<string> comando) {
     }
 }
 
-void Simulador::cmdCriaAnimalRandom(vector<string> comando) {
-    for (auto it: comando){
-        if(it == comando[1]){
-            it = maiscula(it);
-            r->criaAnimalRandom(it);
-        }
-    }
-}
+//void Simulador::cmdCriaAnimalRandom(vector<string> comando) {
+//    for (auto it: comando){
+//        if(it == comando[1]){
+//            it = maiscula(it);
+//            r->criaAnimalRandom(it);
+//        }
+//    }
+//}
 
 /*void Simulador::cmdInfo(Reserva &res, vector<string> comando){
     string aux = comando[1];
@@ -366,6 +382,7 @@ void Simulador::buildArea(int x, int y) {
         cout << "\nPor favor, insira coordenadas validas." << endl;
     }
 }
+
 
 void Simulador::buildReserva() {
     //Animais *a;
@@ -453,7 +470,6 @@ void Simulador::getInfoAnimal(int x, int y) {
             break;
         }
     }
-
 }
 
 void Simulador::getInfoAlimento(int x, int y) {
