@@ -9,6 +9,7 @@
 #include "Animais.h"
 #include "Alimentos.h"
 #include <vector>
+
 class Reserva{
 public:
     Reserva(int nl=0, int nc=0);
@@ -30,11 +31,9 @@ public:
     int getColunas() const;
     bool verificaLinhasColunas(const int& x, const int& y);
 
-
     //Set
     void setLinhas(int newLinhas);
     void setColunas(int newColunas);
-
 
     //Animal
     vector<Animais*> getVecAnimal() const;
@@ -42,8 +41,6 @@ public:
     void criaAnimalRandom(const string &tipo, int saude, int vida, int peso);
     int getNumberOfAnimals() const;
     string getInfoAnimalId(int id) const;
-
-
 
     //Alimento
     vector<Alimentos*> getVecAlimento() const;

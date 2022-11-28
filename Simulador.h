@@ -27,8 +27,6 @@ public:
     int constantesReader(string aux);
     bool leFicheiroConstantes(string fileName);
 
-
-
     //Comandos
     void cmdCriaAnimal(vector<string> comando);
     void cmdCriaAnimalRandom(vector<string> comando);
@@ -39,8 +37,6 @@ public:
     void cmdSee(vector<string> comando);
     void cmdInfo(vector<string> comando);
     void cmdLoad(vector<string> comando);
-
-
 
     Reserva* getReserva() const {
         return r;

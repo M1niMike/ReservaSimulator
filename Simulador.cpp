@@ -1,10 +1,7 @@
 ﻿#include "Simulador.h"
 #include "util.h"
 
-
-
 Simulador::Simulador(Reserva *r):r(r) {}
-
 void Simulador::runInterface() {
 
     leFicheiroConstantes("constantes.txt");
@@ -29,7 +26,6 @@ void Simulador::runInterface() {
 
     }while(opcao != "2");
 }
-
 void Simulador::menuSimulador() {
 
     int linhas = 0;
@@ -66,6 +62,7 @@ void Simulador::menuSimulador() {
         cout << "\nComandos:";
         getline(cin, cmd);
         validaComandos(cmd);
+        cout <<"\n";
         buildReserva();
 
         cout << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals() << endl;
@@ -96,7 +93,6 @@ bool Simulador::leFicheiro(string fileName) {
     file.close();
     return true;
 }
-
 bool Simulador::leFicheiroConstantes(string fileName){
     string textoDoFich;
 
@@ -124,7 +120,6 @@ bool Simulador::leFicheiroConstantes(string fileName){
 
     return true;
 }
-
 int Simulador::constantesReader(string aux) {
     for (auto it: mapa){
         if(mapa.find(aux) != mapa.end()){
@@ -133,7 +128,6 @@ int Simulador::constantesReader(string aux) {
     }
     return -1;
 }
-
 vector<string> Simulador::splitString(const string& cmd) const {
     string aux;
     istringstream ss(cmd);
@@ -146,14 +140,12 @@ vector<string> Simulador::splitString(const string& cmd) const {
 
     return palavras;
 }
-
 string Simulador::maiscula(std::string palavra) {
     for (int i = 0; i < palavra.size(); i++){
         palavra[i] = toupper(palavra[i]);
     }
     return palavra;
 }
-
 void Simulador::getInfoAnimal(int x, int y) {
     int linhas = x;
     int colunas = y;
@@ -169,7 +161,6 @@ void Simulador::getInfoAnimal(int x, int y) {
         }
     }
 }
-
 void Simulador::getInfoAlimento(int x, int y) {
     int linhas = x;
     int colunas = y;
@@ -185,7 +176,6 @@ void Simulador::getInfoAlimento(int x, int y) {
         }
     }
 }
-
 bool Simulador::verificaCoord(const int& linha, const int& coluna) {
     int linhas = r->getLinhas();
     int colunas = r->getColunas();
@@ -279,12 +269,10 @@ void Simulador::validaComandos(string cmd){
         cout << "\nComando desconhecido!" << endl;
     }
 }
-
 void Simulador::cmdExit() {
     cout << "A sair" << endl;
     exit(0);
 }
-
 void Simulador::cmdCriaAnimal(vector<string> comando) {
     for (auto it: comando) { // armezenar comandos
         int peso = constantesReader("Peso");
@@ -317,7 +305,6 @@ void Simulador::cmdCriaAnimal(vector<string> comando) {
         }
     }
 }
-
 void Simulador::cmdCriaAnimalRandom(vector<string> comando) {
     for (auto it: comando){
         if(it == comando[1]){
@@ -326,7 +313,6 @@ void Simulador::cmdCriaAnimalRandom(vector<string> comando) {
         }
     }
 }
-
 void Simulador::cmdSee(vector<string> comando) {
     for (auto it: comando) { // armezenar comandos
         char coordX = comando[1][0];
@@ -349,7 +335,6 @@ void Simulador::cmdSee(vector<string> comando) {
         break;
     }
 }
-
 void Simulador::cmdInfo(vector<string> comando){
 
     for(auto a : r->getVecAnimal()){
@@ -364,7 +349,6 @@ void Simulador::cmdInfo(vector<string> comando){
         }
     }
 }
-
 void Simulador::cmdCriaAlimento(vector<string> comando) {
     for (auto it: comando) { // armezenar comandos
         char coordX = comando[2][0];
@@ -393,7 +377,6 @@ void Simulador::cmdCriaAlimento(vector<string> comando) {
         }
     }
 }
-
 void Simulador::cmdCriaAlimentoRandom(vector<string> comando) {
     for (auto it: comando){
         if(it == comando[1]){
@@ -402,13 +385,11 @@ void Simulador::cmdCriaAlimentoRandom(vector<string> comando) {
         }
     }
 }
-
 void Simulador::cmdAnim() {
     for(int i = 0; i < r->getVecAnimal().size(); i++){
         cout << r->getVecAnimal()[i]->PrintaAnimal();
     }
 }
-
 void Simulador::cmdLoad(vector<string> comando) {
     if (leFicheiro(comando[1])){
         cout << "\nFicheiro lido com sucesso!" << endl;
@@ -431,7 +412,6 @@ void Simulador::buildArea(int x, int y) {
         cout << "\nPor favor, insira coordenadas validas." << endl;
     }
 }
-
 void Simulador::buildReserva() {
     //Animais *a;
     int linhas = r->getLinhas();

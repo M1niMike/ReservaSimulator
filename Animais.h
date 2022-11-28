@@ -26,7 +26,7 @@ public:
 
     //prints
     string PrintaAnimal() const;
-    
+
 
     Animais(const string& t, int SAnimal, int VAnimal, int peso, int x, int y);
     //Animais(int id, const string& t, int SAnimal, int VAnimal, int peso, int x, int y);

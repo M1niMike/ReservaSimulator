@@ -11,26 +11,20 @@ Reserva::Reserva(int nl, int nc): linhas(nl), colunas(nc) {}
 int Reserva::getTotalCoisas(){
     return totalCoisas++;
 }
-
 int Reserva::getLinhas() const {
     return linhas;
 }
-
 int Reserva::getColunas() const {
     return colunas;
 }
-
 void Reserva::setLinhas(int newLinhas){
     linhas = newLinhas;
 }
-
 void Reserva::setColunas(int newColunas) {
     colunas = newColunas;
 }
 
-
 /*ANIMAL*/
-
 void Reserva::criaAnimal(const string &tipo, int saude, int vida, int peso, const int& x, const int& y) {
     if (tipo != "C" && tipo != "O" && tipo != "L" && tipo != "G" && tipo != "M") {
         cout << "\nPor favor insira um animal valido!" << endl;
@@ -53,7 +47,6 @@ void Reserva::criaAnimal(const string &tipo, int saude, int vida, int peso, cons
         }
     }
 }
-
 void Reserva::criaAnimalRandom(const string &tipo, int saude, int vida, int peso) {
     int lRandom = rand() % linhas + 1;
     int cRandom = rand() % colunas + 1;
@@ -83,11 +76,9 @@ void Reserva::criaAnimalRandom(const string &tipo, int saude, int vida, int peso
         }
     }
 }
-
 vector<Animais*> Reserva::getVecAnimal() const {
     return animais;
 }
-
 int Reserva::getNumberOfAnimals() const {
     return animais.size();
 }
@@ -103,9 +94,7 @@ int Reserva::getNumberOfAnimals() const {
 //    return oss.str();
 //}
 
-
 /*ALIMENTO*/
-
 void Reserva::criaAlimento(const string &tipo, const int& x, const int& y) {
     if (tipo != "R" && tipo != "T" && tipo != "P" && tipo != "B" && tipo != "Z") {
         cout << "\nPor favor insira um alimento valido!" << endl;
@@ -129,7 +118,6 @@ void Reserva::criaAlimento(const string &tipo, const int& x, const int& y) {
     }
 
 }
-
 void Reserva::criaAlimentoRandom(const string &tipo) {
     int lRandom = rand() % linhas + 1;
     int cRandom = rand() % colunas + 1;
@@ -159,15 +147,12 @@ void Reserva::criaAlimentoRandom(const string &tipo) {
         }
     }
 }
-
 int Reserva::getNumberOfFood() const {
     return alimentos.size();
 }
-
 vector<Alimentos*> Reserva::getVecAlimento() const {
     return alimentos;
 }
-
 bool Reserva::hasAlimento(int x, int y) {
     for(int i =0; i < alimentos.size(); i++){
         if(alimentos[i]->getX() == x && alimentos[i]->getY() == y){

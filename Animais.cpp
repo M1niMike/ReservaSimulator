@@ -12,27 +12,21 @@ Animais::Animais(const string& t, int SAnimal = 0, int VAnimal = 0, int peso = 0
 string Animais::getTipoAnimal() const {
     return tipo;
 }
-
 int Animais::getId() const {
     return id;
 }
-
 int Animais::getSaude() const{
     return SAnimal;
 }
-
 int Animais::getPeso() const{
     return peso;
 }
-
 int Animais::getvAnimal() const{
     return VAnimal;
 }
-
 int Animais::getX() const {
     return x;
 }
-
 int Animais::getY() const {
     return y;
 }

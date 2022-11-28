@@ -14,15 +14,12 @@ Alimentos::Alimentos(const string& t, int Va = 0, int Vn = 0, int tx = 0, string
 int Alimentos::getValimento() const{
     return VAlimento;
 }
-
 int Alimentos::getValorNutri() const{
     return valorNutri;
 }
-
 int Alimentos::getToxicidade() const {
     return toxicidade;
 }
-
 string Alimentos::getTipoAlimento() const {
     ostringstream oss;
 
@@ -30,7 +27,6 @@ string Alimentos::getTipoAlimento() const {
 
     return oss.str();
 }
-
 string Alimentos::getCheiro() const{
     ostringstream oss;
 
@@ -38,20 +34,15 @@ string Alimentos::getCheiro() const{
 
     return oss.str();
 }
-
 int Alimentos::getX() const {
     return cordX;
 }
-
 int Alimentos::getY() const {
     return cordY;
 }
-
 int Alimentos::getId() const {
     return id;
 }
-
-
 
 //Prints
 string Alimentos::PrintaAlimento() const{
