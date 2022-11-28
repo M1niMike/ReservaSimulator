@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "20"
+			"value" : "23"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -468,18 +468,6 @@
 			],
 			"type" : "STRING",
 			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
-		},
-		{
-			"name" : "CMAKE_DEPENDS_USE_COMPILER",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
-				}
-			],
-			"type" : "UNINITIALIZED",
-			"value" : "FALSE"
 		},
 		{
 			"name" : "CMAKE_DLLTOOL",
@@ -1103,7 +1091,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/JetBrains/CLion 2021.2.3/bin/cmake/win/share/cmake-3.20"
+			"value" : "C:/Program Files/JetBrains/CLion 2021.2.3/bin/cmake/win/share/cmake-3.23"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1340,6 +1328,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/cmake-build-debug"
+		},
+		{
+			"name" : "POO_TP_22_23_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
 		},
 		{
 			"name" : "POO_TP_22_23_SOURCE_DIR",

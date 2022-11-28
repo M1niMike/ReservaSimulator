@@ -1,8 +1,11 @@
 
 #include "util.h"
-#include "Interface.h"
+#include "Simulador.h"
 
 int main() {
 
-    Interface::runInterface();
+    Simulador s(new Reserva());
+    s.runInterface();
+
+    return 0;
 }
