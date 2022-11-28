@@ -5,10 +5,10 @@
 #include "Animais.h"
 #include "util.h"
 
-Animais::Animais(int id, const string& t, int SAnimal = 0, int VAnimal = 0, int peso = 0, int x = 0, int y = 0) : id(id), tipo(t), x(x), y(y), SAnimal(SAnimal), VAnimal(VAnimal), peso(peso){
+Animais::Animais(const string& t, int SAnimal = 0, int VAnimal = 0, int peso = 0, int x = 0, int y = 0) : tipo(t), x(x), y(y), SAnimal(SAnimal), VAnimal(VAnimal), peso(peso){
 }
 
-
+//Gets
 string Animais::getTipoAnimal() const {
     return tipo;
 }
@@ -37,6 +37,7 @@ int Animais::getY() const {
     return y;
 }
 
+//Printa
 string Animais::PrintaAnimal() const{
     ostringstream oss;
 

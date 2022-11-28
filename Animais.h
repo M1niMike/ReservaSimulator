@@ -14,19 +14,21 @@ public:
     int getSaude() const;
     int getPeso () const;
     int getvAnimal() const;
-
-    string PrintaAnimal() const;
-
     int getX() const;
     int getY() const;
-
     int getId() const;
 
+    //Sets
     void setSaude(int novaSaude) { SAnimal = novaSaude;}
     void setPeso(int newPeso) {peso = newPeso;}
     void setVida(int newVida) { VAnimal = newVida;}
+    void setId(int newId) {id = newId;}
 
-    Animais(int id, const string& t, int SAnimal, int VAnimal, int peso, int x, int y);
+    //prints
+    string PrintaAnimal() const;
+    
+
+    Animais(const string& t, int SAnimal, int VAnimal, int peso, int x, int y);
     //Animais(int id, const string& t, int SAnimal, int VAnimal, int peso, int x, int y);
 
 private:
@@ -36,7 +38,7 @@ private:
     int VAnimal; // tempo de vida
     bool isDead;
     int x, y;
-    int id = 1;
+    int id;
 
 };
 

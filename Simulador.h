@@ -12,6 +12,7 @@ class Reserva;
 
 class Simulador{
 public:
+    //funcs Auxiliares
     void runInterface();
     void menuSimulador();
     bool leFicheiro(string fileName);
@@ -38,7 +39,6 @@ public:
     void cmdSee(vector<string> comando);
     void cmdInfo(vector<string> comando);
     void cmdLoad(vector<string> comando);
-
 
 
 

@@ -19,9 +19,13 @@ public:
     int getY() const;
     int getId() const;
 
+    //sets
+    void setId(int newId) {id = newId;}
+
+    //prints
     string PrintaAlimento() const;
 
-    Alimentos(int id, const string& t, int Va, int Vn, int tx, string c, int x, int y);
+    Alimentos(const string& t, int Va, int Vn, int tx, string c, int x, int y);
 
 private:
     string tipo;

@@ -41,6 +41,8 @@ public:
     void criaAnimal(const string &tipo, int saude, int vida, int peso, const int& x, const int& y);
     void criaAnimalRandom(const string &tipo, int saude, int vida, int peso);
     int getNumberOfAnimals() const;
+    string getInfoAnimalId(int id) const;
+
 
 
     //Alimento
@@ -49,6 +51,7 @@ public:
     void criaAlimentoRandom(const string& tipo);
     int getNumberOfFood() const;
     int getTotalCoisas();
+    string getInfoAlimentoId(int id) const;
     bool hasAlimento(int x, int y);
 
 
@@ -58,6 +61,7 @@ private:
     vector<Animais*> animais;
     vector<Alimentos*> alimentos;
     int totalCoisas = 1;
+    //static int ID;
 };
 
 #endif //POO_TP_22_23_RESERVA_H
