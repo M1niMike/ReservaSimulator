@@ -162,6 +162,11 @@ CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj: \
  C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
  C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
  C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Terminal.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\curses.h \
+ C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Reserva.h \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Animais.h \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Alimentos.h

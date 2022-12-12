@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj.d"
   "CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj"
   "CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj.d"
+  "CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.obj"
+  "CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.obj.d"
   "CMakeFiles/POO_TP_22_23.dir/main.cpp.obj"
   "CMakeFiles/POO_TP_22_23.dir/main.cpp.obj.d"
   "POO_TP_22_23.exe"

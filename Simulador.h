@@ -42,7 +42,7 @@ public:
         return r;
     };
 
-    Simulador(Reserva *r);
+    Simulador(Reserva *r, Terminal &t);
 
     ~Simulador(){
         delete r;
@@ -51,6 +51,10 @@ public:
 private:
     Reserva *r;
     map<string, int> mapa;
+    Terminal &t;
+    Window cmdW;
+//    Window textInterface;
+//    Window reserva;
 };
 
 #endif //POO_TP_22_23_INTERFACE_H

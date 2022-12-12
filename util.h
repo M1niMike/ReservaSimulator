@@ -15,7 +15,9 @@
 #include <random>
 #include <cstdlib>
 #include <map>
+#include "Terminal.h"
 
+using namespace term;
 using namespace std;
 
 

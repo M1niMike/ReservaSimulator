@@ -1,7 +1,7 @@
 ﻿#include "Simulador.h"
 #include "util.h"
 
-Simulador::Simulador(Reserva *r):r(r) {}
+Simulador::Simulador(Reserva *r, Terminal &t):r(r), t(t), cmdW(0,0,30,15) /*textInterface(0,0,0,0), reserva(0,0,0,0)*/{}
 void Simulador::runInterface() {
 
     leFicheiroConstantes("constantes.txt");
@@ -9,20 +9,20 @@ void Simulador::runInterface() {
     string opcao;
 
     do{
-        cout << "\n1 - Novo Simulador";
-        cout << "\n2 - Sair";
+        cmdW << "\n1 - Novo Simulador";
+        cmdW << "\n2 - Sair";
 
-        cout << "\n->";
-        cin >> opcao;
+        cmdW << "\n->";
+        cmdW >> opcao;
         if(opcao == "1"){
             menuSimulador();
         }
         else if(opcao == "2"){
-            cout << "\nA Sair";
+            cmdW << "\nA Sair";
             exit(1);
         }
         else
-            cout << "\n Opcao invalida";
+            cmdW << "\n Opcao invalida";
 
     }while(opcao != "2");
 }
@@ -33,24 +33,24 @@ void Simulador::menuSimulador() {
     string choice;
     string cmd;
     string aux;
-    cout << "Simulacao Iniciada" << endl;
-    cout << "A criar a Reserva..." << endl;
-    cin.ignore();
+    cmdW << "Simulacao Iniciada";
+    cmdW << "A criar a Reserva...";
+    //cin.ignore();
     do
     {
-        cout << "Introduza o tamanho da reserva que pretende: [Linha] [Coluna]" << endl;
-        cout << "->";
-        cin >> linhas;
-        cin.clear();
-        cin.ignore(linhas, '\n');
+        cmdW << "Introduza o tamanho da reserva que pretende: [Linha] [Coluna]";
+        cmdW << "->";
+        cmdW >> linhas;
+        //cmdW.clear();
+        //cmdW.ignore(linhas, '\n');
 
-        cout << "->";
-        cin >> colunas;
-        cin.clear();
-        cin.ignore(colunas, '\n');
+        cmdW << "->";
+        cmdW >> colunas;
+        //cmdW.clear();
+        //cin.ignore(colunas, '\n');
 
         if((linhas<16 || colunas<16) || (linhas>500 || colunas>500))
-            cout << "O tamanho da reserva deve ser entre 16x16 e 500x500!" << endl;
+            cmdW << "O tamanho da reserva deve ser entre 16x16 e 500x500!";
     }while((linhas<16 || colunas<16) || (linhas>500 || colunas>500));
 
     r->setLinhas(linhas);
@@ -59,16 +59,15 @@ void Simulador::menuSimulador() {
     buildReserva();
 
     while (cmd != "exit") {
-        cout << "\nComandos:";
-        getline(cin, cmd);
+        cmdW << "\nComandos:";
+        cmdW >> cmd;
         validaComandos(cmd);
-        cout <<"\n";
+        cmdW <<"\n";
         buildReserva();
 
-        cout << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals() << endl;
-        cout << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood() << endl;
-        cout << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals()+r->getNumberOfFood()<< endl;
-        cout << endl;
+        cmdW << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
+        cmdW << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
+        cmdW << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals()+r->getNumberOfFood();
     }
 }
 

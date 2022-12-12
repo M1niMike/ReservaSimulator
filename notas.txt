@@ -1,2 +1,3 @@
 Corrigir comando SEE dos animais por ficheiro
 Corrigir o Exit (destrutores)
+Sem uso de STL para o historico, vector<x> (funções com esse formato), utilizar array criado por nós
