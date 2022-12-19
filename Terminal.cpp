@@ -154,11 +154,6 @@ namespace term {
         return *this;
     }
 
-    Window &Window::operator>>(int &i) {
-        i = ::wgetch(window);
-        return *this;
-    }
-
 
     int Window::getchar() {
         return ::wgetch(window);

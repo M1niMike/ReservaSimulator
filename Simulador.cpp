@@ -1,7 +1,7 @@
 ﻿#include "Simulador.h"
 #include "util.h"
 
-Simulador::Simulador(Reserva *r, Terminal &t):r(r), t(t), cmdW(0,0,30,15) /*textInterface(0,0,0,0), reserva(0,0,0,0)*/{}
+Simulador::Simulador(Reserva *r, Terminal &t):r(r), t(t), cmdW(0,0,70,20)/*textInterface(0,0,0,0),*/ ,reserva(75,0,20,10){}
 void Simulador::runInterface() {
 
     leFicheiroConstantes("constantes.txt");
@@ -33,6 +33,7 @@ void Simulador::menuSimulador() {
     string choice;
     string cmd;
     string aux;
+    string coord;
     cmdW << "Simulacao Iniciada";
     cmdW << "A criar a Reserva...";
     //cin.ignore();
@@ -40,14 +41,13 @@ void Simulador::menuSimulador() {
     {
         cmdW << "Introduza o tamanho da reserva que pretende: [Linha] [Coluna]";
         cmdW << "->";
-        cmdW >> linhas;
-        //cmdW.clear();
-        //cmdW.ignore(linhas, '\n');
 
-        cmdW << "->";
-        cmdW >> colunas;
-        //cmdW.clear();
-        //cin.ignore(colunas, '\n');
+        cmdW >> coord;
+        istringstream iss(coord);
+
+        if (iss >> linhas && iss >> colunas){
+            cmdW << linhas << " " << colunas;
+        }
 
         if((linhas<16 || colunas<16) || (linhas>500 || colunas>500))
             cmdW << "O tamanho da reserva deve ser entre 16x16 e 500x500!";
@@ -418,15 +418,15 @@ void Simulador::buildReserva() {
     int t = 0;
     int cont = 0;
 
-    for(int i = 0; i < colunas; i++){
-        if (i == 0){
-            cout << "|-------";
-        } else if (i == colunas-1){
-            cout << "|-------|";
-        } else {
-            cout << "|-------";
-        }
-    }
+//    for(int i = 0; i < colunas; i++){
+//        if (i == 0){
+//            cmdW << "|-------";
+//        } else if (i == colunas-1){
+//            cmdW << "|-------|";
+//        } else {
+//            cmdW << "|-------";
+//        }
+//    }
 
     for (int i = 0; i<linhas; i++){
 
@@ -436,27 +436,29 @@ void Simulador::buildReserva() {
 //            cout << " " << "\t|"; //movimentação
 //        }
 
-        cout << "\n" << "|";
+//        cmdW << "\n" << "|";
 
         for (int j = 0; j<colunas; j++){
             for (int x = 0; x < r->getVecAnimal().size(); x++){
                 if (r->getVecAnimal()[x]->getX() == i+1 && r->getVecAnimal()[x]->getY() == j+1){
-                    cout << r->getVecAnimal()[x]->getTipoAnimal();
+                    reserva << move_to((r->getVecAnimal()[x]->getX()), r->getVecAnimal()[x]->getY());
+                    reserva << r->getVecAnimal()[x]->getTipoAnimal();
                 } else{
-                    continue;
+                    reserva << "_";
                 }
             }
-            cout <<"\t|";
+//            cmdW <<"\t|";
 
         }
-        cout << "\n" << "|";
+//        cmdW << "\n" << "|";
         for(int j = 0; j<colunas; j++){
             for (int k = 0; k < r->getVecAlimento().size(); k++){
                 if (r->getVecAlimento()[k]->getX() == i+1 && r->getVecAlimento()[k]->getY() == j+1){
-                    cout << r->getVecAlimento()[k]->getTipoAlimento();
+                    reserva << move_to((r->getVecAlimento()[k]->getX()), r->getVecAlimento()[k]->getY());
+                    reserva << r->getVecAlimento()[k]->getTipoAlimento();
                 }
             }
-            cout <<"\t|";
+//            cmdW <<"\t|";
         }
 
 //    Print 4º espaço
@@ -465,27 +467,27 @@ void Simulador::buildReserva() {
 //            cout << " " << "\t|"; // count
 //        }
 
-        cout << "\n";
-        for (int j = 0; j<colunas; j++){
-            if (i != linhas-1){
-                if(j == colunas-1){
-                    cout << "-------|";
-                } else if(j == 0){
-                    cout << "|-------|";
-                } else {
-                    cout << "-------|";
-                }
-            } else{
-                if (j == 0){
-                    cout << "|-------|";
-                } else if(j == colunas-1){
-                    cout << "-------|";
-                } else {
-                    cout << "-------|";
-                }
-            }
-        }
-        cout << "\n";
+//        cmdW << "\n";
+//        for (int j = 0; j<colunas; j++){
+//            if (i != linhas-1){
+//                if(j == colunas-1){
+//                    cmdW << "-------|";
+//                } else if(j == 0){
+//                    cmdW << "|-------|";
+//                } else {
+//                    cmdW << "-------|";
+//                }
+//            } else{
+//                if (j == 0){
+//                    cmdW << "|-------|";
+//                } else if(j == colunas-1){
+//                    cmdW << "-------|";
+//                } else {
+//                    cmdW << "-------|";
+//                }
+//            }
+//        }
+//        cmdW << "\n";
     }
 }
 

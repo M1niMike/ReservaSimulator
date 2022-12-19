@@ -69,7 +69,7 @@ namespace term {
 
         Window& operator>>(char& c);
         Window& operator>>(std::string& str);
-        Window& operator>>(int& i);
+
 
         int getchar();
         void clear();

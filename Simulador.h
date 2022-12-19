@@ -54,7 +54,7 @@ private:
     Terminal &t;
     Window cmdW;
 //    Window textInterface;
-//    Window reserva;
+    Window reserva;
 };
 
 #endif //POO_TP_22_23_INTERFACE_H

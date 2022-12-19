@@ -21,6 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb5b0fea-053f-43f1-a63e-edde484ee9f2" name="Changes" comment="" />
+    <list id="544d10dd-f479-43e0-bf06-9436a7f188f1" name="Changes by Goncalo" comment="" />
     <list id="8d21121b-2be9-4deb-88cf-d1712a93800c" name="Changes by Gonçalo" comment="" />
     <list id="05611b6b-6d4a-48be-88f2-5bbe35e05444" name="Changes by mikae" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +78,11 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="POO_TP_22_23" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="/c start cmd /c &quot;POO_TP_22_23.exe &amp; pause&quot;" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POO_TP_22_23" TARGET_NAME="POO_TP_22_23" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/../../../../../Windows/System32/cmd.exe">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -114,7 +120,13 @@
       <workItem from="1670854693349" duration="1040000" />
       <workItem from="1670855901856" duration="1632000" />
       <workItem from="1670860229374" duration="1130000" />
-      <workItem from="1670861867544" duration="3202000" />
+      <workItem from="1670861867544" duration="3522000" />
+      <workItem from="1671096587714" duration="850000" />
+      <workItem from="1671097993158" duration="18000" />
+      <workItem from="1671098073733" duration="35000" />
+      <workItem from="1671098241084" duration="17000" />
+      <workItem from="1671462993424" duration="2132000" />
+      <workItem from="1671465723473" duration="849000" />
     </task>
     <servers />
   </component>
@@ -133,6 +145,15 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Simulador.cpp</url>
+          <line>421</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="this" language="ObjectiveC" />
