@@ -53,8 +53,8 @@ private:
     map<string, int> mapa;
     Terminal &t;
     Window cmdW;
-//    Window textInterface;
-    Window reserva;
+    Window textInterface;
+    Window reservaPrinter;
 };
 
 #endif //POO_TP_22_23_INTERFACE_H

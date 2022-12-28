@@ -39,6 +39,60 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Alimentos.h" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Simulador.cpp">
+      <ranges>
+        <range start1="3" end1="4" start2="3" end2="4" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="13" end1="13" start2="13" end2="14" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="21" end1="22" start2="22" end2="23" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="36" end1="38" start2="37" end2="39" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="41" end1="42" start2="42" end2="43" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="67" end1="70" start2="68" end2="74" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="87" end1="88" start2="91" end2="92" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="153" end1="156" start2="157" end2="160" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="157" end1="158" start2="161" end2="162" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="168" end1="171" start2="172" end2="175" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="172" end1="173" start2="176" end2="177" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="204" end1="205" start2="208" end2="209" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="207" end1="208" start2="211" end2="212" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="216" end1="217" start2="220" end2="221" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="219" end1="220" start2="223" end2="224" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="222" end1="223" start2="226" end2="227" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="225" end1="226" start2="229" end2="230" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="228" end1="229" start2="232" end2="233" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="237" end1="238" start2="241" end2="242" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="240" end1="241" start2="244" end2="245" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="243" end1="244" start2="247" end2="248" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="249" end1="250" start2="253" end2="254" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="252" end1="253" start2="256" end2="257" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="255" end1="256" start2="259" end2="260" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="261" end1="262" start2="265" end2="266" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="267" end1="268" start2="271" end2="272" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="271" end1="273" start2="275" end2="277" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="285" end1="286" start2="289" end2="290" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="290" end1="291" start2="294" end2="295" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="301" end1="302" start2="305" end2="306" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="320" end1="321" start2="324" end2="325" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="325" end1="326" start2="329" end2="330" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="340" end1="341" start2="344" end2="345" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="346" end1="347" start2="350" end2="351" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="356" end1="357" start2="360" end2="361" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="360" end1="361" start2="364" end2="365" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="370" end1="372" start2="374" end2="376" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="374" end1="375" start2="378" end2="379" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="388" end1="389" start2="392" end2="393" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="393" end1="394" start2="397" end2="398" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="395" end1="396" start2="399" end2="400" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="403" end1="405" start2="407" end2="409" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="406" end1="407" start2="410" end2="411" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="408" end1="409" start2="412" end2="413" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="410" end1="411" start2="414" end2="415" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="443" end1="445" start2="447" end2="449" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="446" end1="447" start2="450" end2="451" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="456" end1="458" start2="460" end2="462" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -69,6 +123,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos" />
+      <recent name="C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais" />
       <recent name="C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug" />
     </key>
   </component>
@@ -126,7 +182,9 @@
       <workItem from="1671098073733" duration="35000" />
       <workItem from="1671098241084" duration="17000" />
       <workItem from="1671462993424" duration="2132000" />
-      <workItem from="1671465723473" duration="849000" />
+      <workItem from="1671465723473" duration="1238000" />
+      <workItem from="1672073121470" duration="209000" />
+      <workItem from="1672247198321" duration="5424000" />
     </task>
     <servers />
   </component>
@@ -149,7 +207,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Simulador.cpp</url>
-          <line>421</line>
+          <line>425</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
