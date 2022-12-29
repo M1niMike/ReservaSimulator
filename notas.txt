@@ -3,6 +3,10 @@ Sem uso de STL para o historico, vector<x> (funções com esse formato), utiliza
 
 Metas para hoje:
 
-	Corrigir SEE
+    Comandos kill + derivados para animal e alimento
 	Começar a tratar do Deslizar
 	se der, fazer algum comando
+
+
+Correção:
+    Print dos animais apos apagar

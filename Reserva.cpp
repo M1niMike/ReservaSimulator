@@ -5,7 +5,7 @@
 #include "Reserva.h"
 #include "util.h"
 
-Reserva::Reserva(int nl, int nc): linhas(nl), colunas(nc) {}
+Reserva::Reserva(int nl, int nc): linhas(nl), colunas(nc), textInterface(113,35,112,20) {}
 
 //Funcs Auxiliares
 int Reserva::getTotalCoisas(){
@@ -147,6 +147,40 @@ void Reserva::criaAlimentoRandom(const string &tipo) {
         }
     }
 }
+
+void Reserva::removeAnimalbyId(const int& id){
+    for (int i = 0; i < animais.size(); i++){
+        if (animais[i]->getId() == id){
+            animais.erase(animais.begin()+i);
+        }
+    }
+}
+
+void Reserva::removeAnimalbyCoord(const int& x, const int& y) {
+    for (int i = 0; i < animais.size(); i++){
+        if(animais[i]->getX() == x && animais[i]->getY() == y) {
+            animais.erase(animais.begin() + i);
+        }
+    }
+}
+
+void Reserva::removeAlimentobyCoord(const int& x, const int& y) {
+    for (int i = 0; i < alimentos.size(); i++){
+        if(alimentos[i]->getX() == x && alimentos[i]->getY() == y){
+            alimentos.erase(alimentos.begin()+i);
+        }
+    }
+}
+
+void Reserva::removeAlimentobyId(const int& id) {
+    for (int i = 0; i < alimentos.size(); i++){
+        if(alimentos[i]->getId() == id){
+            alimentos.erase(alimentos.begin()+i);
+        }
+    }
+}
+
+
 int Reserva::getNumberOfFood() const {
     return alimentos.size();
 }

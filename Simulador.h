@@ -10,22 +10,23 @@
 
 class Reserva;
 
-class Simulador{
+class Simulador {
 public:
     //funcs Auxiliares
     void runInterface();
     void menuSimulador();
     bool leFicheiro(string fileName);
     void validaComandos(string cmd);
-    vector<string> splitString(const string& cmd) const;
+    vector<string> splitString(const string &cmd) const;
     void buildReserva();
     void buildArea(int x, int y);
     void getInfoAnimal(int x, int y);
     void getInfoAlimento(int x, int y);
-    bool verificaCoord(const int& linha, const int& coluna);
+    bool verificaCoord(const int &linha, const int &coluna);
     string maiscula(string palavra);
     int constantesReader(string aux);
     bool leFicheiroConstantes(string fileName);
+
 
     //Comandos
     void cmdCriaAnimal(vector<string> comando);
@@ -37,14 +38,21 @@ public:
     void cmdSee(vector<string> comando);
     void cmdInfo(vector<string> comando);
     void cmdLoad(vector<string> comando);
+    void cmdKillAnimalId(vector<string> comando);
+    void cmdKillAnimalCoord(vector<string> comando);
+    void cmdNoFoodId(vector<string> comando);
+    void cmdNoFoodCoord(vector<string> comando);
+    void cmdEmpty(vector<string> comando);
 
-    Reserva* getReserva() const {
+    Reserva *getReserva() const
+    {
         return r;
     };
 
     Simulador(Reserva *r, Terminal &t);
 
-    ~Simulador(){
+    ~Simulador()
+    {
         delete r;
     }
 
