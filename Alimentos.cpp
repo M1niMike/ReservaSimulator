@@ -7,7 +7,7 @@
 
 
 
-Alimentos::Alimentos(const string& t, int Va = 0, int Vn = 0, int tx = 0, string c = "", int x = 0, int y = 0) :tipo(t), VAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), cordX(x), cordY(y){
+Alimentos::Alimentos(const string& t, const string& c, int Va = 0, int Vn = 0, int tx = 0, int x = 0, int y = 0) :tipo(t), VAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), cordX(x), cordY(y), podeSerComido(0){
 }
 
 //Gets
@@ -48,12 +48,7 @@ int Alimentos::getId() const {
 string Alimentos::PrintaAlimento() const{
     ostringstream oss;
 
-    oss << "\nID: " << id;
-    oss << "\nTipo de alimento: " << tipo;
-    oss << "\nVida: " << VAlimento;
-    oss << "\nValor Nutricional: " << valorNutri;
-    oss << "\nToxicidade: " << toxicidade;
-    oss << "\nCheiro: " << cheiro << endl;
+    oss << "\nID: " << id << " | " << "Tipo do alimento: " << tipo << " | " << "Tempo de validade: " << VAlimento << "\n" << "Valor Nutritivo: " << valorNutri << " | " << "Toxidade: " << toxicidade << " | " << "Cheiro: " << cheiro << "\n";
 
     return oss.str();
 }

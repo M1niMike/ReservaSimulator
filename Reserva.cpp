@@ -5,7 +5,7 @@
 #include "Reserva.h"
 #include "util.h"
 
-Reserva::Reserva(int nl, int nc): linhas(nl), colunas(nc), textInterface(113,35,112,20) {}
+Reserva::Reserva(int nl, int nc): linhas(nl), colunas(nc){}
 
 //Funcs Auxiliares
 int Reserva::getTotalCoisas(){
@@ -25,54 +25,49 @@ void Reserva::setColunas(int newColunas) {
 }
 
 /*ANIMAL*/
-void Reserva::criaAnimal(const string &tipo, int saude, int vida, int peso, const int& x, const int& y) {
+void Reserva::criaAnimal(const string &tipo, int saude, int vida, const int& x, const int& y) {
     if (tipo != "C" && tipo != "O" && tipo != "L" && tipo != "G" && tipo != "M") {
         cout << "\nPor favor insira um animal valido!" << endl;
     }else{
         if (tipo == "C") {
-            animais.push_back(new Animais(tipo, saude, vida, peso, x,y));
+            animais.push_back(new Coelho("Coelho", saude, vida, rand() % 4 + 1, x,y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "O") {
-            animais.push_back(new Animais(tipo,  saude, vida, peso, x, y));
+            animais.push_back(new Ovelha("Ovelha",  saude, vida, rand() % 8 + 4, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "L") {
-            animais.push_back(new Animais(tipo,  saude, vida, peso,  x, y));
+            animais.push_back(new Lobo("Lobo",  saude, vida, 15, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "G") {
-            animais.push_back(new Animais(tipo, saude, vida, peso, x, y));
+            animais.push_back(new Canguru("Canguru", saude, vida, 10, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "M") {
-            animais.push_back(new Animais(tipo , saude, vida, peso, x, y));
+            animais.push_back(new AnimalMisterioso("Macaco (AM)" , saude, vida, rand() % 10 + 2, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         }
     }
 }
-void Reserva::criaAnimalRandom(const string &tipo, int saude, int vida, int peso) {
+void Reserva::criaAnimalRandom(const string &tipo, int saude, int vida) {
     int lRandom = rand() % linhas + 1;
     int cRandom = rand() % colunas + 1;
     if (tipo != "C" && tipo != "O" && tipo != "L" && tipo != "G" && tipo != "M") {
         cout << "\nPor favor insira um animal valido!" << endl;
     } else {
         if (tipo == "C") {
-            animais.push_back(new Animais(tipo, saude, vida, peso, lRandom , cRandom));
+            animais.push_back(new Coelho("Coelho", saude, vida, rand() % 4 + 1, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
         } else if (tipo == "O") {
-            animais.push_back(new Animais(tipo, saude, vida, peso, lRandom , cRandom));
+            animais.push_back(new Ovelha("Ovelha", saude, vida, rand() % 8 + 4, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
         } else if (tipo == "L") {
-            animais.push_back(new Animais(tipo, saude, vida, peso, lRandom , cRandom));
+            animais.push_back(new Lobo("Lobo", saude, vida, 15, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
         } else if (tipo == "G") {
-            animais.push_back(new Animais(tipo, saude, vida, peso, lRandom , cRandom));
+            animais.push_back(new Canguru("Canguru", saude, vida, 10, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
         } else if (tipo == "M") {
-            animais.push_back(new Animais(tipo, saude, vida, peso, lRandom , cRandom));
+            animais.push_back(new AnimalMisterioso("Macaco (AM)", saude, vida, rand() % 10 + 2, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
         }
     }
 }
@@ -99,20 +94,20 @@ void Reserva::criaAlimento(const string &tipo, const int& x, const int& y) {
     if (tipo != "R" && tipo != "T" && tipo != "P" && tipo != "B" && tipo != "Z") {
         cout << "\nPor favor insira um alimento valido!" << endl;
     } else {
-        if (tipo == "R") {                    //tipo va vn tx cheiro id x y
-            alimentos.push_back(new Alimentos(tipo, 20, 3, 0, "erva e verdura", x, y));
+        if (tipo == "R") {
+            alimentos.push_back(new Relva("Relva", "erva e verdura", 20, 3, 0,  x, y));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "T") {
-            alimentos.push_back(new Alimentos(tipo, 30, 9999, 4, "verdura", x, y));
-            alimentos[alimentos.size()-1]->setId(totalCoisas++);
-        } else if (tipo == "P") {
-            alimentos.push_back(new Alimentos(tipo, 9999, 4, 1, "carne", x, y));
+            alimentos.push_back(new Cenoura("Cenoura", "verdura", 9999, 4, 0,  x, y));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "B") {
-            alimentos.push_back(new Alimentos(tipo, 30, 10, 2, "carne e ketchup", x, y));
+            alimentos.push_back(new Bife("Bife", "carne e ketchup", 30, 10, 2,  x, y));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-        } else if (tipo == "Z") {
-            alimentos.push_back(new Alimentos(tipo, 20, 2, 1, "fruta", x, y));
+        } else if (tipo == "P") {
+            alimentos.push_back(new Corpo("Corpo", "carne", 9999, 4, 0, x, y));
+            alimentos[alimentos.size()-1]->setId(totalCoisas++);
+        } else if (tipo == "A") {
+            alimentos.push_back(new AlimentoMisterioso("Banana (ALM)", "fruta", 15, 5, 0, x, y));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         }
     }
@@ -125,25 +120,25 @@ void Reserva::criaAlimentoRandom(const string &tipo) {
         cout << "\nPor favor insira um alimento valido!" << endl;
     } else {
         if (tipo == "R") {                    //tipo va vn tx cheiro id x y
-            alimentos.push_back(new Alimentos(tipo, 20, 3, 0, "erva e verdura", lRandom , cRandom));
+            alimentos.push_back(new Relva("Relva", "erva e verdura", 20, 3, 0,  lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
+
         } else if (tipo == "T") {
-            alimentos.push_back(new Alimentos(tipo, 30, 9999, 4, "verdura", lRandom , cRandom));
+            alimentos.push_back(new Cenoura("Cenoura", "verdura", 9999, 4, 0, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
+
         } else if (tipo == "P") {
-            alimentos.push_back(new Alimentos(tipo, 9999, 4, 1, "carne", lRandom , cRandom));
+            alimentos.push_back(new Corpo("Corpo", "carne", 9999, 4, 0, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
+
         } else if (tipo == "B") {
-            alimentos.push_back(new Alimentos(tipo, 30, 10, 2, "carne e ketchup", lRandom , cRandom));
+            alimentos.push_back(new Bife("Bife", "carne e ketchup", 30, 10, 2, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
+
         } else if (tipo == "Z") {
-            alimentos.push_back(new Alimentos(tipo, 20, 2, 1, "fruta", lRandom , cRandom));
+            alimentos.push_back(new AlimentoMisterioso("Banana (ALM)", "fruta", 15, 5, 0, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
-            cout << "[" << tipo << "]" << " Criado em: " << lRandom << "x" << cRandom << endl;
+
         }
     }
 }

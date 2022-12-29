@@ -1,7 +1,7 @@
 ﻿#include "Simulador.h"
 #include "util.h"
 
-Simulador::Simulador(Reserva *r, Terminal &t) : r(r), t(t), cmdW(0, 35, 112, 20), textInterface(113, 35, 112, 20),
+Simulador::Simulador(Reserva *r, Terminal &t) : r(r), t(t), cmdW(0, 35, 112, 20), textInterface(113, 0, 112, 55),
                                                 reservaPrinter(0, 0, 10, 10) {}
 
 void Simulador::runInterface() {
@@ -444,7 +444,6 @@ void Simulador::cmdExit() {
 
 void Simulador::cmdCriaAnimal(vector<string> comando) {
     for (auto it: comando) { // armezenar comandos
-        int peso = constantesReader("Peso");
         int saude = constantesReader("SAnimal");
         int vida = constantesReader("VAnimal");
         char coordX = comando[2][0];
@@ -467,7 +466,18 @@ void Simulador::cmdCriaAnimal(vector<string> comando) {
             int y = stoi(comando[3]);
 
             if (verificaCoord(x, y)) {
-                r->criaAnimal(it, saude, vida, peso, x, y);
+                if(it == "C"){
+                    r->criaAnimal(it, constantesReader("SCoelho"), constantesReader("VCoelho"), x, y);
+                }else if(it == "L"){
+                    r->criaAnimal(it, constantesReader("SLobo"), constantesReader("VLobo"), x, y);
+                }else if(it == "G"){
+                    r->criaAnimal(it, constantesReader("SCanguru"), constantesReader("VCanguru"), x, y);
+                }else if(it == "O"){
+                    r->criaAnimal(it, constantesReader("SOvelha"), constantesReader("VOvelha"), x, y);
+                }else if(it == "M"){
+                    r->criaAnimal(it, constantesReader("SAnimalM"), constantesReader("VAnimalM"), x, y);
+                }
+
             } else {
                 textInterface << "\nPor favor, insira coordenadas validas!" << "\n";
             }
@@ -479,7 +489,17 @@ void Simulador::cmdCriaAnimalRandom(vector<string> comando) {
     for (auto it: comando) {
         if (it == comando[1]) {
             it = maiscula(it);
-            r->criaAnimalRandom(it, constantesReader("SAnimal"), constantesReader("VAnimal"), constantesReader("Peso"));
+            if(it == "C"){
+                r->criaAnimalRandom(it, constantesReader("SCoelho"), constantesReader("VCoelho"));
+            }else if(it == "L"){
+                r->criaAnimalRandom(it, constantesReader("SLobo"), constantesReader("VLobo"));
+            }else if(it == "G"){
+                r->criaAnimalRandom(it, constantesReader("SCanguru"), constantesReader("VCanguru"));
+            }else if(it == "O"){
+                r->criaAnimalRandom(it, constantesReader("SOvelha"), constantesReader("VOvelha"));
+            }else if(it == "M"){
+                r->criaAnimalRandom(it, constantesReader("SAnimalM"), constantesReader("VAnimalM"));
+            }
         }
     }
 }

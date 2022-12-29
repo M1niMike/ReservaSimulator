@@ -1,3 +1,11 @@
-Peso 60
-SAnimal 50
-VAnimal 11
+SCoelho 30
+VCoelho 25
+SLobo 45
+VLobo 15
+SCanguru 40
+VCanguru 20
+SOvelha 50
+VOvelha 10
+SAnimalM 55
+VAnimalM 45
+

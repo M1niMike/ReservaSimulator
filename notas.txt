@@ -2,11 +2,10 @@ Sem uso de STL para o historico, vector<x> (funções com esse formato), utiliza
 
 
 Metas para hoje:
-
-    Comandos kill + derivados para animal e alimento
-	Começar a tratar do Deslizar
-	se der, fazer algum comando
-
-
-Correção:
+    tratar dos instantes/movimentação
     Print dos animais apos apagar
+    tratar de alimentar os animais
+    tratar de matar os animais com os instantes
+
+
+

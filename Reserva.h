@@ -8,7 +8,7 @@
 #include "util.h"
 #include "Animais.h"
 #include "Alimentos.h"
-#include <vector>
+
 
 class Reserva {
 public:
@@ -40,8 +40,8 @@ public:
 
     //Animal
     vector<Animais *> getVecAnimal() const;
-    void criaAnimal(const string &tipo, int saude, int vida, int peso, const int &x, const int &y);
-    void criaAnimalRandom(const string &tipo, int saude, int vida, int peso);
+    void criaAnimal(const string &tipo, int saude, int vida, const int &x, const int &y);
+    void criaAnimalRandom(const string &tipo, int saude, int vida);
     int getNumberOfAnimals() const;
     void removeAnimalbyId(const int &id);
     void removeAnimalbyCoord(const int &x, const int &y);
@@ -65,7 +65,6 @@ private:
     vector<Animais *> animais;
     vector<Alimentos *> alimentos;
     int totalCoisas = 1;
-    Window textInterface;
     //static int ID;
 };
 
