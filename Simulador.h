@@ -13,8 +13,7 @@ class Reserva;
 class Simulador {
 public:
     //funcs Auxiliares
-    void runInterface();
-    void menuSimulador();
+    Reserva* menuSimulador();
     bool leFicheiro(string fileName);
     void validaComandos(string cmd);
     vector<string> splitString(const string &cmd) const;
@@ -45,6 +44,9 @@ public:
     void cmdEmpty(vector<string> comando);
     void cmdRestore(vector<string> comando);
     void cmdStore(vector<string> comando);
+    void cmdN(vector<string> comando);
+    void cmdNPause(vector<string> comando);
+    void cmdNN(vector<string> comando);
 
     Reserva *getReserva() const
     {

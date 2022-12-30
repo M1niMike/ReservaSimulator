@@ -5,7 +5,7 @@
 #include "Reserva.h"
 #include "util.h"
 
-Reserva::Reserva(int nl, int nc): linhas(nl), colunas(nc){}
+Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes){}
 
 //Funcs Auxiliares
 int Reserva::getTotalCoisas(){
@@ -22,6 +22,10 @@ void Reserva::setLinhas(int newLinhas){
 }
 void Reserva::setColunas(int newColunas) {
     colunas = newColunas;
+}
+
+int Reserva::getInstantes() const {
+    return numInstantes;
 }
 
 /*ANIMAL*/

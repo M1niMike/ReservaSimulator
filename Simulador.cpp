@@ -4,31 +4,8 @@
 Simulador::Simulador(Reserva *r, Terminal &t) : r(r), t(t), cmdW(0, 35, 112, 20), textInterface(113, 0, 112, 55),
                                                 reservaPrinter(0, 0, 10, 10) {}
 
-void Simulador::runInterface() {
 
-    leFicheiroConstantes("constantes.txt");
-
-    string opcao;
-
-    do {
-        cmdW << "\n1 - Novo Simulador";
-        cmdW << "\n2 - Sair";
-        //textInterface << "AQUI\n";
-
-        cmdW << "\n->";
-        cmdW >> opcao;
-        if (opcao == "1") {
-            menuSimulador();
-        } else if (opcao == "2") {
-            cmdW << "\nA Sair";
-            return;
-        } else
-            cmdW << "\n Opcao invalida";
-
-    } while (opcao != "2");
-}
-
-void Simulador::menuSimulador() {
+Reserva* Simulador::menuSimulador() {
 
     int linhas = 0;
     int colunas = 0;
@@ -36,6 +13,9 @@ void Simulador::menuSimulador() {
     string cmd;
     string aux;
     string coord;
+
+    leFicheiroConstantes("constantes.txt");
+
     cmdW << "Simulacao Iniciada\n";
     cmdW << "A criar a Reserva...\n";
     //cin.ignore();
@@ -60,19 +40,24 @@ void Simulador::menuSimulador() {
     buildReserva();
 
     while (cmd != "exit") {
+
         cmdW << "\nComandos:";
         cmdW >> cmd;
         validaComandos(cmd);
         cmdW << "\n";
         buildReserva();
 
+        textInterface << "\nInstante da Reserva: " << r->getInstantes();
         textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
         textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
         textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
+        textInterface << "\n";
 
-        cmdW.clear();
-        textInterface.clear();
+        //cmdW.clear();
+        //textInterface.clear();
     }
+
+    return r;
 }
 
 //Funcs Auxiliares
@@ -335,6 +320,24 @@ void Simulador::cmdRestore(vector<string> comando) {
     textInterface << "\nNao encontrei o nome que inseriu...\n";
 }
 
+void Simulador::cmdN(vector<string> comando){
+    r->incrementaInstante();
+}
+
+void Simulador::cmdNPause(vector<string> comando){
+
+}
+
+void Simulador::cmdNN(vector<string> comando){
+    r->incrementaInstante(stoi(comando[1]));
+
+    for(int i = 0; i < r->getInstantes(); i++){
+        textInterface << "\nInstante:" << i+1;
+        textInterface << "AQUI\n";
+    }
+}
+
+
 void Simulador::cmdEmpty(vector<string> comando) {
 
     for (auto it: comando) { // armezenar comandos
@@ -430,11 +433,11 @@ void Simulador::validaComandos(string cmd) {
     }
     else if (tipoComando == "n" && cmdVector.size() == 1)
     {
-        textInterface << "A ser implementado" << "\n";
+        cmdN(cmdVector);
     }
     else if (tipoComando == "n" && cmdVector.size() == 2)
     {
-        textInterface << "A ser implementado" << "\n";
+        cmdNN(cmdVector);
     }
     else if (tipoComando == "n" && cmdVector.size() == 3)
     {

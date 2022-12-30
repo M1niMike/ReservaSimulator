@@ -15,6 +15,7 @@
 #include <random>
 #include <cstdlib>
 #include <map>
+#include <chrono>
 #include "Terminal.h"
 
 using namespace term;

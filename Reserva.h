@@ -12,7 +12,7 @@
 
 class Reserva {
 public:
-    Reserva(int nl = 0, int nc = 0);
+    Reserva(int numInstantes = 1, int nl = 0, int nc = 0);
 
     ~Reserva()
     {
@@ -20,18 +20,17 @@ public:
         {
             delete (*it);
         }
-        cout << "\nAdeus...Animais...\n";
 
         for (auto it = alimentos.begin(); it != alimentos.end(); it++)
         {
             delete (*it);
         }
-        cout << "\nAdeus...alimentos...\n" << endl;
     }
 
     //Get
     int getLinhas() const;
     int getColunas() const;
+    int getInstantes() const;
     bool verificaLinhasColunas(const int &x, const int &y);
 
     //Set
@@ -39,6 +38,7 @@ public:
     void setColunas(int newColunas);
 
     void incrementaInstante(){numInstantes++;} //funçao para o comando n
+    void incrementaInstante(int valor) {numInstantes += valor;}
 
     //Animal
     vector<Animais *> getVecAnimal() const;

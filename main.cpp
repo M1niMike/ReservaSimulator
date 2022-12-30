@@ -8,7 +8,13 @@ using namespace term;
 int main() {
 
     Terminal &t = Terminal::instance();
-    Simulador s(new Reserva(), t);
-    s.runInterface();
+    Reserva* reserva = new Reserva();
+    Simulador* simulador = new Simulador(reserva, t);
+    reserva = simulador->menuSimulador();
+
+
+    delete reserva;
+    delete simulador;
+
     return 0;
 }

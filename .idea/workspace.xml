@@ -42,28 +42,51 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/Reserva.cpp">
       <ranges>
-        <range start1="146" end1="149" start2="146" end2="154" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="154" end1="157" start2="159" end2="167" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="162" end1="165" start2="172" end2="180" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="170" end1="173" start2="185" end2="193" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
-        <range start1="184" end1="184" start2="204" end2="206" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="7" end1="8" start2="7" end2="8" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="25" end1="25" start2="25" end2="29" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="146" end1="149" start2="150" end2="158" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="154" end1="157" start2="163" end2="171" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="162" end1="165" start2="176" end2="184" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="170" end1="173" start2="189" end2="197" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="184" end1="184" start2="208" end2="210" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Reserva.h">
+      <ranges>
+        <range start1="14" end1="15" start2="14" end2="15" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="22" end1="23" start2="22" end2="22" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="28" end1="30" start2="27" end2="28" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="34" end1="34" start2="32" end2="33" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="39" end1="39" start2="38" end2="41" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="68" end1="68" start2="70" end2="73" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/Simulador.h">
       <ranges>
-        <range start1="45" end1="45" start2="45" end2="47" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="53" end1="54" start2="55" end2="56" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
-        <range start1="56" end1="57" start2="58" end2="59" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
-        <range start1="60" end1="61" start2="62" end2="64" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="15" end1="17" start2="15" end2="16" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="45" end1="45" start2="44" end2="49" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="53" end1="54" start2="57" end2="58" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="56" end1="57" start2="60" end2="61" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="60" end1="61" start2="64" end2="66" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/Simulador.cpp">
       <ranges>
-        <range start1="118" end1="119" start2="118" end2="119" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="127" end1="130" start2="127" end2="130" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="299" end1="299" start2="299" end2="336" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
-        <range start1="415" end1="416" start2="452" end2="453" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="419" end1="420" start2="456" end2="457" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="6" end1="9" start2="6" end2="6" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="10" end1="31" start2="7" end2="8" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="38" end1="38" start2="15" end2="18" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="62" end1="62" start2="42" end2="43" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="68" end1="68" start2="49" end2="50" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="71" end1="71" start2="53" end2="54" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="72" end1="74" start2="55" end2="57" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="75" end1="75" start2="58" end2="60" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="118" end1="119" start2="103" end2="104" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="127" end1="130" start2="112" end2="115" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="299" end1="299" start2="284" end2="339" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="395" end1="396" start2="435" end2="436" changelist="8d21121b-2be9-4deb-88cf-d1712a93800c" />
+        <range start1="399" end1="400" start2="439" end2="440" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="415" end1="416" start2="455" end2="456" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="419" end1="420" start2="459" end2="460" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
       </ranges>
     </file>
   </component>
@@ -160,7 +183,7 @@
       <workItem from="1672274956810" duration="6824000" />
       <workItem from="1672331568078" duration="9793000" />
       <workItem from="1672348905484" duration="332000" />
-      <workItem from="1672422530012" duration="5891000" />
+      <workItem from="1672422530012" duration="8880000" />
     </task>
     <servers />
   </component>

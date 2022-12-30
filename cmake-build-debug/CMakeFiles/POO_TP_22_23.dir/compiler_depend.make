@@ -164,6 +164,15 @@ CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-2
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -333,6 +342,15 @@ CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -502,6 +520,15 @@ CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -673,6 +700,15 @@ CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-2
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -944,6 +980,15 @@ CMakeFiles/POO_TP_22_23.dir/main.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -994,6 +1039,8 @@ C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h:
 
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/_timeval.h:
 
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h:
 
@@ -1290,6 +1337,22 @@ C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ar
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h:
 
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h:
+
+C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/chrono:
+
+C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ratio:
+
+C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/time.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
+
+C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h:
 
 C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h:
 
