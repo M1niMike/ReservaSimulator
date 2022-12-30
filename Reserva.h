@@ -27,7 +27,7 @@ public:
             delete (*it);
         }
         cout << "\nAdeus...alimentos...\n" << endl;
-    };
+    }
 
     //Get
     int getLinhas() const;
@@ -37,6 +37,8 @@ public:
     //Set
     void setLinhas(int newLinhas);
     void setColunas(int newColunas);
+
+    void incrementaInstante(){numInstantes++;} //funçao para o comando n
 
     //Animal
     vector<Animais *> getVecAnimal() const;
@@ -66,6 +68,9 @@ private:
     vector<Alimentos *> alimentos;
     int totalCoisas = 1;
     //static int ID;
+    int numInstantes;
+
+    //map string, Reservas* se o nome(string) for igual ao nome da reserva entao carregaReserva(cominputdouser)
 };
 
 #endif //POO_TP_22_23_RESERVA_H

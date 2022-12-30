@@ -43,6 +43,8 @@ public:
     void cmdNoFoodId(vector<string> comando);
     void cmdNoFoodCoord(vector<string> comando);
     void cmdEmpty(vector<string> comando);
+    void cmdRestore(vector<string> comando);
+    void cmdStore(vector<string> comando);
 
     Reserva *getReserva() const
     {
@@ -51,14 +53,15 @@ public:
 
     Simulador(Reserva *r, Terminal &t);
 
-    ~Simulador()
+    /*~Simulador()
     {
         delete r;
-    }
+    }*/
 
 private:
     Reserva *r;
-    map<string, int> mapa;
+    map<string, int> mapaConstantes;
+    map<string, Reserva*> mapaSave;
     Terminal &t;
     Window cmdW;
     Window textInterface;

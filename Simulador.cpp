@@ -116,7 +116,7 @@ bool Simulador::leFicheiroConstantes(string fileName) {
         if (!(iss >> aux >> valor)) {
             continue;
         }
-        mapa[aux] = valor;
+        mapaConstantes[aux] = valor;
     }
 
     file.ignore('\n');
@@ -125,9 +125,9 @@ bool Simulador::leFicheiroConstantes(string fileName) {
 }
 
 int Simulador::constantesReader(string aux) {
-    for (auto it: mapa) {
-        if (mapa.find(aux) != mapa.end()) {
-            return mapa[aux];
+    for (auto it: mapaConstantes) {
+        if (mapaConstantes.find(aux) != mapaConstantes.end()) {
+            return mapaConstantes[aux];
         }
     }
     return -1;
@@ -298,6 +298,43 @@ void Simulador::cmdKillAnimalId(vector<string> comando){
     }
 }
 
+void Simulador::cmdStore(vector<string> comando) {
+    for (auto it: comando) {
+        string nomeSave = comando[1]; // ir buscar o nome do "save" que o user meteu
+
+        if(it == comando[1]){
+            if (mapaSave.find(nomeSave) != mapaSave.end()) {
+                textInterface << "\nJa existe um store com esse nome, por favor insira outro.\n";
+                return;
+            }
+
+            Reserva *temp = new Reserva(*r);
+
+            mapaSave.insert(std::pair<string, Reserva*>(nomeSave, temp));
+            textInterface << "\nReserva guardada com sucesso\n";
+        }
+    } //ver melhor esta parte
+}
+
+void Simulador::cmdRestore(vector<string> comando) {
+    for (auto it : comando) {
+        string nomeRestore = comando[1];
+
+        textInterface << comando[1];
+
+        if (it == comando[1]){
+            if (mapaSave.find(nomeRestore) != mapaSave.end()) {
+                delete r; //apagar onde estamos agora
+                r = (mapaSave.find(nomeRestore)->second); //o second vai buscar a segunda "chavE" do mapa, ou seja, o Reserva* e carrega-o
+
+                textInterface << "\n A sua gravacao: " << nomeRestore << " foi restaurada com sucesso!\n";
+                return;
+            } // se ele encontrar o nome antes de chegar ao fim do mapa
+        }
+    }
+    textInterface << "\nNao encontrei o nome que inseriu...\n";
+}
+
 void Simulador::cmdEmpty(vector<string> comando) {
 
     for (auto it: comando) { // armezenar comandos
@@ -413,11 +450,11 @@ void Simulador::validaComandos(string cmd) {
     }
     else if (tipoComando == "store" && cmdVector.size() == 2)
     {
-        textInterface << "A ser implementado" << "\n";
+        cmdStore(cmdVector);
     }
     else if (tipoComando == "restore" && cmdVector.size() == 2)
     {
-        textInterface << "A ser implementado" << "\n";
+        cmdRestore(cmdVector);
     }
     else if (tipoComando == "load" && cmdVector.size() == 2)
     {

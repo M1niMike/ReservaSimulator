@@ -7,6 +7,7 @@
 
 #include "util.h"
 
+class Reserva; // Forma de inibir o include recursivo, falando para o compilador que tal classe vai ser implementada em outro lugar
 
 class Alimentos{
 public:

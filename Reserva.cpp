@@ -144,33 +144,53 @@ void Reserva::criaAlimentoRandom(const string &tipo) {
 }
 
 void Reserva::removeAnimalbyId(const int& id){
-    for (int i = 0; i < animais.size(); i++){
-        if (animais[i]->getId() == id){
-            animais.erase(animais.begin()+i);
+    auto it = animais.begin();
+
+    while(it != animais.end()){
+        if((*it)->getId() == id){
+            delete *it;
+            it = animais.erase(it);
+        }else{
+            it++;
         }
     }
 }
 
 void Reserva::removeAnimalbyCoord(const int& x, const int& y) {
-    for (int i = 0; i < animais.size(); i++){
-        if(animais[i]->getX() == x && animais[i]->getY() == y) {
-            animais.erase(animais.begin() + i);
+    auto it = animais.begin();
+
+    while(it != animais.end()){
+        if((*it)->getX() == x && (*it)->getY() == y){
+            delete *it;
+            it = animais.erase(it);
+        }else{
+            it++;
         }
     }
 }
 
 void Reserva::removeAlimentobyCoord(const int& x, const int& y) {
-    for (int i = 0; i < alimentos.size(); i++){
-        if(alimentos[i]->getX() == x && alimentos[i]->getY() == y){
-            alimentos.erase(alimentos.begin()+i);
+    auto it = alimentos.begin();
+
+    while(it != alimentos.end()){
+        if((*it)->getX() == x && (*it)->getY() == y){
+            delete *it;
+            it = alimentos.erase(it);
+        }else{
+            it++;
         }
     }
 }
 
 void Reserva::removeAlimentobyId(const int& id) {
-    for (int i = 0; i < alimentos.size(); i++){
-        if(alimentos[i]->getId() == id){
-            alimentos.erase(alimentos.begin()+i);
+    auto it = alimentos.begin();
+
+    while(it != alimentos.end()){
+        if((*it)->getId() == id){
+            delete *it;
+            it = alimentos.erase(it);
+        }else{
+            it++;
         }
     }
 }
@@ -182,6 +202,8 @@ int Reserva::getNumberOfFood() const {
 vector<Alimentos*> Reserva::getVecAlimento() const {
     return alimentos;
 }
+
+
 bool Reserva::hasAlimento(int x, int y) {
     for(int i =0; i < alimentos.size(); i++){
         if(alimentos[i]->getX() == x && alimentos[i]->getY() == y){

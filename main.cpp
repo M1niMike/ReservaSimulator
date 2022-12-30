@@ -10,6 +10,5 @@ int main() {
     Terminal &t = Terminal::instance();
     Simulador s(new Reserva(), t);
     s.runInterface();
-
     return 0;
 }
