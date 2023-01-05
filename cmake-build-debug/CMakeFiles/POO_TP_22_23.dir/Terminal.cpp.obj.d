@@ -1,100 +1,97 @@
 CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.obj: \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Terminal.cpp \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Terminal.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/wchar.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/vadefs.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/stddef.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/locale.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/stdio.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/ctype.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/errno.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/stdlib.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/limits.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/malloc.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\string \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\c++config.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\os_defines.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\cpu_defines.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stringfwd.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\memoryfwd.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\char_traits.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\postypes.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cwchar \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\wchar.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\corecrt.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw_mac.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw_secapi.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\vadefs.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\sdks/_mingw_ddk.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\corecrt_stdio_config.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\corecrt_wstdlib.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw_off_t.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw_stat64.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\swprintf.inl \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\sec_api\wchar_s.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\type_traits \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cstdint \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stdint.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\stdint.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\crtdefs.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stddef.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\stddef.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\allocator.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\c++allocator.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\new_allocator.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\new \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\exception.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\functexcept.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\exception_defines.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\move.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\cpp_type_traits.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\localefwd.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\x86_64-w64-mingw32\bits\c++locale.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\clocale \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\locale.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\stdio.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\sec_api\stdio_s.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\iosfwd \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cctype \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\ctype.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ostream_insert.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\cxxabi_forced.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_iterator_base_types.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_iterator_base_funcs.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\concept_check.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\debug\assertions.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_iterator.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\type_traits.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\ptr_traits.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_function.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\backward\binders.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\numeric_traits.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_algobase.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_pair.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\utility.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\debug\debug.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\predefined_ops.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\refwrap.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\invoke.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\range_access.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\initializer_list \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\basic_string.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\alloc_traits.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\alloc_traits.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_construct.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\ext\string_conversions.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cstdlib \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\stdlib.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include-fixed\limits.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include-fixed\syslimits.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\limits.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\sec_api\stdlib_s.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\stdlib.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\malloc.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\mm_malloc.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\errno.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\std_abs.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cstdio \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\cerrno \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\charconv.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\functional_hash.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\hash_bytes.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\basic_string.tcc \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\curses.h \
- C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/stdarg.h \
- C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stdarg.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\stdarg.h \
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw_stdarg.h

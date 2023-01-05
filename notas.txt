@@ -6,8 +6,3 @@ Metas para hoje:
     Print dos animais apos apagar
     tratar de alimentar os animais (falta eles comerem o alimento porque eles já comem input de user) (50%)
     tratar de matar os animais com os instantes
-    tratar de corrigir o sleep(não é aquela biblioteca) (SE TIVERMOS TEMPO, SENÃO CAGAMOS E MANDAMOS ASSIM MESMO, C A G U E I BALDES XD XD KEKW)
-
-
-
-

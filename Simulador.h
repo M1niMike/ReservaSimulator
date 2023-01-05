@@ -25,6 +25,7 @@ public:
     string maiscula(string palavra);
     int constantesReader(string aux);
     bool leFicheiroConstantes(string fileName);
+    void sleepChrono(int valorTempo);
 
 
     //Comandos

@@ -231,6 +231,7 @@ void Reserva::feedAnimalbyCoord(const int &x, const int &y, const int &valorNutr
 int Reserva::getNumberOfFood() const {
     return alimentos.size();
 }
+
 vector<Alimentos*> Reserva::getVecAlimento() const {
     return alimentos;
 }

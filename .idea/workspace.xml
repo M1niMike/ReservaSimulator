@@ -39,92 +39,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Alimentos.h" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/TipoAnimais/Ovelha.h">
-      <ranges>
-        <range start1="11" end1="12" start2="11" end2="12" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="16" end1="18" start2="16" end2="16" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Animais.cpp">
-      <ranges>
-        <range start1="6" end1="6" start2="6" end2="8" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="7" end1="8" start2="9" end2="10" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="36" end1="36" start2="38" end2="42" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="50" end1="51" start2="56" end2="66" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="52" end1="53" start2="67" end2="73" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/TipoAnimais/Canguru.h">
-      <ranges>
-        <range start1="11" end1="12" start2="11" end2="12" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="16" end1="18" start2="16" end2="16" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Animais.h">
-      <ranges>
-        <range start1="8" end1="8" start2="8" end2="9" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="14" end1="15" start2="15" end2="16" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="21" end1="21" start2="22" end2="24" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="28" end1="28" start2="31" end2="32" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="32" end1="32" start2="36" end2="42" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="33" end1="34" start2="43" end2="44" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="36" end1="37" start2="46" end2="46" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="44" end1="45" start2="53" end2="55" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="49" end1="97" start2="59" end2="59" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/TipoAnimais/AnimalMisterioso.h">
-      <ranges>
-        <range start1="11" end1="12" start2="11" end2="12" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="17" end1="18" start2="17" end2="17" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Simulador.cpp">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="3" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="55" end1="57" start2="56" end2="58" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="193" end1="194" start2="194" end2="195" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="221" end1="221" start2="222" end2="300" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="285" end1="302" start2="364" end2="381" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="325" end1="325" start2="404" end2="405" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="327" end1="327" start2="407" end2="408" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="328" end1="328" start2="409" end2="415" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="407" end1="408" start2="494" end2="495" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="411" end1="412" start2="498" end2="499" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="443" end1="444" start2="530" end2="531" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="455" end1="456" start2="542" end2="544" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/notas.txt">
-      <ranges>
-        <range start1="4" end1="5" start2="4" end2="5" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="6" end1="7" start2="6" end2="7" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="8" end1="8" start2="8" end2="10" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/Reserva.cpp">
-      <ranges>
-        <range start1="7" end1="8" start2="7" end2="15" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="36" end1="37" start2="43" end2="44" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="39" end1="40" start2="46" end2="47" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="42" end1="43" start2="49" end2="50" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="45" end1="46" start2="52" end2="53" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="48" end1="49" start2="55" end2="56" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="60" end1="61" start2="67" end2="68" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="63" end1="64" start2="70" end2="71" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="66" end1="67" start2="73" end2="74" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="69" end1="70" start2="76" end2="77" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="72" end1="73" start2="79" end2="80" changelist="2640831d-2dd3-4821-bded-3274888ef685" />
-        <range start1="200" end1="200" start2="207" end2="228" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="220" end1="224" start2="248" end2="262" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="225" end1="229" start2="263" end2="263" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="230" end1="233" start2="264" end2="272" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="234" end1="238" start2="273" end2="278" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="239" end1="240" start2="279" end2="279" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -167,12 +81,12 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="POO_TP_22_23" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="/c start cmd /c &quot;POO_TP_22_23.exe &amp; pause&quot;" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POO_TP_22_23" TARGET_NAME="POO_TP_22_23" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/../../../../../Windows/System32/cmd.exe">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POO_TP_22_23" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="/c start cmd /c &quot;POO_TP_22_23.exe &amp; pause&quot;" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POO_TP_22_23" TARGET_NAME="POO_TP_22_23" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/../../../../../Windows/System32/cmd.exe">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -225,7 +139,8 @@
       <workItem from="1672348905484" duration="332000" />
       <workItem from="1672422530012" duration="9549000" />
       <workItem from="1672684577691" duration="782000" />
-      <workItem from="1672873467156" duration="18015000" />
+      <workItem from="1672873467156" duration="18118000" />
+      <workItem from="1672937410666" duration="3479000" />
     </task>
     <servers />
   </component>

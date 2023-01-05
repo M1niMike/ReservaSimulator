@@ -2,6 +2,7 @@
 #include "util.h"
 
 
+
 Simulador::Simulador(Reserva *r, Terminal &t) : r(r), t(t), cmdW(0, 35, 112, 20), textInterface(113, 0, 112, 55),
                                                 reservaPrinter(0, 0, 10, 10) {}
 
@@ -117,6 +118,10 @@ int Simulador::constantesReader(string aux) {
         }
     }
     return -1;
+}
+
+void Simulador::sleepChrono(int valorTempo) {
+    this_thread::sleep_for(chrono::seconds (valorTempo));
 }
 
 vector<string> Simulador::splitString(const string &cmd) const {
@@ -410,7 +415,7 @@ void Simulador::cmdNPause(vector<string> comando){
     for(int i = 0; i < r->getInstantes(); i++){
         textInterface << "\nInstante:" << i+1;
         textInterface << "AQUI\n";
-        sleep(stoi(comando[2]));
+        sleepChrono(stoi(comando[2]));
 
     }
 }
