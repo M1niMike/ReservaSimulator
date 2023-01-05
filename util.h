@@ -16,6 +16,7 @@
 #include <cstdlib>
 #include <map>
 #include <chrono>
+#include <unistd.h>
 #include "Terminal.h"
 
 using namespace term;

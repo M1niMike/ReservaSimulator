@@ -172,6 +172,15 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj: \
  C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
  C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
  C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/unistd.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/io.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/process.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/getopt.h \
+ C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
  C:/PROGRA~2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \

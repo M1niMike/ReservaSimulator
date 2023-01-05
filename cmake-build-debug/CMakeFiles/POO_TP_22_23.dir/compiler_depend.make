@@ -173,6 +173,15 @@ CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-2
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -351,6 +360,15 @@ CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -531,6 +549,15 @@ CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -717,6 +744,15 @@ CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-2
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -999,6 +1035,15 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj: C:/ISEC/1Semes
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -1181,6 +1226,15 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj: C:/ISEC/1Semestre/POO/T
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -1363,6 +1417,15 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj: C:/ISEC/1Semestre/POO/TP
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -1545,6 +1608,15 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj: C:/ISEC/1Semestre/POO/TP/P
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -1727,6 +1799,15 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj: C:/ISEC/1Semestre/POO/TP
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -1907,6 +1988,15 @@ CMakeFiles/POO_TP_22_23.dir/main.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h \
+  C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
@@ -1985,6 +2075,8 @@ C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bi
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h:
 
 C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/process.h:
 
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h:
 
@@ -2180,6 +2272,8 @@ C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bi
 
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc:
 
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/io.h:
+
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc:
 
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream:
@@ -2273,6 +2367,20 @@ C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.
 C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
 
 C:/Program\ Files\ (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/parse_numbers.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/unistd.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/string.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/sys/types.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/getopt.h:
+
+C:/Program\ Files\ (x86)/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
 
 C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h:
 

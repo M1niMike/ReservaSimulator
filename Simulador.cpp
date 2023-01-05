@@ -1,6 +1,7 @@
 ﻿#include "Simulador.h"
 #include "util.h"
 
+
 Simulador::Simulador(Reserva *r, Terminal &t) : r(r), t(t), cmdW(0, 35, 112, 20), textInterface(113, 0, 112, 55),
                                                 reservaPrinter(0, 0, 10, 10) {}
 
@@ -298,9 +299,6 @@ void Simulador::cmdFeedCoord(vector<string> comando) {
 }
 
 
-
-
-
 void Simulador::cmdNoFoodId(vector<string> comando) {
     for (auto it: comando) { // armezenar comandos
         char idchar = comando[1][0];
@@ -405,8 +403,16 @@ void Simulador::cmdN(vector<string> comando){
     r->incrementaInstante();
 }
 
-void Simulador::cmdNPause(vector<string> comando){
 
+void Simulador::cmdNPause(vector<string> comando){
+    r->incrementaInstante(stoi(comando[1]));
+
+    for(int i = 0; i < r->getInstantes(); i++){
+        textInterface << "\nInstante:" << i+1;
+        textInterface << "AQUI\n";
+        sleep(stoi(comando[2]));
+
+    }
 }
 
 void Simulador::cmdNN(vector<string> comando){
@@ -522,7 +528,7 @@ void Simulador::validaComandos(string cmd) {
     }
     else if (tipoComando == "n" && cmdVector.size() == 3)
     {
-        textInterface << "A ser implementado" << "\n";
+        cmdNPause(cmdVector);
     }
     else if (tipoComando == "anim" && cmdVector.size() == 1)
     {
