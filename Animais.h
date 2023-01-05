@@ -7,18 +7,21 @@
 
 #include "util.h"
 
+
 class Reserva; // Forma de inibir o include recursivo, falando para o compilador que tal classe vai ser implementada em outro lugar
 
 class Animais{
 public:
     //gets
-    virtual string getTipoAnimal () const;
+
     int getSaude() const;
     int getPeso () const;
     int getvAnimal() const;
     int getX() const;
     int getY() const;
     int getId() const;
+    int getFome() const;
+
     bool isDead();
 
     //Sets
@@ -26,15 +29,21 @@ public:
     void setPeso(int newPeso) {peso = newPeso;}
     void setVida(int newVida) { VAnimal = newVida;}
     void setId(int newId) {id = newId;}
+    void setFome(int newFome) {fome = newFome;}
 
     //prints
     string PrintaAnimal() const;
 
 
-    Animais(const string& t, int SAnimal, int VAnimal, int peso, int x, int y);
+    bool alimentaAnimal(int valorNutritivo, int valorToxico);
+
+
+    virtual void fazInteracao(Reserva r) = 0;
+    virtual string getTipoAnimal () const = 0;
+
+    Animais(const string& t, int SAnimal, int VAnimal, int fome, int peso, int x, int y);
 
     virtual ~Animais() = default;
-
 
 private:
     string tipo;
@@ -42,59 +51,12 @@ private:
     int peso;
     int VAnimal; // tempo de vida
     int estaMorto;
-    bool podeComer;
+    // bool podeComer;
+    int fome;
     int x, y;
     int id;
 
 };
-
-class Coelho : public Animais{
-public:
-    Coelho(const string& tipo, int SCoelho, int VCoelho, int peso, int x, int y) : Animais(tipo, SCoelho, VCoelho, peso, x, y) {}
-
-    string getTipoAnimal() const override{
-        return "C";
-    }
-};
-
-class Lobo : public Animais{
-public:
-    Lobo(const string& tipo, int SLobo, int VLobo, int peso, int x, int y) : Animais(tipo, SLobo, VLobo, peso, x, y) {}
-
-    string getTipoAnimal() const override{
-        return "L";
-    }
-};
-
-class AnimalMisterioso : public Animais{
-public:
-    AnimalMisterioso(const string&  tipo, int SAnimalM, int VAnimalM, int peso, int x, int y) : Animais(tipo, SAnimalM, VAnimalM, peso, x, y) {}
-
-    string getTipoAnimal() const override{
-        return "M";
-    }
-};
-
-class Ovelha : public Animais{
-public:
-    Ovelha(const string& tipo, int SOvelha, int VOvelha, int peso, int x, int y) : Animais(tipo, SOvelha, VOvelha, peso, x, y) {}
-
-    string getTipoAnimal() const override{
-        return "O";
-    }
-};
-
-
-
-class Canguru : public Animais{
-public:
-    Canguru(const string& tipo, int SCanguru, int VCanguru, int peso, int x, int y) : Animais(tipo, SCanguru, VCanguru, peso, x, y) {}
-
-    string getTipoAnimal() const override{
-        return "G";
-    }
-};
-
 
 
 #endif //POO_TP_22_23_ANIMAIS_H

@@ -4,8 +4,10 @@
 
 #include "Animais.h"
 #include "util.h"
+#include "Reserva.h"
 
-Animais::Animais(const string& t, int SAnimal = 0, int VAnimal = 0, int peso = 0, int x = 0, int y = 0) : tipo(t), x(x), y(y), SAnimal(SAnimal), VAnimal(VAnimal), peso(peso), estaMorto(0){
+
+Animais::Animais(const string& t, int SAnimal = 0, int VAnimal = 0, int fome = 0, int peso = 0, int x = 0, int y = 0) : tipo(t), x(x), y(y), SAnimal(SAnimal), VAnimal(VAnimal), fome(fome), peso(peso), estaMorto(0){
 }
 
 //Gets
@@ -35,6 +37,10 @@ int Animais::getY() const {
     return y;
 }
 
+int Animais::getFome() const {
+    return fome;
+}
+
 bool Animais::isDead() {
     return estaMorto = 1;
 }
@@ -47,3 +53,21 @@ string Animais::PrintaAnimal() const{
 
     return oss.str();
 }
+
+//bool Animais::alimentaAnimal(int valorNutritivo, int valorToxico) {
+//    if (!isDead()){
+//        setSaude(getSaude() + valorNutritivo - valorToxico);
+//        setFome(0);
+//        return true;
+//    }
+//
+//    return false;
+//}
+
+
+/*PEGAR NISSO DEPOIS*/
+
+//void Coelho::fazInteracao(Reserva r) {
+//    r.
+//}
+

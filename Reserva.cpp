@@ -5,7 +5,14 @@
 #include "Reserva.h"
 #include "util.h"
 
-Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes){}
+#include "TipoAnimais/Coelho.h"
+#include "TipoAnimais/Ovelha.h"
+#include "TipoAnimais/Lobo.h"
+#include "TipoAnimais/Canguru.h"
+#include "TipoAnimais/AnimalMisterioso.h"
+
+
+Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15){}
 
 //Funcs Auxiliares
 int Reserva::getTotalCoisas(){
@@ -34,19 +41,19 @@ void Reserva::criaAnimal(const string &tipo, int saude, int vida, const int& x, 
         cout << "\nPor favor insira um animal valido!" << endl;
     }else{
         if (tipo == "C") {
-            animais.push_back(new Coelho("Coelho", saude, vida, rand() % 4 + 1, x,y));
+            animais.push_back(new Coelho("Coelho", saude, vida, 0, rand() % 4 + 1, x,y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "O") {
-            animais.push_back(new Ovelha("Ovelha",  saude, vida, rand() % 8 + 4, x, y));
+            animais.push_back(new Ovelha("Ovelha",  saude, vida, 0, rand() % 8 + 4, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "L") {
-            animais.push_back(new Lobo("Lobo",  saude, vida, 15, x, y));
+            animais.push_back(new Lobo("Lobo",  saude, vida, 0, 15, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "G") {
-            animais.push_back(new Canguru("Canguru", saude, vida, 10, x, y));
+            animais.push_back(new Canguru("Canguru", saude, vida, 0, 10, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "M") {
-            animais.push_back(new AnimalMisterioso("Macaco (AM)" , saude, vida, rand() % 10 + 2, x, y));
+            animais.push_back(new AnimalMisterioso("Macaco (AM)" , saude, vida, 0, rand() % 10 + 2, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         }
     }
@@ -58,19 +65,19 @@ void Reserva::criaAnimalRandom(const string &tipo, int saude, int vida) {
         cout << "\nPor favor insira um animal valido!" << endl;
     } else {
         if (tipo == "C") {
-            animais.push_back(new Coelho("Coelho", saude, vida, rand() % 4 + 1, lRandom , cRandom));
+            animais.push_back(new Coelho("Coelho", saude, vida, 0, rand() % 4 + 1, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "O") {
-            animais.push_back(new Ovelha("Ovelha", saude, vida, rand() % 8 + 4, lRandom , cRandom));
+            animais.push_back(new Ovelha("Ovelha", saude, vida, 0, rand() % 8 + 4, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "L") {
-            animais.push_back(new Lobo("Lobo", saude, vida, 15, lRandom , cRandom));
+            animais.push_back(new Lobo("Lobo", saude, vida, 0, 15, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "G") {
-            animais.push_back(new Canguru("Canguru", saude, vida, 10, lRandom , cRandom));
+            animais.push_back(new Canguru("Canguru", saude, vida, 0, 10, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "M") {
-            animais.push_back(new AnimalMisterioso("Macaco (AM)", saude, vida, rand() % 10 + 2, lRandom , cRandom));
+            animais.push_back(new AnimalMisterioso("Macaco (AM)", saude, vida, 0, rand() % 10 + 2, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         }
     }
@@ -199,6 +206,27 @@ void Reserva::removeAlimentobyId(const int& id) {
     }
 }
 
+void Reserva::feedAnimalById(const int &id, const int &valorNutritivo, const int &toxicidade) {
+
+    for(auto it = animais.begin(); it != animais.end(); it++){
+        if((*it)->getId() == id){
+            int total = (*it)->getSaude() + valorNutritivo - toxicidade;
+            (*it)->setSaude(total);
+        }
+    }
+}
+
+
+void Reserva::feedAnimalbyCoord(const int &x, const int &y, const int &valorNutritivo, const int &toxicidade) {
+
+    for(auto it = animais.begin(); it != animais.end(); it++){
+        if((*it)->getX() == x && (*it)->getY() == y){
+            int total = (*it)->getSaude() + valorNutritivo - toxicidade;
+            (*it)->setSaude(total);
+        }
+    }
+}
+
 
 int Reserva::getNumberOfFood() const {
     return alimentos.size();
@@ -217,13 +245,35 @@ bool Reserva::hasAlimento(int x, int y) {
     return false;
 }
 
-//string Reserva::getInfoAlimentoId(int id) const {
-//    ostringstream oss;
-//    for(int i = 0; i < alimentos.size(); i++){
+
+
+
+/*PEGAR NISSO DEPOIS*/
+
+
+//void Reserva::interacaoAnimal() {
+////    for(auto animal:animais){
+////        animalfazInteracao(this)
+////    }
 //
-//        oss << alimentos[i]->getId();
+//    for(int i = 0; i < animais.size(); i++){
+//        animais[i]->fazInteracao(*this);
 //    }
-//
-//    return oss.str();
 //}
 
+
+
+
+//bool Reserva::verificaAnimalRedondeza(const int &x, const int &y, const int &valorRedondeza) {
+//
+////    animais[i]->getX() < x+valorRedondeza - # Coordenada abaixo da coordenada atual
+////    animais[i]->getX() > x-valorRedondeza - # Coordenada acima da coordenada atual
+////    animais[i]->getY() < y+valorRedondeza - # Coordenada à direita da coordenada atual
+////    animais[i]->getY() > y-valorRedondeza - # Coordenada à esquerda da coordenada atual
+//
+//    for(int i = 0; i < animais.size(); i++){
+//        if(animais[i]->getX() < x+valorRedondeza && animais[i]->getX() > x-valorRedondeza && animais[i]->getY() < y+valorRedondeza && animais[i]->getY() > y-valorRedondeza){
+//            if(animais[i].)
+//        }
+//    }
+//}

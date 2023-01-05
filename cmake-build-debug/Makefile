@@ -248,6 +248,126 @@ Terminal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.s
 .PHONY : Terminal.cpp.s
 
+TipoAnimais/AnimalMisterioso.obj: TipoAnimais/AnimalMisterioso.cpp.obj
+.PHONY : TipoAnimais/AnimalMisterioso.obj
+
+# target to build an object file
+TipoAnimais/AnimalMisterioso.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj
+.PHONY : TipoAnimais/AnimalMisterioso.cpp.obj
+
+TipoAnimais/AnimalMisterioso.i: TipoAnimais/AnimalMisterioso.cpp.i
+.PHONY : TipoAnimais/AnimalMisterioso.i
+
+# target to preprocess a source file
+TipoAnimais/AnimalMisterioso.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.i
+.PHONY : TipoAnimais/AnimalMisterioso.cpp.i
+
+TipoAnimais/AnimalMisterioso.s: TipoAnimais/AnimalMisterioso.cpp.s
+.PHONY : TipoAnimais/AnimalMisterioso.s
+
+# target to generate assembly for a file
+TipoAnimais/AnimalMisterioso.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.s
+.PHONY : TipoAnimais/AnimalMisterioso.cpp.s
+
+TipoAnimais/Canguru.obj: TipoAnimais/Canguru.cpp.obj
+.PHONY : TipoAnimais/Canguru.obj
+
+# target to build an object file
+TipoAnimais/Canguru.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj
+.PHONY : TipoAnimais/Canguru.cpp.obj
+
+TipoAnimais/Canguru.i: TipoAnimais/Canguru.cpp.i
+.PHONY : TipoAnimais/Canguru.i
+
+# target to preprocess a source file
+TipoAnimais/Canguru.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.i
+.PHONY : TipoAnimais/Canguru.cpp.i
+
+TipoAnimais/Canguru.s: TipoAnimais/Canguru.cpp.s
+.PHONY : TipoAnimais/Canguru.s
+
+# target to generate assembly for a file
+TipoAnimais/Canguru.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.s
+.PHONY : TipoAnimais/Canguru.cpp.s
+
+TipoAnimais/Coelho.obj: TipoAnimais/Coelho.cpp.obj
+.PHONY : TipoAnimais/Coelho.obj
+
+# target to build an object file
+TipoAnimais/Coelho.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj
+.PHONY : TipoAnimais/Coelho.cpp.obj
+
+TipoAnimais/Coelho.i: TipoAnimais/Coelho.cpp.i
+.PHONY : TipoAnimais/Coelho.i
+
+# target to preprocess a source file
+TipoAnimais/Coelho.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.i
+.PHONY : TipoAnimais/Coelho.cpp.i
+
+TipoAnimais/Coelho.s: TipoAnimais/Coelho.cpp.s
+.PHONY : TipoAnimais/Coelho.s
+
+# target to generate assembly for a file
+TipoAnimais/Coelho.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.s
+.PHONY : TipoAnimais/Coelho.cpp.s
+
+TipoAnimais/Lobo.obj: TipoAnimais/Lobo.cpp.obj
+.PHONY : TipoAnimais/Lobo.obj
+
+# target to build an object file
+TipoAnimais/Lobo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj
+.PHONY : TipoAnimais/Lobo.cpp.obj
+
+TipoAnimais/Lobo.i: TipoAnimais/Lobo.cpp.i
+.PHONY : TipoAnimais/Lobo.i
+
+# target to preprocess a source file
+TipoAnimais/Lobo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.i
+.PHONY : TipoAnimais/Lobo.cpp.i
+
+TipoAnimais/Lobo.s: TipoAnimais/Lobo.cpp.s
+.PHONY : TipoAnimais/Lobo.s
+
+# target to generate assembly for a file
+TipoAnimais/Lobo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.s
+.PHONY : TipoAnimais/Lobo.cpp.s
+
+TipoAnimais/Ovelha.obj: TipoAnimais/Ovelha.cpp.obj
+.PHONY : TipoAnimais/Ovelha.obj
+
+# target to build an object file
+TipoAnimais/Ovelha.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj
+.PHONY : TipoAnimais/Ovelha.cpp.obj
+
+TipoAnimais/Ovelha.i: TipoAnimais/Ovelha.cpp.i
+.PHONY : TipoAnimais/Ovelha.i
+
+# target to preprocess a source file
+TipoAnimais/Ovelha.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.i
+.PHONY : TipoAnimais/Ovelha.cpp.i
+
+TipoAnimais/Ovelha.s: TipoAnimais/Ovelha.cpp.s
+.PHONY : TipoAnimais/Ovelha.s
+
+# target to generate assembly for a file
+TipoAnimais/Ovelha.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.s
+.PHONY : TipoAnimais/Ovelha.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -296,6 +416,21 @@ help:
 	@echo ... Terminal.obj
 	@echo ... Terminal.i
 	@echo ... Terminal.s
+	@echo ... TipoAnimais/AnimalMisterioso.obj
+	@echo ... TipoAnimais/AnimalMisterioso.i
+	@echo ... TipoAnimais/AnimalMisterioso.s
+	@echo ... TipoAnimais/Canguru.obj
+	@echo ... TipoAnimais/Canguru.i
+	@echo ... TipoAnimais/Canguru.s
+	@echo ... TipoAnimais/Coelho.obj
+	@echo ... TipoAnimais/Coelho.i
+	@echo ... TipoAnimais/Coelho.s
+	@echo ... TipoAnimais/Lobo.obj
+	@echo ... TipoAnimais/Lobo.i
+	@echo ... TipoAnimais/Lobo.s
+	@echo ... TipoAnimais/Ovelha.obj
+	@echo ... TipoAnimais/Ovelha.i
+	@echo ... TipoAnimais/Ovelha.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

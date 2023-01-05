@@ -60,7 +60,7 @@ class Cenoura : public Alimentos{
 public:
     Cenoura(const string& tipo, const string& c, int VCenoura, int Vn, int tx, int x, int y) : Alimentos(tipo, c, VCenoura, Vn, tx,  x, y) {}
 
-    string getTipoAlimento() const override{
+    string getTipoAlimento() const override {
         return "t";
     }
 

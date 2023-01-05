@@ -110,6 +110,36 @@
 		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h">
 			<Option target="POO_TP_22_23"/>
 		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/AnimalMisterioso.cpp">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/AnimalMisterioso.h">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Canguru.cpp">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Canguru.h">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Coelho.cpp">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Coelho.h">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Lobo.cpp">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Lobo.h">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Ovelha.cpp">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
+		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Ovelha.h">
+			<Option target="POO_TP_22_23"/>
+		</Unit>
 		<Unit filename="C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h">
 			<Option target="POO_TP_22_23"/>
 		</Unit>

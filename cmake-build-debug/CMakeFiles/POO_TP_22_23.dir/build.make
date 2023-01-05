@@ -152,6 +152,76 @@ CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.s"
 	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Terminal.cpp -o CMakeFiles\POO_TP_22_23.dir\Terminal.cpp.s
 
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Coelho.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Coelho.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Coelho.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Coelho.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.i"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Coelho.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Coelho.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.s"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Coelho.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Coelho.cpp.s
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Lobo.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Lobo.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Lobo.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Lobo.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.i"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Lobo.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Lobo.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.s"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Lobo.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Lobo.cpp.s
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Ovelha.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Ovelha.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Ovelha.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Ovelha.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.i"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Ovelha.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Ovelha.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.s"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Ovelha.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Ovelha.cpp.s
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Canguru.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Canguru.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Canguru.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Canguru.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.i"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Canguru.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Canguru.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.s"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\Canguru.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\Canguru.cpp.s
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/AnimalMisterioso.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAnimais\AnimalMisterioso.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\AnimalMisterioso.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\AnimalMisterioso.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.i"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\AnimalMisterioso.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAnimais\AnimalMisterioso.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.s"
+	C:\PROGRA~2\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\AnimalMisterioso.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\AnimalMisterioso.cpp.s
+
 # Object files for target POO_TP_22_23
 POO_TP_22_23_OBJECTS = \
 "CMakeFiles/POO_TP_22_23.dir/main.cpp.obj" \
@@ -159,7 +229,12 @@ POO_TP_22_23_OBJECTS = \
 "CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj" \
 "CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj" \
 "CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj" \
-"CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.obj"
+"CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj"
 
 # External object files for target POO_TP_22_23
 POO_TP_22_23_EXTERNAL_OBJECTS =
@@ -170,12 +245,17 @@ POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/build.make
 POO_TP_22_23.exe: C:/ISEC/1Semestre/POO/TP/PDCurses-3.9/PDCurses-3.9/wincon/pdcurses.a
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/linklibs.rsp
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/objects1.rsp
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable POO_TP_22_23.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable POO_TP_22_23.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\POO_TP_22_23.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -177,4 +177,10 @@ CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj: \
  C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/stdarg.h \
  C:/PROGRA~2/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Animais.h \
- C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Alimentos.h
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Alimentos.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/Coelho.h \
+ C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/Ovelha.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/Lobo.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/Canguru.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/AnimalMisterioso.h

@@ -32,6 +32,7 @@ public:
     int getColunas() const;
     int getInstantes() const;
     bool verificaLinhasColunas(const int &x, const int &y);
+    bool verificaAnimalRedondeza(const int &x, const int &y, const int &valorRedondeza);
 
     //Set
     void setLinhas(int newLinhas);
@@ -47,6 +48,9 @@ public:
     int getNumberOfAnimals() const;
     void removeAnimalbyId(const int &id);
     void removeAnimalbyCoord(const int &x, const int &y);
+    void feedAnimalbyCoord(const int &x, const int &y, const int &valorNutritivo, const int &toxicidade);
+    void feedAnimalById(const int &id, const int &valorNutritivo, const int &toxicidade);
+    void interacaoAnimal();
 
     string getInfoAnimalId(int id) const;
 
@@ -69,6 +73,9 @@ private:
     int totalCoisas = 1;
     //static int ID;
     int numInstantes;
+
+
+    Window debug; //APAGAR DEPOIS
 
     //map string, Reservas* se o nome(string) for igual ao nome da reserva entao carregaReserva(cominputdouser)
 };

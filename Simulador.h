@@ -47,6 +47,8 @@ public:
     void cmdN(vector<string> comando);
     void cmdNPause(vector<string> comando);
     void cmdNN(vector<string> comando);
+    void cmdFeedId(vector<string> comando);
+    void cmdFeedCoord(vector<string> comando);
 
     Reserva *getReserva() const
     {
