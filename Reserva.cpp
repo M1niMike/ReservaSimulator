@@ -423,6 +423,9 @@ bool Reserva::verificaAnimalRedondeza(const int &id, const int &x, const int &y,
 }
 
 void Reserva::interacaoAlimento() {
+
+    int vNutriInicial;
+
     for(int i = 0; i < alimentos.size(); i++ ){ //Percorre os alimentos da reserva
 
         if(alimentos[i]->getTipoAlimento() == "r"){// Verifica se o tipo é r
@@ -431,7 +434,7 @@ void Reserva::interacaoAlimento() {
 
             if(alimentos[i]->getValimento() != 0){// se o alimento ainda tiver vAlimento, faz a logica
 
-                
+
             }else{ // caso o vAlimento for 0, ele remove o alimento do vetor
 
                 removeAlimentobyId(alimentos[i]->getId());
@@ -439,11 +442,41 @@ void Reserva::interacaoAlimento() {
 
         }else if(alimentos[i]->getTipoAlimento() == "t"){ // Verifica se o tipo é t
 
+            if(alimentos[i]->getValimento() != 0){
+
+                if (numInstantes % 10 == 0 && alimentos[i]->getToxicidade() < 3) {// a cada 10 instantes, aumenta um valor de toxicidade até dar stack em 3
+
+                    alimentos[i]->setToxicidade(alimentos[i]->getToxicidade()+1);
+                }
+
+            }
 
         }else if(alimentos[i]->getTipoAlimento() == "p"){ // Verifica se o tipo é p
 
+                vNutriInicial = alimentos[i]->getValorNutri(); // salva o valorNutri para usar como o valorInicial
+
+
+                alimentos[i]->setValorNutri(alimentos[i]->getValorNutri() - 1); // diminui o valor nutritivo em 1 unidade a cada instante
+                alimentos[i]->setToxicidade(alimentos[i]->getToxicidade() + 1); // aumenta o valor de toxicidade em 1 unidade em cada instante
+
+                if (numInstantes > 2 * vNutriInicial) { // se passaram tantos instantes como duas vezes o valor nutritivo inicial
+
+                    alimentos[i]->setToxicidade(alimentos[i]->getToxicidade() - 1); // para de aumentar o valor de toxicidade
+                }
 
         }else if(alimentos[i]->getTipoAlimento() == "b"){ // Verifica se o tipo é b
+
+            alimentos[i]->setValimento(alimentos[i]->getValimento() - 1); // diminui um do vAlimento a cada instante
+
+            if(alimentos[i]->getValorNutri() > 0){ // diminui o valor nutri a cada instante até chegar a zero
+
+                alimentos[i]->setValorNutri(alimentos[i]->getValorNutri() - 1);
+            }
+
+            if(alimentos[i]->getValimento() == 0){ //se o vAlimento for zero, ele remove o alimento do vetor/reserva
+
+                removeAlimentobyId(alimentos[i]->getId());
+            }
 
 
         }else if(alimentos[i]->getTipoAlimento() == "a"){ // Verifica se o tipo é a
