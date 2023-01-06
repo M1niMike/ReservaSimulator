@@ -32,7 +32,7 @@ public:
     int getColunas() const;
     int getInstantes() const;
     bool verificaLinhasColunas(const int &x, const int &y);
-    bool verificaAnimalRedondeza(const int &x, const int &y, const int &valorRedondeza);
+
 
     //Set
     void setLinhas(int newLinhas);
@@ -51,6 +51,8 @@ public:
     void feedAnimalbyCoord(const int &x, const int &y, const int &valorNutritivo, const int &toxicidade);
     void feedAnimalById(const int &id, const int &valorNutritivo, const int &toxicidade);
     void interacaoAnimal();
+    bool checkPeso(const int &id, const int &x, const int &y, const int &valorRedondeza, const int& peso);
+    bool verificaAnimalRedondeza(const int &id, const int &x, const int &y, const int &valorRedondeza);
 
     string getInfoAnimalId(int id) const;
 

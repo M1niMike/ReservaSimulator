@@ -2,7 +2,7 @@ Sem uso de STL para o historico, vector<x> (funções com esse formato), utiliza
 
 
 Metas para hoje:
-    movimentação
     Print dos animais apos apagar
     tratar de alimentar os animais (falta eles comerem o alimento porque eles já comem input de user) (50%)
-    tratar de matar os animais com os instantes
+    corrigir extremidades do board
+    corrigir o verificaRedondezas com o id

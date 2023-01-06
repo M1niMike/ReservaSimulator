@@ -39,9 +39,8 @@ public:
 
     bool alimentaAnimal(int valorNutritivo, int valorToxico);
 
-
     virtual void fazInteracao(Reserva r) = 0;
-    virtual void fazMovimentacaoSAR() = 0;
+    virtual void fazMovimentacaoSAR(int inicio, int fim) = 0;
     virtual void fazMovimentacaoCAR() = 0;
     virtual string getTipoAnimal () const = 0;
 

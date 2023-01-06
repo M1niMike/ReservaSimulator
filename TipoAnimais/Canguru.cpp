@@ -9,9 +9,9 @@ void Canguru::fazInteracao(Reserva r) {
 
 }
 
-void Canguru::fazMovimentacaoSAR() { //SAR = Sem Animal Redondeza
-        setX(getX() + 1);
-        setY(getY() + 1);
+void Canguru::fazMovimentacaoSAR(int inicio, int fim) { //SAR = Sem Animal Redondeza
+        setX(getX() + rand() % fim + inicio);
+        setY(getY() + rand() % fim + inicio);
 }
 
 void Canguru::fazMovimentacaoCAR() { // Com Aninal Redondeza

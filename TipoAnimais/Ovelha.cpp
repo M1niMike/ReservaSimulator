@@ -10,11 +10,10 @@ void Ovelha::fazInteracao(Reserva r) {
 }
 
 
-void Ovelha::fazMovimentacaoSAR() { //SAR = Sem Animal Redondeza
+void Ovelha::fazMovimentacaoSAR(int inicio, int fim) { //SAR = Sem Animal Redondeza
 
-    setX(getX() + 1);
-    setY(getY() + 1);
-
+    setX(getX() + rand() % fim + inicio);
+    setY(getY() + rand() % fim + inicio);
 }
 
 void Ovelha::fazMovimentacaoCAR() {  //CAR = Com Animal Redondeza

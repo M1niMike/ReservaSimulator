@@ -17,7 +17,7 @@ public:
 
     void fazMovimentacaoCAR() override;
 
-    void fazMovimentacaoSAR() override;
+    void fazMovimentacaoSAR(int inicio, int fim) override;
 
 
 };

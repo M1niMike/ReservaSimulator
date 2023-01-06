@@ -15,7 +15,7 @@ public:
 
     void fazInteracao(Reserva r) override;
 
-    void fazMovimentacaoSAR() override;
+    void fazMovimentacaoSAR(int inicio, int fim) override;
 
     void fazMovimentacaoCAR() override;
 };

@@ -10,6 +10,7 @@
 Animais::Animais(const string& t, int SAnimal = 0, int VAnimal = 0, int fome = 0, int peso = 0, int x = 0, int y = 0) : tipo(t), x(x), y(y), SAnimal(SAnimal), VAnimal(VAnimal), fome(fome), peso(peso), estaMorto(0){
 }
 
+
 //Gets
 string Animais::getTipoAnimal() const {
     ostringstream oss;
@@ -49,20 +50,28 @@ bool Animais::isDead() {
 string Animais::PrintaAnimal() const{
     ostringstream oss;
 
-    oss << "\nID: " << id << " | " << "Tipo de animal: " << tipo << " | " << "Saude: " << SAnimal << " | " << "X: " << x << " | " << "Y: " << y <<"\n";
+    oss << "\nID: " << id << " | " << "Tipo de animal: " << tipo << " | " << "Saude: " << SAnimal << " | " << "Vida: " << VAnimal << " | " << "X: " << x << " | " << "Y: " << y <<"\n";
 
     return oss.str();
 }
 
-//bool Animais::alimentaAnimal(int valorNutritivo, int valorToxico) {
-//    if (!isDead()){
-//        setSaude(getSaude() + valorNutritivo - valorToxico);
-//        setFome(0);
-//        return true;
-//    }
-//
-//    return false;
-//}
+bool Animais::alimentaAnimal(int valorNutritivo, int valorToxico) {
+    if (!isDead()) { // Verifica se não esta morto
 
+        if (SAnimal <= 0) { // se o valor da saude for 0, significa que esta morto
+
+            estaMorto = 1;
+            return false;
+        }
+        // Altera os status do animal
+        SAnimal += valorNutritivo;
+        SAnimal -= valorToxico;
+
+        //fome fica a 0, pois comeu
+        fome = 0;
+        return true; // se estiver vivo ele come
+    }
+    return false; // Se tiver morto
+}
 
 

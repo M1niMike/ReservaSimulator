@@ -9,9 +9,9 @@ void Lobo::fazInteracao(Reserva r) {
 
 }
 
-void Lobo::fazMovimentacaoSAR() { //SAR = Sem Animal Redondeza
-    setX(getX() + 1);
-    setY(getY() + 1);
+void Lobo::fazMovimentacaoSAR(int inicio, int fim) { //SAR = Sem Animal Redondeza
+    setX(getX() + rand() % fim + inicio);
+    setY(getY() + rand() % fim + inicio);
 }
 
 void Lobo::fazMovimentacaoCAR() { //CAR = Com Animal Redondeza

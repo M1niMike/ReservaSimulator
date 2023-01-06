@@ -17,7 +17,7 @@ public:
 
     void fazMovimentacaoCAR() override;
 
-    void fazMovimentacaoSAR() override;
+    void fazMovimentacaoSAR(int inicio, int fim) override;
 };
 
 #endif //RESERVA_H_LOBO_H
