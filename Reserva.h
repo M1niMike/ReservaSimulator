@@ -40,6 +40,8 @@ public:
 
     void incrementaInstante();
     void incrementaInstante(int valor);
+    void incrementaInstante(int valor, int tempo);
+    void sleepChrono(int valorTempo);
 
     //Animal
     vector<Animais *> getVecAnimal() const;

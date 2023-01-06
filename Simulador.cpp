@@ -121,9 +121,6 @@ int Simulador::constantesReader(string aux) {
     return -1;
 }
 
-void Simulador::sleepChrono(int valorTempo) {
-    this_thread::sleep_for(chrono::seconds (valorTempo));
-}
 
 vector<string> Simulador::splitString(const string &cmd) const {
     string aux;
@@ -411,12 +408,15 @@ void Simulador::cmdN(vector<string> comando){
 
 
 void Simulador::cmdNPause(vector<string> comando){
-    r->incrementaInstante(stoi(comando[1]));
+    r->incrementaInstante(stoi(comando[1]), stoi(comando[2]));
 
     for(int i = 0; i < r->getInstantes(); i++){
-        textInterface << "\nInstante:" << i+1;
-        textInterface << "AQUI\n";
-        sleepChrono(stoi(comando[2]));
+        
+        textInterface << "\nInstante da Reserva: " << r->getInstantes();
+        textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
+        textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
+        textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
+        textInterface << "\n";
 
     }
 }
@@ -425,8 +425,11 @@ void Simulador::cmdNN(vector<string> comando){
     r->incrementaInstante(stoi(comando[1]));
 
     for(int i = 0; i < r->getInstantes(); i++){
-        textInterface << "\nInstante:" << i+1;
-        textInterface << "AQUI\n";
+        textInterface << "\nInstante da Reserva: " << r->getInstantes();
+        textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
+        textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
+        textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
+        textInterface << "\n";
     }
 }
 

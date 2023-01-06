@@ -49,7 +49,7 @@ int Alimentos::getId() const {
 string Alimentos::PrintaAlimento() const{
     ostringstream oss;
 
-    oss << "\nID: " << id << " | " << "Tipo do alimento: " << tipo << " | " << "Tempo de validade: " << VAlimento << "\n" << "Valor Nutritivo: " << valorNutri << " | " << "Toxidade: " << toxicidade << " | " << "Cheiro: " << cheiro << "\n";
+    oss << "\nID: " << id << " | " << "Tipo do alimento: " << tipo << " | " << "Tempo de validade: " << VAlimento << "\n" << "Valor Nutritivo: " << valorNutri << " | " << "Toxicidade: " << toxicidade << " | " << "Cheiro: " << cheiro << "\n";
 
     return oss.str();
 }
