@@ -41,10 +41,10 @@ void Reserva::criaAnimal(const string &tipo, int saude, int vida, const int& x, 
         cout << "\nPor favor insira um animal valido!" << endl;
     }else{
         if (tipo == "C") {
-            animais.push_back(new Coelho("Coelho", saude, vida, 0, rand() % 4 + 1, x,y));
+            animais.push_back(new Coelho("Coelho", saude, vida, 0,  rand() % 4 + 1, x,y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "O") {
-            animais.push_back(new Ovelha("Ovelha",  saude, vida, 0, rand() % 8 + 4, x, y));
+            animais.push_back(new Ovelha("Ovelha",  saude, vida, 0, rand() % 5 + 4, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "L") {
             animais.push_back(new Lobo("Lobo",  saude, vida, 0, 15, x, y));
@@ -53,7 +53,7 @@ void Reserva::criaAnimal(const string &tipo, int saude, int vida, const int& x, 
             animais.push_back(new Canguru("Canguru", saude, vida, 0, 10, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "M") {
-            animais.push_back(new AnimalMisterioso("Macaco (AM)" , saude, vida, 0, rand() % 10 + 2, x, y));
+            animais.push_back(new AnimalMisterioso("Macaco (AM)" , saude, vida, 0, rand() % 9 + 2, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         }
     }
@@ -68,7 +68,7 @@ void Reserva::criaAnimalRandom(const string &tipo, int saude, int vida) {
             animais.push_back(new Coelho("Coelho", saude, vida, 0, rand() % 4 + 1, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "O") {
-            animais.push_back(new Ovelha("Ovelha", saude, vida, 0, rand() % 8 + 4, lRandom , cRandom));
+            animais.push_back(new Ovelha("Ovelha", saude, vida, 0, rand() % 5 + 4, lRandom , cRandom)); //rand() % 5 + 4; numero entre 4 e 8 --
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "L") {
             animais.push_back(new Lobo("Lobo", saude, vida, 0, 15, lRandom , cRandom));
@@ -77,7 +77,7 @@ void Reserva::criaAnimalRandom(const string &tipo, int saude, int vida) {
             animais.push_back(new Canguru("Canguru", saude, vida, 0, 10, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "M") {
-            animais.push_back(new AnimalMisterioso("Macaco (AM)", saude, vida, 0, rand() % 10 + 2, lRandom , cRandom));
+            animais.push_back(new AnimalMisterioso("Macaco (AM)", saude, vida, 0, rand() % 9 + 2, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         }
     }
@@ -252,29 +252,116 @@ bool Reserva::hasAlimento(int x, int y) {
 /*PEGAR NISSO DEPOIS*/
 
 
-//void Reserva::interacaoAnimal() {
-////    for(auto animal:animais){
-////        animalfazInteracao(this)
-////    }
-//
-//    for(int i = 0; i < animais.size(); i++){
-//        animais[i]->fazInteracao(*this);
-//    }
-//}
+void Reserva::interacaoAnimal() {
+    bool temAnimalRedondeza;
+    debug << "entrei interacaoAnimal\n";
+
+    for(int i = 0; i < animais.size(); i++){
+        debug << "entrei no for interacaoAnimal\n";
+        if(animais[i]->getTipoAnimal() == "C"){
+
+            temAnimalRedondeza = verificaAnimalRedondeza(animais[i]->getX(), animais[i]->getX(), 4);
+
+            if(temAnimalRedondeza){ //faz Movimentação com animal na redondeza
+
+                debug << "Fiz CAR C\n";
+
+            }else{  //faz Movimentação sem animal na redondeza
+
+                debug << "Fiz SAR C\n";
+                animais[i]->fazMovimentacaoSAR();
+            }
+
+        }else if(animais[i]->getTipoAnimal() == "O"){
+
+            temAnimalRedondeza = verificaAnimalRedondeza(animais[i]->getX(), animais[i]->getX(), 3);
+
+            if(temAnimalRedondeza){ //faz Movimentação com animal na redondeza
+
+                debug << "Fiz CAR O\n";
+
+
+            }else{ //faz Movimentação sem animal na redondeza
+
+                debug << "Fiz SAR O\n";
+                animais[i]->fazMovimentacaoSAR();
+            }
+
+        }else if(animais[i]->getTipoAnimal() == "L"){
+
+            temAnimalRedondeza = verificaAnimalRedondeza(animais[i]->getX(), animais[i]->getX(), 5);
+
+            if(temAnimalRedondeza){  //faz Movimentação com animal na redondeza
+
+                debug << "Fiz CAR L\n";
+
+
+            }else{ //faz Movimentação sem animal na redondeza
+
+
+                debug << "Fiz SAR L\n";
+                animais[i]->fazMovimentacaoSAR();
+            }
+
+        }else if(animais[i]->getTipoAnimal() == "G"){
+
+            temAnimalRedondeza = verificaAnimalRedondeza(animais[i]->getX(), animais[i]->getX(), 7);
+
+            if(temAnimalRedondeza){ //faz Movimentação com animal na redondeza
+
+                debug << "Fiz CAR G\n";
+
+            }else{ //faz Movimentação sem animal na redondeza
+
+                debug << "Fiz SAR G\n";
+                animais[i]->fazMovimentacaoSAR();
+            }
+
+        }else if(animais[i]->getTipoAnimal() == "M"){
+
+            temAnimalRedondeza = verificaAnimalRedondeza(animais[i]->getX(), animais[i]->getX(), 9);
+
+            if(temAnimalRedondeza){  //faz Movimentação com animal na redondeza
+
+                debug << "Fiz CAR M\n";
+
+
+            }else{ //faz Movimentação sem animal na redondeza
+                
+                debug << "Fiz SAR M\n";
+                animais[i]->fazMovimentacaoSAR();
+            }
+        }
+    }
+}
 
 
 
+bool Reserva::verificaAnimalRedondeza(const int &x, const int &y, const int &valorRedondeza) {
 
-//bool Reserva::verificaAnimalRedondeza(const int &x, const int &y, const int &valorRedondeza) {
-//
-////    animais[i]->getX() < x+valorRedondeza - # Coordenada abaixo da coordenada atual
-////    animais[i]->getX() > x-valorRedondeza - # Coordenada acima da coordenada atual
-////    animais[i]->getY() < y+valorRedondeza - # Coordenada à direita da coordenada atual
-////    animais[i]->getY() > y-valorRedondeza - # Coordenada à esquerda da coordenada atual
-//
-//    for(int i = 0; i < animais.size(); i++){
-//        if(animais[i]->getX() < x+valorRedondeza && animais[i]->getX() > x-valorRedondeza && animais[i]->getY() < y+valorRedondeza && animais[i]->getY() > y-valorRedondeza){
-//            if(animais[i].)
-//        }
-//    }
-//}
+    //    animais[i]->getX() < x+valorRedondeza - # Coordenada abaixo da coordenada atual
+    //    animais[i]->getX() > x-valorRedondeza - # Coordenada acima da coordenada atual
+    //    animais[i]->getY() < y+valorRedondeza - # Coordenada à direita da coordenada atual
+    //    animais[i]->getY() > y-valorRedondeza - # Coordenada à esquerda da coordenada atual
+
+    for(auto & animal : animais) {
+        if (animal->getX() < x + valorRedondeza && animal->getX() > x - valorRedondeza && animal->getY() < y + valorRedondeza && animal->getY() > y - valorRedondeza) {
+
+            return false; // Encontrou um animal nas redondezas
+        }
+    }
+    return true; // Não encontrou nenhum animal nas redondezas
+}
+
+
+void Reserva::incrementaInstante() {
+    numInstantes++;
+    interacaoAnimal();
+}
+
+void Reserva::incrementaInstante(int valor) {
+    numInstantes += valor;
+    interacaoAnimal();
+}
+
+

@@ -8,3 +8,16 @@
 void Ovelha::fazInteracao(Reserva r) {
 
 }
+
+
+void Ovelha::fazMovimentacaoSAR() { //SAR = Sem Animal Redondeza
+
+    setX(getX() + 1);
+    setY(getY() + 1);
+
+}
+
+void Ovelha::fazMovimentacaoCAR() {  //CAR = Com Animal Redondeza
+
+}
+

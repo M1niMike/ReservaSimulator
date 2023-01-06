@@ -14,6 +14,12 @@ public:
     string getTipoAnimal() const override{ return "O"; }
 
     void fazInteracao(Reserva r) override;
+
+    void fazMovimentacaoCAR() override;
+
+    void fazMovimentacaoSAR() override;
+
+
 };
 
 

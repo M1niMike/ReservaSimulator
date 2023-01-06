@@ -30,6 +30,8 @@ public:
     void setVida(int newVida) { VAnimal = newVida;}
     void setId(int newId) {id = newId;}
     void setFome(int newFome) {fome = newFome;}
+    void setX(int newX){x = newX;}
+    void setY(int newY){y = newY;}
 
     //prints
     string PrintaAnimal() const;
@@ -39,6 +41,8 @@ public:
 
 
     virtual void fazInteracao(Reserva r) = 0;
+    virtual void fazMovimentacaoSAR() = 0;
+    virtual void fazMovimentacaoCAR() = 0;
     virtual string getTipoAnimal () const = 0;
 
     Animais(const string& t, int SAnimal, int VAnimal, int fome, int peso, int x, int y);

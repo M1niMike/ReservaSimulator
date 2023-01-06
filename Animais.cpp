@@ -49,7 +49,7 @@ bool Animais::isDead() {
 string Animais::PrintaAnimal() const{
     ostringstream oss;
 
-    oss << "\nID: " << id << " | " << "Tipo de animal: " << tipo << " | " << "Saude: " << SAnimal << "\n";
+    oss << "\nID: " << id << " | " << "Tipo de animal: " << tipo << " | " << "Saude: " << SAnimal << " | " << "X: " << x << " | " << "Y: " << y <<"\n";
 
     return oss.str();
 }
@@ -65,9 +65,4 @@ string Animais::PrintaAnimal() const{
 //}
 
 
-/*PEGAR NISSO DEPOIS*/
-
-//void Coelho::fazInteracao(Reserva r) {
-//    r.
-//}
 

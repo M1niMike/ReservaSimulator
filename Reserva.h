@@ -38,8 +38,8 @@ public:
     void setLinhas(int newLinhas);
     void setColunas(int newColunas);
 
-    void incrementaInstante(){numInstantes++;} //funçao para o comando n
-    void incrementaInstante(int valor) {numInstantes += valor;}
+    void incrementaInstante();
+    void incrementaInstante(int valor);
 
     //Animal
     vector<Animais *> getVecAnimal() const;
