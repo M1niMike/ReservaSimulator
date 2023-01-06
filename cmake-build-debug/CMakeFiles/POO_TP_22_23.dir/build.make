@@ -222,6 +222,76 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.s"
 	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais\AnimalMisterioso.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAnimais\AnimalMisterioso.cpp.s
 
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAlimentos/Relva.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.obj"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Relva.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Relva.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Relva.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.i"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Relva.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Relva.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.s"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Relva.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Relva.cpp.s
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAlimentos/Cenoura.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.obj"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Cenoura.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Cenoura.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Cenoura.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.i"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Cenoura.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Cenoura.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.s"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Cenoura.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Cenoura.cpp.s
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAlimentos/Corpo.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.obj"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Corpo.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Corpo.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Corpo.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.i"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Corpo.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Corpo.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.s"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Corpo.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Corpo.cpp.s
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAlimentos/Bife.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.obj"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Bife.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Bife.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Bife.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.i"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Bife.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Bife.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.s"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\Bife.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\Bife.cpp.s
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.obj: CMakeFiles/POO_TP_22_23.dir/flags.make
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAlimentos/AlimentoMisterioso.cpp
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.obj: CMakeFiles/POO_TP_22_23.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.obj"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.obj -MF CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\AlimentoMisterioso.cpp.obj.d -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\AlimentoMisterioso.cpp.obj -c C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\AlimentoMisterioso.cpp
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.i"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\AlimentoMisterioso.cpp > CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\AlimentoMisterioso.cpp.i
+
+CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.s"
+	C:\PROGRA~2\W64DEV~1\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos\AlimentoMisterioso.cpp -o CMakeFiles\POO_TP_22_23.dir\TipoAlimentos\AlimentoMisterioso.cpp.s
+
 # Object files for target POO_TP_22_23
 POO_TP_22_23_OBJECTS = \
 "CMakeFiles/POO_TP_22_23.dir/main.cpp.obj" \
@@ -234,7 +304,12 @@ POO_TP_22_23_OBJECTS = \
 "CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj" \
 "CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj" \
 "CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj" \
-"CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj"
+"CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.obj" \
+"CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.obj"
 
 # External object files for target POO_TP_22_23
 POO_TP_22_23_EXTERNAL_OBJECTS =
@@ -250,12 +325,17 @@ POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.obj
+POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.obj
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/build.make
 POO_TP_22_23.exe: C:/ISEC/1Semestre/POO/TP/PDCurses-3.9/PDCurses-3.9/wincon/pdcurses.a
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/linklibs.rsp
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/objects1.rsp
 POO_TP_22_23.exe: CMakeFiles/POO_TP_22_23.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable POO_TP_22_23.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable POO_TP_22_23.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\POO_TP_22_23.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

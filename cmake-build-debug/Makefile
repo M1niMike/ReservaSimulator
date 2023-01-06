@@ -248,6 +248,126 @@ Terminal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Terminal.cpp.s
 .PHONY : Terminal.cpp.s
 
+TipoAlimentos/AlimentoMisterioso.obj: TipoAlimentos/AlimentoMisterioso.cpp.obj
+.PHONY : TipoAlimentos/AlimentoMisterioso.obj
+
+# target to build an object file
+TipoAlimentos/AlimentoMisterioso.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.obj
+.PHONY : TipoAlimentos/AlimentoMisterioso.cpp.obj
+
+TipoAlimentos/AlimentoMisterioso.i: TipoAlimentos/AlimentoMisterioso.cpp.i
+.PHONY : TipoAlimentos/AlimentoMisterioso.i
+
+# target to preprocess a source file
+TipoAlimentos/AlimentoMisterioso.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.i
+.PHONY : TipoAlimentos/AlimentoMisterioso.cpp.i
+
+TipoAlimentos/AlimentoMisterioso.s: TipoAlimentos/AlimentoMisterioso.cpp.s
+.PHONY : TipoAlimentos/AlimentoMisterioso.s
+
+# target to generate assembly for a file
+TipoAlimentos/AlimentoMisterioso.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.s
+.PHONY : TipoAlimentos/AlimentoMisterioso.cpp.s
+
+TipoAlimentos/Bife.obj: TipoAlimentos/Bife.cpp.obj
+.PHONY : TipoAlimentos/Bife.obj
+
+# target to build an object file
+TipoAlimentos/Bife.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.obj
+.PHONY : TipoAlimentos/Bife.cpp.obj
+
+TipoAlimentos/Bife.i: TipoAlimentos/Bife.cpp.i
+.PHONY : TipoAlimentos/Bife.i
+
+# target to preprocess a source file
+TipoAlimentos/Bife.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.i
+.PHONY : TipoAlimentos/Bife.cpp.i
+
+TipoAlimentos/Bife.s: TipoAlimentos/Bife.cpp.s
+.PHONY : TipoAlimentos/Bife.s
+
+# target to generate assembly for a file
+TipoAlimentos/Bife.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.s
+.PHONY : TipoAlimentos/Bife.cpp.s
+
+TipoAlimentos/Cenoura.obj: TipoAlimentos/Cenoura.cpp.obj
+.PHONY : TipoAlimentos/Cenoura.obj
+
+# target to build an object file
+TipoAlimentos/Cenoura.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.obj
+.PHONY : TipoAlimentos/Cenoura.cpp.obj
+
+TipoAlimentos/Cenoura.i: TipoAlimentos/Cenoura.cpp.i
+.PHONY : TipoAlimentos/Cenoura.i
+
+# target to preprocess a source file
+TipoAlimentos/Cenoura.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.i
+.PHONY : TipoAlimentos/Cenoura.cpp.i
+
+TipoAlimentos/Cenoura.s: TipoAlimentos/Cenoura.cpp.s
+.PHONY : TipoAlimentos/Cenoura.s
+
+# target to generate assembly for a file
+TipoAlimentos/Cenoura.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.s
+.PHONY : TipoAlimentos/Cenoura.cpp.s
+
+TipoAlimentos/Corpo.obj: TipoAlimentos/Corpo.cpp.obj
+.PHONY : TipoAlimentos/Corpo.obj
+
+# target to build an object file
+TipoAlimentos/Corpo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.obj
+.PHONY : TipoAlimentos/Corpo.cpp.obj
+
+TipoAlimentos/Corpo.i: TipoAlimentos/Corpo.cpp.i
+.PHONY : TipoAlimentos/Corpo.i
+
+# target to preprocess a source file
+TipoAlimentos/Corpo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.i
+.PHONY : TipoAlimentos/Corpo.cpp.i
+
+TipoAlimentos/Corpo.s: TipoAlimentos/Corpo.cpp.s
+.PHONY : TipoAlimentos/Corpo.s
+
+# target to generate assembly for a file
+TipoAlimentos/Corpo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.s
+.PHONY : TipoAlimentos/Corpo.cpp.s
+
+TipoAlimentos/Relva.obj: TipoAlimentos/Relva.cpp.obj
+.PHONY : TipoAlimentos/Relva.obj
+
+# target to build an object file
+TipoAlimentos/Relva.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.obj
+.PHONY : TipoAlimentos/Relva.cpp.obj
+
+TipoAlimentos/Relva.i: TipoAlimentos/Relva.cpp.i
+.PHONY : TipoAlimentos/Relva.i
+
+# target to preprocess a source file
+TipoAlimentos/Relva.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.i
+.PHONY : TipoAlimentos/Relva.cpp.i
+
+TipoAlimentos/Relva.s: TipoAlimentos/Relva.cpp.s
+.PHONY : TipoAlimentos/Relva.s
+
+# target to generate assembly for a file
+TipoAlimentos/Relva.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.s
+.PHONY : TipoAlimentos/Relva.cpp.s
+
 TipoAnimais/AnimalMisterioso.obj: TipoAnimais/AnimalMisterioso.cpp.obj
 .PHONY : TipoAnimais/AnimalMisterioso.obj
 
@@ -416,6 +536,21 @@ help:
 	@echo ... Terminal.obj
 	@echo ... Terminal.i
 	@echo ... Terminal.s
+	@echo ... TipoAlimentos/AlimentoMisterioso.obj
+	@echo ... TipoAlimentos/AlimentoMisterioso.i
+	@echo ... TipoAlimentos/AlimentoMisterioso.s
+	@echo ... TipoAlimentos/Bife.obj
+	@echo ... TipoAlimentos/Bife.i
+	@echo ... TipoAlimentos/Bife.s
+	@echo ... TipoAlimentos/Cenoura.obj
+	@echo ... TipoAlimentos/Cenoura.i
+	@echo ... TipoAlimentos/Cenoura.s
+	@echo ... TipoAlimentos/Corpo.obj
+	@echo ... TipoAlimentos/Corpo.i
+	@echo ... TipoAlimentos/Corpo.s
+	@echo ... TipoAlimentos/Relva.obj
+	@echo ... TipoAlimentos/Relva.i
+	@echo ... TipoAlimentos/Relva.s
 	@echo ... TipoAnimais/AnimalMisterioso.obj
 	@echo ... TipoAnimais/AnimalMisterioso.i
 	@echo ... TipoAnimais/AnimalMisterioso.s

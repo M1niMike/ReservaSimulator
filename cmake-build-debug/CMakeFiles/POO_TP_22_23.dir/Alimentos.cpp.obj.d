@@ -186,4 +186,6 @@ CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj: \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\curses.h \
  c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stdarg.h \
  c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\stdarg.h \
- c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw_stdarg.h
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw_stdarg.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Reserva.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Animais.h

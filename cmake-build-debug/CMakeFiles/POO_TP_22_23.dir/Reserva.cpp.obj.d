@@ -194,4 +194,10 @@ CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj: \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/Ovelha.h \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/Lobo.h \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/Canguru.h \
- C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/AnimalMisterioso.h
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAnimais/AnimalMisterioso.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos/Relva.h \
+ c:\isec\1semestre\poo\tp\poo-tp-22-23\alimentos.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos/Cenoura.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos/Corpo.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos/Bife.h \
+ C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\TipoAlimentos/AlimentoMisterioso.h

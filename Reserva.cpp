@@ -5,11 +5,21 @@
 #include "Reserva.h"
 #include "util.h"
 
+/*ANIMAIS*/
+
 #include "TipoAnimais/Coelho.h"
 #include "TipoAnimais/Ovelha.h"
 #include "TipoAnimais/Lobo.h"
 #include "TipoAnimais/Canguru.h"
 #include "TipoAnimais/AnimalMisterioso.h"
+
+/*ALIMENTOS*/
+
+#include "TipoAlimentos/Relva.h"
+#include "TipoAlimentos/Cenoura.h"
+#include "TipoAlimentos/Corpo.h"
+#include "TipoAlimentos/Bife.h"
+#include "TipoAlimentos/AlimentoMisterioso.h"
 
 
 Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15){}
@@ -412,17 +422,54 @@ bool Reserva::verificaAnimalRedondeza(const int &id, const int &x, const int &y,
     return false; // Não encontrou nenhum animal nas redondezas
 }
 
+void Reserva::interacaoAlimento() {
+    for(int i = 0; i < alimentos.size(); i++ ){ //Percorre os alimentos da reserva
+
+        if(alimentos[i]->getTipoAlimento() == "r"){// Verifica se o tipo é r
+
+            alimentos[i]->setValimento(alimentos[i]->getValimento() - 1 ); // a cada instante diminui um do vAlimento
+
+            if(alimentos[i]->getValimento() != 0){// se o alimento ainda tiver vAlimento, faz a logica
+
+                
+            }else{ // caso o vAlimento for 0, ele remove o alimento do vetor
+
+                removeAlimentobyId(alimentos[i]->getId());
+            }
+
+        }else if(alimentos[i]->getTipoAlimento() == "t"){ // Verifica se o tipo é t
+
+
+        }else if(alimentos[i]->getTipoAlimento() == "p"){ // Verifica se o tipo é p
+
+
+        }else if(alimentos[i]->getTipoAlimento() == "b"){ // Verifica se o tipo é b
+
+
+        }else if(alimentos[i]->getTipoAlimento() == "a"){ // Verifica se o tipo é a
+
+
+        }
+        debug.clear();
+    }
+}
+
 void Reserva::incrementaInstante() {
     numInstantes++;
+    interacaoAlimento();
     interacaoAnimal();
+
 }
 
 void Reserva::incrementaInstante(int valor) {
     for(int i = 0; i < valor; i++){
         numInstantes++;
+        interacaoAlimento();
         interacaoAnimal();
     }
 }
+
+
 
 
 

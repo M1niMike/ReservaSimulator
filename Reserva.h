@@ -66,6 +66,7 @@ public:
     bool hasAlimento(int x, int y);
     void removeAlimentobyId(const int &id);
     void removeAlimentobyCoord(const int &x, const int &y);
+    void interacaoAlimento();
 
 private:
     int linhas;
