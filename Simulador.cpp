@@ -57,6 +57,7 @@ Reserva* Simulador::menuSimulador() {
 
         cmdW.clear();
         textInterface.clear();
+        reservaPrinter.clear();
     }
 
     return r;

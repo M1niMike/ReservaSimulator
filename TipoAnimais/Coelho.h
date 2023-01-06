@@ -18,6 +18,8 @@ public:
     void fazMovimentacaoSAR(int inicio, int fim) override;
 
     void fazMovimentacaoCAR() override;
+
+    Animais* duplica() const override {return new Coelho(*this);}
 };
 
 

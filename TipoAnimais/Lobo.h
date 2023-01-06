@@ -18,6 +18,8 @@ public:
     void fazMovimentacaoCAR() override;
 
     void fazMovimentacaoSAR(int inicio, int fim) override;
+
+    Animais* duplica() const override {return new Lobo(*this);}
 };
 
 #endif //RESERVA_H_LOBO_H

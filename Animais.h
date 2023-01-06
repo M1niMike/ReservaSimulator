@@ -48,6 +48,9 @@ public:
 
     virtual ~Animais() = default;
 
+
+    virtual Animais* duplica() const = 0; //cada animal tem uma reprodução diferente mas aplica-se a mesma função a todos
+
 private:
     string tipo;
     int SAnimal;

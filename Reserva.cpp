@@ -248,15 +248,25 @@ bool Reserva::hasAlimento(int x, int y) {
 void Reserva::interacaoAnimal() {
     bool animalRedondeza = false;
     bool pesoPerigoso = false;
+    int engravida = 0;
 
     for(int i = 0; i < animais.size(); i++){
 
-        if(animais[i]->getTipoAnimal() == "C"){
+        if(animais[i]->getTipoAnimal() == "C"){ // ANIMAL C COELHO
 
             animais[i]->setVida(animais[i]->getvAnimal()-1); //A cada instante diminui um do vAnimal
             animais[i]->setFome(animais[i]->getFome()+1);// A cada instante aumenta a fome do animal
 
             if(animais[i]->getvAnimal() != 0){ //Se a vida for diferente de 0, ele faz toda a logica do animal
+
+                if (animais[i]->getvAnimal() == animais[i]->getvAnimal() - 8){
+                    engravida = rand() % 1 + 2;
+                    if(engravida == 1){ //engravidou com sucesso
+                       animais.push_back(animais[i]->duplica());
+                       animais[animais.size()-1]->setId(totalCoisas++);
+                    }
+
+                } // passaram 8 instantes
 
                 animalRedondeza = verificaAnimalRedondeza(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4); // Return true - se tiver | Return false - se não tiver
                 pesoPerigoso = checkPeso(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4, 10); // Return true - se tiver algum peso perigoso | Return false - se não tiver nenhum
@@ -308,7 +318,7 @@ void Reserva::interacaoAnimal() {
 
             animalRedondeza = verificaAnimalRedondeza(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 3);
 
-            if(animalRedondeza){  ; // Return true - faz Movimentação com animal na redondeza
+            if(animalRedondeza){   // Return true - faz Movimentação com animal na redondeza
 
                 debug << "Tem animal na redondeza O\n";
 

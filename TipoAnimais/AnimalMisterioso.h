@@ -19,6 +19,8 @@ public:
 
     void fazMovimentacaoSAR(int inicio, int fim) override;
 
+    Animais* duplica() const override {return new AnimalMisterioso(*this);}
+
 };
 
 
