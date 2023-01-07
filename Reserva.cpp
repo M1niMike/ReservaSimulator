@@ -488,33 +488,9 @@ void Reserva::interacaoAlimento() {
 }
 
 void Reserva::incrementaInstante() {
-
     numInstantes++;
-    interacaoAlimento();
-    interacaoAnimal();
-
 }
 
-void Reserva::incrementaInstante(int valor) {
-    for(int i = 0; i < valor; i++){
-        numInstantes++;
-        interacaoAlimento();
-        interacaoAnimal();
-    }
-}
-
-void Reserva::sleepChrono(int valorTempo) {
-    this_thread::sleep_for(chrono::seconds (valorTempo));
-}
-
-void Reserva::incrementaInstante(int valor, int tempo) {
-    for(int i = 0; i < valor; i++){
-        numInstantes++;
-        interacaoAlimento();
-        interacaoAnimal();
-        sleepChrono(tempo);
-    }
-}
 
 
 

@@ -48,13 +48,6 @@ Reserva* Simulador::menuSimulador() {
         validaComandos(cmd);
         cmdW << "\n";
         buildReserva();
-
-        textInterface << "\nInstante da Reserva: " << r->getInstantes();
-        textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
-        textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
-        textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
-        textInterface << "\n";
-
         cmdW.clear();
         textInterface.clear();
         reservaPrinter.clear();
@@ -402,34 +395,64 @@ void Simulador::cmdRestore(vector<string> comando) {
     textInterface << "\nNao encontrei o nome que inseriu...\n";
 }
 
+
+void Simulador::sleepChrono(int valorTempo) {
+    this_thread::sleep_for(chrono::seconds (valorTempo));
+}
+
+
+
 void Simulador::cmdN(vector<string> comando){
     r->incrementaInstante();
+    r->interacaoAlimento();
+    r->interacaoAnimal();
+    textInterface << "\nInstante da Reserva: " << r->getInstantes();
+    textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
+    textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
+    textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
+    textInterface << "\n";
 }
 
 
 void Simulador::cmdNPause(vector<string> comando){
-    r->incrementaInstante(stoi(comando[1]), stoi(comando[2]));
 
-    for(int i = 0; i < r->getInstantes(); i++){
+
+    for(int i = 0; i < stoi(comando[1]); i++){
+        r->incrementaInstante();
+        r->interacaoAlimento();
+        r->interacaoAnimal();
         
+        buildReserva();
+        reservaPrinter.clear();
+
         textInterface << "\nInstante da Reserva: " << r->getInstantes();
         textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
         textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
         textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
         textInterface << "\n";
+
+        sleepChrono(stoi(comando[2]));
 
     }
 }
 
-void Simulador::cmdNN(vector<string> comando){
-    r->incrementaInstante(stoi(comando[1]));
 
-    for(int i = 0; i < r->getInstantes(); i++){
+
+
+void Simulador::cmdNN(vector<string> comando){
+
+    for(int i = 0; i < stoi(comando[1]); i++){
+        r->incrementaInstante();
+        r->interacaoAlimento();
+        r->interacaoAnimal();
+        buildReserva();
+        reservaPrinter.clear();
         textInterface << "\nInstante da Reserva: " << r->getInstantes();
         textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
         textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
         textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
         textInterface << "\n";
+
     }
 }
 

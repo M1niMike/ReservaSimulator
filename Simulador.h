@@ -25,6 +25,7 @@ public:
     string maiscula(string palavra);
     int constantesReader(string aux);
     bool leFicheiroConstantes(string fileName);
+    void sleepChrono(int valorTempo);
 
 
 
@@ -50,6 +51,8 @@ public:
     void cmdNN(vector<string> comando);
     void cmdFeedId(vector<string> comando);
     void cmdFeedCoord(vector<string> comando);
+
+    void cmdTeste(vector<string> comando);
 
     Reserva *getReserva() const
     {
