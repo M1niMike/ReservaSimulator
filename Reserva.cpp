@@ -303,10 +303,10 @@ void Reserva::interacaoAnimal() {
 
         if(animais[i]->getTipoAnimal() == "C"){ // ANIMAL C COELHO
 
-            animais[i]->setVida(animais[i]->getvAnimal()-1); //A cada instante diminui um do vAnimal
-            animais[i]->setFome(animais[i]->getFome()+1);// A cada instante aumenta a fome do animal
-
             if(animais[i]->getvAnimal() != 0){ //Se a vida for diferente de 0, ele faz toda a logica do animal
+
+                animais[i]->setVida(animais[i]->getvAnimal()-1); //A cada instante diminui um do vAnimal
+                animais[i]->setFome(animais[i]->getFome()+1);// A cada instante aumenta a fome do animal
 
                 if (numInstantes % 8 == 0){
 
@@ -322,7 +322,7 @@ void Reserva::interacaoAnimal() {
                 animalRedondeza = verificaAnimalRedondeza(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4); // Return true - se tiver | Return false - se não tiver
                 pesoPerigoso = checkPeso(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4, 10); // Return true - se tiver algum peso perigoso | Return false - se não tiver nenhum
 
-                if(animalRedondeza && pesoPerigoso){  ; // Return true para ambos - faz Movimentação com animal na redondeza
+                if(animalRedondeza && pesoPerigoso){  // Return true para ambos - faz Movimentação com animal na redondeza
 
                     debug << "Tem animal na redondeza C\n";
 
@@ -336,7 +336,14 @@ void Reserva::interacaoAnimal() {
                         animais[i]->setSaude(animais[i]->getSaude()-2);
 
                     }
-                    animais[i]->fazMovimentacaoCAR(); //se move na direcao oposta
+
+
+                    /*animais[i]->setX();
+                    animais[i]->setY();*/
+
+                    //animais[i]->fazMovimentacaoCAR(); //se move na direcao oposta
+
+
 
                 }else{  // Return false - faz Movimentação sem animal na redondeza
 
@@ -367,17 +374,67 @@ void Reserva::interacaoAnimal() {
 
         }else if(animais[i]->getTipoAnimal() == "O"){
 
-            animalRedondeza = verificaAnimalRedondeza(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 3);
+           if(animais[i]->getvAnimal() != 0){
 
-            if(animalRedondeza){   // Return true - faz Movimentação com animal na redondeza
+               animais[i]->setVida(animais[i]->getvAnimal() - 1);
+               animais[i]->setFome(animais[i]->getFome() + 1);
 
-                debug << "Tem animal na redondeza O\n";
+               if (numInstantes % 15 == 0){ // após 15 instantes
 
-            }else{  // Return false - faz Movimentação sem animal na redondeza
+                   animais.push_back(new Ovelha(animais[i]->getTipoAnimal(), animais[i]->getSaude(), constantesReader("VCoelho"), 0, rand() % 4 + 1, animais[i]->getX()+1, animais[i]->getY()+1));
+                   animais[animais.size()-1]->setId(totalCoisas++);
 
-                debug << "Nao tem animal na redondeza O\n";
-                animais[i]->fazMovimentacaoSAR(1,1);
-            }
+               }
+
+               animalRedondeza = verificaAnimalRedondeza(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 3);
+               pesoPerigoso = checkPeso(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 3, 15); // Return true - se tiver algum peso perigoso | Return false - se não tiver nenhum
+
+               if(animalRedondeza && pesoPerigoso){   // Return true - faz Movimentação com animal na redondeza
+
+                   debug << "Tem animal na redondeza O\n";
+
+                   if(animais[i]->getFome() >= 15){ // se a fome for maior ou igual a 10, ele faz a logica do if
+
+                       animais[i]->setSaude(animais[i]->getSaude()-1);
+
+
+                   }else if(animais[i]->getFome() >= 20){ // se a fome for maior ou igual a 20, ele faz a logica do else if
+
+                       animais[i]->setSaude(animais[i]->getSaude()-2);
+
+                   }
+                   animais[i]->fazMovimentacaoCAR(); //se move na direcao oposta
+
+               }
+               else
+               {  // Return false - faz Movimentação sem animal na redondeza
+
+                   debug << "Nao tem animal na redondeza O\n";
+
+                   if(animais[i]->getFome() >= 15){ // se a fome for maior ou igual a 10, ele faz a logica do if
+
+                       animais[i]->setSaude(animais[i]->getSaude()-1);
+
+                       animais[i]->fazMovimentacaoSAR(1,2);
+
+                   }else if(animais[i]->getFome() >= 20){ // se a fome for maior ou igual a 20, ele faz a logica do else if
+
+                       animais[i]->setSaude(animais[i]->getSaude()-2);
+
+                       animais[i]->fazMovimentacaoSAR(1,2);
+
+                   }else{ // se a fome for menor que 10, ele faz a logica do else
+
+                       animais[i]->fazMovimentacaoSAR(1,1);
+                   }
+               }
+           }else{
+               removeAnimalbyId(animais[i]->getId());
+               alimentos.push_back(new Corpo("Corpo", "carne", 9999, animais[i]->getPeso(), 0, rand() % 5 + 4, rand() % 5 + 4));
+               alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+
+           }
+
 
         }else if(animais[i]->getTipoAnimal() == "L"){
 

@@ -51,6 +51,7 @@ void Coelho::fazMovimentacaoSAR(int inicio, int fim) { //SAR = Sem Animal Redond
 void Coelho::fazMovimentacaoCAR() { // se ele vir alguma coisa nas redondezas, ele foge
     setX(getX() - 1);
     setY(getY() - 1);
+
 }
 
 //void Coelho::fazMovimentacaoCAlimentoR() {}
