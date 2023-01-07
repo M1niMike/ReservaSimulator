@@ -70,9 +70,9 @@ private:
     Reserva *r;
     map<string, Reserva*> mapaSave;
     Terminal &t;
-    Window cmdW;
-    Window textInterface;
-    Window reservaPrinter;
+    Window cmdW; //Comandos
+    Window textInterface; //Print
+    Window reservaPrinter; // reserva
 };
 
 #endif //POO_TP_22_23_INTERFACE_H

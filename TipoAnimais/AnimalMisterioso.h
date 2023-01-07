@@ -15,9 +15,11 @@ public:
 
     void fazInteracao(Reserva r) override;
 
-    void fazMovimentacaoCAR() override;
+    void fazMovimentacaoComAnimal() override;
 
-    void fazMovimentacaoSAR(int inicio, int fim) override;
+    void fazMovimentacaoSemAnimal_I_F(int inicio, int fim) override;
+
+    void fazMovimentacaoSemAnimal_P(int posicao) override {}
 
     Animais* duplica() const override {return new AnimalMisterioso(*this);}
 

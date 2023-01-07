@@ -15,9 +15,11 @@ public:
 
     void fazInteracao(Reserva r) override;
 
-    void fazMovimentacaoSAR(int inicio, int fim) override;
+    void fazMovimentacaoSemAnimal_I_F(int inicio, int fim) override;
 
-    void fazMovimentacaoCAR() override;
+    void fazMovimentacaoSemAnimal_P(int posicao) override;
+
+    void fazMovimentacaoComAnimal() override;
 
     Animais* duplica() const override {return new Coelho(*this);}
 };

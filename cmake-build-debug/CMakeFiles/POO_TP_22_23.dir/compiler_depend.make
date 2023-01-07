@@ -184,6 +184,8 @@ CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-2
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -375,6 +377,8 @@ CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -566,6 +570,8 @@ CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -769,6 +775,8 @@ CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-2
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -1059,6 +1067,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/AlimentoMisterioso.cpp.obj: C:/ISEC/1S
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -1249,6 +1259,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Bife.cpp.obj: C:/ISEC/1Semestre/POO/TP
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -1439,6 +1451,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Cenoura.cpp.obj: C:/ISEC/1Semestre/POO
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -1629,6 +1643,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Corpo.cpp.obj: C:/ISEC/1Semestre/POO/T
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -1819,6 +1835,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAlimentos/Relva.cpp.obj: C:/ISEC/1Semestre/POO/T
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -2009,6 +2027,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj: C:/ISEC/1Semes
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -2202,6 +2222,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj: C:/ISEC/1Semestre/POO/T
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -2395,6 +2417,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj: C:/ISEC/1Semestre/POO/TP
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -2588,6 +2612,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj: C:/ISEC/1Semestre/POO/TP/P
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -2781,6 +2807,8 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj: C:/ISEC/1Semestre/POO/TP
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -2972,6 +3000,8 @@ CMakeFiles/POO_TP_22_23.dir/main.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_thread.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility \
+  C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
@@ -3378,6 +3408,10 @@ C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++
 C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/thread:
 
 C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/unique_ptr.h:
+
+C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/utility:
+
+C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/stl_relops.h:
 
 C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Terminal.h:
 

@@ -30,6 +30,11 @@ public:
     int constantesReader(string aux);
     bool leFicheiroConstantes(string fileName);
 
+
+    /* pair<int, int>, é uma classe template do C++ que permite armazenar um par de valores de qualquer tipo*/
+    pair<int, int> createFilho(int x, int y, int direcao, int distancia);
+    pair<int, int> createCorpo(int x, int y, int direcao);
+
     //Get
     int getLinhas() const;
     int getColunas() const;
@@ -54,7 +59,7 @@ public:
     void feedAnimalById(const int &id, const int &valorNutritivo, const int &toxicidade);
     void interacaoAnimal();
     bool checkPeso(const int &id, const int &x, const int &y, const int &valorRedondeza, const int& peso);
-    bool verificaAnimalRedondeza(const int &id, const int &x, const int &y, const int &valorRedondeza);
+    Animais* verificaAnimalRedondeza(const int &id, const int &x, const int &y, const int &valorRedondeza);
 
     string getInfoAnimalId(int id) const;
 

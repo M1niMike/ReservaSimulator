@@ -22,7 +22,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb5b0fea-053f-43f1-a63e-edde484ee9f2" name="Changes" comment="" />
     <list id="544d10dd-f479-43e0-bf06-9436a7f188f1" name="Changes by Goncalo" comment="" />
-    <list id="d74b76ab-da4f-49b7-acff-e0c62734cd79" name="Changes by Gonçalo" comment="" />
     <list id="05611b6b-6d4a-48be-88f2-5bbe35e05444" name="Changes by mikae" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +39,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Alimentos.h" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Reserva.cpp">
-      <ranges>
-        <range start1="304" end1="307" start2="304" end2="304" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="309" end1="309" start2="306" end2="309" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="324" end1="325" start2="324" end2="325" changelist="d74b76ab-da4f-49b7-acff-e0c62734cd79" />
-        <range start1="338" end1="339" start2="338" end2="346" changelist="d74b76ab-da4f-49b7-acff-e0c62734cd79" />
-        <range start1="369" end1="370" start2="376" end2="390" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="371" end1="372" start2="391" end2="392" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="373" end1="374" start2="393" end2="394" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="375" end1="376" start2="395" end2="410" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-        <range start1="377" end1="380" start2="411" end2="437" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -71,6 +55,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "TODO_SCOPE": "All Places",
     "WebServerToolWindowFactoryState": "false",
+    "cf.advertisement.text.has.clang-format": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
@@ -80,7 +65,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C/C++",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -156,7 +141,8 @@
       <workItem from="1672970363142" duration="7139000" />
       <workItem from="1672977921149" duration="8743000" />
       <workItem from="1673031660431" duration="5738000" />
-      <workItem from="1673100880636" duration="1944000" />
+      <workItem from="1673100880636" duration="2128000" />
+      <workItem from="1673103886593" duration="13635000" />
     </task>
     <servers />
   </component>

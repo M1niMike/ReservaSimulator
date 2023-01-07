@@ -9,11 +9,11 @@ void AnimalMisterioso::fazInteracao(Reserva r) {
 
 }
 //Fazer Logica do AnimalMisterioso
-void AnimalMisterioso::fazMovimentacaoSAR(int inicio, int fim) { //SAR = Sem Animal Redondeza
+void AnimalMisterioso::fazMovimentacaoSemAnimal_I_F(int inicio, int fim) { //SAR = Sem Animal Redondeza
     setX(getX() + rand() % fim + inicio);
     setY(getY() + rand() % fim + inicio);
 }
 
-void AnimalMisterioso::fazMovimentacaoCAR() { //CAR = Com Animal Redondeza
+void AnimalMisterioso::fazMovimentacaoComAnimal() { //CAR = Com Animal Redondeza
     //Fazer Logica
 }

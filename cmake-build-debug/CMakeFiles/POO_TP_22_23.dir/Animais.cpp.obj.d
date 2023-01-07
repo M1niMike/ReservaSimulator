@@ -182,6 +182,8 @@ CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj: \
  c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\std_thread.h \
  c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\unique_ptr.h \
  c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\this_thread_sleep.h \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\utility \
+ c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\c++\bits\stl_relops.h \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\Terminal.h \
  C:\ISEC\1Semestre\POO\TP\POO-TP-22-23\curses.h \
  c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stdarg.h \
