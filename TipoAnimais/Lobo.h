@@ -21,6 +21,8 @@ public:
 
     void fazMovimentacaoSemAnimal_I_F(int inicio, int fim) override {}
 
+    void fazDarVolta(int x, int y, int linhas, int colunas) override;
+
     Animais* duplica() const override {return new Lobo(*this);}
 };
 

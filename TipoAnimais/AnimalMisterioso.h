@@ -21,6 +21,8 @@ public:
 
     void fazMovimentacaoSemAnimal_P(int posicao) override {}
 
+    void fazDarVolta(int x, int y, int linhas, int colunas) override;
+
     Animais* duplica() const override {return new AnimalMisterioso(*this);}
 
 };

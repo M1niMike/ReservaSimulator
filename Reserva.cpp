@@ -22,10 +22,7 @@
 #include "TipoAlimentos/AlimentoMisterioso.h"
 
 
-Reserva::Reserva(int numInstantes, int nl, int nc)
-        : linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15)
-{
-}
+Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15){}
 
 //Funcs Auxiliares
 int Reserva::getTotalCoisas()
@@ -395,15 +392,27 @@ void Reserva::interacaoAnimal()
 
                         animais[i]->fazMovimentacaoSemAnimal_I_F(1, 3);
 
+                        if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+                            animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                        }
+
                     } else if (animais[i]->getFome() >= 20) { // se a fome for maior ou igual a 20, ele faz a logica do else if
 
                         animais[i]->setSaude(animais[i]->getSaude() - 2);
 
                         animais[i]->fazMovimentacaoSemAnimal_I_F(1, 4);
 
+                        if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+                            animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                        }
+
                     } else { // se a fome for menor que 10, ele faz a logica do else
 
                         animais[i]->fazMovimentacaoSemAnimal_I_F(1, 2);
+
+                        if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+                            animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                        }
                     }
                 }
             } else { // se vAnimal for = 0, ele morre e é eliminado do vetor
@@ -461,15 +470,27 @@ void Reserva::interacaoAnimal()
 
                         animais[i]->fazMovimentacaoSemAnimal_I_F(1, 2);
 
+                        if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+                            animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                        }
+
                     } else if (animais[i]->getFome() >= 20) { // se a fome for maior ou igual a 20, ele faz a logica do else if
 
                         animais[i]->setSaude(animais[i]->getSaude() - 2);
 
                         animais[i]->fazMovimentacaoSemAnimal_I_F(1, 2);
 
+                        if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+                            animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                        }
+
                     } else { // se a fome for menor que 10, ele faz a logica do else
 
                         animais[i]->fazMovimentacaoSemAnimal_P(1);
+
+                        if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+                            animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                        }
                     }
                 }
             } else {
@@ -498,7 +519,6 @@ void Reserva::interacaoAnimal()
 
                 if (numInstantes == nascer && !teveFilho) {
 
-                    debug << "Criei um lobo\n";
                     pair<int,
                          int> aux = createFilho(animais[i]->getX(), animais[i]->getY(), rand() % 8, rand() % 15 + 1);
 
@@ -535,13 +555,25 @@ void Reserva::interacaoAnimal()
                         animais[i]->setSaude(animais[i]->getSaude() - 1);
                         animais[i]->fazMovimentacaoSemAnimal_P(2);
 
+                        if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+                            animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                        }
+
                     } else if (animais[i]->getFome() >= 25) {
 
                         animais[i]->setSaude(animais[i]->getSaude() - 2);
                         animais[i]->fazMovimentacaoSemAnimal_P(2);
 
+                        if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+                            animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                        }
+
                     } else {
                         animais[i]->fazMovimentacaoSemAnimal_P(1);
+
+                        if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+                            animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                        }
                     }
 
                 }
@@ -596,6 +628,11 @@ void Reserva::interacaoAnimal()
                     debug << "Nao tem animal na redondeza G\n";
 
                     animais[i]->fazMovimentacaoSemAnimal_P(1);
+
+                    if(verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())){
+
+                        animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                    }
                 }
             } else {
 
@@ -833,6 +870,23 @@ pair<int, int> Reserva::createFilho(int x, int y, int direcao, int distancia)
     return make_pair(x, y);
 }
 
+bool Reserva::verificaSeEstaFora(int x, int y, int linhas, int colunas)
+{
+    if (x < 1) {
+        return true;
+    }
+    if (x >= linhas) {
+        return true;
+    }
+    if (y < 1) {
+        return true;
+    }
+    if (y >= colunas) {
+        return true;
+    }
+
+    return false;
+}
 
 
 

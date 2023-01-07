@@ -21,6 +21,8 @@ public:
 
     void fazMovimentacaoComAnimal() override;
 
+    void fazDarVolta(int x, int y, int linhas, int colunas) override;
+
     Animais* duplica() const override {return new Coelho(*this);}
 };
 

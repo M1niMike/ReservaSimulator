@@ -43,6 +43,7 @@ public:
     virtual void fazMovimentacaoSemAnimal_I_F(int inicio, int fim) = 0;
     virtual void fazMovimentacaoSemAnimal_P(int posicao) = 0;
     virtual void fazMovimentacaoComAnimal() = 0;
+    virtual void fazDarVolta(int x, int y, int linhas, int colunas) = 0;
     virtual string getTipoAnimal () const = 0;
 
     Animais(const string& t, int SAnimal, int VAnimal, int fome, int peso, int x, int y);
