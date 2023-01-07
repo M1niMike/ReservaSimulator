@@ -27,6 +27,9 @@ public:
         }
     }
 
+    int constantesReader(string aux);
+    bool leFicheiroConstantes(string fileName);
+
     //Get
     int getLinhas() const;
     int getColunas() const;
@@ -42,8 +45,8 @@ public:
 
     //Animal
     vector<Animais *> getVecAnimal() const;
-    void criaAnimal(const string &tipo, int saude, int vida, const int &x, const int &y);
-    void criaAnimalRandom(const string &tipo, int saude, int vida);
+    void criaAnimal(const string &tipo, const int &x, const int &y);
+    void criaAnimalRandom(const string &tipo);
     int getNumberOfAnimals() const;
     void removeAnimalbyId(const int &id);
     void removeAnimalbyCoord(const int &x, const int &y);
@@ -65,6 +68,7 @@ public:
     bool hasAlimento(int x, int y);
     void removeAlimentobyId(const int &id);
     void removeAlimentobyCoord(const int &x, const int &y);
+    bool verificaAlimentoRedondeza(const int &id, const int &x, const int &y, const int &valorRedondeza);
     void interacaoAlimento();
 
 private:
@@ -72,6 +76,7 @@ private:
     int colunas;
     vector<Animais *> animais;
     vector<Alimentos *> alimentos;
+    map<string, int> mapaConstantes;
     int totalCoisas = 1;
     //static int ID;
     int numInstantes;

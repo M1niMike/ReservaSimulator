@@ -16,7 +16,7 @@ Reserva* Simulador::menuSimulador() {
     string aux;
     string coord;
 
-    leFicheiroConstantes("constantes.txt");
+    r->leFicheiroConstantes("constantes.txt");
 
     cmdW << "Simulacao Iniciada\n";
     cmdW << "A criar a Reserva...\n";
@@ -77,43 +77,9 @@ bool Simulador::leFicheiro(string fileName) {
     return true;
 }
 
-bool Simulador::leFicheiroConstantes(string fileName) {
-    string textoDoFich;
-
-    ifstream file;
-
-    int valor;
-
-    string aux;
-
-    file.open(fileName);
-
-    if (!file) {
-        return false;
-    }
-
-    while (getline(file, textoDoFich)) {
-        istringstream iss(textoDoFich);
-        if (!(iss >> aux >> valor)) {
-            continue;
-        }
-        mapaConstantes[aux] = valor;
-    }
-
-    file.ignore('\n');
-
-    return true;
+void Simulador::sleepChrono(int valorTempo) {
+    this_thread::sleep_for(chrono::seconds(valorTempo));
 }
-
-int Simulador::constantesReader(string aux) {
-    for (auto it: mapaConstantes) {
-        if (mapaConstantes.find(aux) != mapaConstantes.end()) {
-            return mapaConstantes[aux];
-        }
-    }
-    return -1;
-}
-
 
 vector<string> Simulador::splitString(const string &cmd) const {
     string aux;
@@ -144,7 +110,8 @@ void Simulador::getInfoAnimal(int x, int y) {
         if (r->getVecAnimal()[k]->getX() == x && r->getVecAnimal()[k]->getY() == y) {
             textInterface << "Id: " << r->getVecAnimal()[k]->getId() << " | ";
             textInterface << "Tipo: " << r->getVecAnimal()[k]->getTipoAnimal() << " | ";
-            textInterface << "Saude: " << r->getVecAnimal()[k]->getSaude() << "\n";
+            textInterface << "Saude: " << r->getVecAnimal()[k]->getSaude() << " | ";
+            textInterface << "Vida: " << r->getVecAnimal()[k]->getvAnimal() << "\n";
             flag = true;
         }
     }
@@ -166,7 +133,9 @@ void Simulador::getInfoAlimento(int x, int y) {
         {
             textInterface << "Id: " << r->getVecAlimento()[k]->getId() << " | ";
             textInterface << "Tipo: " << r->getVecAlimento()[k]->getTipoAlimento() << " | ";
-            textInterface << "Cheiro: " << r->getVecAlimento()[k]->getCheiro() << "\n";
+            textInterface << "Cheiro: " << r->getVecAlimento()[k]->getCheiro() << " | ";
+            textInterface << "Tempo de validade: " << r->getVecAlimento()[k]->getValimento() << " | ";
+            textInterface << "Toxicidade: " << r->getVecAlimento()[k]->getToxicidade() << "\n";
             flag = true;
         }
     }
@@ -188,305 +157,6 @@ bool Simulador::verificaCoord(const int &linha, const int &coluna) {
     return false;
 }
 
-void Simulador::cmdNoFoodCoord(vector<string> comando) { // nofood
-    for (auto it: comando) { // armezenar comandos
-        char coordX = comando[1][0];
-        char coordY = comando[2][0];
-
-        if (it == comando[2]) {
-
-            if (isdigit(coordX) == 0) {
-                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
-            }
-
-        } else if (it == comando[2]) {
-            if (isdigit(coordY) == 0) {
-                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
-            }
-
-        }
-        int x = stoi(comando[1]);
-        int y = stoi(comando[2]);
-
-        if (verificaCoord(x, y)) {
-            r->removeAlimentobyCoord(x,y);
-
-        } else {
-            textInterface << "\nPor favor, insira coordenadas validas!" << "\n";
-        }
-    }
-}
-
-void Simulador::cmdFeedId(vector<string> comando){ // feedid id vn vt
-    for (auto it: comando) { // armezenar comandos
-        char verificaId  = comando[1][0]; // id
-        char verificaVn = comando[2][0]; // valor nutricional
-        char verificaVt = comando[3][0]; // valor toxicidade
-
-        if (it == comando[1]) {
-
-            if (isdigit(verificaId) == 0) {
-                textInterface << "\nPor favor insira um numero no id!\n" << "\n";
-            }
-
-        } else if (it == comando[2]) {
-            if (isdigit(verificaVn) == 0) {
-                textInterface << "\nPor favor insira um numero no valor nutricional!\n" << "\n";
-            }
-
-        }else if (it == comando[3]) {
-            if (isdigit(verificaVt) == 0) {
-                textInterface << "\nPor favor insira um numero no valor de toxicidade!\n" << "\n";
-            }
-
-        }
-        int id = stoi(comando[1]);
-        int vn = stoi(comando[2]);
-        int vt = stoi(comando[3]);
-
-        r->feedAnimalById(id, vn, vt);
-        break;
-    }
-
-}
-
-
-void Simulador::cmdFeedCoord(vector<string> comando) {
-    for (auto it: comando) { // armezenar comandos
-        char CoordX  = comando[1][0];
-        char CoordY  = comando[2][0]; // id
-        char verificaVn = comando[3][0]; // valor nutricional
-        char verificaVt = comando[4][0]; // valor toxicidade
-
-        if (it == comando[1]) {
-
-            if (isdigit(CoordX) == 0) {
-                textInterface << "\nPor favor insira um numero no id!\n" << "\n";
-            }
-
-        } else if (it == comando[2]) {
-            if (isdigit(CoordY) == 0) {
-                textInterface << "\nPor favor insira um numero no valor nutricional!\n" << "\n";
-            }
-
-        }else if (it == comando[3]) {
-            if (isdigit(verificaVn) == 0) {
-                textInterface << "\nPor favor insira um numero no valor de toxicidade!\n" << "\n";
-            }
-
-        }else if (it == comando[4]) {
-            if (isdigit(verificaVt) == 0) {
-                textInterface << "\nPor favor insira um numero no valor de toxicidade!\n" << "\n";
-            }
-
-        }
-        int x = stoi(comando[1]);
-        int y = stoi(comando[2]);
-        int vn = stoi(comando[3]);
-        int vt = stoi(comando[4]);
-
-
-
-        r->feedAnimalbyCoord(x, y, vn, vt);
-        break;
-    }
-
-
-}
-
-
-void Simulador::cmdNoFoodId(vector<string> comando) {
-    for (auto it: comando) { // armezenar comandos
-        char idchar = comando[1][0];
-
-        if (it == comando[1]) {
-
-            if (isdigit(idchar) == 0) {
-                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
-            }
-
-        }
-
-        int id = stoi(comando[1]);
-        r->removeAlimentobyId(id);
-    }
-}
-
-void Simulador::cmdKillAnimalCoord(vector<string> comando) {
-    for (auto it: comando) { // armezenar comandos
-        char coordX = comando[1][0];
-        char coordY = comando[2][0];
-
-        if (it == comando[2]) {
-
-            if (isdigit(coordX) == 0) {
-                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
-            }
-
-        } else if (it == comando[2]) {
-            if (isdigit(coordY) == 0) {
-                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
-            }
-
-        }
-        int x = stoi(comando[1]);
-        int y = stoi(comando[2]);
-
-        if (verificaCoord(x, y)) {
-            r->removeAnimalbyCoord(x,y);
-
-        } else {
-            textInterface << "\nPor favor, insira coordenadas validas!" << "\n";
-        }
-    }
-}
-
-void Simulador::cmdKillAnimalId(vector<string> comando){
-    for (auto it: comando) { // armezenar comandos
-        char idchar = comando[1][0];
-
-        if (it == comando[1]) {
-
-            if (isdigit(idchar) == 0) {
-                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
-            }
-
-        }
-
-        int id = stoi(comando[1]);
-        r->removeAnimalbyId(id);
-    }
-}
-
-//void Simulador::cmdStore(vector<string> comando) {
-//    for (auto it: comando) {
-//        string nomeSave = comando[1]; // ir buscar o nome do "save" que o user meteu
-//
-//        if(it == comando[1]){
-//            if (mapaSave.find(nomeSave) != mapaSave.end()) {
-//                textInterface << "\nJa existe um store com esse nome, por favor insira outro.\n";
-//                return;
-//            }
-//
-//            Reserva *temp = new Reserva(*r);
-//
-//            mapaSave.insert(std::pair<string, Reserva*>(nomeSave, temp));
-//            textInterface << "\nReserva guardada com sucesso\n";
-//        }
-//    } //ver melhor esta parte
-//}
-
-void Simulador::cmdRestore(vector<string> comando) {
-    for (auto it : comando) {
-        string nomeRestore = comando[1];
-
-        textInterface << comando[1];
-
-        if (it == comando[1]){
-            if (mapaSave.find(nomeRestore) != mapaSave.end()) {
-                delete r; //apagar onde estamos agora
-                r = (mapaSave.find(nomeRestore)->second); //o second vai buscar a segunda "chavE" do mapa, ou seja, o Reserva* e carrega-o
-
-                textInterface << "\n A sua gravacao: " << nomeRestore << " foi restaurada com sucesso!\n";
-                return;
-            } // se ele encontrar o nome antes de chegar ao fim do mapa
-        }
-    }
-    textInterface << "\nNao encontrei o nome que inseriu...\n";
-}
-
-
-void Simulador::sleepChrono(int valorTempo) {
-    this_thread::sleep_for(chrono::seconds (valorTempo));
-}
-
-
-
-void Simulador::cmdN(vector<string> comando){
-    r->incrementaInstante();
-    r->interacaoAlimento();
-    r->interacaoAnimal();
-    textInterface << "\nInstante da Reserva: " << r->getInstantes();
-    textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
-    textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
-    textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
-    textInterface << "\n";
-}
-
-
-void Simulador::cmdNPause(vector<string> comando){
-
-
-    for(int i = 0; i < stoi(comando[1]); i++){
-        r->incrementaInstante();
-        r->interacaoAlimento();
-        r->interacaoAnimal();
-        
-        buildReserva();
-        reservaPrinter.clear();
-
-        textInterface << "\nInstante da Reserva: " << r->getInstantes();
-        textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
-        textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
-        textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
-        textInterface << "\n";
-
-        sleepChrono(stoi(comando[2]));
-
-    }
-}
-
-
-
-
-void Simulador::cmdNN(vector<string> comando){
-
-    for(int i = 0; i < stoi(comando[1]); i++){
-        r->incrementaInstante();
-        r->interacaoAlimento();
-        r->interacaoAnimal();
-        buildReserva();
-        reservaPrinter.clear();
-        textInterface << "\nInstante da Reserva: " << r->getInstantes();
-        textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
-        textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
-        textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
-        textInterface << "\n";
-
-    }
-}
-
-
-void Simulador::cmdEmpty(vector<string> comando) {
-
-    for (auto it: comando) { // armezenar comandos
-        char coordX = comando[1][0];
-        char coordY = comando[2][0];
-
-        if (it == comando[2]) {
-
-            if (isdigit(coordX) == 0) {
-                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
-            }
-
-        } else if (it == comando[2]) {
-            if (isdigit(coordY) == 0) {
-                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
-            }
-
-        }
-            int x = stoi(comando[1]);
-            int y = stoi(comando[2]);
-
-            if (verificaCoord(x, y)) {
-                r->removeAlimentobyCoord(x,y);
-                r->removeAnimalbyCoord(x,y);
-
-            } else {
-                textInterface << "\nPor favor, insira coordenadas validas!" << "\n";
-            }
-    }
-}
 
 //Comandos
 void Simulador::validaComandos(string cmd) {
@@ -604,8 +274,6 @@ void Simulador::cmdExit() {
 
 void Simulador::cmdCriaAnimal(vector<string> comando) {
     for (auto it: comando) { // armezenar comandos
-        int saude = constantesReader("SAnimal");
-        int vida = constantesReader("VAnimal");
         char coordX = comando[2][0];
         char coordY = comando[3][0];
 
@@ -626,18 +294,7 @@ void Simulador::cmdCriaAnimal(vector<string> comando) {
             int y = stoi(comando[3]);
 
             if (verificaCoord(x, y)) {
-                if(it == "C"){
-                    r->criaAnimal(it, constantesReader("SCoelho"), constantesReader("VCoelho"), x, y);
-                }else if(it == "L"){
-                    r->criaAnimal(it, constantesReader("SLobo"), constantesReader("VLobo"), x, y);
-                }else if(it == "G"){
-                    r->criaAnimal(it, constantesReader("SCanguru"), constantesReader("VCanguru"), x, y);
-                }else if(it == "O"){
-                    r->criaAnimal(it, constantesReader("SOvelha"), constantesReader("VOvelha"), x, y);
-                }else if(it == "M"){
-                    r->criaAnimal(it, constantesReader("SAnimalM"), constantesReader("VAnimalM"), x, y);
-                }
-
+                r->criaAnimal(it, x, y);
             } else {
                 textInterface << "\nPor favor, insira coordenadas validas!" << "\n";
             }
@@ -649,17 +306,7 @@ void Simulador::cmdCriaAnimalRandom(vector<string> comando) {
     for (auto it: comando) {
         if (it == comando[1]) {
             it = maiscula(it);
-            if(it == "C"){
-                r->criaAnimalRandom(it, constantesReader("SCoelho"), constantesReader("VCoelho"));
-            }else if(it == "L"){
-                r->criaAnimalRandom(it, constantesReader("SLobo"), constantesReader("VLobo"));
-            }else if(it == "G"){
-                r->criaAnimalRandom(it, constantesReader("SCanguru"), constantesReader("VCanguru"));
-            }else if(it == "O"){
-                r->criaAnimalRandom(it, constantesReader("SOvelha"), constantesReader("VOvelha"));
-            }else if(it == "M"){
-                r->criaAnimalRandom(it, constantesReader("SAnimalM"), constantesReader("VAnimalM"));
-            }
+            r->criaAnimalRandom(it);
         }
     }
 }
@@ -753,6 +400,295 @@ void Simulador::cmdLoad(vector<string> comando) {
     }
 }
 
+void Simulador::cmdEmpty(vector<string> comando) {
+
+    for (auto it: comando) { // armezenar comandos
+        char coordX = comando[1][0];
+        char coordY = comando[2][0];
+
+        if (it == comando[2]) {
+
+            if (isdigit(coordX) == 0) {
+                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
+            }
+
+        } else if (it == comando[2]) {
+            if (isdigit(coordY) == 0) {
+                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
+            }
+
+        }
+        int x = stoi(comando[1]);
+        int y = stoi(comando[2]);
+
+        if (verificaCoord(x, y)) {
+            r->removeAlimentobyCoord(x,y);
+            r->removeAnimalbyCoord(x,y);
+
+        } else {
+            textInterface << "\nPor favor, insira coordenadas validas!" << "\n";
+        }
+    }
+}
+
+void Simulador::cmdNN(vector<string> comando){
+
+    for(int i = 0; i < stoi(comando[1]); i++){
+        r->incrementaInstante();
+        r->interacaoAlimento();
+        r->interacaoAnimal();
+        buildReserva();
+        reservaPrinter.clear();
+        textInterface << "\nInstante da Reserva: " << r->getInstantes();
+        textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
+        textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
+        textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
+        textInterface << "\n";
+
+    }
+}
+
+void Simulador::cmdNPause(vector<string> comando){
+
+
+    for(int i = 0; i < stoi(comando[1]); i++){
+        r->incrementaInstante();
+        r->interacaoAlimento();
+        r->interacaoAnimal();
+
+        buildReserva();
+        reservaPrinter.clear();
+
+        textInterface << "\nInstante da Reserva: " << r->getInstantes();
+        textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
+        textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
+        textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
+        textInterface << "\n";
+
+        sleepChrono(stoi(comando[2]));
+
+    }
+}
+
+void Simulador::cmdN(vector<string> comando){
+    r->incrementaInstante();
+    r->interacaoAlimento();
+    r->interacaoAnimal();
+    textInterface << "\nInstante da Reserva: " << r->getInstantes();
+    textInterface << "\nNumero de Animais na Reserva: " << r->getNumberOfAnimals();
+    textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
+    textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
+    textInterface << "\n";
+}
+
+void Simulador::cmdRestore(vector<string> comando) {
+    for (auto it : comando) {
+        string nomeRestore = comando[1];
+
+        textInterface << comando[1];
+
+        if (it == comando[1]){
+            if (mapaSave.find(nomeRestore) != mapaSave.end()) {
+                delete r; //apagar onde estamos agora
+                r = (mapaSave.find(nomeRestore)->second); //o second vai buscar a segunda "chavE" do mapa, ou seja, o Reserva* e carrega-o
+
+                textInterface << "\n A sua gravacao: " << nomeRestore << " foi restaurada com sucesso!\n";
+                return;
+            } // se ele encontrar o nome antes de chegar ao fim do mapa
+        }
+    }
+    textInterface << "\nNao encontrei o nome que inseriu...\n";
+}
+
+//void Simulador::cmdStore(vector<string> comando) {
+//    for (auto it: comando) {
+//        string nomeSave = comando[1]; // ir buscar o nome do "save" que o user meteu
+//
+//        if(it == comando[1]){
+//            if (mapaSave.find(nomeSave) != mapaSave.end()) {
+//                textInterface << "\nJa existe um store com esse nome, por favor insira outro.\n";
+//                return;
+//            }
+//
+//            Reserva *temp = new Reserva(*r);
+//
+//            mapaSave.insert(std::pair<string, Reserva*>(nomeSave, temp));
+//            textInterface << "\nReserva guardada com sucesso\n";
+//        }
+//    } //ver melhor esta parte
+//}
+
+void Simulador::cmdKillAnimalId(vector<string> comando){
+    for (auto it: comando) { // armezenar comandos
+        char idchar = comando[1][0];
+
+        if (it == comando[1]) {
+
+            if (isdigit(idchar) == 0) {
+                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
+            }
+
+        }
+
+        int id = stoi(comando[1]);
+        r->removeAnimalbyId(id);
+    }
+}
+
+void Simulador::cmdKillAnimalCoord(vector<string> comando) {
+    for (auto it: comando) { // armezenar comandos
+        char coordX = comando[1][0];
+        char coordY = comando[2][0];
+
+        if (it == comando[2]) {
+
+            if (isdigit(coordX) == 0) {
+                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
+            }
+
+        } else if (it == comando[2]) {
+            if (isdigit(coordY) == 0) {
+                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
+            }
+
+        }
+        int x = stoi(comando[1]);
+        int y = stoi(comando[2]);
+
+        if (verificaCoord(x, y)) {
+            r->removeAnimalbyCoord(x,y);
+
+        } else {
+            textInterface << "\nPor favor, insira coordenadas validas!" << "\n";
+        }
+    }
+}
+
+void Simulador::cmdNoFoodId(vector<string> comando) {
+    for (auto it: comando) { // armezenar comandos
+        char idchar = comando[1][0];
+
+        if (it == comando[1]) {
+
+            if (isdigit(idchar) == 0) {
+                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
+            }
+
+        }
+
+        int id = stoi(comando[1]);
+        r->removeAlimentobyId(id);
+    }
+}
+
+void Simulador::cmdFeedCoord(vector<string> comando) {
+    for (auto it: comando) { // armezenar comandos
+        char CoordX  = comando[1][0];
+        char CoordY  = comando[2][0]; // id
+        char verificaVn = comando[3][0]; // valor nutricional
+        char verificaVt = comando[4][0]; // valor toxicidade
+
+        if (it == comando[1]) {
+
+            if (isdigit(CoordX) == 0) {
+                textInterface << "\nPor favor insira um numero no id!\n" << "\n";
+            }
+
+        } else if (it == comando[2]) {
+            if (isdigit(CoordY) == 0) {
+                textInterface << "\nPor favor insira um numero no valor nutricional!\n" << "\n";
+            }
+
+        }else if (it == comando[3]) {
+            if (isdigit(verificaVn) == 0) {
+                textInterface << "\nPor favor insira um numero no valor de toxicidade!\n" << "\n";
+            }
+
+        }else if (it == comando[4]) {
+            if (isdigit(verificaVt) == 0) {
+                textInterface << "\nPor favor insira um numero no valor de toxicidade!\n" << "\n";
+            }
+
+        }
+        int x = stoi(comando[1]);
+        int y = stoi(comando[2]);
+        int vn = stoi(comando[3]);
+        int vt = stoi(comando[4]);
+
+
+
+        r->feedAnimalbyCoord(x, y, vn, vt);
+        break;
+    }
+
+
+}
+
+void Simulador::cmdFeedId(vector<string> comando){ // feedid id vn vt
+    for (auto it: comando) { // armezenar comandos
+        char verificaId  = comando[1][0]; // id
+        char verificaVn = comando[2][0]; // valor nutricional
+        char verificaVt = comando[3][0]; // valor toxicidade
+
+        if (it == comando[1]) {
+
+            if (isdigit(verificaId) == 0) {
+                textInterface << "\nPor favor insira um numero no id!\n" << "\n";
+            }
+
+        } else if (it == comando[2]) {
+            if (isdigit(verificaVn) == 0) {
+                textInterface << "\nPor favor insira um numero no valor nutricional!\n" << "\n";
+            }
+
+        }else if (it == comando[3]) {
+            if (isdigit(verificaVt) == 0) {
+                textInterface << "\nPor favor insira um numero no valor de toxicidade!\n" << "\n";
+            }
+
+        }
+        int id = stoi(comando[1]);
+        int vn = stoi(comando[2]);
+        int vt = stoi(comando[3]);
+
+        r->feedAnimalById(id, vn, vt);
+        break;
+    }
+
+}
+
+void Simulador::cmdNoFoodCoord(vector<string> comando) { // nofood
+    for (auto it: comando) { // armezenar comandos
+        char coordX = comando[1][0];
+        char coordY = comando[2][0];
+
+        if (it == comando[2]) {
+
+            if (isdigit(coordX) == 0) {
+                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
+            }
+
+        } else if (it == comando[2]) {
+            if (isdigit(coordY) == 0) {
+                textInterface << "\nPor favor insira um numero na coordenada!\n" << "\n";
+            }
+
+        }
+        int x = stoi(comando[1]);
+        int y = stoi(comando[2]);
+
+        if (verificaCoord(x, y)) {
+            r->removeAlimentobyCoord(x,y);
+
+        } else {
+            textInterface << "\nPor favor, insira coordenadas validas!" << "\n";
+        }
+    }
+}
+
+
+
+
 //Prints "Tabuleiro" e "Zona"
 void Simulador::buildArea(int x, int y) {
 
@@ -762,7 +698,7 @@ void Simulador::buildArea(int x, int y) {
         getInfoAnimal(x, y);
         textInterface << "\nAlimentos: " << "\n";
         getInfoAlimento(x, y);
-        textInterface << "\n";
+        //textInterface << "\n";
     } else {
         textInterface << "\nPor favor, insira coordenadas validas." << "\n";
     }

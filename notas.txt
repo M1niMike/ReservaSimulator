@@ -4,4 +4,5 @@ Sem uso de STL para o historico, vector<x> (funções com esse formato), utiliza
 Metas para hoje:
     tratar de alimentar os animais (falta eles comerem o alimento porque eles já comem input de user) (50%)
     corrigir extremidades do board
+    corrigir todos os move
     fazer a logica dos animaisM e alimentosM

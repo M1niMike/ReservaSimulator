@@ -23,8 +23,8 @@ public:
     void getInfoAlimento(int x, int y);
     bool verificaCoord(const int &linha, const int &coluna);
     string maiscula(string palavra);
-    int constantesReader(string aux);
-    bool leFicheiroConstantes(string fileName);
+//    int constantesReader(string aux);
+//    bool leFicheiroConstantes(string fileName);
     void sleepChrono(int valorTempo);
 
 
@@ -52,7 +52,7 @@ public:
     void cmdFeedId(vector<string> comando);
     void cmdFeedCoord(vector<string> comando);
 
-    void cmdTeste(vector<string> comando);
+
 
     Reserva *getReserva() const
     {
@@ -68,7 +68,6 @@ public:
 
 private:
     Reserva *r;
-    map<string, int> mapaConstantes;
     map<string, Reserva*> mapaSave;
     Terminal &t;
     Window cmdW;

@@ -45,49 +45,89 @@ int Reserva::getInstantes() const {
     return numInstantes;
 }
 
+
+bool Reserva::leFicheiroConstantes(string fileName) {
+    string textoDoFich;
+
+    ifstream file;
+
+    int valor;
+
+    string aux;
+
+    file.open(fileName);
+
+    if (!file) {
+        return false;
+    }
+
+    while (getline(file, textoDoFich)) {
+        istringstream iss(textoDoFich);
+        if (!(iss >> aux >> valor)) {
+            continue;
+        }
+        mapaConstantes[aux] = valor;
+    }
+
+    file.ignore('\n');
+
+    return true;
+}
+
+
+int Reserva::constantesReader(string aux) {
+    for (auto it: mapaConstantes) {
+        if (mapaConstantes.find(aux) != mapaConstantes.end()) {
+            return mapaConstantes[aux];
+        }
+    }
+    return -1;
+}
+
+
 /*ANIMAL*/
-void Reserva::criaAnimal(const string &tipo, int saude, int vida, const int& x, const int& y) {
+void Reserva::criaAnimal(const string &tipo, const int& x, const int& y) {
     if (tipo != "C" && tipo != "O" && tipo != "L" && tipo != "G" && tipo != "M") {
         cout << "\nPor favor insira um animal valido!" << endl;
     }else{
         if (tipo == "C") {
-            animais.push_back(new Coelho("Coelho", saude, vida, 0,  rand() % 4 + 1, x,y));
+            animais.push_back(new Coelho("Coelho", constantesReader("SCoelho"), constantesReader("VCoelho"), 0,  rand() % 4 + 1, x,y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "O") {
-            animais.push_back(new Ovelha("Ovelha",  saude, vida, 0, rand() % 5 + 4, x, y));
+            animais.push_back(new Ovelha("Ovelha",  constantesReader("SOvelha"), constantesReader("VOvelha"), 0, rand() % 5 + 4, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "L") {
-            animais.push_back(new Lobo("Lobo",  saude, vida, 0, 15, x, y));
+            animais.push_back(new Lobo("Lobo",  constantesReader("SLobo"), constantesReader("VLobo"), 0, 15, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "G") {
-            animais.push_back(new Canguru("Canguru", saude, vida, 0, 10, x, y));
+            animais.push_back(new Canguru("Canguru", constantesReader("SCanguru"), constantesReader("VCanguru"), 0, 10, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         } else if (tipo == "M") {
-            animais.push_back(new AnimalMisterioso("Macaco (AM)" , saude, vida, 0, rand() % 9 + 2, x, y));
+            animais.push_back(new AnimalMisterioso("Macaco (AM)" , constantesReader("SAnimalM"), constantesReader("VAnimalM"), 0, rand() % 9 + 2, x, y));
             animais[animais.size()-1]->setId(totalCoisas++);
         }
     }
 }
-void Reserva::criaAnimalRandom(const string &tipo, int saude, int vida) {
+void Reserva::criaAnimalRandom(const string &tipo) {
     int lRandom = rand() % linhas + 1;
     int cRandom = rand() % colunas + 1;
     if (tipo != "C" && tipo != "O" && tipo != "L" && tipo != "G" && tipo != "M") {
         cout << "\nPor favor insira um animal valido!" << endl;
     } else {
         if (tipo == "C") {
-            animais.push_back(new Coelho("Coelho", saude, vida, 0, rand() % 4 + 1, lRandom , cRandom));
+            animais.push_back(new Coelho("Coelho", constantesReader("SCoelho"), constantesReader("VCoelho"), 0, rand() % 4 + 1, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "O") {
-            animais.push_back(new Ovelha("Ovelha", saude, vida, 0, rand() % 5 + 4, lRandom , cRandom)); //rand() % 5 + 4; numero entre 4 e 8 --
+            animais.push_back(new Ovelha("Ovelha", constantesReader("SOvelha"), constantesReader("VOvelha"), 0, rand() % 5 + 4, lRandom , cRandom)); //rand() % 5 + 4; numero entre 4 e 8 --
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "L") {
-            animais.push_back(new Lobo("Lobo", saude, vida, 0, 15, lRandom , cRandom));
+            animais.push_back(new Lobo("Lobo", constantesReader("SLobo"), constantesReader("VLobo"), 0, 15, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "G") {
-            animais.push_back(new Canguru("Canguru", saude, vida, 0, 10, lRandom , cRandom));
+            animais.push_back(new Canguru("Canguru", constantesReader("SCanguru"), constantesReader("VCanguru"), 0, 10, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         } else if (tipo == "M") {
-            animais.push_back(new AnimalMisterioso("Macaco (AM)", saude, vida, 0, rand() % 9 + 2, lRandom , cRandom));
+            animais.push_back(new AnimalMisterioso("Macaco (AM)", constantesReader("SAnimalM"), constantesReader("VAnimalM"), 0, rand() % 9 + 2, lRandom , cRandom));
             alimentos[alimentos.size()-1]->setId(totalCoisas++);
         }
     }
@@ -131,6 +171,7 @@ void Reserva::criaAlimento(const string &tipo, const int& x, const int& y) {
     }
 
 }
+
 void Reserva::criaAlimentoRandom(const string &tipo) {
     int lRandom = rand() % linhas + 1;
     int cRandom = rand() % colunas + 1;
@@ -219,7 +260,6 @@ void Reserva::feedAnimalById(const int &id, const int &valorNutritivo, const int
     }
 }
 
-
 void Reserva::feedAnimalbyCoord(const int &x, const int &y, const int &valorNutritivo, const int &toxicidade) {
 
     for(auto it = animais.begin(); it != animais.end(); it++){
@@ -229,7 +269,6 @@ void Reserva::feedAnimalbyCoord(const int &x, const int &y, const int &valorNutr
         }
     }
 }
-
 
 int Reserva::getNumberOfFood() const {
     return alimentos.size();
@@ -269,10 +308,12 @@ void Reserva::interacaoAnimal() {
 
             if(animais[i]->getvAnimal() != 0){ //Se a vida for diferente de 0, ele faz toda a logica do animal
 
-                if (animais[i]->getvAnimal() == animais[i]->getvAnimal() - 8){
-                    engravida = rand() % 1 + 2;
+                if (numInstantes % 8 == 0){
+
+                    engravida = rand() % 2 + 1;
+
                     if(engravida == 1){ //engravidou com sucesso
-                       animais.push_back(animais[i]->duplica());
+                       animais.push_back(new Coelho(animais[i]->getTipoAnimal(), constantesReader("SCoelho"), constantesReader("VCoelho"), 0, rand() % 4 + 1, animais[i]->getX()+1, animais[i]->getY()+1));
                        animais[animais.size()-1]->setId(totalCoisas++);
                     }
 
@@ -422,18 +463,49 @@ bool Reserva::verificaAnimalRedondeza(const int &id, const int &x, const int &y,
     return false; // Não encontrou nenhum animal nas redondezas
 }
 
+bool Reserva::verificaAlimentoRedondeza(const int &id, const int &x, const int &y, const int &valorRedondeza){
+    for (auto &alimento: alimentos){
+        if(alimento->getId() == id){
+            continue;
+        }
+
+        if (alimento->getX() < x + valorRedondeza && alimento->getX() > x - valorRedondeza && alimento->getY() < y + valorRedondeza && alimento->getY() > y - valorRedondeza){
+            return true;
+        }
+    }
+    return false;
+}
+
 void Reserva::interacaoAlimento() {
 
-    int vNutriInicial;
+    bool alimentoRedondeza = false;
+    int vNutriInicial = 0;
+    int vAlimentoInicial = 0;
+    int vToxicidadeInicial = 0;
+    bool flag = false;
 
     for(int i = 0; i < alimentos.size(); i++ ){ //Percorre os alimentos da reserva
 
-        if(alimentos[i]->getTipoAlimento() == "r"){// Verifica se o tipo é r
+        if(alimentos[i]->getTipoAlimento() == "r"){// Verifica se o tipo é r(relva)
 
-            alimentos[i]->setValimento(alimentos[i]->getValimento() - 1 ); // a cada instante diminui um do vAlimento
+            vNutriInicial = 3;
+            vAlimentoInicial = 20;
+            vToxicidadeInicial = 0;
 
             if(alimentos[i]->getValimento() != 0){// se o alimento ainda tiver vAlimento, faz a logica
 
+                alimentos[i]->setValimento(alimentos[i]->getValimento() - 1); // a cada instante diminui um do vAlimento
+
+                // se o alimento está com saude: 5 então o vAlimentoInicial * 0,75 é 15
+                if (alimentos[i]->getValimento() + vAlimentoInicial * 0.75 == vAlimentoInicial) {
+
+                    alimentoRedondeza = verificaAlimentoRedondeza(alimentos[i]->getId(), alimentos[i]->getX(), alimentos[i]->getY(), rand() % 5 + 4);
+
+                    if (!alimentoRedondeza) { // se não tiver um alimento nas redondezas, então vai criar uma nova relva num sitio random
+                        alimentos.push_back(new Relva(alimentos[i]->getTipoAlimento(), alimentos[i]->getCheiro(), vAlimentoInicial, vNutriInicial, vToxicidadeInicial, rand() % 5 + 4, rand() % 5 + 4));
+                        alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+                    }
+                }
 
             }else{ // caso o vAlimento for 0, ele remove o alimento do vetor
 

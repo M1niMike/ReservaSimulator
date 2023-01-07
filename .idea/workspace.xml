@@ -22,6 +22,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb5b0fea-053f-43f1-a63e-edde484ee9f2" name="Changes" comment="" />
     <list id="544d10dd-f479-43e0-bf06-9436a7f188f1" name="Changes by Goncalo" comment="" />
+    <list id="864c555a-c3f8-4b9d-ab0b-2f5f584a2752" name="Changes by Gonçalo" comment="" />
     <list id="05611b6b-6d4a-48be-88f2-5bbe35e05444" name="Changes by mikae" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ClangdSettings">
+    <option name="clangTidyViaClangd" value="false" />
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
@@ -37,6 +39,53 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Alimentos.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Simulador.cpp">
+      <ranges>
+        <range start1="18" end1="19" start2="18" end2="19" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="79" end1="114" start2="79" end2="81" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="115" end1="116" start2="82" end2="82" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="146" end1="147" start2="112" end2="114" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="168" end1="169" start2="135" end2="138" changelist="864c555a-c3f8-4b9d-ab0b-2f5f584a2752" />
+        <range start1="190" end1="489" start2="159" end2="159" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="606" end1="608" start2="276" end2="276" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="628" end1="640" start2="296" end2="297" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="651" end1="662" start2="308" end2="309" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="754" end1="754" start2="401" end2="690" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="764" end1="765" start2="700" end2="701" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Reserva.cpp">
+      <ranges>
+        <range start1="46" end1="46" start2="46" end2="86" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="48" end1="49" start2="88" end2="89" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="53" end1="54" start2="93" end2="94" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="56" end1="57" start2="96" end2="97" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="59" end1="60" start2="99" end2="100" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="62" end1="63" start2="102" end2="103" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="65" end1="66" start2="105" end2="106" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="70" end1="71" start2="110" end2="111" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="77" end1="78" start2="117" end2="118" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="80" end1="81" start2="120" end2="121" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="83" end1="84" start2="123" end2="124" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="86" end1="87" start2="126" end2="127" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="89" end1="90" start2="129" end2="130" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="133" end1="133" start2="173" end2="174" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="220" end1="221" start2="261" end2="261" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="231" end1="232" start2="271" end2="271" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="271" end1="273" start2="310" end2="314" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="274" end1="275" start2="315" end2="316" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="423" end1="423" start2="464" end2="477" changelist="864c555a-c3f8-4b9d-ab0b-2f5f584a2752" />
+        <range start1="426" end1="427" start2="480" end2="485" changelist="864c555a-c3f8-4b9d-ab0b-2f5f584a2752" />
+        <range start1="430" end1="431" start2="488" end2="489" changelist="864c555a-c3f8-4b9d-ab0b-2f5f584a2752" />
+        <range start1="432" end1="433" start2="490" end2="493" changelist="864c555a-c3f8-4b9d-ab0b-2f5f584a2752" />
+        <range start1="436" end1="436" start2="496" end2="508" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="490" end1="491" start2="562" end2="562" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="492" end1="495" start2="563" end2="563" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="497" end1="517" start2="565" end2="565" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
