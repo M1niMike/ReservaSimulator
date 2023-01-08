@@ -31,7 +31,7 @@ string Alimentos::getTipoAlimento() const {
 string Alimentos::getCheiro() const{
     ostringstream oss;
 
-    oss << "(" << cheiro << ")" << endl;
+    oss << cheiro;
 
     return oss.str();
 }

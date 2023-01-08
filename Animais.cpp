@@ -55,23 +55,6 @@ string Animais::PrintaAnimal() const{
     return oss.str();
 }
 
-bool Animais::alimentaAnimal(int valorNutritivo, int valorToxico) {
-    if (!isDead()) { // Verifica se não esta morto
 
-        if (SAnimal <= 0) { // se o valor da saude for 0, significa que esta morto
-
-            estaMorto = 1;
-            return false;
-        }
-        // Altera os status do animal
-        SAnimal += valorNutritivo;
-        SAnimal -= valorToxico;
-
-        //fome fica a 0, pois comeu
-        fome = 0;
-        return true; // se estiver vivo ele come
-    }
-    return false; // Se tiver morto
-}
 
 

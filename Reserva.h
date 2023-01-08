@@ -35,6 +35,9 @@ public:
     pair<int, int> createFilho(int x, int y, int direcao, int distancia);
     pair<int, int> createCorpo(int x, int y, int direcao);
 
+    pair<int, int> pegaCoordAl(int x, int y, int valorRedondeza, string comida);
+    pair<int, int> pegaValoresAl(int x, int y, int valorRedondeza, string comida);
+
 
     //Get
     int getLinhas() const;
@@ -62,6 +65,8 @@ public:
     bool checkPeso(const int &id, const int &x, const int &y, const int &valorRedondeza, const int& peso);
     Animais* verificaAnimalRedondeza(const int &id, const int &x, const int &y, const int &valorRedondeza);
     bool verificaSeEstaFora(int x, int y, int linhas, int colunas);
+    bool checkComida(int x, int y, int valorRedondeza, string comida);
+  //Alimentos* checkComida(int id, int x, int y, int valorRedondeza, string comida);
 
 
     string getInfoAnimalId(int id) const;

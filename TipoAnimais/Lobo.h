@@ -12,18 +12,11 @@ public:
     Lobo(const string& tipo, int SLobo, int VLobo, int fome, int peso, int x, int y) : Animais(tipo, SLobo, VLobo, fome, peso, x, y) {}
 
     string getTipoAnimal() const override{ return "L"; }
-
-    void fazInteracao(Reserva r) override;
-
     void fazMovimentacaoComAnimal() override;
-
     void fazMovimentacaoSemAnimal_P(int posicao) override;
-
     void fazMovimentacaoSemAnimal_I_F(int inicio, int fim) override {}
-
     void fazDarVolta(int x, int y, int linhas, int colunas) override;
-
-    Animais* duplica() const override {return new Lobo(*this);}
+    void fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico) override;
 };
 
 #endif //RESERVA_H_LOBO_H

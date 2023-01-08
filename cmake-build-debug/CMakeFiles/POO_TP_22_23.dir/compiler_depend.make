@@ -2033,10 +2033,7 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/AnimalMisterioso.cpp.obj: C:/ISEC/1Semes
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
   C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/stdarg.h \
-  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.h
+  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h
 
 CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Canguru.cpp \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Canguru.h \
@@ -2228,10 +2225,7 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj: C:/ISEC/1Semestre/POO/T
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
   C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/stdarg.h \
-  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.h
+  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h
 
 CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Coelho.cpp \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Coelho.h \
@@ -2423,10 +2417,7 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Coelho.cpp.obj: C:/ISEC/1Semestre/POO/TP
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
   C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/stdarg.h \
-  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.h
+  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h
 
 CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Lobo.cpp \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Lobo.h \
@@ -2618,10 +2609,7 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Lobo.cpp.obj: C:/ISEC/1Semestre/POO/TP/P
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
   C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/stdarg.h \
-  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.h
+  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h
 
 CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Ovelha.cpp \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/TipoAnimais/Ovelha.h \
@@ -2813,10 +2801,7 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Ovelha.cpp.obj: C:/ISEC/1Semestre/POO/TP
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/curses.h \
   C:/Program\ Files\ (x86)/w64devkit/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
   C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/stdarg.h \
-  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Reserva.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Animais.h \
-  C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/Alimentos.h
+  C:/Program\ Files\ (x86)/w64devkit/x86_64-w64-mingw32/include/_mingw_stdarg.h
 
 CMakeFiles/POO_TP_22_23.dir/main.cpp.obj: C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/main.cpp \
   C:/ISEC/1Semestre/POO/TP/POO-TP-22-23/util.h \

@@ -3,11 +3,7 @@
 //
 
 #include "Canguru.h"
-#include "../Reserva.h"
 
-void Canguru::fazInteracao(Reserva r) {
-
-}
 
 void Canguru::fazMovimentacaoSemAnimal_I_F(int inicio, int fim) { //SAR = Sem Animal Redondeza
     for (int i = 0; i < rand() % fim + inicio; i++){

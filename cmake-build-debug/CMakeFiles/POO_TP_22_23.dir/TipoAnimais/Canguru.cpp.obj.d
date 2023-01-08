@@ -189,7 +189,4 @@ CMakeFiles/POO_TP_22_23.dir/TipoAnimais/Canguru.cpp.obj: \
  c:\isec\1semestre\poo\tp\poo-tp-22-23\curses.h \
  c:\program\ files\ (x86)\w64devkit\lib\gcc\x86_64-w64-mingw32\12.2.0\include\stdarg.h \
  c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\stdarg.h \
- c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw_stdarg.h \
- c:\isec\1semestre\poo\tp\poo-tp-22-23\reserva.h \
- c:\isec\1semestre\poo\tp\poo-tp-22-23\Animais.h \
- c:\isec\1semestre\poo\tp\poo-tp-22-23\Alimentos.h
+ c:\program\ files\ (x86)\w64devkit\x86_64-w64-mingw32\include\_mingw_stdarg.h

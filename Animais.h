@@ -36,13 +36,10 @@ public:
     //prints
     string PrintaAnimal() const;
 
-
-    bool alimentaAnimal(int valorNutritivo, int valorToxico);
-
-    virtual void fazInteracao(Reserva r) = 0;
     virtual void fazMovimentacaoSemAnimal_I_F(int inicio, int fim) = 0;
     virtual void fazMovimentacaoSemAnimal_P(int posicao) = 0;
     virtual void fazMovimentacaoComAnimal() = 0;
+    virtual void fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico) = 0;
     virtual void fazDarVolta(int x, int y, int linhas, int colunas) = 0;
     virtual string getTipoAnimal () const = 0;
 
@@ -50,8 +47,6 @@ public:
 
     virtual ~Animais() = default;
 
-
-    virtual Animais* duplica() const = 0; //cada animal tem uma reprodução diferente mas aplica-se a mesma função a todos
 
 private:
     string tipo;

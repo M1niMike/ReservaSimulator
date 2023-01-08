@@ -3,11 +3,6 @@
 //
 
 #include "Coelho.h"
-#include "../Reserva.h"
-
-void Coelho::fazInteracao(Reserva r) {
-    //r->
-}
 
 void Coelho::fazMovimentacaoSemAnimal_I_F(int inicio, int fim) { //SAR = Sem Animal Redondeza
     for (int i = 0; i < rand() % fim + inicio; i++){
@@ -106,4 +101,33 @@ void Coelho::fazDarVolta(int x, int y, int linhas, int colunas)
     }
 }
 
-//void Coelho::fazMovimentacaoCAlimentoR() {}
+void Coelho::fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico)
+{
+    int distX = x - getX();
+    int distY = y - getY();
+
+
+    if(distX > 0){ // Se a distância for maior que zero, move o animal para a direita (ou para cima, no caso do eixo y)
+        setX(getX() + 1);
+    }else if(distX < 0){ // Se a distância for menor que zero, move o animal para a esquerda (ou para baixo)
+        setX(getX() - 1);
+    }
+
+    // Repete o processo para o y
+    if(distY > 0){
+        setY(getY() + 1);
+    }
+    else if(distX > 0){
+        setX(getX() + 1);
+    }
+
+    if(getX() == x && getY() == y){ // se as coordenadas do animal forem iguais a do alimento, ele come
+        // Altera os status do animal
+        setSaude(getSaude() + valorNutri);
+        setSaude(getSaude() - valorToxico);
+        //fome fica a 0, pois comeu
+
+        setFome(0); // se estiver vivo ele come
+    }
+}
+
