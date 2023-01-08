@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/POO_TP_22_23.dir/Alimentos.cpp.obj.d"
   "CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj"
   "CMakeFiles/POO_TP_22_23.dir/Animais.cpp.obj.d"
+  "CMakeFiles/POO_TP_22_23.dir/Historico.cpp.obj"
+  "CMakeFiles/POO_TP_22_23.dir/Historico.cpp.obj.d"
   "CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj"
   "CMakeFiles/POO_TP_22_23.dir/Reserva.cpp.obj.d"
   "CMakeFiles/POO_TP_22_23.dir/Simulador.cpp.obj"

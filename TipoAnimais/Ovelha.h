@@ -9,7 +9,8 @@
 
 class Ovelha : public Animais{
 public:
-    Ovelha(const string& tipo, int SOvelha, int VOvelha, int fome, int peso, int x, int y) : Animais(tipo, SOvelha, VOvelha, fome, peso, x, y) {}
+    Ovelha(const string& tipo, int SOvelha, int VOvelha, int fome, int peso, int x, int y, int idPai) : Animais(tipo, SOvelha, VOvelha, fome, peso, x, y, 0)
+    {}
 
     string getTipoAnimal() const override{ return "O"; }
     void fazMovimentacaoComAnimalFoge(int x, int y) override;
@@ -18,6 +19,7 @@ public:
     void fazMovimentacaoComAnimalCaca(int x, int y, int distancia) override {}
     void fazDarVolta(int x, int y, int linhas, int colunas) override;
     void fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico) override;
+    void fazMovimentacaoAtePai(int x, int y, int inicio, int fim, int distancia) override {}
 
 
 };

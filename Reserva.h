@@ -38,6 +38,7 @@ public:
     pair<int, int> pegaValoresAl(int x, int y, int valorRedondeza, string comida);
     pair<int, int> pegaCoordAni(int id, int x, int y, int valorRedondeza, int peso);
     pair<int, int> pegaCoordCaca(int id, int x, int y, int valorRedondeza);
+    pair<int, int> pegaCoordPai(int id, int idPai, int x, int y, int valorRedondeza);
 
 
 
@@ -68,6 +69,7 @@ public:
     Animais* verificaAnimalRedondeza(const int &id, const int &x, const int &y, const int &valorRedondeza);
     bool verificaSeEstaFora(int x, int y, int linhas, int colunas);
     bool checkComida(int x, int y, int valorRedondeza, string comida);
+    bool verificaAnimalRedondezaAlemPai(int id, int idPai, int x, int y, int valorRedondeza);
     int pegaPesoAnimalCacado(int id, int x, int y, int valorRedondeza);
 
   //Alimentos* checkComida(int id, int x, int y, int valorRedondeza, string comida);

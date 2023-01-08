@@ -40,6 +40,59 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Alimentos.h" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Reserva.cpp">
+      <ranges>
+        <range start1="22" end1="22" start2="22" end2="24" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="24" end1="26" start2="26" end2="27" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="27" end1="27" start2="28" end2="29" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="109" end1="110" start2="111" end2="112" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="112" end1="113" start2="114" end2="115" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="115" end1="116" start2="117" end2="118" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="118" end1="119" start2="120" end2="121" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="121" end1="122" start2="123" end2="124" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="135" end1="137" start2="137" end2="139" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="138" end1="140" start2="140" end2="142" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="141" end1="143" start2="143" end2="145" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="144" end1="146" start2="146" end2="148" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="147" end1="149" start2="149" end2="151" changelist="bef09d84-b09e-4aca-a5b4-e2e6556469b9" />
+        <range start1="331" end1="332" start2="333" end2="333" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="341" end1="342" start2="342" end2="343" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="348" end1="349" start2="349" end2="350" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="354" end1="357" start2="355" end2="358" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="382" end1="383" start2="383" end2="384" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="399" end1="400" start2="400" end2="401" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="441" end1="442" start2="442" end2="443" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="443" end1="445" start2="444" end2="445" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="446" end1="447" start2="446" end2="447" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="473" end1="474" start2="473" end2="474" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="475" end1="479" start2="475" end2="477" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="489" end1="490" start2="487" end2="488" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="544" end1="545" start2="542" end2="543" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="676" end1="677" start2="674" end2="675" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="678" end1="679" start2="676" end2="677" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="680" end1="683" start2="678" end2="681" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="684" end1="685" start2="682" end2="683" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="686" end1="687" start2="684" end2="685" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="688" end1="690" start2="686" end2="688" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="691" end1="692" start2="689" end2="690" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="693" end1="694" start2="691" end2="704" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="695" end1="696" start2="705" end2="706" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="697" end1="698" start2="707" end2="708" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="699" end1="700" start2="709" end2="710" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="701" end1="702" start2="711" end2="717" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="703" end1="704" start2="718" end2="719" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="705" end1="710" start2="720" end2="726" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="711" end1="712" start2="727" end2="728" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="713" end1="715" start2="729" end2="731" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="716" end1="717" start2="732" end2="733" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="718" end1="720" start2="734" end2="736" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="726" end1="733" start2="742" end2="742" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="783" end1="784" start2="792" end2="793" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+        <range start1="1128" end1="1128" start2="1137" end2="1171" changelist="bb5b0fea-053f-43f1-a63e-edde484ee9f2" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -82,6 +135,11 @@
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="POO_TP_22_23" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="/c start cmd /c &quot;POO_TP_22_23.exe &amp; pause&quot;" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POO_TP_22_23" TARGET_NAME="POO_TP_22_23" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/../../../../../Windows/System32/cmd.exe">

@@ -7,7 +7,7 @@
 #include "Reserva.h"
 
 
-Animais::Animais(const string& t, int SAnimal = 0, int VAnimal = 0, int fome = 0, int peso = 0, int x = 0, int y = 0) : tipo(t), x(x), y(y), SAnimal(SAnimal), VAnimal(VAnimal), fome(fome), peso(peso), estaMorto(0){
+Animais::Animais(const string& t, int SAnimal = 0, int VAnimal = 0, int fome = 0, int peso = 0, int x = 0, int y = 0, int idPai = 0) : tipo(t), x(x), y(y), SAnimal(SAnimal), VAnimal(VAnimal), fome(fome), peso(peso), estaMorto(0), idPai(idPai){
 }
 
 
@@ -53,6 +53,11 @@ string Animais::PrintaAnimal() const{
     oss << "\nID: " << id << " | " << "Tipo de animal: " << tipo << " | " << "Saude: " << SAnimal << " | " << "Vida: " << VAnimal << " | " << "X: " << x << " | " << "Y: " << y <<"\n";
 
     return oss.str();
+}
+
+int Animais::getIdPai() const
+{
+    return idPai;
 }
 
 

@@ -21,6 +21,7 @@ public:
     int getY() const;
     int getId() const;
     int getFome() const;
+    int getIdPai() const;
 
     bool isDead();
 
@@ -32,6 +33,7 @@ public:
     void setFome(int newFome) {fome = newFome;}
     void setX(int newX){x = newX;}
     void setY(int newY){y = newY;}
+    void setIdPai(int newIdPai){idPai = newIdPai;}
 
     //prints
     string PrintaAnimal() const;
@@ -41,10 +43,11 @@ public:
     virtual void fazMovimentacaoComAnimalFoge(int x, int y) = 0;
     virtual void fazMovimentacaoComAnimalCaca(int x, int y, int distancia) = 0;
     virtual void fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico) = 0;
+    virtual void fazMovimentacaoAtePai(int x, int y,int inicio, int fim, int distancia) = 0;
     virtual void fazDarVolta(int x, int y, int linhas, int colunas) = 0;
     virtual string getTipoAnimal () const = 0;
 
-    Animais(const string& t, int SAnimal, int VAnimal, int fome, int peso, int x, int y);
+    Animais(const string &t, int SAnimal, int VAnimal, int fome, int peso, int x, int y, int idPai);
 
     virtual ~Animais() = default;
 
@@ -59,6 +62,7 @@ private:
     int fome;
     int x, y;
     int id;
+    int idPai;
 
 };
 

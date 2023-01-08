@@ -21,10 +21,12 @@
 #include "TipoAlimentos/Bife.h"
 #include "TipoAlimentos/AlimentoMisterioso.h"
 
+static int idDoPai = 0;
 
-Reserva::Reserva(int numInstantes, int nl, int nc)
-        : linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15)
+
+Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15)
 {
+    
 }
 
 //Funcs Auxiliares
@@ -107,19 +109,19 @@ void Reserva::criaAnimal(const string &tipo, const int &x, const int &y)
         cout << "\nPor favor insira um animal valido!" << endl;
     } else {
         if (tipo == "C") {
-            animais.push_back(new Coelho("C", constantesReader("SCoelho"), constantesReader("VCoelho"), 0, rand() % 4 + 1, x, y));
+            animais.push_back(new Coelho("C", constantesReader("SCoelho"), constantesReader("VCoelho"), 0, rand() % 4 + 1, x, y, idDoPai));
             animais[animais.size() - 1]->setId(totalCoisas++);
         } else if (tipo == "O") {
-            animais.push_back(new Ovelha("O", constantesReader("SOvelha"), constantesReader("VOvelha"), 0, rand() % 5 + 4, x, y));
+            animais.push_back(new Ovelha("O", constantesReader("SOvelha"), constantesReader("VOvelha"), 0, rand() % 5 + 4, x, y, idDoPai));
             animais[animais.size() - 1]->setId(totalCoisas++);
         } else if (tipo == "L") {
-            animais.push_back(new Lobo("L", constantesReader("SLobo"), constantesReader("VLobo"), 0, 15, x, y));
+            animais.push_back(new Lobo("L", constantesReader("SLobo"), constantesReader("VLobo"), 0, 15, x, y, idDoPai));
             animais[animais.size() - 1]->setId(totalCoisas++);
         } else if (tipo == "G") {
-            animais.push_back(new Canguru("C", constantesReader("SCanguru"), constantesReader("VCanguru"), 0, 10, x, y));
+            animais.push_back(new Canguru("C", constantesReader("SCanguru"), constantesReader("VCanguru"), 0, 10, x, y, idDoPai++));
             animais[animais.size() - 1]->setId(totalCoisas++);
         } else if (tipo == "M") {
-            animais.push_back(new AnimalMisterioso("M", constantesReader("SAnimalM"), constantesReader("VAnimalM"), 0, rand() % 9 + 2, x, y));
+            animais.push_back(new AnimalMisterioso("M", constantesReader("SAnimalM"), constantesReader("VAnimalM"), 0, rand() % 9 + 2, x, y, idDoPai));
             animais[animais.size() - 1]->setId(totalCoisas++);
         }
     }
@@ -133,20 +135,20 @@ void Reserva::criaAnimalRandom(const string &tipo)
         cout << "\nPor favor insira um animal valido!" << endl;
     } else {
         if (tipo == "C") {
-            animais.push_back(new Coelho("C", constantesReader("SCoelho"), constantesReader("VCoelho"), 0, rand() % 4 + 1, lRandom, cRandom));
-            alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+            animais.push_back(new Coelho("C", constantesReader("SCoelho"), constantesReader("VCoelho"), 0, rand() % 4 + 1, lRandom, cRandom, idDoPai));
+            animais[animais.size() - 1]->setId(totalCoisas++);
         } else if (tipo == "O") {
-            animais.push_back(new Ovelha("O", constantesReader("SOvelha"), constantesReader("VOvelha"), 0, rand() % 5 + 4, lRandom, cRandom)); //rand() % 5 + 4; numero entre 4 e 8 --
-            alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+            animais.push_back(new Ovelha("O", constantesReader("SOvelha"), constantesReader("VOvelha"), 0, rand() % 5 + 4, lRandom, cRandom, idDoPai)); //rand() % 5 + 4; numero entre 4 e 8 --
+            animais[animais.size() - 1]->setId(totalCoisas++);
         } else if (tipo == "L") {
-            animais.push_back(new Lobo("L", constantesReader("SLobo"), constantesReader("VLobo"), 0, 15, lRandom, cRandom));
-            alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+            animais.push_back(new Lobo("L", constantesReader("SLobo"), constantesReader("VLobo"), 0, 15, lRandom, cRandom, idDoPai));
+            animais[animais.size() - 1]->setId(totalCoisas++);
         } else if (tipo == "G") {
-            animais.push_back(new Canguru("G", constantesReader("SCanguru"), constantesReader("VCanguru"), 0, 10, lRandom, cRandom));
-            alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+            animais.push_back(new Canguru("G", constantesReader("SCanguru"), constantesReader("VCanguru"), 0, 10, lRandom, cRandom, idDoPai++));
+            animais[animais.size() - 1]->setId(totalCoisas++);
         } else if (tipo == "M") {
-            animais.push_back(new AnimalMisterioso("M", constantesReader("SAnimalM"), constantesReader("VAnimalM"), 0, rand() % 9 + 2, lRandom, cRandom));
-            alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+            animais.push_back(new AnimalMisterioso("M", constantesReader("SAnimalM"), constantesReader("VAnimalM"), 0, rand() % 9 + 2, lRandom, cRandom, idDoPai));
+            animais[animais.size() - 1]->setId(totalCoisas++);
         }
     }
 }
@@ -345,15 +347,15 @@ void Reserva::interacaoAnimal()
                 animais[i]->setVida(animais[i]->getvAnimal() - 1); //A cada instante diminui um do vAnimal
                 animais[i]->setFome(animais[i]->getFome() + 1);// A cada instante aumenta a fome do animal
 
-                if (numInstantes % 8 == 0) { // se passaram 8 instantes
+                if (animais[i]->getvAnimal() == constantesReader("VCoelho") - 8) { // se passaram 8 instantes
 
                     engravida = rand() % 2 + 1;
 
                     if (engravida == 1) { //engravidou com sucesso
 
                         pair<int,int> cf = createFilho(animais[i]->getX(), animais[i]->getY(), rand() % 8, rand() % 10 + 1); //apanha as coordenadas para o filho
-                        //animais.push_back(new Coelho(animais[i]->getTipoAnimal(), constantesReader("SCoelho"), constantesReader("VCoelho"), 0, rand() % 4 + 1, cf.first, cf.second));
-                        animais.push_back(new Ovelha("O", constantesReader("SOvelha"), constantesReader("VOvelha"), 0, rand() % 5 + 4, 5, 5));
+                        animais.push_back(new Coelho(animais[i]->getTipoAnimal(), constantesReader("SCoelho"), constantesReader("VCoelho"), 0, rand() % 4 + 1, cf.first, cf.second, 0));
+
                         animais[animais.size() - 1]->setId(totalCoisas++);
                     }
 
@@ -438,13 +440,11 @@ void Reserva::interacaoAnimal()
                 animais[i]->setVida(animais[i]->getvAnimal() - 1);
                 animais[i]->setFome(animais[i]->getFome() + 1);
 
-                if (numInstantes % 15 == 0) { // após 15 instantes
+                if (animais[i]->getvAnimal() == constantesReader("VOvelha") - 15){ // após 15 instantes
 
                     pair<int,int> cf = createFilho(animais[i]->getX(), animais[i]->getY(), rand() % 8, rand() % 12 + 1);
 
-                    //animais.push_back(new Ovelha(animais[i]->getTipoAnimal(), animais[i]->getSaude(), constantesReader("VOvelha"), 0, rand() % 5 + 4, 5, 5));
-                    //animais.push_back(new Coelho("C", constantesReader("SCoelho"), constantesReader("VCoelho"), 0, rand() % 5 + 4, 5, 5));
-                    animais.push_back(new Ovelha("O", constantesReader("SOvelha"), constantesReader("VOvelha"), 0, rand() % 5 + 4, 5, 5));
+                    animais.push_back(new Ovelha(animais[i]->getTipoAnimal(), animais[i]->getSaude(), constantesReader("VOvelha"), 0, rand() % 5 + 4, cf.first, cf.second, 0));
                     animais[animais.size() - 1]->setId(totalCoisas++);
 
                 }
@@ -540,7 +540,7 @@ void Reserva::interacaoAnimal()
                     pair<int,
                          int> cf = createFilho(animais[i]->getX(), animais[i]->getY(), rand() % 8, rand() % 15 + 1);
 
-                    animais.push_back(new Lobo(animais[i]->getTipoAnimal(), constantesReader("SLobo"), constantesReader("VLobo"), 0, 15, cf.first, cf.second));
+                    animais.push_back(new Lobo(animais[i]->getTipoAnimal(), constantesReader("SLobo"), constantesReader("VLobo"), 0, 15, cf.first, cf.second, animais[i]->getId()));
                     animais[animais.size() - 1]->setId(totalCoisas++);
                     teveFilho = true;
                 }
@@ -672,63 +672,74 @@ void Reserva::interacaoAnimal()
             }
         } else if (animais[i]->getTipoAnimal() == "G") {
 
-            if (animais[i]->getvAnimal() != 0) {
+           if (animais[i]->getvAnimal() != 0) {
 
-                animais[i]->setVida(animais[i]->getvAnimal() - 1);
+               animais[i]->setVida(animais[i]->getvAnimal() - 1);
 
-                if (numInstantes % 20 == 0) { // apos 20 instantes, set ao peso a 20
-                    animais[i]->setPeso(20);
-                }
+               if (animais[i]->getvAnimal() == constantesReader("VCanguru") - 20) { // apos 20 instantes, set ao peso a 20
+                   animais[i]->setPeso(20);
+               }
 
-                if (numInstantes % 30 == 0) { // apos 30 instantes cria uma novo canguru entre 1 ou 3 casas de distancia
+               if (animais[i]->getvAnimal() == constantesReader("VCanguru") - 30) { // apos 30 instantes cria uma novo canguru entre 1 ou 3 casas de distancia
 
-                    pair<int, int> cc = createFilho(animais[i]->getX(), animais[i]->getY(), rand() % 8, rand() % 3 + 1);
+                   pair<int, int> cc = createFilho(animais[i]->getX(), animais[i]->getY(), rand() % 8, rand() % 3 + 1);
 
-                    animais.push_back(new Canguru(animais[i]->getTipoAnimal(), constantesReader("SCanguru"), constantesReader("VCanguru"), 0, 10, cc.first, cc.second));
-                    animais[animais.size() - 1]->setId(totalCoisas++);
+                   animais.push_back(new Canguru(animais[i]->getTipoAnimal(), constantesReader("SCanguru"), constantesReader("VCanguru"), 0, 10, cc.first, cc.second, animais[i]->getId()));
+                   animais[animais.size() - 1]->setId(totalCoisas++);
 
-                }
+               }
 
-                an = verificaAnimalRedondeza(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 7);
+               an = verificaAnimalRedondeza(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 7);
+               bool verificaAlemPai = false;
+               verificaAlemPai = verificaAnimalRedondezaAlemPai(animais[i]->getId(), animais[i]->getIdPai(), animais[i]->getX(),animais[i]->getY(), 7);
 
-                if (an != nullptr) {   // Return true - faz Movimentação com animal na redondeza
+               if (an != nullptr && verificaAlemPai) {   // Return true - faz Movimentação com animal na redondeza
 
-                    debug << "Tem animal na redondeza G\n";
+                    pair<int, int> coordPai = pegaCoordPai(animais[i]->getId(), animais[i]->getIdPai(), animais[i]->getX(),animais[i]->getY(), 7);
 
-                } else {  // Return false - faz Movimentação sem animal na redondeza
+                    animais[i]->fazMovimentacaoAtePai(coordPai.first, coordPai.second, 1, 3, 2);  //faz move até o pai com duas casas
 
-                    debug << "Nao tem animal na redondeza G\n";
+                   if (verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())) {
+                       animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                   }
 
-                    animais[i]->fazMovimentacaoSemAnimal_P(1);
+               } else if (animais[i]->getvAnimal() > constantesReader("VCanguru") - 10) {
 
-                    if (verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())) {
-                        animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
-                    }
-                }
-            } else {
+                   pair<int, int> coordPai = pegaCoordPai(animais[i]->getId(), animais[i]->getIdPai(), animais[i]->getX(),animais[i]->getY(), 7);
 
-                pair<int, int> cc = createCorpo(animais[i]->getX(), animais[i]->getY(), rand() % 8);
+                   animais[i]->fazMovimentacaoAtePai(coordPai.first, coordPai.second, 1, 3, 1);  //faz move até o pai com duas casas
 
-                alimentos.push_back(new Corpo("Corpo", 9999, 15, 5, cc.first, cc.second));
-                alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+                   if (verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())) {
+                       animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                   }
 
-                removeAnimalbyId(animais[i]->getId());
+               } else if(animais[i]->getvAnimal() < constantesReader("VCanguru") -10 ){  // Return false - faz Movimentação sem animal na redondeza
 
-            }
-        } else if (animais[i]->getTipoAnimal() == "M") {
+
+                   animais[i]->fazMovimentacaoSemAnimal_P(1);
+
+                   if (verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())) {
+                       animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
+                   }
+
+               }
+           } else {
+
+               pair<int, int> cc = createCorpo(animais[i]->getX(), animais[i]->getY(), rand() % 8);
+
+               alimentos.push_back(new Corpo("Corpo", 9999, 15, 5, cc.first, cc.second));
+               alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+
+               removeAnimalbyId(animais[i]->getId());
+
+           }
+       } else if (animais[i]->getTipoAnimal() == "M") {
 
             if (animais[i]->getvAnimal() != 0) {
 
                 animais[i]->setVida(animais[i]->getvAnimal() - 1);
                 animais[i]->setFome(animais[i]->getFome() + 1);
 
-
-                if (numInstantes % 15 == 0) { // apos 10 instantes
-
-                    animais.push_back(new AnimalMisterioso("G", 100, 200, 0, 6, 2, 2));
-                    animais[animais.size() - 1]->setId(totalCoisas++);
-
-                }
 
                 an = verificaAnimalRedondeza(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 9);
                 pesoPerigoso = checkPeso(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 9, 15);
@@ -1123,6 +1134,40 @@ bool Reserva::verificaSeEstaFora(int x, int y, int linhas, int colunas)
     }
 
     return false;
+}
+
+bool Reserva::verificaAnimalRedondezaAlemPai(int id, int idPai, int x, int y, int valorRedondeza)
+{
+    for (auto &animal : animais) {
+
+        if (animal->getId() == id) {
+            continue;
+        }
+
+        if (animal->getX() < x + valorRedondeza && animal->getX() > x - valorRedondeza && animal->getY() < y + valorRedondeza && animal->getY() > y - valorRedondeza) {
+            if(animal->getId() != idPai){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+pair<int, int> Reserva::pegaCoordPai(int id, int idPai, int x, int y, int valorRedondeza)
+{
+    for (auto &ani : animais) {
+
+        if (ani->getId() == id) {
+            continue;
+        }
+
+        if (ani->getX() < x + valorRedondeza && ani->getX() > x - valorRedondeza && ani->getY() < y + valorRedondeza && ani->getY() > y - valorRedondeza) {
+            if (ani->getId() == idPai) {
+                return make_pair(ani->getX(), ani->getY());
+            }
+        }
+    }
+    return make_pair(-1, -1);
 }
 
 
