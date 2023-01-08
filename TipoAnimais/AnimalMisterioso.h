@@ -17,7 +17,7 @@ public:
     void fazMovimentacaoSemAnimal_P(int posicao) override {}
     void fazDarVolta(int x, int y, int linhas, int colunas) override;
     void fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico) override;
-    void fazMovimentacaoComAnimalCaca(int x, int y, int distancia) override{}
+    void fazMovimentacaoComAnimalCaca(int x, int y, int distancia) override {}
 
 };
 
