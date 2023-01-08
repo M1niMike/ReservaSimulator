@@ -96,27 +96,35 @@ void Ovelha::fazDarVolta(int x, int y, int linhas, int colunas)
     }
 }
 
-void Ovelha::fazMovimentacaoComAnimalFoge(int x, int y) {  //CAR = Com Animal Redondeza
-    if (x < getY()) {// animal perigoso está acima, então move-se para baixo
-
-        if(y < getX()) {// animal perigoso está à esquerda, então move-se para a direita e para baixo
-            setX(getX() + 1);
+void Ovelha::fazMovimentacaoComAnimalFoge(int x, int y) {
+    if (x < getX()) { // Verifica se a coordenada x do objeto atual é menor que a coordenada x do objeto de destino
+        if (y < getY()) {
+            setX(getX() + 1); // Move o objeto atual diagonalmente em direção ao objeto de destino incrementando tanto x quanto y
             setY(getY() + 1);
-        }else{// animal perigoso está à direita, então move-se para a esquerda e para baixo
-            setX(getX() + 1);
+        } else if (y == getY()) {
+            setX(getX() + 1); // Move o objeto atual horizontalmente em direção ao objeto de destino incrementando x
+        } else if (y > getY()) {
+            setX(getX() + 1); // Move o objeto atual diagonalmente em direção ao objeto de destino incrementando x e decrementando y
             setY(getY() - 1);
         }
-    }else{// animal perigoso está abaixo, então move-se para cima
-
-        if (x < getX()) {// animal perigoso está à esquerda, então move-se para a direita e para cima
-            setX(getX() - 1);
+    } else if (x == getX()) {// Verifica se as coordenadas x são iguais
+        if (y < getY()) {
+            setY(getY() + 1);// Move o objeto atual verticalmente em direção ao objeto de destino incrementando y
+        } else if (y > getY()) {
+            setY(getY() - 1); // Move o objeto atual verticalmente em direção ao objeto de destino decrementando y
+        }
+    } else if (x > getX()) { // Verifica se a coordenada x do objeto atual é maior que a coordenada x do objeto de destino
+        if (y < getY()) {
+            setX(getX() - 1); // Move o objeto atual diagonalmente em direção ao objeto de destino decrementando x e incrementando y
             setY(getY() + 1);
-
-        }else{ // animal perigoso está à direita, então move-se para a esquerda e para cima
-            setX(getX() - 1);
+        } else if (y == getY()) {
+            setX(getX() - 1);  // Move o objeto atual horizontalmente em direção ao objeto de destino decrementando x
+        } else if (y > getY()) {
+            setX(getX() - 1); // Move o objeto atual diagonalmente em direção ao objeto de destino decrementando x e decrementando y
             setY(getY() - 1);
         }
     }
+
 }
 
 void Ovelha::fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico)

@@ -4,102 +4,98 @@
 
 #include "Coelho.h"
 
-void Coelho::fazMovimentacaoSemAnimal_I_F(int inicio, int fim) { //SAR = Sem Animal Redondeza
-    for (int i = 0; i < rand() % fim + inicio; i++){
+void Coelho::fazMovimentacaoSemAnimal_I_F(int inicio, int fim)
+{ //SAR = Sem Animal Redondeza
+    for (int i = 0; i < rand() % fim + inicio; i++) {
 
         int vezes = rand() % 8 + 1;
 
-        if (vezes == 1){ // mexe para cima
-            setX(getX()-1);
-        }
-        else if (vezes == 2){ //mexe a direita
-            setY(getY()+1);
-        }
-        else if (vezes == 3){ // mexe para baixo
-            setX(getX()+1);
-        }
-        else if (vezes == 4){ // mexe para trás (esquerda)
-            setY(getY()-1);
-        }
-        else if(vezes == 5){ // mexe para a diagonal esquerda cima
-            setX(getX()-1);
-            setY(getY()-1);
-        }
-        else if(vezes == 6){ // mexe para a diagonal direita cima
-            setX(getX()+1);
-            setY(getY()-1);
-        }
-        else if(vezes == 7){ // mexe para a diagonal direita baixo
-            setX(getX()+1);
-            setY(getY()+1);
-        }
-        else if(vezes == 8){ // mexe para a diagonal esquerda baixo
-            setX(getX()-1);
-            setY(getY()+1);
+        if (vezes == 1) { // mexe para cima
+            setX(getX() - 1);
+        } else if (vezes == 2) { //mexe a direita
+            setY(getY() + 1);
+        } else if (vezes == 3) { // mexe para baixo
+            setX(getX() + 1);
+        } else if (vezes == 4) { // mexe para trás (esquerda)
+            setY(getY() - 1);
+        } else if (vezes == 5) { // mexe para a diagonal esquerda cima
+            setX(getX() - 1);
+            setY(getY() - 1);
+        } else if (vezes == 6) { // mexe para a diagonal direita cima
+            setX(getX() + 1);
+            setY(getY() - 1);
+        } else if (vezes == 7) { // mexe para a diagonal direita baixo
+            setX(getX() + 1);
+            setY(getY() + 1);
+        } else if (vezes == 8) { // mexe para a diagonal esquerda baixo
+            setX(getX() - 1);
+            setY(getY() + 1);
         }
     }
 }
 
-void Coelho::fazMovimentacaoSemAnimal_P(int posicao) {
-    for (int i = 0; i < posicao; i++){
+void Coelho::fazMovimentacaoSemAnimal_P(int posicao)
+{
+    for (int i = 0; i < posicao; i++) {
 
         int vezes = rand() % 8 + 1;
 
-        if (vezes == 1){ // mexe para cima
-            setX(getX()-1);
-        }
-        else if (vezes == 2){ //mexe a direita
-            setY(getY()+1);
-        }
-        else if (vezes == 3){ // mexe para baixo
-            setX(getX()+1);
-        }
-        else if (vezes == 4){ // mexe para trás (esquerda)
-            setY(getY()-1);
-        }
-        else if(vezes == 5){ // mexe para a diagonal esquerda cima
-            setX(getX()-1);
-            setY(getY()-1);
-        }
-        else if(vezes == 6){ // mexe para a diagonal direita cima
-            setX(getX()+1);
-            setY(getY()-1);
-        }
-        else if(vezes == 7){ // mexe para a diagonal direita baixo
-            setX(getX()+1);
-            setY(getY()+1);
-        }
-        else if(vezes == 8){ // mexe para a diagonal esquerda baixo
-            setX(getX()-1);
-            setY(getY()+1);
+        if (vezes == 1) { // mexe para cima
+            setX(getX() - 1);
+        } else if (vezes == 2) { //mexe a direita
+            setY(getY() + 1);
+        } else if (vezes == 3) { // mexe para baixo
+            setX(getX() + 1);
+        } else if (vezes == 4) { // mexe para trás (esquerda)
+            setY(getY() - 1);
+        } else if (vezes == 5) { // mexe para a diagonal esquerda cima
+            setX(getX() - 1);
+            setY(getY() - 1);
+        } else if (vezes == 6) { // mexe para a diagonal direita cima
+            setX(getX() + 1);
+            setY(getY() - 1);
+        } else if (vezes == 7) { // mexe para a diagonal direita baixo
+            setX(getX() + 1);
+            setY(getY() + 1);
+        } else if (vezes == 8) { // mexe para a diagonal esquerda baixo
+            setX(getX() - 1);
+            setY(getY() + 1);
         }
     }
 }
 
-void Coelho::fazMovimentacaoComAnimalFoge(int x, int y) { // se ele vir alguma coisa nas redondezas, ele foge
+void Coelho::fazMovimentacaoComAnimalFoge(int x, int y)
+{ // se ele vir alguma coisa nas redondezas, ele foge
 
-        if (x < getY()) {// animal perigoso está acima, então move-se para baixo
-
-            if(y < getX()) {// animal perigoso está à esquerda, então move-se para a direita e para baixo
-                setX(getX() + 1);
-                setY(getY() + 1);
-            }else{// animal perigoso está à direita, então move-se para a esquerda e para baixo
-                setX(getX() + 1);
-                setY(getY() - 1);
-            }
-        }else{// animal perigoso está abaixo, então move-se para cima
-
-            if (x < getX()) {// animal perigoso está à esquerda, então move-se para a direita e para cima
-                setX(getX() - 1);
-                setY(getY() + 1);
-
-            }else{ // animal perigoso está à direita, então move-se para a esquerda e para cima
-                setX(getX() - 1);
-                setY(getY() - 1);
-            }
+    if (x < getX()) { // Verifica se a coordenada x do objeto atual é menor que a coordenada x do objeto de destino
+        if (y < getY()) {
+            setX(getX() + 1); // Move o objeto atual diagonalmente em direção ao objeto de destino incrementando tanto x quanto y
+            setY(getY() + 1);
+        } else if (y == getY()) {
+            setX(getX() + 1); // Move o objeto atual horizontalmente em direção ao objeto de destino incrementando x
+        } else if (y > getY()) {
+            setX(getX() + 1); // Move o objeto atual diagonalmente em direção ao objeto de destino incrementando x e decrementando y
+            setY(getY() - 1);
+        }
+    } else if (x == getX()) {// Verifica se as coordenadas x são iguais
+        if (y < getY()) {
+            setY(getY() + 1);// Move o objeto atual verticalmente em direção ao objeto de destino incrementando y
+        } else if (y > getY()) {
+            setY(getY() - 1); // Move o objeto atual verticalmente em direção ao objeto de destino decrementando y
+        }
+    } else if (x > getX()) { // Verifica se a coordenada x do objeto atual é maior que a coordenada x do objeto de destino
+        if (y < getY()) {
+            setX(getX() - 1); // Move o objeto atual diagonalmente em direção ao objeto de destino decrementando x e incrementando y
+            setY(getY() + 1);
+        } else if (y == getY()) {
+            setX(getX() - 1);  // Move o objeto atual horizontalmente em direção ao objeto de destino decrementando x
+        } else if (y > getY()) {
+            setX(getX() - 1); // Move o objeto atual diagonalmente em direção ao objeto de destino decrementando x e decrementando y
+            setY(getY() - 1);
         }
     }
 
+}
 
 
 void Coelho::fazDarVolta(int x, int y, int linhas, int colunas)
@@ -127,21 +123,20 @@ void Coelho::fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico)
     int distY = y - getY();
 
 
-    if(distX > 0){ // Se a distância for maior que zero, move o animal para a direita (ou para cima, no caso do eixo y)
+    if (distX > 0) { // Se a distância for maior que zero, move o animal para a direita (ou para cima, no caso do eixo y)
         setX(getX() + 1);
-    }else if(distX < 0){ // Se a distância for menor que zero, move o animal para a esquerda (ou para baixo)
+    } else if (distX < 0) { // Se a distância for menor que zero, move o animal para a esquerda (ou para baixo)
         setX(getX() - 1);
     }
 
     // Repete o processo para o y
-    if(distY > 0){
+    if (distY > 0) {
         setY(getY() + 1);
-    }
-    else if(distX > 0){
+    } else if (distX > 0) {
         setX(getX() + 1);
     }
 
-    if(getX() == x && getY() == y){ // se as coordenadas do animal forem iguais a do alimento, ele come
+    if (getX() == x && getY() == y) { // se as coordenadas do animal forem iguais a do alimento, ele come
         // Altera os status do animal
         setSaude(getSaude() + valorNutri);
         setSaude(getSaude() - valorToxico);
