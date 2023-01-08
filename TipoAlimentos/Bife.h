@@ -10,7 +10,10 @@
 
 class Bife : public Alimentos{
 public:
-    Bife(const string& tipo, const string& c, int VBife, int Vn, int tx, int x, int y) : Alimentos(tipo, c, VBife, Vn, tx,  x, y) {}
+    Bife(const string& tipo, int VBife, int Vn, int tx, int x, int y) : Alimentos(tipo, VBife, Vn, tx,  x, y) {
+        setCheiro("carne");
+        setCheiro("ketchup");
+    }
 
     string getTipoAlimento() const override{ return "b"; }
 

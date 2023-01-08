@@ -76,11 +76,31 @@ void Coelho::fazMovimentacaoSemAnimal_P(int posicao) {
     }
 }
 
-void Coelho::fazMovimentacaoComAnimal() { // se ele vir alguma coisa nas redondezas, ele foge
-    setX(getX() - 1);
-    setY(getY() - 1);
+void Coelho::fazMovimentacaoComAnimalFoge(int x, int y) { // se ele vir alguma coisa nas redondezas, ele foge
 
-}
+        if (x < getY()) {// animal perigoso está acima, então move-se para baixo
+
+            if(y < getX()) {// animal perigoso está à esquerda, então move-se para a direita e para baixo
+                setX(getX() + 1);
+                setY(getY() + 1);
+            }else{// animal perigoso está à direita, então move-se para a esquerda e para baixo
+                setX(getX() + 1);
+                setY(getY() - 1);
+            }
+        }else{// animal perigoso está abaixo, então move-se para cima
+
+            if (x < getX()) {// animal perigoso está à esquerda, então move-se para a direita e para cima
+                setX(getX() - 1);
+                setY(getY() + 1);
+
+            }else{ // animal perigoso está à direita, então move-se para a esquerda e para cima
+                setX(getX() - 1);
+                setY(getY() - 1);
+            }
+        }
+    }
+
+
 
 void Coelho::fazDarVolta(int x, int y, int linhas, int colunas)
 {

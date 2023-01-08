@@ -16,7 +16,7 @@ public:
     int getValimento() const;
     int getValorNutri() const;
     int getToxicidade() const;
-    string getCheiro() const;
+    vector<string> getCheiro() const;
     int getX() const;
     int getY() const;
     int getId() const;
@@ -27,11 +27,12 @@ public:
     void setValimento(int newValimento) { VAlimento = newValimento; }
     void setValorNutri(int newValorNutri) { valorNutri = newValorNutri; }
     void setToxicidade(int newToxicidade) { toxicidade = newToxicidade; }
+    void setCheiro(string newCheiro) { cheiro.push_back(newCheiro); }
 
     //prints
     string PrintaAlimento() const;
 
-    Alimentos(const string& t, const string& c, int Va, int Vn, int tx, int x, int y);
+    Alimentos(const string& t, int Va, int Vn, int tx, int x, int y);
 
     virtual ~Alimentos() = default;
 
@@ -40,7 +41,7 @@ private:
     int VAlimento;
     int valorNutri;
     int toxicidade;
-    string cheiro;
+    vector<string> cheiro;
     int id;
     int cordX, cordY;
     int podeSerComido;

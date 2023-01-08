@@ -14,9 +14,10 @@ public:
     string getTipoAnimal() const override{ return "C"; }
     void fazMovimentacaoSemAnimal_I_F(int inicio, int fim) override;
     void fazMovimentacaoSemAnimal_P(int posicao) override;
-    void fazMovimentacaoComAnimal() override;
+    void fazMovimentacaoComAnimalFoge(int x, int y) override;
     void fazDarVolta(int x, int y, int linhas, int colunas) override;
     void fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico) override;
+    void fazMovimentacaoComAnimalCaca(int x, int y, int distancia) override {}
 
 };
 

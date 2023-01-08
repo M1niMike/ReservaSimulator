@@ -34,9 +34,11 @@ public:
     /* pair<int, int>, é uma classe template do C++ que permite armazenar um par de valores de qualquer tipo*/
     pair<int, int> createFilho(int x, int y, int direcao, int distancia);
     pair<int, int> createCorpo(int x, int y, int direcao);
-
     pair<int, int> pegaCoordAl(int x, int y, int valorRedondeza, string comida);
     pair<int, int> pegaValoresAl(int x, int y, int valorRedondeza, string comida);
+    pair<int, int> pegaCoordAni(int id, int x, int y, int valorRedondeza, int peso);
+    pair<int, int> pegaCoordCaca(int id, int x, int y, int valorRedondeza);
+
 
 
     //Get
@@ -66,6 +68,8 @@ public:
     Animais* verificaAnimalRedondeza(const int &id, const int &x, const int &y, const int &valorRedondeza);
     bool verificaSeEstaFora(int x, int y, int linhas, int colunas);
     bool checkComida(int x, int y, int valorRedondeza, string comida);
+    int pegaPesoAnimalCacado(int id, int x, int y, int valorRedondeza);
+
   //Alimentos* checkComida(int id, int x, int y, int valorRedondeza, string comida);
 
 
@@ -97,7 +101,7 @@ private:
 
     Window debug; //APAGAR DEPOIS
 
-    //map string, Reservas* se o nome(string) for igual ao nome da reserva entao carregaReserva(cominputdouser)
+
 };
 
 #endif //POO_TP_22_23_RESERVA_H

@@ -133,7 +133,10 @@ void Simulador::getInfoAlimento(int x, int y) {
         {
             textInterface << "Id: " << r->getVecAlimento()[k]->getId() << " | ";
             textInterface << "Tipo: " << r->getVecAlimento()[k]->getTipoAlimento() << " | ";
-            textInterface << "Cheiro: " << r->getVecAlimento()[k]->getCheiro() << " | ";
+            for (int i = 0; i < r->getVecAlimento().size(); i++){
+                textInterface << "Cheiro: " << r->getVecAlimento()[k]->getCheiro()[i] << " | ";
+                break;
+            }
             textInterface << "Tempo de validade: " << r->getVecAlimento()[k]->getValimento() << " | ";
             textInterface << "Toxicidade: " << r->getVecAlimento()[k]->getToxicidade() << "\n";
             flag = true;
@@ -432,7 +435,6 @@ void Simulador::cmdEmpty(vector<string> comando) {
 }
 
 void Simulador::cmdNN(vector<string> comando){
-
     for(int i = 0; i < stoi(comando[1]); i++){
         r->incrementaInstante();
         r->interacaoAlimento();
@@ -444,7 +446,6 @@ void Simulador::cmdNN(vector<string> comando){
         textInterface << "\nNumero de Alimentos na Reserva: " << r->getNumberOfFood();
         textInterface << "\nNumero total de coisas na Reserva: " << r->getNumberOfAnimals() + r->getNumberOfFood();
         textInterface << "\n";
-
     }
 }
 

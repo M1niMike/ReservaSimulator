@@ -77,8 +77,27 @@ void Canguru::fazMovimentacaoSemAnimal_P(int posicao) {
     }
 }
 
-void Canguru::fazMovimentacaoComAnimal() { // Com Aninal Redondeza
-    //Fazer Logica
+void Canguru::fazMovimentacaoComAnimalFoge(int x, int y) { // Com Aninal Redondeza
+    if (x < getY()) {// animal perigoso está acima, então move-se para baixo
+
+        if(y < getX()) {// animal perigoso está à esquerda, então move-se para a direita e para baixo
+            setX(getX() + 1);
+            setY(getY() + 1);
+        }else{// animal perigoso está à direita, então move-se para a esquerda e para baixo
+            setX(getX() + 1);
+            setY(getY() - 1);
+        }
+    }else{// animal perigoso está abaixo, então move-se para cima
+
+        if (x < getX()) {// animal perigoso está à esquerda, então move-se para a direita e para cima
+            setX(getX() - 1);
+            setY(getY() + 1);
+
+        }else{ // animal perigoso está à direita, então move-se para a esquerda e para cima
+            setX(getX() - 1);
+            setY(getY() - 1);
+        }
+    }
 }
 
 void Canguru::fazDarVolta(int x, int y, int linhas, int colunas)

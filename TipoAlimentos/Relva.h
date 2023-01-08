@@ -9,7 +9,12 @@
 
 class Relva : public Alimentos{
 public:
-    Relva(const string& tipo, const string& c, int VRelva, int Vn, int tx,  int x, int y) : Alimentos(tipo, c, VRelva, Vn, tx,  x, y) {}
+    Relva(const string& tipo, int VRelva, int Vn, int tx,  int x, int y) : Alimentos(tipo, VRelva, Vn, tx,  x, y) {
+
+        setCheiro("erva");
+        setCheiro("verdura");
+
+    }
 
     string getTipoAlimento() const override{ return "r"; }
 

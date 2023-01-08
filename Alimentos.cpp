@@ -8,7 +8,7 @@
 
 
 
-Alimentos::Alimentos(const string& t, const string& c, int Va = 0, int Vn = 0, int tx = 0, int x = 0, int y = 0) :tipo(t), VAlimento(Va), valorNutri(Vn), toxicidade(tx), cheiro(c), cordX(x), cordY(y), podeSerComido(0){
+Alimentos::Alimentos(const string& t, int Va = 0, int Vn = 0, int tx = 0, int x = 0, int y = 0) :tipo(t), VAlimento(Va), valorNutri(Vn), toxicidade(tx), cordX(x), cordY(y), podeSerComido(0){
 }
 
 //Gets
@@ -28,13 +28,10 @@ string Alimentos::getTipoAlimento() const {
 
     return oss.str();
 }
-string Alimentos::getCheiro() const{
-    ostringstream oss;
-
-    oss << cheiro;
-
-    return oss.str();
+vector<string> Alimentos::getCheiro() const{
+    return cheiro;
 }
+
 int Alimentos::getX() const {
     return cordX;
 }
@@ -49,7 +46,7 @@ int Alimentos::getId() const {
 string Alimentos::PrintaAlimento() const{
     ostringstream oss;
 
-    oss << "\nID: " << id << " | " << "Tipo do alimento: " << tipo << " | " << "Tempo de validade: " << VAlimento << "\n" << "Valor Nutritivo: " << valorNutri << " | " << "Toxicidade: " << toxicidade << " | " << "Cheiro: " << cheiro << "\n";
+    oss << "\nID: " << id << " | " << "Tipo do alimento: " << tipo << " | " << "Tempo de validade: " << VAlimento << "\n" << "Valor Nutritivo: " << valorNutri << " | " << "Toxicidade: " << toxicidade << "\n";
 
     return oss.str();
 }

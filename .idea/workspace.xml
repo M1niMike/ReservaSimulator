@@ -22,7 +22,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb5b0fea-053f-43f1-a63e-edde484ee9f2" name="Changes" comment="" />
     <list id="544d10dd-f479-43e0-bf06-9436a7f188f1" name="Changes by Goncalo" comment="" />
-    <list id="54fcfce6-ba31-45a0-b4e2-3c679a6d5b4e" name="Changes by Gonçalo" comment="" />
     <list id="05611b6b-6d4a-48be-88f2-5bbe35e05444" name="Changes by mikae" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,7 @@
       <workItem from="1672977921149" duration="8743000" />
       <workItem from="1673031660431" duration="5738000" />
       <workItem from="1673100880636" duration="2128000" />
-      <workItem from="1673103886593" duration="30664000" />
+      <workItem from="1673103886593" duration="40323000" />
     </task>
     <servers />
   </component>

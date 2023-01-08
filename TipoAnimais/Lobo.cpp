@@ -41,10 +41,6 @@ void Lobo::fazMovimentacaoSemAnimal_P(int posicao) { //SAR = Sem Animal Redondez
     }
 }
 
-void Lobo::fazMovimentacaoComAnimal() { //CAR = Com Animal Redondeza
-    //Fazer Logica
-}
-
 
 void Lobo::fazDarVolta(int x, int y, int linhas, int colunas)
 {
@@ -92,5 +88,26 @@ void Lobo::fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico)
         //fome fica a 0, pois comeu
 
         setFome(0); // se estiver vivo ele come
+    }
+}
+
+void Lobo::fazMovimentacaoComAnimalCaca(int x, int y, int distancia)
+{
+    int distX = x - getX();
+    int distY = y - getY();
+
+
+    if(distX > 0){ // Se a distância for maior que zero, move o animal para a direita (ou para cima, no caso do eixo y)
+        setX(getX() + 1);
+    }else if(distX < 0){ // Se a distância for menor que zero, move o animal para a esquerda (ou para baixo)
+        setX(getX() - 1);
+    }
+
+    // Repete o processo para o y
+    if(distY > 0){
+        setY(getY() + 1);
+    }
+    else if(distX > 0){
+        setX(getX() + 1);
     }
 }

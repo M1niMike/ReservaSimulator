@@ -10,7 +10,9 @@
 
 class Corpo : public Alimentos{
 public:
-    Corpo(const string& tipo, const string& c, int VCorpo, int Vn, int tx, int x, int y) : Alimentos(tipo, c, VCorpo, Vn, tx,  x, y) {}
+    Corpo(const string& tipo, int VCorpo, int Vn, int tx, int x, int y) : Alimentos(tipo, VCorpo, Vn, tx,  x, y) {
+        setCheiro("carne");
+    }
 
     string getTipoAlimento() const override{ return "p"; }
 

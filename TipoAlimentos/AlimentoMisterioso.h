@@ -9,7 +9,9 @@
 
 class AlimentoMisterioso : public Alimentos{
 public:
-    AlimentoMisterioso(const string& tipo, const string& c, int VAlimentoM, int Vn, int tx, int x, int y) : Alimentos(tipo, c, VAlimentoM, Vn, tx,  x, y) {}
+    AlimentoMisterioso(const string& tipo, int VAlimentoM, int Vn, int tx, int x, int y) : Alimentos(tipo, VAlimentoM, Vn, tx,  x, y) {
+        setCheiro("fruta");
+    }
 
     string getTipoAlimento() const override{ return "a"; }
 
