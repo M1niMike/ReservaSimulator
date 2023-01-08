@@ -8,4 +8,3 @@ SOvelha 50
 VOvelha 10
 SAnimalM 55
 VAnimalM 45
-

@@ -22,7 +22,10 @@
 #include "TipoAlimentos/AlimentoMisterioso.h"
 
 
-Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15){}
+Reserva::Reserva(int numInstantes, int nl, int nc)
+        : linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15)
+{
+}
 
 //Funcs Auxiliares
 int Reserva::getTotalCoisas()
@@ -363,7 +366,6 @@ void Reserva::interacaoAnimal()
 
                 if (an != nullptr && pesoPerigoso) {  // Return true para ambos - faz Movimentação com animal na redondeza
 
-                    debug << "Tem animal na redondeza C\n";
                     pair<int,
                          int> cordPredador = pegaCoordAni(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4, 10);
 
@@ -397,7 +399,6 @@ void Reserva::interacaoAnimal()
 
                 } else if (an == nullptr && !achouComida) {  // Return false - faz Movimentação sem animal na redondeza
 
-                    debug << "Nao tem animal na redondeza C\n";
 
                     if (animais[i]->getFome() >= 10) { // se a fome for maior ou igual a 10, ele faz a logica do if
 
@@ -454,7 +455,6 @@ void Reserva::interacaoAnimal()
 
                 if (an != nullptr && pesoPerigoso) {   // Return true - faz Movimentação com animal na redondeza
 
-                    debug << "Tem animal na redondeza O\n";
 
                     pair<int,
                          int> cordPredador = pegaCoordAni(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4, 10);
@@ -489,7 +489,6 @@ void Reserva::interacaoAnimal()
 
                 } else if (an == nullptr && !achouComida) {  // Return false - faz Movimentação sem animal na redondeza
 
-                    debug << "Nao tem animal na redondeza O\n";
 
                     if (animais[i]->getFome() >= 15) { // se a fome for maior ou igual a 10, ele faz a logica do if
 
@@ -553,9 +552,9 @@ void Reserva::interacaoAnimal()
 
                 if (an != nullptr) { // Return true - faz Movimentação com animal na redondeza
 
-                    debug << "Tem animal na redondeza L\n";
 
-                    pair<int,int> coordHunt = pegaCoordCaca(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 5); //apanha a coordenada do animal mais pesado
+                    pair<int,
+                         int> coordHunt = pegaCoordCaca(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 5); //apanha a coordenada do animal mais pesado
 
                     if (animais[i]->getFome() >= 15) { // se a fome for maior que 15, ele perde um ponto de saude e caça o animal avançando 3 casa
                         animais[i]->setSaude(animais[i]->getSaude() - 1);
@@ -633,7 +632,6 @@ void Reserva::interacaoAnimal()
                     }
                 } else if (an == nullptr && !achouComida) {  // Return false - faz Movimentação sem animal na redondeza
 
-                    debug << "Nao tem animal na redondeza L\n";
 
                     if (animais[i]->getFome() >= 15) {
 
@@ -719,29 +717,29 @@ void Reserva::interacaoAnimal()
                 removeAnimalbyId(animais[i]->getId());
 
             }
-
-
         } else if (animais[i]->getTipoAnimal() == "M") {
 
-            if (animais[i]->getSaude() != 0) {
+            if (animais[i]->getvAnimal() != 0) {
 
+                animais[i]->setVida(animais[i]->getvAnimal() - 1);
                 animais[i]->setFome(animais[i]->getFome() + 1);
 
-                if (numInstantes % 10 == 0) {
 
-                    pair<int,int> cf = createFilho(animais[i]->getX(), animais[i]->getY(), rand() % 8, rand() % 3 + 1);
+                if (numInstantes % 15 == 0) { // apos 10 instantes
 
-                    animais.push_back(new AnimalMisterioso(animais[i]->getTipoAnimal(), constantesReader("SAnimalM"), constantesReader("SAnimalM"), 0, 15, cf.first, cf.second));
+                    animais.push_back(new AnimalMisterioso("G", 100, 200, 0, 6, 2, 2));
                     animais[animais.size() - 1]->setId(totalCoisas++);
+
                 }
 
                 an = verificaAnimalRedondeza(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 9);
                 pesoPerigoso = checkPeso(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 9, 15);
-                achouComida = checkComida(animais[i]->getX(), animais[i]->getY(), 5, "fruta");
+                achouComida = checkComida(animais[i]->getX(), animais[i]->getY(), 9, "fruta");
 
                 if (an != nullptr && pesoPerigoso) {   // Return true - faz Movimentação com animal na redondeza
 
-                    pair<int,int> cordPredador = pegaCoordAni(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4, 15); //foge do lobo apenas
+                    pair<int,
+                         int> cordPredador = pegaCoordAni(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4, 15); //foge do lobo apenas
 
                     animais[i]->fazMovimentacaoComAnimalFoge(cordPredador.first, cordPredador.second); //se move na direcao oposta
 
@@ -749,13 +747,12 @@ void Reserva::interacaoAnimal()
                         animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
                     }
 
-                    debug << "Tem animal na redondeza M\n";
+                } else if (achouComida) {
 
-
-                } else if (achouComida){
-
-                    pair<int,int> ca = pegaCoordAl(animais[i]->getX(), animais[i]->getY(), 4, "fruta"); // retira coordenadas do alimento com cheiro tal
-                    pair<int,int> va = pegaValoresAl(animais[i]->getX(), animais[i]->getY(), 4, "fruta"); // retira valores (nutri e toxi) do alimento com cheiro tal
+                    pair<int,
+                         int> ca = pegaCoordAl(animais[i]->getX(), animais[i]->getY(), 9, "fruta"); // retira coordenadas do alimento com cheiro tal
+                    pair<int,
+                         int> va = pegaValoresAl(animais[i]->getX(), animais[i]->getY(), 9, "fruta"); // retira valores (nutri e toxi) do alimento com cheiro tal
 
                     animais[i]->fazMovimentacaoComer(ca.first, ca.second, va.first, va.second);
 
@@ -767,27 +764,24 @@ void Reserva::interacaoAnimal()
                         removeAlimentobyCoord(ca.first, ca.second);
                     }
 
-                }
-                else if(an == nullptr && !achouComida) {  // Return false - faz Movimentação sem animal na redondeza
-
-                    debug << "Nao tem animal na redondeza M\n";
+                } else if (an == nullptr && !achouComida) {  // Return false - faz Movimentação sem animal na redondeza
                     animais[i]->fazMovimentacaoSemAnimal_I_F(2, 7);
 
                     if (verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())) { //verifica se o animal atual está prestes a sair da reserva
                         animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
                     }
                 }
-            }else{
-                    pair<int, int> cc = createCorpo(animais[i]->getX(), animais[i]->getY(), rand() % 8);
+            } else {
+                pair<int, int> cc = createCorpo(animais[i]->getX(), animais[i]->getY(), rand() % 8);
 
-                    alimentos.push_back(new Corpo("Corpo", 9999, 15, 5, cc.first, cc.second));
-                    alimentos[alimentos.size() - 1]->setId(totalCoisas++);
+                alimentos.push_back(new Corpo("Corpo", 9999, 15, 5, cc.first, cc.second));
+                alimentos[alimentos.size() - 1]->setId(totalCoisas++);
 
-                    removeAnimalbyId(animais[i]->getId());
+                removeAnimalbyId(animais[i]->getId());
             }
         }
     }
-    //debug.clear();
+    debug.clear();
 }
 
 bool Reserva::checkPeso(const int &id, const int &x, const int &y, const int &valorRedondeza, const int &peso)
@@ -813,21 +807,17 @@ bool Reserva::checkPeso(const int &id, const int &x, const int &y, const int &va
 
 bool Reserva::checkComida(int x, int y, int valorRedondeza, string comida)
 {
-    for (auto &alimento : alimentos){
+    for (auto &alimento : alimentos) {
 
-        if(alimento->getCheiro().size() == 2){
+        if (alimento->getCheiro().size() == 2) {
             if (alimento->getCheiro()[0] == comida || alimento->getCheiro()[1] == comida) {
-                debug << "cheiro a: " << alimento->getCheiro()[0];
-                debug << "cheiro a: " << alimento->getCheiro()[1];
                 if (alimento->getX() < x + valorRedondeza && alimento->getX() > x - valorRedondeza && alimento->getY() < y + valorRedondeza && alimento->getY() > y - valorRedondeza) {
 
                     return true;
                 }
             }
-        }
-        else if(alimento->getCheiro().size() == 1){
-            if (alimento->getCheiro()[0] == comida){
-                debug << "cheiro a: " << alimento->getCheiro()[0];
+        } else if (alimento->getCheiro().size() == 1) {
+            if (alimento->getCheiro()[0] == comida) {
                 if (alimento->getX() < x + valorRedondeza && alimento->getX() > x - valorRedondeza && alimento->getY() < y + valorRedondeza && alimento->getY() > y - valorRedondeza) {
 
                     return true;
@@ -1031,14 +1021,13 @@ pair<int, int> Reserva::createFilho(int x, int y, int direcao, int distancia)
 
 pair<int, int> Reserva::pegaCoordAl(int x, int y, int valorRedondeza, string comida)
 {
-    for(auto &al: alimentos){
+    for (auto &al : alimentos) {
         if (al->getX() < x + valorRedondeza && al->getX() > x - valorRedondeza && al->getY() < y + valorRedondeza && al->getY() > y - valorRedondeza) {
-            if(al->getCheiro().size() == 2){
-                if(al->getCheiro()[0] == comida || al->getCheiro()[1] == comida)
+            if (al->getCheiro().size() == 2) {
+                if (al->getCheiro()[0] == comida || al->getCheiro()[1] == comida)
                     return make_pair(al->getX(), al->getY());
-            }
-            else if(al->getCheiro().size() == 1){
-                if(al->getCheiro()[0] == comida)
+            } else if (al->getCheiro().size() == 1) {
+                if (al->getCheiro()[0] == comida)
                     return make_pair(al->getX(), al->getY());
             }
         }
@@ -1048,14 +1037,13 @@ pair<int, int> Reserva::pegaCoordAl(int x, int y, int valorRedondeza, string com
 
 pair<int, int> Reserva::pegaValoresAl(int x, int y, int valorRedondeza, string comida)
 {
-    for(auto &al: alimentos){
+    for (auto &al : alimentos) {
         if (al->getX() < x + valorRedondeza && al->getX() > x - valorRedondeza && al->getY() < y + valorRedondeza && al->getY() > y - valorRedondeza) {
-            if(al->getCheiro().size() == 2){
-                if(al->getCheiro()[0] == comida || al->getCheiro()[1] == comida)
+            if (al->getCheiro().size() == 2) {
+                if (al->getCheiro()[0] == comida || al->getCheiro()[1] == comida)
                     return make_pair(al->getValorNutri(), al->getToxicidade());
-            }
-            else if(al->getCheiro().size() == 1){
-                if(al->getCheiro()[0] == comida)
+            } else if (al->getCheiro().size() == 1) {
+                if (al->getCheiro()[0] == comida)
                     return make_pair(al->getValorNutri(), al->getToxicidade());
             }
         }
@@ -1065,56 +1053,56 @@ pair<int, int> Reserva::pegaValoresAl(int x, int y, int valorRedondeza, string c
 
 pair<int, int> Reserva::pegaCoordAni(int id, int x, int y, int valorRedondeza, int peso)
 {
-    for(auto &ani : animais){
+    for (auto &ani : animais) {
 
-        if(ani->getId() == id){
+        if (ani->getId() == id) {
             continue;
         }
 
-        if(ani->getX() < x + valorRedondeza && ani->getX() > x - valorRedondeza && ani->getY() < y + valorRedondeza && ani->getY() > y - valorRedondeza){
-            if(ani->getPeso() >= peso){
+        if (ani->getX() < x + valorRedondeza && ani->getX() > x - valorRedondeza && ani->getY() < y + valorRedondeza && ani->getY() > y - valorRedondeza) {
+            if (ani->getPeso() >= peso) {
                 return make_pair(ani->getX(), ani->getY());
             }
         }
     }
-    return make_pair(-1,-1);
+    return make_pair(-1, -1);
 }
 
 pair<int, int> Reserva::pegaCoordCaca(int id, int x, int y, int valorRedondeza)
 {
 
-        int maiorPeso = 0;
-        int xMaiorPeso = 0;
-        int yMaiorPeso = 0;
-        for(auto &ani : animais){
+    int maiorPeso = 0;
+    int xMaiorPeso = 0;
+    int yMaiorPeso = 0;
+    for (auto &ani : animais) {
 
-            if(ani->getId() == id){
-                continue;
-            }
+        if (ani->getId() == id) {
+            continue;
+        }
 
-            if(ani->getX() < x + valorRedondeza && ani->getX() > x - valorRedondeza && ani->getY() < y + valorRedondeza && ani->getY() > y - valorRedondeza){
-                if(ani->getPeso() > maiorPeso){
-                    maiorPeso = ani->getPeso();
-                    xMaiorPeso = ani->getX();
-                    yMaiorPeso = ani->getY();
+        if (ani->getX() < x + valorRedondeza && ani->getX() > x - valorRedondeza && ani->getY() < y + valorRedondeza && ani->getY() > y - valorRedondeza) {
+            if (ani->getPeso() > maiorPeso) {
+                maiorPeso = ani->getPeso();
+                xMaiorPeso = ani->getX();
+                yMaiorPeso = ani->getY();
 
-                    return make_pair(xMaiorPeso, yMaiorPeso);
-                }
+                return make_pair(xMaiorPeso, yMaiorPeso);
             }
         }
-    return make_pair(-1,-1);
+    }
+    return make_pair(-1, -1);
 }
 
 int Reserva::pegaPesoAnimalCacado(int id, int x, int y, int valorRedondeza)
 {
-    for(auto &ani : animais){
+    for (auto &ani : animais) {
 
-        if(ani->getId() == id){
+        if (ani->getId() == id) {
             continue;
         }
 
-        if(ani->getX() < x + valorRedondeza && ani->getX() > x - valorRedondeza && ani->getY() < y + valorRedondeza && ani->getY() > y - valorRedondeza){
-                return ani->getPeso();
+        if (ani->getX() < x + valorRedondeza && ani->getX() > x - valorRedondeza && ani->getY() < y + valorRedondeza && ani->getY() > y - valorRedondeza) {
+            return ani->getPeso();
         }
     }
 

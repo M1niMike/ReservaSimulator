@@ -27,7 +27,7 @@ food r 5 3
 food t 10 2
 food p 16 3
 food b 5 2
-food z 9 3
+food a 9 3
 food t 1 7
 food p 2 1
 food b 3 2
