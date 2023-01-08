@@ -5,5 +5,5 @@
 #include "Historico.h"
 
 Historico::Historico() {
-    alimentos = new 
+    alimentos;
 }
