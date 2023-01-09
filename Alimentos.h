@@ -20,7 +20,6 @@ public:
     int getX() const;
     int getY() const;
     int getId() const;
-    bool canBeEaten(){ return podeSerComido = 1; }
 
     //sets
     void setId(int newId) { id = newId; }
@@ -34,6 +33,8 @@ public:
 
     Alimentos(const string& t, int Va, int Vn, int tx, int x, int y);
 
+    Alimentos();
+
     virtual ~Alimentos() = default;
 
 private:
@@ -44,7 +45,6 @@ private:
     vector<string> cheiro;
     int id;
     int cordX, cordY;
-    int podeSerComido;
 };
 
 

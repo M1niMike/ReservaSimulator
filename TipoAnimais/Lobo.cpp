@@ -93,7 +93,7 @@ void Lobo::fazMovimentacaoComer(int x, int y, int valorNutri, int valorToxico)
 
 void Lobo::fazMovimentacaoComAnimalCaca(int x, int y, int distancia)
 {
-    nt distX = x - getX();
+    int distX = x - getX();
     int distY = y - getY();
 
 

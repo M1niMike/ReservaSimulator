@@ -3,10 +3,12 @@
 
 
 
+
+int Simulador::right = 0;
+int Simulador::down = 0;
+
 Simulador::Simulador(Reserva *r, Terminal &t) : r(r), t(t), cmdW(0, 35, 112, 20), textInterface(113, 0, 112, 55),
-                                                reservaPrinter(0, 0, 10, 10) {}
-
-
+                                                reservaPrinter(0, 0, 30, 15) {}
 Reserva* Simulador::menuSimulador() {
 
     int linhas = 0;
@@ -256,9 +258,9 @@ void Simulador::validaComandos(string cmd) {
     {
         cmdLoad(cmdVector);
     }
-    else if (tipoComando == "slide" && cmdVector.size() == 3)
+    else if (tipoComando == "slide" && cmdVector.size() == 2)
     {
-        textInterface << "A ser implementado" << "\n";
+        cmdSlide(cmdVector);
     }
     else if (tipoComando == "exit" && cmdVector.size() == 1)
     {
@@ -501,6 +503,31 @@ void Simulador::cmdRestore(vector<string> comando) {
     textInterface << "\nNao encontrei o nome que inseriu...\n";
 }
 
+void Simulador::cmdSlide(vector<string> comando)
+{
+    for (auto it : comando) {
+       // string posicao = comando[1];
+
+
+        if (it == comando[1]){
+
+                if(comando[1] == "right"){
+                    right += r->getLinhas();
+                }else if(comando[1] == "left"){
+                    right -= r->getLinhas();
+                }else if(comando[1] == "up"){
+                    down -= r->getColunas();
+                }else if(comando[1] == "down"){
+                    down += r->getColunas();
+                }
+
+            }
+        }
+}
+
+
+
+
 //void Simulador::cmdStore(vector<string> comando) {
 //    for (auto it: comando) {
 //        string nomeSave = comando[1]; // ir buscar o nome do "save" que o user meteu
@@ -709,22 +736,29 @@ void Simulador::buildReserva() {
     //Animais *a;
     int linhas = r->getLinhas();
     int colunas = r->getColunas();
-    int t = 0;
     int cont = 0;
 
 
-    for (int i = 0; i < linhas; i++) {
-        for (int j = 0; j < colunas; j++) {
-            for (int x = 0; x < r->getVecAnimal().size(); x++) {
-                if (r->getVecAnimal()[x]->getX() == i + 1 && r->getVecAnimal()[x]->getY() == j + 1) {
+    for (int i = 0; i < linhas; i++)
+    {
+        for (int j = 0; j < colunas; j++)
+        {
+
+            for (int x = 0; x < r->getVecAnimal().size(); x++)
+            {
+                if (r->getVecAnimal()[x]->getX() == i + 1 + right && r->getVecAnimal()[x]->getY() == j + 1 + down)
+                {
                     reservaPrinter << move_to((r->getVecAnimal()[x]->getX()), r->getVecAnimal()[x]->getY());
                     reservaPrinter << r->getVecAnimal()[x]->getTipoAnimal();
                 }
             }
         }
-        for (int j = 0; j < colunas; j++) {
-            for (int k = 0; k < r->getVecAlimento().size(); k++) {
-                if (r->getVecAlimento()[k]->getX() == i + 1 && r->getVecAlimento()[k]->getY() == j + 1) {
+        for (int j = 0; j < colunas; j++)
+        {
+            for (int k = 0; k < r->getVecAlimento().size(); k++)
+            {
+                if (r->getVecAlimento()[k]->getX() == i + 1 + right && r->getVecAlimento()[k]->getY() == j + 1 + down)
+                {
                     reservaPrinter << move_to((r->getVecAlimento()[k]->getX()), r->getVecAlimento()[k]->getY());
                     reservaPrinter << r->getVecAlimento()[k]->getTipoAlimento();
                 }
@@ -733,6 +767,92 @@ void Simulador::buildReserva() {
     }
 }
 
+
+
+
+//void Simulador::buildReserva() {
+//    //Animais *a;
+//    int linhas = r->getLinhas();
+//    int colunas = r->getColunas();
+//    int t = 0;
+//    int cont = 0;
+//
+//    for(int i = 0; i < colunas; i++){
+//        if (i == 0){
+//            reservaPrinter << "|-------";
+//        } else if (i == colunas-1){
+//            reservaPrinter << "|-------|";
+//        } else {
+//            reservaPrinter << "|-------";
+//        }
+//    }
+//
+//    for (int i = 0; i<linhas; i++){
+//
+//        // Print 1º espaço
+////        reservaPrinter << "\n|";
+////        for (int j = 0; j<colunas; j++){
+////            reservaPrinter << " " << "\t|"; //movimentação
+////        }
+//
+//        reservaPrinter << "\n" << "|";
+//
+//        for (int j = 0; j<colunas; j++){
+//           for (int x = 0; x < r->getVecAnimal().size(); x++)
+//            {
+//                if (r->getVecAnimal()[x]->getX() == i + 1 + right && r->getVecAnimal()[x]->getY() == j + 1 + down)
+//                {
+//
+//                    reservaPrinter << move_to((r->getVecAnimal()[x]->getX()), r->getVecAnimal()[x]->getY());
+//                    reservaPrinter << r->getVecAnimal()[x]->getTipoAnimal();
+//                }
+//            }
+//            reservaPrinter <<"\t|";
+//
+//        }
+//        reservaPrinter << "\n" << "|";
+//        for(int j = 0; j<colunas; j++){
+//            for (int k = 0; k < r->getVecAlimento().size(); k++)
+//            {
+//                if (r->getVecAlimento()[k]->getX() == i + 1 + right && r->getVecAlimento()[k]->getY() == j + 1 + down)
+//                {
+//
+//                    reservaPrinter << move_to((r->getVecAlimento()[k]->getX()), r->getVecAlimento()[k]->getY());
+//                    reservaPrinter << r->getVecAlimento()[k]->getTipoAlimento();
+//                }
+//            }
+//            reservaPrinter <<"\t|";
+//        }
+//
+////    Print 4º espaço
+////        reservaPrinter << "\n" << "|";
+////        for(int j=0; j<colunas; j++){
+////            reservaPrinter << " " << "\t|"; // count
+////        }
+//
+//        reservaPrinter << "\n";
+//        for (int j = 0; j<colunas; j++){
+//            if (i != linhas-1){
+//                if(j == colunas-1){
+//                    reservaPrinter << "-------|";
+//                } else if(j == 0){
+//                    reservaPrinter << "|-------|";
+//                } else {
+//                    reservaPrinter << "-------|";
+//                }
+//            } else{
+//                if (j == 0){
+//                    reservaPrinter << "|-------|";
+//                } else if(j == colunas-1){
+//                    reservaPrinter << "-------|";
+//                } else {
+//                    reservaPrinter << "-------|";
+//                }
+//            }
+//        }
+//        reservaPrinter << "\n";
+//    }
+//}
 
 
 // Notes

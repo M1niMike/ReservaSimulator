@@ -8,7 +8,16 @@
 
 
 
-Alimentos::Alimentos(const string& t, int Va = 0, int Vn = 0, int tx = 0, int x = 0, int y = 0) :tipo(t), VAlimento(Va), valorNutri(Vn), toxicidade(tx), cordX(x), cordY(y), podeSerComido(0){
+Alimentos::Alimentos(const string& t, int Va = 0, int Vn = 0, int tx = 0, int x = 0, int y = 0) :tipo(t), VAlimento(Va), valorNutri(Vn), toxicidade(tx), cordX(x), cordY(y){
+}
+
+Alimentos::Alimentos() {
+    string t1 = tipo;
+    int Va1 = VAlimento;
+    int Vn1 = valorNutri;
+    int toxic = toxicidade;
+    vector<string> cheiro1 = cheiro;
+    int ida = id;
 }
 
 //Gets

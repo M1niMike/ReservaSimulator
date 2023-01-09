@@ -51,6 +51,7 @@ public:
     void cmdNN(vector<string> comando);
     void cmdFeedId(vector<string> comando);
     void cmdFeedCoord(vector<string> comando);
+    void cmdSlide(vector<string> comando);
 
 
 
@@ -73,6 +74,9 @@ private:
     Window cmdW; //Comandos
     Window textInterface; //Print
     Window reservaPrinter; // reserva
+
+    static int right;
+    static int down;
 };
 
 #endif //POO_TP_22_23_INTERFACE_H

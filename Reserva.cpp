@@ -26,7 +26,7 @@ static int idDoPai = 0;
 
 Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15)
 {
-    
+
 }
 
 //Funcs Auxiliares
@@ -613,7 +613,7 @@ void Reserva::interacaoAnimal()
 
                     }
 
-                } else if (achouComida) {
+                } else if (achouComida && an == nullptr) {
                     pair<int,
                          int> ca = pegaCoordAl(animais[i]->getX(), animais[i]->getY(), 5, "carne"); // retira coordenadas do alimento com cheiro tal
                     pair<int,
@@ -703,7 +703,7 @@ void Reserva::interacaoAnimal()
                        animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
                    }
 
-               } else if (animais[i]->getvAnimal() > constantesReader("VCanguru") - 10) {
+               } else if (animais[i]->getvAnimal() > constantesReader("VCanguru") - 10) { //primeiros 10 instantes da vida dele
 
                    pair<int, int> coordPai = pegaCoordPai(animais[i]->getId(), animais[i]->getIdPai(), animais[i]->getX(),animais[i]->getY(), 7);
 
@@ -747,8 +747,7 @@ void Reserva::interacaoAnimal()
 
                 if (an != nullptr && pesoPerigoso) {   // Return true - faz Movimentação com animal na redondeza
 
-                    pair<int,
-                         int> cordPredador = pegaCoordAni(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4, 15); //foge do lobo apenas
+                    pair<int,int> cordPredador = pegaCoordAni(animais[i]->getId(), animais[i]->getX(), animais[i]->getY(), 4, 15); //foge do lobo apenas
 
                     animais[i]->fazMovimentacaoComAnimalFoge(cordPredador.first, cordPredador.second); //se move na direcao oposta
 
@@ -756,12 +755,10 @@ void Reserva::interacaoAnimal()
                         animais[i]->fazDarVolta(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas());
                     }
 
-                } else if (achouComida) {
+                } else if (achouComida && an == nullptr || an != nullptr && !pesoPerigoso) {
 
-                    pair<int,
-                         int> ca = pegaCoordAl(animais[i]->getX(), animais[i]->getY(), 9, "fruta"); // retira coordenadas do alimento com cheiro tal
-                    pair<int,
-                         int> va = pegaValoresAl(animais[i]->getX(), animais[i]->getY(), 9, "fruta"); // retira valores (nutri e toxi) do alimento com cheiro tal
+                    pair<int,int> ca = pegaCoordAl(animais[i]->getX(), animais[i]->getY(), 9, "fruta"); // retira coordenadas do alimento com cheiro tal
+                    pair<int,int> va = pegaValoresAl(animais[i]->getX(), animais[i]->getY(), 9, "fruta"); // retira valores (nutri e toxi) do alimento com cheiro tal
 
                     animais[i]->fazMovimentacaoComer(ca.first, ca.second, va.first, va.second);
 
@@ -773,7 +770,7 @@ void Reserva::interacaoAnimal()
                         removeAlimentobyCoord(ca.first, ca.second);
                     }
 
-                } else if (an == nullptr && !achouComida) {  // Return false - faz Movimentação sem animal na redondeza
+                } else if (an == nullptr || an != nullptr && !achouComida && !pesoPerigoso) {  // Return false - faz Movimentação sem animal na redondeza
                     animais[i]->fazMovimentacaoSemAnimal_I_F(2, 7);
 
                     if (verificaSeEstaFora(animais[i]->getX(), animais[i]->getY(), getLinhas(), getColunas())) { //verifica se o animal atual está prestes a sair da reserva

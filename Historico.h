@@ -14,7 +14,9 @@ class Historico {
     void adiciona(string nomeAlimento, int VNutri, int VToxic);
     void apaga();
  private:
+
   Alimentos *alimentos;
+  int tam;
 };
 
 
