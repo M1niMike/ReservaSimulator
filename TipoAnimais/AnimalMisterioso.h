@@ -9,7 +9,8 @@
 
 class AnimalMisterioso : public Animais{
 public:
-    AnimalMisterioso(const string& tipo, int SAnimalM, int VAnimalM, int fome, int peso, int x, int y, int idPai) : Animais(tipo, SAnimalM, VAnimalM, fome, peso, x, y, 0)
+    AnimalMisterioso(const string& tipo, int SAnimalM, int VAnimalM, int fome, int peso, int x, int y, int idPai) :
+    Animais(tipo, SAnimalM, VAnimalM, fome, peso, x, y, 0)
     {}
 
     string getTipoAnimal() const override{ return "M"; }

@@ -176,30 +176,6 @@ Animais.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Animais.cpp.s
 .PHONY : Animais.cpp.s
 
-Historico.obj: Historico.cpp.obj
-.PHONY : Historico.obj
-
-# target to build an object file
-Historico.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Historico.cpp.obj
-.PHONY : Historico.cpp.obj
-
-Historico.i: Historico.cpp.i
-.PHONY : Historico.i
-
-# target to preprocess a source file
-Historico.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Historico.cpp.i
-.PHONY : Historico.cpp.i
-
-Historico.s: Historico.cpp.s
-.PHONY : Historico.s
-
-# target to generate assembly for a file
-Historico.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\POO_TP_22_23.dir\build.make CMakeFiles/POO_TP_22_23.dir/Historico.cpp.s
-.PHONY : Historico.cpp.s
-
 Reserva.obj: Reserva.cpp.obj
 .PHONY : Reserva.obj
 
@@ -551,9 +527,6 @@ help:
 	@echo ... Animais.obj
 	@echo ... Animais.i
 	@echo ... Animais.s
-	@echo ... Historico.obj
-	@echo ... Historico.i
-	@echo ... Historico.s
 	@echo ... Reserva.obj
 	@echo ... Reserva.i
 	@echo ... Reserva.s

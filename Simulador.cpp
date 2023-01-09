@@ -7,8 +7,8 @@
 int Simulador::right = 0;
 int Simulador::down = 0;
 
-Simulador::Simulador(Reserva *r, Terminal &t) : r(r), t(t), cmdW(0, 35, 112, 20), textInterface(113, 0, 112, 55),
-                                                reservaPrinter(0, 0, 30, 15) {}
+Simulador::Simulador(Reserva *r, Terminal &t) : r(r), t(t), cmdW(0, 45, 128, 10), textInterface(128, 0, 65, 55),
+                                                reservaPrinter(0, 0, 128, 45) {}
 Reserva* Simulador::menuSimulador() {
 
     int linhas = 0;
@@ -66,7 +66,6 @@ bool Simulador::leFicheiro(string fileName) {
 
     if (file) {
         while (getline(file, texto)) {
-            //cout << "[ " << texto << " ]" << endl;
             validaComandos(texto);
         }
         file.ignore('\n');
@@ -247,8 +246,8 @@ void Simulador::validaComandos(string cmd) {
     }
     else if (tipoComando == "store" && cmdVector.size() == 2)
     {
-        textInterface << "Descomentar a funcao" << "\n";
-        //cmdStore(cmdVector);
+
+        cmdStore(cmdVector);
     }
     else if (tipoComando == "restore" && cmdVector.size() == 2)
     {
@@ -492,7 +491,8 @@ void Simulador::cmdRestore(vector<string> comando) {
 
         if (it == comando[1]){
             if (mapaSave.find(nomeRestore) != mapaSave.end()) {
-                delete r; //apagar onde estamos agora
+
+                //delete r; //apagar onde estamos agora
                 r = (mapaSave.find(nomeRestore)->second); //o second vai buscar a segunda "chavE" do mapa, ou seja, o Reserva* e carrega-o
 
                 textInterface << "\n A sua gravacao: " << nomeRestore << " foi restaurada com sucesso!\n";
@@ -526,25 +526,23 @@ void Simulador::cmdSlide(vector<string> comando)
 }
 
 
+void Simulador::cmdStore(vector<string> comando) {
+    for (auto it: comando) {
+        string nomeSave = comando[1]; // ir buscar o nome do "save" que o user meteu
 
+        if(it == comando[1]){
+            if (mapaSave.find(nomeSave) != mapaSave.end()) {
+                textInterface << "\nJa existe um store com esse nome, por favor insira outro.\n";
+                return;
+            }
 
-//void Simulador::cmdStore(vector<string> comando) {
-//    for (auto it: comando) {
-//        string nomeSave = comando[1]; // ir buscar o nome do "save" que o user meteu
-//
-//        if(it == comando[1]){
-//            if (mapaSave.find(nomeSave) != mapaSave.end()) {
-//                textInterface << "\nJa existe um store com esse nome, por favor insira outro.\n";
-//                return;
-//            }
-//
-//            Reserva *temp = new Reserva(*r);
-//
-//            mapaSave.insert(std::pair<string, Reserva*>(nomeSave, temp));
-//            textInterface << "\nReserva guardada com sucesso\n";
-//        }
-//    } //ver melhor esta parte
-//}
+            Reserva *temp = new Reserva(*r);
+
+            mapaSave.insert(std::pair<string, Reserva*>(nomeSave, temp));
+            textInterface << "\nReserva guardada com sucesso\n";
+        }
+    }
+}
 
 void Simulador::cmdKillAnimalId(vector<string> comando){
     for (auto it: comando) { // armezenar comandos
@@ -743,23 +741,24 @@ void Simulador::buildReserva() {
     {
         for (int j = 0; j < colunas; j++)
         {
-
+            //reservaPrinter << "*";
             for (int x = 0; x < r->getVecAnimal().size(); x++)
             {
                 if (r->getVecAnimal()[x]->getX() == i + 1 + right && r->getVecAnimal()[x]->getY() == j + 1 + down)
                 {
-                    reservaPrinter << move_to((r->getVecAnimal()[x]->getX()), r->getVecAnimal()[x]->getY());
+                    reservaPrinter << move_to((r->getVecAnimal()[x]->getX()-1), r->getVecAnimal()[x]->getY()-1);
                     reservaPrinter << r->getVecAnimal()[x]->getTipoAnimal();
                 }
             }
         }
         for (int j = 0; j < colunas; j++)
         {
+            //reservaPrinter << "*";
             for (int k = 0; k < r->getVecAlimento().size(); k++)
             {
                 if (r->getVecAlimento()[k]->getX() == i + 1 + right && r->getVecAlimento()[k]->getY() == j + 1 + down)
                 {
-                    reservaPrinter << move_to((r->getVecAlimento()[k]->getX()), r->getVecAlimento()[k]->getY());
+                    reservaPrinter << move_to((r->getVecAlimento()[k]->getX()-1), r->getVecAlimento()[k]->getY()-1);
                     reservaPrinter << r->getVecAlimento()[k]->getTipoAlimento();
                 }
             }

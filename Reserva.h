@@ -29,9 +29,6 @@ public:
 
     int constantesReader(string aux);
     bool leFicheiroConstantes(string fileName);
-
-
-    /* pair<int, int>, é uma classe template do C++ que permite armazenar um par de valores de qualquer tipo*/
     pair<int, int> createFilho(int x, int y, int direcao, int distancia);
     pair<int, int> createCorpo(int x, int y, int direcao);
     pair<int, int> pegaCoordAl(int x, int y, int valorRedondeza, string comida);
@@ -39,22 +36,15 @@ public:
     pair<int, int> pegaCoordAni(int id, int x, int y, int valorRedondeza, int peso);
     pair<int, int> pegaCoordCaca(int id, int x, int y, int valorRedondeza);
     pair<int, int> pegaCoordPai(int id, int idPai, int x, int y, int valorRedondeza);
-
-
-
     //Get
     int getLinhas() const;
     int getColunas() const;
     int getInstantes() const;
     bool verificaLinhasColunas(const int &x, const int &y);
-
-
     //Set
     void setLinhas(int newLinhas);
     void setColunas(int newColunas);
-
     void incrementaInstante();
-
     //Animal
     vector<Animais *> getVecAnimal() const;
     void criaAnimal(const string &tipo, const int &x, const int &y);
@@ -71,12 +61,7 @@ public:
     bool checkComida(int x, int y, int valorRedondeza, string comida);
     bool verificaAnimalRedondezaAlemPai(int id, int idPai, int x, int y, int valorRedondeza);
     int pegaPesoAnimalCacado(int id, int x, int y, int valorRedondeza);
-
-  //Alimentos* checkComida(int id, int x, int y, int valorRedondeza, string comida);
-
-
     string getInfoAnimalId(int id) const;
-
     //Alimento
     vector<Alimentos *> getVecAlimento() const;
     void criaAlimento(const string &tipo, const int &x, const int &y);
@@ -100,8 +85,6 @@ private:
     //static int ID;
     int numInstantes;
 
-
-    Window debug; //APAGAR DEPOIS
 
 
 };

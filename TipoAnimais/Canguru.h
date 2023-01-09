@@ -9,7 +9,8 @@
 
 class Canguru : public Animais{
 public:
-    Canguru(const string& tipo, int SCanguru, int VCanguru, int fome, int peso, int x, int y, int idPai) : Animais(tipo, SCanguru, VCanguru, fome, peso, x, y, 0)
+    Canguru(const string& tipo, int SCanguru, int VCanguru, int fome, int peso, int x, int y, int idPai) :
+    Animais(tipo, SCanguru, VCanguru, fome, peso, x, y, 0)
     {}
 
     string getTipoAnimal() const override{ return "G"; }

@@ -6,7 +6,6 @@
 #define POO_TP_22_23_ANIMAIS_H
 
 #include "util.h"
-#include "Alimentos.h"
 
 
 class Reserva; // Forma de inibir o include recursivo, falando para o compilador que tal classe vai ser implementada em outro lugar
@@ -63,7 +62,6 @@ private:
     int x, y;
     int id;
     int idPai;
-    Alimentos *alimento;
 };
 
 

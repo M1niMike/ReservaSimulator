@@ -33,7 +33,6 @@ public:
 
     Alimentos(const string& t, int Va, int Vn, int tx, int x, int y);
 
-    Alimentos();
 
     virtual ~Alimentos() = default;
 

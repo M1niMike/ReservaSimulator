@@ -23,11 +23,7 @@ public:
     void getInfoAlimento(int x, int y);
     bool verificaCoord(const int &linha, const int &coluna);
     string maiscula(string palavra);
-//    int constantesReader(string aux);
-//    bool leFicheiroConstantes(string fileName);
     void sleepChrono(int valorTempo);
-
-
 
     //Comandos
     void cmdCriaAnimal(vector<string> comando);
@@ -53,8 +49,6 @@ public:
     void cmdFeedCoord(vector<string> comando);
     void cmdSlide(vector<string> comando);
 
-
-
     Reserva *getReserva() const
     {
         return r;
@@ -74,7 +68,6 @@ private:
     Window cmdW; //Comandos
     Window textInterface; //Print
     Window reservaPrinter; // reserva
-
     static int right;
     static int down;
 };

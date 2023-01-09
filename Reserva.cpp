@@ -24,7 +24,7 @@
 static int idDoPai = 0;
 
 
-Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes), /*APAGAR*/ debug(15, 15, 50, 15)
+Reserva::Reserva(int numInstantes, int nl, int nc): linhas(nl), colunas(nc), numInstantes(numInstantes)
 {
 
 }
@@ -787,7 +787,6 @@ void Reserva::interacaoAnimal()
             }
         }
     }
-    //debug.clear();
 }
 
 bool Reserva::checkPeso(const int &id, const int &x, const int &y, const int &valorRedondeza, const int &peso)
@@ -955,8 +954,6 @@ void Reserva::interacaoAlimento()
             }
 
         }
-
-        debug.clear();
     }
 }
 

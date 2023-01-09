@@ -1,6 +1,0 @@
-Sem uso de STL para o historico, vector<x> (funções com esse formato), utilizar array criado por nós
-
-
-Metas para hoje:
-   fazer ultimas coisas do canguru
-   fazer slide e visanim
