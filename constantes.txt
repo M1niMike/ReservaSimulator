@@ -1,3 +1,0 @@
-Peso 60
-SAnimal 50
-VAnimal 11

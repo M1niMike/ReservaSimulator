@@ -10,22 +10,20 @@
 
 class Reserva;
 
-class Simulador{
+class Simulador {
 public:
     //funcs Auxiliares
-    void runInterface();
-    void menuSimulador();
+    Reserva* menuSimulador();
     bool leFicheiro(string fileName);
     void validaComandos(string cmd);
-    vector<string> splitString(const string& cmd) const;
+    vector<string> splitString(const string &cmd) const;
     void buildReserva();
     void buildArea(int x, int y);
     void getInfoAnimal(int x, int y);
     void getInfoAlimento(int x, int y);
-    bool verificaCoord(const int& linha, const int& coluna);
+    bool verificaCoord(const int &linha, const int &coluna);
     string maiscula(string palavra);
-    int constantesReader(string aux);
-    bool leFicheiroConstantes(string fileName);
+    void sleepChrono(int valorTempo);
 
     //Comandos
     void cmdCriaAnimal(vector<string> comando);
@@ -37,20 +35,41 @@ public:
     void cmdSee(vector<string> comando);
     void cmdInfo(vector<string> comando);
     void cmdLoad(vector<string> comando);
+    void cmdKillAnimalId(vector<string> comando);
+    void cmdKillAnimalCoord(vector<string> comando);
+    void cmdNoFoodId(vector<string> comando);
+    void cmdNoFoodCoord(vector<string> comando);
+    void cmdEmpty(vector<string> comando);
+    void cmdRestore(vector<string> comando);
+    void cmdStore(vector<string> comando);
+    void cmdN(vector<string> comando);
+    void cmdNPause(vector<string> comando);
+    void cmdNN(vector<string> comando);
+    void cmdFeedId(vector<string> comando);
+    void cmdFeedCoord(vector<string> comando);
+    void cmdSlide(vector<string> comando);
 
-    Reserva* getReserva() const {
+    Reserva *getReserva() const
+    {
         return r;
     };
 
-    Simulador(Reserva *r);
+    Simulador(Reserva *r, Terminal &t);
 
-    ~Simulador(){
+    /*~Simulador()
+    {
         delete r;
-    }
+    }*/
 
 private:
     Reserva *r;
-    map<string, int> mapa;
+    map<string, Reserva*> mapaSave;
+    Terminal &t;
+    Window cmdW; //Comandos
+    Window textInterface; //Print
+    Window reservaPrinter; // reserva
+    static int right;
+    static int down;
 };
 
 #endif //POO_TP_22_23_INTERFACE_H

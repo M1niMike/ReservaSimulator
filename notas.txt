@@ -1,2 +1,0 @@
-Corrigir comando SEE dos animais por ficheiro
-Corrigir o Exit (destrutores)

@@ -1,4 +1,4 @@
-ToolSet: w64 6.0 (local)@C:\Program Files (x86)\mingw64
+ToolSet: w64 10.0 (local)@C:\Program Files (x86)\w64devkit
 Options: 
 
 Options:
