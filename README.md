@@ -5,4 +5,5 @@ Trabalho Prático de Programação Orientada a Objetos - Ano Letivo 22/23
 
 Integrantes: Micael Melo Eid e Gonçalo Costa Enes
 
+Nota: 83/100
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
